@@ -1,0 +1,16 @@
+state={
+	id=110
+	name="STATE_110"
+	provinces={
+		1239 2487 
+	}
+	manpower=5600000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = SHD
+		owner = SHD
+
+	}
+}

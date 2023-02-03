@@ -1,0 +1,16 @@
+state={
+	id=85
+	name="STATE_85"
+	provinces={
+		1199 1262 1563 1667 2471 2639 3650 
+	}
+	manpower=9195000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = HEB
+		owner = HEB
+
+	}
+}

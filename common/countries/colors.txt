@@ -1,0 +1,40 @@
+TST = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+BEJ = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+TIJ = {
+	color = rgb { 51 155 0 }
+	color_ui = rgb { 51 155 0 }
+}
+HEB = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+LIN = {
+	color = rgb { 124 125 184 }
+	color_ui = rgb { 124 125 184 }
+}
+JIL = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+HLJ = {
+	color = rgb { 51 155 0 }
+	color_ui = rgb { 51 155 0 }
+}
+SHD = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+JIS = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+SHH = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 152 130 191 }
+}

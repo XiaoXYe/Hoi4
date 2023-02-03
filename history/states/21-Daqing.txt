@@ -1,0 +1,16 @@
+state={
+	id=21
+	name="STATE_21"
+	provinces={
+		594 2090 2298 2312 2782 2842 3040 3498 3510 
+	}
+	manpower=2690000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = HLJ
+		owner = HLJ
+
+	}
+}

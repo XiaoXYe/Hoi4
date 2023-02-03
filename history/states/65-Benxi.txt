@@ -1,0 +1,16 @@
+state={
+	id=65
+	name="STATE_65"
+	provinces={
+		639 951 3058 3605 
+	}
+	manpower=1321000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = LIN
+		owner = LIN
+
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=200
+	name="STATE_200"
+	provinces={
+		1300 1514 2121 3787 
+	}
+	manpower=4522000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = JIS
+		owner = JIS
+
+	}
+}

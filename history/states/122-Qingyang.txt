@@ -1,0 +1,10 @@
+state={
+	id=122
+	name="STATE_122"
+	provinces={
+		636 1387 1934 2975 
+	}
+	manpower=1000
+	state_category = town
+	local_supplies = 0.0
+}

@@ -1,0 +1,16 @@
+state={
+	id=54
+	name="STATE_54"
+	provinces={
+		1735 2118 2308 2822 3334 3588 3591 3594 
+	}
+	manpower=952000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = JIL
+		owner = JIL
+
+	}
+}

@@ -1,0 +1,16 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		3261 
+	}
+	manpower=5435000
+	state_category = town
+	local_supplies = 0.0
+
+	history = {
+		add_core_of = SHD
+		owner = SHD
+
+	}
+}
