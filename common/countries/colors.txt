@@ -35,6 +35,14 @@ JIS = {
 	color_ui = rgb { 201 56 93 }
 }
 SHH = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 152 130 191 }
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
+}
+ZHJ = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+FUJ = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
 }
