@@ -58,3 +58,15 @@ HEN = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 203 138 74 }
 }
+HUB = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+HUN = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
+}
+JIX = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
