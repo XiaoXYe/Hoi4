@@ -12,5 +12,8 @@ state={
 		add_core_of = SHD
 		owner = SHD
 
+		victory_points = {
+			2178 5 
+		}
 	}
 }
