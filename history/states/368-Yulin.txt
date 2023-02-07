@@ -4,7 +4,13 @@ state={
 	provinces={
 		1970 2553 3029 3365 4175 4185 4186 4200 
 	}
-	manpower=1000
+	manpower=5816000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = GUX
+		owner = GUX
+
+	}
 }

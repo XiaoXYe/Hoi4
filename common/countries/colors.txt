@@ -70,3 +70,19 @@ JIX = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 201 56 93 }
 }
+GUD = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}
+GUX = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+HOK = {
+	color = rgb { 51 155 0 }
+	color_ui = rgb { 51 155 0 }
+}
+MAC = {
+	color = rgb { 124 125 184 }
+	color_ui = rgb { 124 125 184 }
+}

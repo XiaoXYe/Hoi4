@@ -4,7 +4,13 @@ state={
 	provinces={
 		5092 5093
 	}
-	manpower=1000
+	manpower=646000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = FUJ
+		owner = FUJ
+
+	}
 }
