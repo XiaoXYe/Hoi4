@@ -4,7 +4,13 @@ state={
 	provinces={
 		227 622 2039 2296 
 	}
-	manpower=1000
+	manpower=2676000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = SIC
+		owner = SIC
+
+	}
 }
