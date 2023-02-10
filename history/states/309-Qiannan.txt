@@ -4,7 +4,13 @@ state={
 	provinces={
 		927 1371 1535 1866 2160 4009 4028 
 	}
-	manpower=1000
+	manpower=3481000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = GUZ
+		owner = GUZ
+
+	}
 }

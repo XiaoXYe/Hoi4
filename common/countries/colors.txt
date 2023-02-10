@@ -86,3 +86,15 @@ MAC = {
 	color = rgb { 124 125 184 }
 	color_ui = rgb { 124 125 184 }
 }
+SAX = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+CHQ = {
+	color = rgb { 124 125 184 }
+	color_ui = rgb { 124 125 184 }
+}
+GUZ = {
+	color = rgb { 51 155 0 }
+	color_ui = rgb { 51 155 0 }
+}

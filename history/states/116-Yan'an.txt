@@ -4,7 +4,13 @@ state={
 	provinces={
 		680 1256 1724 1829 1896 1976 2078 2173 2410 2416 
 	}
-	manpower=1000
+	manpower=2269000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = SAX
+		owner = SAX
+
+	}
 }
