@@ -4,7 +4,13 @@ state={
 	provinces={
 		437 626 856 985 1110 1751 2233 2350 2521 2675 2687 2788 3236 3573 3577 3602 3623 
 	}
-	manpower=1000
+	manpower=1660000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = NMG
+		owner = NMG
+
+	}
 }
