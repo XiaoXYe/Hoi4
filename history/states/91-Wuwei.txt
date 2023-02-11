@@ -4,7 +4,13 @@ state={
 	provinces={
 		598 1858 2935 3648 3649 3673 
 	}
-	manpower=1000
+	manpower=1443000
 	state_category = town
 	local_supplies = 0.0
+
+	history = {
+		add_core_of = GAS
+		owner = GAS
+
+	}
 }
