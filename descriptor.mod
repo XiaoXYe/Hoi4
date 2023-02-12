@@ -28,6 +28,7 @@ replace_path="common/technology_sharing"
 replace_path="common/characters"
 replace_path="common/generation"
 replace_path="events"
+replace_path="localisation"
 tags={
 	"Alternative History"
 }
