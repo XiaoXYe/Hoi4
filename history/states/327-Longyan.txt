@@ -5,12 +5,17 @@ state={
 		348 1402 1598 1913 2281 2534 3182 3282 4015 4021 4023 4027 4033 4039 4041 4042 4043 4053 
 	}
 	manpower=2730000
-	state_category = town
+	state_category = large_town
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = FUJ
 		owner = FUJ
-
+		victory_points = { 4042 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 }

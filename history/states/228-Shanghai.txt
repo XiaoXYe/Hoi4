@@ -5,12 +5,17 @@ state={
 		2946 3285 3815 3828 3833 3841 
 	}
 	manpower=24894000
-	state_category = town
+	state_category = megalopolis
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = SHH
 		owner = SHH
-
+		victory_points = { 3285 50 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 6
+		}
 	}
 }
