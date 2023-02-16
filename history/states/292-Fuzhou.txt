@@ -5,12 +5,17 @@ state={
 		973 1217 2483 2819 2996 3922 3945 3955 
 	}
 	manpower=3579000
-	state_category = town
+	state_category = large_town
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = JIX
 		owner = JIX
-
+		victory_points = { 2996 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 }
