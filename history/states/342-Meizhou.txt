@@ -5,12 +5,17 @@ state={
 		1447 1669 1823 2477 2775 2919 2963 3220 3270 4065 4077 4088 4092 4093 4096 4103 4113 4115 
 	}
 	manpower=3877000
-	state_category = town
+	state_category = large_town
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = GUD
 		owner = GUD
-
+		victory_points = { 4092 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 }
