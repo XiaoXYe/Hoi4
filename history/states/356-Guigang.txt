@@ -11,6 +11,11 @@ state={
 	history = {
 		add_core_of = GUX
 		owner = GUX
-
+		victory_points = { 2221 5 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
+		}
 	}
 }
