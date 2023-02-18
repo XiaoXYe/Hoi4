@@ -11,6 +11,11 @@ state={
 	history = {
 		add_core_of = GAS
 		owner = GAS
-
+		victory_points = { 4184 5 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
+		}
 	}
 }

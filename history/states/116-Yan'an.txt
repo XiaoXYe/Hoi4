@@ -11,6 +11,11 @@ state={
 	history = {
 		add_core_of = SAX
 		owner = SAX
-
+		victory_points = { 680 5 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
+		}
 	}
 }

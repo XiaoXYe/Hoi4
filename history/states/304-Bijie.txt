@@ -5,12 +5,17 @@ state={
 		16 103 1214 1791 1972 2248 3316 
 	}
 	manpower=6845000
-	state_category = town
+	state_category = large_town
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = GUZ
 		owner = GUZ
-
+		victory_points = { 103 10 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 }
