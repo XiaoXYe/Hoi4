@@ -5,12 +5,17 @@ state={
 		472 1351 2727 2839 4056 4956
 	}
 	manpower=4030000
-	state_category = town
+	state_category = large_city
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = TAW
 		owner = TAW
-
+		victory_points = { 472 20 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4
+		}
 	}
 }

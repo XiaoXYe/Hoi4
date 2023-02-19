@@ -11,6 +11,11 @@ state={
 	history = {
 		add_core_of = XIJ
 		owner = XIJ
-
+		victory_points = { 145 5 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
+		}
 	}
 }

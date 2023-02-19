@@ -5,17 +5,17 @@ state={
 		191 438 445 1407 1610 1695 1757 1914 2087 2411 2462 2536 2575 2678 3095 3526 3548 3556 3574 
 	}
 	manpower=2853000
-	state_category = metropolis
+	state_category = town
 	local_supplies = 0.0
 
 	history = {
 		add_core_of = NMG
 		owner = NMG
-		victory_points = { 2462 30 }
+		victory_points = { 1757 5 }
 		buildings = {
-			infrastructure = 4
-			arms_factory = 3
-			industrial_complex = 4
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
 		}
 	}
 }

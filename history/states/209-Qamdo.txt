@@ -11,6 +11,11 @@ state={
 	history = {
 		add_core_of = TIB
 		owner = TIB
-
+		victory_points = { 2383 5 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 1
+		}
 	}
 }
