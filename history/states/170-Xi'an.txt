@@ -8,6 +8,11 @@ state={
 	state_category = metropolis
 	local_supplies = 0.0
 
+
+	resources = {
+		oil = 50
+	}
+
 	history = {
 		add_core_of = SAX
 		owner = SAX

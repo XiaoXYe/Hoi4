@@ -8,6 +8,11 @@ state={
 	state_category = large_city
 	local_supplies = 0.0
 
+
+	resources = {
+		aluminium = 51
+	}
+
 	history = {
 		add_core_of = GUZ
 		owner = GUZ

@@ -8,6 +8,11 @@ state={
 	state_category = city
 	local_supplies = 0.0
 
+
+	resources = {
+		steel = 16
+	}
+
 	history = {
 		add_core_of = GUX
 		owner = GUX

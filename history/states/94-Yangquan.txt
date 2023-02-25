@@ -8,6 +8,11 @@ state={
 	state_category = town
 	local_supplies = 0.0
 
+
+	resources = {
+		aluminium = 80
+	}
+
 	history = {
 		add_core_of = SHX
 		owner = SHX

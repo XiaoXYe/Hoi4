@@ -8,6 +8,12 @@ state={
 	state_category = metropolis
 	local_supplies = 0.0
 
+
+	resources = {
+		aluminium = 10
+		steel = 8
+	}
+
 	history = {
 		add_core_of = CHQ
 		owner = CHQ

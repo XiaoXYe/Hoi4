@@ -8,6 +8,11 @@ state={
 	state_category = town
 	local_supplies = 0.0
 
+
+	resources = {
+		rubber = 49
+	}
+
 	history = {
 		add_core_of = YUN
 		owner = YUN

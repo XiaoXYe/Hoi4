@@ -8,6 +8,11 @@ state={
 	state_category = town
 	local_supplies = 0.0
 
+
+	resources = {
+		steel = 12
+	}
+
 	history = {
 		add_core_of = NMG
 		owner = NMG
