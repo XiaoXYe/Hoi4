@@ -4,7 +4,7 @@ test_path = "D:\\hoi4mod\\test"
 path = 'C:\\Users\\JacobXij\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\EastMeme\\history\\states'
 ins_path = "C:\\Users\\JacobXij\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\EastMeme\\tutorial\\"
 dict = {}
-resource_categories = ['steel', 'oil', 'rubber', 'aluminium']
+resource_categories = ['steel', 'oil', 'rubber', 'aluminium', 'tungsten', 'chromium']
 for file_name in os.listdir(path):
     index = file_name.split('-')[0]
     dict[index] = path + "\\" + file_name

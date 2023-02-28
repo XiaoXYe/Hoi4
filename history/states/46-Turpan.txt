@@ -8,6 +8,11 @@ state={
 	state_category = town
 	local_supplies = 0.0
 
+
+	resources = {
+		chromium = 24
+	}
+
 	history = {
 		add_core_of = XIJ
 		owner = XIJ

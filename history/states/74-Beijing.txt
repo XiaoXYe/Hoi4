@@ -8,6 +8,11 @@ state={
 	state_category = megalopolis
 	local_supplies = 0.0
 
+
+	resources = {
+		chromium = 24
+	}
+
 	history = {
 		add_core_of = BEJ
 		owner = BEJ

@@ -8,6 +8,11 @@ state={
 	state_category = city
 	local_supplies = 0.0
 
+
+	resources = {
+		tungsten = 152
+	}
+
 	history = {
 		add_core_of = JIX
 		owner = JIX

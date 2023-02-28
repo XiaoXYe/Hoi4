@@ -8,6 +8,11 @@ state={
 	state_category = city
 	local_supplies = 0.0
 
+
+	resources = {
+		tungsten = 56
+	}
+
 	history = {
 		add_core_of = HUN
 		owner = HUN

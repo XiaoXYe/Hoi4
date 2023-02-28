@@ -8,6 +8,11 @@ state={
 	state_category = town
 	local_supplies = 0.0
 
+
+	resources = {
+		chromium = 36
+	}
+
 	history = {
 		add_core_of = GAS
 		owner = GAS

@@ -10,6 +10,7 @@ state={
 
 
 	resources = {
+		tungsten = 20
 		aluminium = 6
 		rubber = 5
 	}

@@ -10,6 +10,7 @@ state={
 
 
 	resources = {
+		chromium = 24
 		rubber = 80
 	}
 

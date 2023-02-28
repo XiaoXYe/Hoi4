@@ -10,6 +10,7 @@ state={
 
 
 	resources = {
+		chromium = 24
 		aluminium = 6
 		oil = 17
 		steel = 180
