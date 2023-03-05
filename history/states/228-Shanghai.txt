@@ -18,6 +18,7 @@ state={
 		owner = SHH
 		victory_points = { 3285 50 }
 		buildings = {
+			dockyard = 5
 			infrastructure = 5
 			arms_factory = 3
 			industrial_complex = 6

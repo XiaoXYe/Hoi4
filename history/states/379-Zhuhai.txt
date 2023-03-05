@@ -13,6 +13,7 @@ state={
 		owner = GUD
 		victory_points = { 4193 20 }
 		buildings = {
+			dockyard = 2
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 4
