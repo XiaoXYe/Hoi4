@@ -18,9 +18,13 @@ state={
 		owner = TAW
 		victory_points = { 1899 15 }
 		buildings = {
+			dockyard = 3
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
+			1899 = {
+				naval_base = 10
+			}
 		}
 	}
 }
