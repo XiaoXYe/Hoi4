@@ -1,1 +1,45 @@
 capital = 97
+
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = NIX_ar
+recruit_character = NIX_acr
+recruit_character = NIX_mt
+recruit_character = NIX_stc
+recruit_character = NIX_aa2
+recruit_character = NIX_acgs
+recruit_character = NIX_ncm
+recruit_character = NIX_nccr
+recruit_character = NIX_coi
+recruit_character = NIX_democratic_guy
+recruit_character = NIX_acd2
+recruit_character = NIX_acas
+recruit_character = NIX_communist_guy
+recruit_character = NIX_ncs
+recruit_character = NIX_awt
+recruit_character = NIX_pot
+recruit_character = NIX_fascist_guy
+recruit_character = NIX_ai2
+recruit_character = NIX_nt
+recruit_character = NIX_aco2
+
+
+set_convoys = 20

@@ -1,0 +1,367 @@
+characters={
+	BEJ_ar={
+		advisor={
+			slot = high_command
+			idea_token = BEJ_ar
+			ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	BEJ_acr={
+		advisor={
+			slot = air_chief
+			idea_token = BEJ_acr
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	BEJ_mt={
+		advisor={
+			slot = theorist
+			idea_token = BEJ_mt
+			ledger  = army 
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	BEJ_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_stc
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	BEJ_aa2={
+		advisor={
+			slot = high_command
+			idea_token = BEJ_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+	BEJ_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = BEJ_acgs
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_3"
+			}
+		}
+	}
+	BEJ_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = BEJ_ncm
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	BEJ_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = BEJ_nccr
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	BEJ_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_coi
+				traits  = {
+					captain_of_industry 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	BEJ_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_democratic_guy
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	BEJ_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = BEJ_acd2
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+	}
+	BEJ_acas={
+		advisor={
+			slot = high_command
+			idea_token = BEJ_acas
+			ledger  = air 
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	BEJ_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_communist_guy
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = communism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+	}
+	BEJ_ncs={
+		advisor={
+			slot = high_command
+			idea_token = BEJ_ncs
+			ledger  = navy 
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	BEJ_awt={
+		advisor={
+			slot = theorist
+			idea_token = BEJ_awt
+			ledger  = air 
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	BEJ_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_pot
+				traits  = {
+					prince_of_terror 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	BEJ_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_fascist_guy
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+	}
+	BEJ_ai2={
+		advisor={
+			slot = high_command
+			idea_token = BEJ_ai2
+			ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+	}
+	BEJ_nt={
+		advisor={
+			slot = theorist
+			idea_token = BEJ_nt
+			ledger  = navy 
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+	}
+	BEJ_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = BEJ_aco2
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+}

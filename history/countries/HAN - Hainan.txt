@@ -1,1 +1,45 @@
 capital = 388
+
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = HAN_ar
+recruit_character = HAN_acr
+recruit_character = HAN_mt
+recruit_character = HAN_stc
+recruit_character = HAN_aa2
+recruit_character = HAN_acgs
+recruit_character = HAN_ncm
+recruit_character = HAN_nccr
+recruit_character = HAN_coi
+recruit_character = HAN_democratic_guy
+recruit_character = HAN_acd2
+recruit_character = HAN_acas
+recruit_character = HAN_communist_guy
+recruit_character = HAN_ncs
+recruit_character = HAN_awt
+recruit_character = HAN_pot
+recruit_character = HAN_fascist_guy
+recruit_character = HAN_ai2
+recruit_character = HAN_nt
+recruit_character = HAN_aco2
+
+
+set_convoys = 20

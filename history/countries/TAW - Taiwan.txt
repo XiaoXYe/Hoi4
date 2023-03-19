@@ -1,1 +1,44 @@
 capital = 334
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = TAW_ar
+recruit_character = TAW_acr
+recruit_character = TAW_mt
+recruit_character = TAW_stc
+recruit_character = TAW_aa2
+recruit_character = TAW_acgs
+recruit_character = TAW_ncm
+recruit_character = TAW_nccr
+recruit_character = TAW_coi
+recruit_character = TAW_democratic_guy
+recruit_character = TAW_acd2
+recruit_character = TAW_acas
+recruit_character = TAW_communist_guy
+recruit_character = TAW_ncs
+recruit_character = TAW_awt
+recruit_character = TAW_pot
+recruit_character = TAW_fascist_guy
+recruit_character = TAW_ai2
+recruit_character = TAW_nt
+recruit_character = TAW_aco2
+
+
+set_convoys = 20

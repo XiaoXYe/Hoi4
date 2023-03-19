@@ -1,1 +1,44 @@
 capital = 170
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = SAX_ar
+recruit_character = SAX_acr
+recruit_character = SAX_mt
+recruit_character = SAX_stc
+recruit_character = SAX_aa2
+recruit_character = SAX_acgs
+recruit_character = SAX_ncm
+recruit_character = SAX_nccr
+recruit_character = SAX_coi
+recruit_character = SAX_democratic_guy
+recruit_character = SAX_acd2
+recruit_character = SAX_acas
+recruit_character = SAX_communist_guy
+recruit_character = SAX_ncs
+recruit_character = SAX_awt
+recruit_character = SAX_pot
+recruit_character = SAX_fascist_guy
+recruit_character = SAX_ai2
+recruit_character = SAX_nt
+recruit_character = SAX_aco2
+
+
+set_convoys = 20

@@ -1,1 +1,44 @@
 ﻿capital = 323
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = YUN_ar
+recruit_character = YUN_acr
+recruit_character = YUN_mt
+recruit_character = YUN_stc
+recruit_character = YUN_aa2
+recruit_character = YUN_acgs
+recruit_character = YUN_ncm
+recruit_character = YUN_nccr
+recruit_character = YUN_coi
+recruit_character = YUN_democratic_guy
+recruit_character = YUN_acd2
+recruit_character = YUN_acas
+recruit_character = YUN_communist_guy
+recruit_character = YUN_ncs
+recruit_character = YUN_awt
+recruit_character = YUN_pot
+recruit_character = YUN_fascist_guy
+recruit_character = YUN_ai2
+recruit_character = YUN_nt
+recruit_character = YUN_aco2
+
+
+set_convoys = 20

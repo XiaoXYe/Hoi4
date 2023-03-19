@@ -1,1 +1,44 @@
 capital = 319
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = FUJ_ar
+recruit_character = FUJ_acr
+recruit_character = FUJ_mt
+recruit_character = FUJ_stc
+recruit_character = FUJ_aa2
+recruit_character = FUJ_acgs
+recruit_character = FUJ_ncm
+recruit_character = FUJ_nccr
+recruit_character = FUJ_coi
+recruit_character = FUJ_democratic_guy
+recruit_character = FUJ_acd2
+recruit_character = FUJ_acas
+recruit_character = FUJ_communist_guy
+recruit_character = FUJ_ncs
+recruit_character = FUJ_awt
+recruit_character = FUJ_pot
+recruit_character = FUJ_fascist_guy
+recruit_character = FUJ_ai2
+recruit_character = FUJ_nt
+recruit_character = FUJ_aco2
+
+
+set_convoys = 20

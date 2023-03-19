@@ -1,1 +1,44 @@
 capital = 246
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = HUB_ar
+recruit_character = HUB_acr
+recruit_character = HUB_mt
+recruit_character = HUB_stc
+recruit_character = HUB_aa2
+recruit_character = HUB_acgs
+recruit_character = HUB_ncm
+recruit_character = HUB_nccr
+recruit_character = HUB_coi
+recruit_character = HUB_democratic_guy
+recruit_character = HUB_acd2
+recruit_character = HUB_acas
+recruit_character = HUB_communist_guy
+recruit_character = HUB_ncs
+recruit_character = HUB_awt
+recruit_character = HUB_pot
+recruit_character = HUB_fascist_guy
+recruit_character = HUB_ai2
+recruit_character = HUB_nt
+recruit_character = HUB_aco2
+
+
+set_convoys = 20
