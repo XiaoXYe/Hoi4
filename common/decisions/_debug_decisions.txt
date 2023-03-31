@@ -1,0 +1,28 @@
+debug_decisions = {
+	
+	chicken_chicken_dinner_debug = {
+		icon = generic_research
+
+		available = {
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			every_other_country = {
+				every_other_country = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+}
