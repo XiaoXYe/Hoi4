@@ -1,4 +1,5 @@
-capital = 167
+﻿capital = 167
+oob = "HEN"
 
 
 set_politics = {

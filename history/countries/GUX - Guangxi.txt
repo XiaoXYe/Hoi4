@@ -1,4 +1,5 @@
-capital = 354
+﻿capital = 354
+oob = "GUX"
 
 
 set_politics = {

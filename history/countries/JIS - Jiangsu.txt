@@ -1,4 +1,5 @@
-capital = 214
+﻿capital = 214
+oob = "JIS"
 
 set_politics = {
 	ruling_party = communism 

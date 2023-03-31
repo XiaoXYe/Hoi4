@@ -1,4 +1,5 @@
-capital = 97
+﻿capital = 97
+oob = "NIX"
 
 
 set_politics = {

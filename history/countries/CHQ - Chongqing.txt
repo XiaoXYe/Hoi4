@@ -1,4 +1,5 @@
-capital = 238
+﻿capital = 238
+oob = "CHQ"
 
 set_politics = {
 	ruling_party = communism 
