@@ -15,11 +15,15 @@ debug_decisions = {
 		cost = 0
 
 		complete_effect = {
-			every_other_country = {
+			TST = {
 				every_other_country = {
-					declare_war_on = {
-						target = PREV
-						type = annex_everything
+					TST = {
+						every_other_country = {
+							declare_war_on = {
+								target = PREV.PREV
+								type = annex_everything
+							}
+						}
 					}
 				}
 			}
