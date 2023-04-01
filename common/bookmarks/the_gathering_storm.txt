@@ -7,8 +7,76 @@ bookmarks = {
 		default_country = "TST"
 		default = yes
 		
+		"BEJ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"SHH"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"SIC"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"LIN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"SHD"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"GUD"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"HEN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+		}
 		"TST"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			available = {
+				is_debug = yes
+			}
+		}
+
+
+		"HOK"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"JIL"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"HLJ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"HEB"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"NMG"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"HOK"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+		}
+		"MAC"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
