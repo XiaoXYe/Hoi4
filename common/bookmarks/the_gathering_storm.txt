@@ -10,30 +10,82 @@ bookmarks = {
 		"BEJ"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"SHH"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"SIC"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
-		}
-		"LIN"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = communism
-		}
-		"SHD"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"GUD"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
-		"HEN"={
+		"ZHJ"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"JIS"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"HUB"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"LIN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"TST"={
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -43,40 +95,291 @@ bookmarks = {
 		}
 
 
-		"HOK"={
+		"TIJ"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"CHQ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"JIL"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"HLJ"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"HEB"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"NMG"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"SHX"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"SAX"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"HEN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"HUN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"ANH"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"JIX"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"SHD"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"FUJ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"GUX"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"YUN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"GUZ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"HAN"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"GAS"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"NIX"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"QIH"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"XIJ"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"TIB"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"HOK"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		"MAC"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"TAW"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
