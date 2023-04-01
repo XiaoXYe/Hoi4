@@ -43,3 +43,13 @@ recruit_character = HUN_aco2
 
 
 set_convoys = 20
+
+create_country_leader = {
+	name = "杜家毫"
+	desc = ""
+	picture = GFX_Portrait_Asia_Generic_1
+	ideology = marxism
+	traits = {
+		#
+	}
+}

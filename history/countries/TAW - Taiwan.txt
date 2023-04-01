@@ -43,3 +43,13 @@ recruit_character = TAW_aco2
 
 
 set_convoys = 20
+
+create_country_leader = {
+	name = "蔡英文"
+	desc = ""
+	picture = GFX_Portrait_Asia_Generic_1
+	ideology = marxism
+	traits = {
+		#
+	}
+}

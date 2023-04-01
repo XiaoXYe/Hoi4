@@ -43,3 +43,13 @@ recruit_character = TIB_aco2
 
 
 set_convoys = 20
+
+create_country_leader = {
+	name = "吴英杰"
+	desc = ""
+	picture = GFX_Portrait_Asia_Generic_1
+	ideology = marxism
+	traits = {
+		#
+	}
+}

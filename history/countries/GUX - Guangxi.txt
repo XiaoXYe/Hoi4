@@ -44,3 +44,13 @@ recruit_character = GUX_aco2
 
 
 set_convoys = 20
+
+create_country_leader = {
+	name = "鹿心社"
+	desc = ""
+	picture = GFX_Portrait_Asia_Generic_1
+	ideology = marxism
+	traits = {
+		#
+	}
+}
