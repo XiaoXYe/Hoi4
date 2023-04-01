@@ -1,6 +1,6 @@
 debug_decisions = {
 	
-	chicken_chicken_dinner_debug = {
+	debug_chicken_chicken_dinner = {
 		icon = generic_research
 
 		available = {
