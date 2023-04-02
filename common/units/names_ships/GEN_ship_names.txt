@@ -1,0 +1,98 @@
+﻿##### CHINA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+GEN_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	fallback_name = "%d 驱逐舰"					
+
+	unique = {											
+		"青海湖" "洞庭湖" "太湖" "鄱阳湖" "洪泽湖" "滇池" "天目湖" "天池" "喀纳斯湖"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+GEN_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	fallback_name = "%d 轻巡洋舰"
+
+	unique = {
+		"黄河" "淮河" "天池河" "巨鹿河" "苏雅河" "羊草河" "黑河" "石河子河" "神木河" "沱沱河" "克鲁伊河" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+GEN_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	fallback_name = "%d 重巡洋舰"
+
+	unique = {
+		"长江" "哈尔滨江" "珠江" "黑龙江" "澜沧江" "岷江" "怒江" "新安江" "抚仙江"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+GEN_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	fallback_name = "%d 战舰"		
+
+	unique = {
+		"黄山" "泰山" "华山" "衡山" "嵩山" "恒山" "峨眉山" "天山" "太行山" "长白山" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+GEN_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	fallback_name = "%d 战列巡洋舰"		
+
+	unique = {
+		"黄山" "泰山" "华山" "衡山" "嵩山" "恒山" "峨眉山" "天山" "太行山" "长白山" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+GEN_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	fallback_name = "%d 航母"	
+
+	unique = {
+		"郑和" "陈祖义" "王景弘" "赵光义" "纪纲" "王直" "马舜英" "田丰" "孙逸仙" "王兆祥"
+}
+
+### SUBMARINES ###
+GEN_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "%d 潜艇"
+	
+	unique = {
+		"诗经" "周易" "论语" "道德经" "史记" "汉书" "三国演义" "红楼梦" "西游记" "孙子兵法" "资治通鉴" "金瓶梅" 
+	}
+}
