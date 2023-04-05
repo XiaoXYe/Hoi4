@@ -22,7 +22,7 @@ state={
 			infrastructure = 4
 			air_base = 8
 			arms_factory = 3
-			industrial_complex = 5
+			industrial_complex = 4
 			2559 = {
 				naval_base = 8
 			}

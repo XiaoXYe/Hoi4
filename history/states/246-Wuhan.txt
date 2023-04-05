@@ -18,11 +18,11 @@ state={
 		owner = HUB
 		victory_points = { 2141 30 }
 		buildings = {
-			dockyard = 4
+			dockyard = 3
 			infrastructure = 4
 			air_base = 8
 			arms_factory = 3
-			industrial_complex = 5
+			industrial_complex = 4
 			3023 = {
 				naval_base = 8
 			}
