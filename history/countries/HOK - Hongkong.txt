@@ -118,7 +118,7 @@ set_convoys = 20
 create_country_leader = {
 	name = "林郑月娥"
 	desc = ""
-	picture = GFX_Portrait_Asia_Generic_1
+	picture = "gfx/leaders/PRC/Portrait_Hongkong_LizhengYuee.dds"
 	ideology = marxism
 	traits = {
 		#

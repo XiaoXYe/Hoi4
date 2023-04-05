@@ -118,7 +118,7 @@ set_convoys = 20
 create_country_leader = {
 	name = "彭清华"
 	desc = ""
-	picture = GFX_Portrait_Asia_Generic_1
+	picture = "gfx/leaders/PRC/Portrait_Sichuan_PengQinghua.dds"
 	ideology = marxism
 	traits = {
 		#
