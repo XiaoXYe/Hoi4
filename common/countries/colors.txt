@@ -1,6 +1,6 @@
 TST = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 57 85 58 }
+	color_ui = rgb { 57 85 58 }
 }
 BEJ = {
 	color = rgb { 193 171 8 }
