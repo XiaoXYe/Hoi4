@@ -2199,7 +2199,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
+					set_rule = { can_create_factions = no }
 				}			
 			}
 		}
@@ -2256,7 +2256,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ideological_fanaticism_focus
 			set_rule = {
-				can_create_factions = yes
+				can_create_factions = no
 			}
 			hidden_effect = {
 				set_rule = { can_use_kamikaze_pilots = yes }

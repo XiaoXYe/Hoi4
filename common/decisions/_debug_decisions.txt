@@ -15,16 +15,40 @@ debug_decisions = {
 		cost = 0
 
 		complete_effect = {
-			TST = {
+			every_country = {
+				limit = {
+						NOT = {
+							original_tag = TST
+						}
+				}
 				every_other_country = {
-					TST = {
-						every_other_country = {
-							declare_war_on = {
-								target = PREV.PREV
-								type = annex_everything
+					limit = {
+						NOT = {
+							OR = {
+								original_tag = TST
+								has_war_with = PREV
 							}
 						}
 					}
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					NOT = {
+						is_core_of = TST
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							original_tag = TST
+						}
+					}
+					add_state_claim = PREV
 				}
 			}
 		}
