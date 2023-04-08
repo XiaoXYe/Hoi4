@@ -12,7 +12,7 @@ state={
 	resources = {
 		chromium = 108
 		tungsten = 24
-		oil = 40
+		oil = 80
 		steel = 8
 	}
 

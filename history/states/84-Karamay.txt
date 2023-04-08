@@ -11,7 +11,7 @@ state={
 
 	resources = {
 		chromium = 72
-		oil = 86
+		oil = 172
 	}
 
 	history = {

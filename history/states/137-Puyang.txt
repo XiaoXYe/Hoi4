@@ -10,7 +10,7 @@ state={
 
 
 	resources = {
-		oil = 6
+		oil = 12
 	}
 
 	history = {
