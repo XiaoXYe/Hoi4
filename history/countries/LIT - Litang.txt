@@ -1,0 +1,126 @@
+﻿capital = 188
+oob = "empty"
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 70
+	neutrality = 10
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	gw_artillery = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			engines_1 = 1
+			aa_lmg = 1
+			early_bombs = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			cv_CAS1 = 1
+			naval_bomber1 = 1
+			CAS1 = 1
+			early_bomber = 1
+		}
+	}
+}
+
+recruit_character = LIT_ar
+recruit_character = LIT_acr
+recruit_character = LIT_mt
+recruit_character = LIT_stc
+recruit_character = LIT_aa2
+recruit_character = LIT_acgs
+recruit_character = LIT_ncm
+recruit_character = LIT_nccr
+recruit_character = LIT_coi
+recruit_character = LIT_democratic_guy
+recruit_character = LIT_acd2
+recruit_character = LIT_acas
+recruit_character = LIT_communist_guy
+recruit_character = LIT_ncs
+recruit_character = LIT_awt
+recruit_character = LIT_pot
+recruit_character = LIT_fascist_guy
+recruit_character = LIT_ai2
+recruit_character = LIT_nt
+recruit_character = LIT_aco2
+
+
+set_convoys = 20
+
+create_country_leader = {
+	name = "丁真珍珠"
+	desc = ""
+	picture = "gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,96 @@
+﻿division_template = {
+	name = "保安队"
+
+	division_names_group = GEN_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "步兵师"
+
+	division_names_group = GEN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "骑兵师"
+
+	division_names_group = GEN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "理塘卫戍队"
+
+	division_names_group = GEN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	######## LAND OOB ########
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "理塘卫戍队"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "理塘卫戍队"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "理塘卫戍队"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+	######## No Naval OOB ########
+}

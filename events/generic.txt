@@ -1,0 +1,38 @@
+###########################
+# Sichuan Events
+###########################
+
+add_namespace = pandemic
+
+news_event = {
+	id = pandemic.1
+	title = pandemic.1.t
+	desc = pandemic.1.d
+	picture = GFX_news_event_generic_parliament
+	
+	trigger = {
+		date > 2020.1.20
+	}
+
+	immediate = {
+		log = "[GetDateText]: news_event pandemic.1"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = TST
+					}
+				}
+				add_ideas = {
+					GEN_pandemic
+				}
+			}
+		}
+
+	}
+	option = {
+		name = pandemic.1.a 
+		
+	}
+}
+

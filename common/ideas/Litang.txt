@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		LIT_social_media_influencer_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+	}
+
+}

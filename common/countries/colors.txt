@@ -138,3 +138,7 @@ TAW = {
 	color = rgb { 51 155 0 }
 	color_ui = rgb { 51 155 0 }
 }
+LIT = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}

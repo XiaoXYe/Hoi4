@@ -1,0 +1,40 @@
+﻿focus_tree = {
+	id = litang_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LIT
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			is_subject = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 5
+			 
+		}
+	}
+
+}
