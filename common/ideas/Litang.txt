@@ -16,6 +16,26 @@ ideas = {
 				industrial_capacity_factory = 0.10
 			}
 		}
+
+		LIT_fight_for_freedom = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				defence	= 0.30
+				army_attack_factor = 0.30
+				army_org_factor = 0.30
+				dig_in_speed_factor = 0.30
+				army_speed_factor = 0.30
+				out_of_supply_factor = -0.50
+				surrender_limit = 1.00
+			}
+		}
+
 	}
 
 }

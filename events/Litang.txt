@@ -1,0 +1,41 @@
+###########################
+# Sichuan Events
+###########################
+
+add_namespace = litang
+
+country_event = {
+	id = litang.1
+	title = litang.1.t
+	desc = litang.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.1"
+	}
+
+	option = { # Accept demands
+		name = litang.1.a
+	}
+}
+
+country_event = {
+	id = litang.2
+	title = litang.2.t
+	desc = litang.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.2"
+	}
+
+	option = { # Accept demands
+		name = litang.2.a
+	}
+}

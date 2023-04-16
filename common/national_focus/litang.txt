@@ -15,7 +15,7 @@
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 15
 		y = 0
 		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -34,6 +34,138 @@
 		completion_reward = {
 			army_experience = 5
 			 
+		}
+	}
+
+	focus = {
+		id = LIT_situation_worse
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			is_subject_of = SIC
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_situation_worse"
+			army_experience = 5
+			 
+		}
+	}
+
+	focus = {
+		id = LIT_socialmedia_propaganda
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		cost = 5
+
+		prerequisite = { focus = LIT_situation_worse }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			is_subject_of = SIC
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_socialmedia_propaganda"
+			army_experience = 5
+			 
+		}
+	}
+
+	focus = {
+		id = LIT_stir_up_people_emotion
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = LIT_situation_worse }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			is_subject_of = SIC
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_stir_up_people_emotion"
+			army_experience = 5
+			188 = {
+				create_unit = {
+					division = "name = \"理塘自由战士1号\" division_template = \"骑兵师\" start_experience_factor = 1.0"
+					owner = LIT
+				}
+				create_unit = {
+					division = "name = \"理塘自由战士1号\" division_template = \"骑兵师\" start_experience_factor = 1.0"
+					owner = LIT
+				}	
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_final_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = LIT_socialmedia_propaganda }
+		prerequisite = { focus = LIT_stir_up_people_emotion }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			is_subject_of = SIC
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_final_effort"
+			army_experience = 5
+			SIC = {
+				end_puppet = LIT
+				country_event = {
+					id = sichuan.4
+					days = 1
+				}
+			}
+			LIT = {
+				add_ideas = {
+					LIT_fight_for_freedom
+				}
+			}
 		}
 	}
 
