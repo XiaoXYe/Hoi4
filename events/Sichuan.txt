@@ -23,15 +23,6 @@ country_event = {
 	option = { # Accept demands
 		name = sichuan.1.a
 		ai_chance = { factor = 100 }
-		add_war_support = 0.2
-		country_event = {
-			id = sichuan.2
-			days = 3
-		}
-	}
-	option = { # Refuse
-		name = sichuan.1.b
-		annex_country = { target = TIB }
 		country_event = {
 			id = sichuan.2
 			days = 3
@@ -93,7 +84,7 @@ country_event = {  # 理塘试点基地成立
 	}
 }
 
-country_event = {  # 严格的防疫措施
+country_event = {  # 更加严格的防疫措施
 	id = sichuan.3
 	title = sichuan.3.t
 	desc = sichuan.3.d
@@ -114,6 +105,7 @@ country_event = {  # 严格的防疫措施
 		name = sichuan.3.a
 		add_war_support = -0.1
 		LIT = {
+			set_country_flag = LIT_turmoil
 			country_event = {
 				id = litang.2
 				days = 3
@@ -123,7 +115,7 @@ country_event = {  # 严格的防疫措施
 }
 
 country_event = {  # 理塘反抗了我们！
-	id = sichuan.4
+	id = sichuan.4	
 	title = sichuan.4.t
 	desc = sichuan.4.d
 	picture = GFX_report_event_soviet_tanks_snow

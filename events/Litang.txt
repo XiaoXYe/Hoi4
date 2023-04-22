@@ -1,5 +1,5 @@
 ###########################
-# Sichuan Events
+# Litang Events
 ###########################
 
 add_namespace = litang

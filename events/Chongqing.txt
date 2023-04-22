@@ -1,0 +1,47 @@
+###########################
+# Chongqing Events
+###########################
+
+add_namespace = chongqing
+
+country_event = {
+	id = chongqing.1
+	title = chongqing.1.t
+	desc = chongqing.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event chongqing.1"
+	}
+
+	option = { # Accept demands
+		name = chongqing.1.a
+		ai_chance = { factor = 100 }
+		LIT = {
+			annex_country = {
+				target = CHQ
+				transfer_troops = yes
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = CHQ
+			}
+			add_core_of = LIT
+		}		
+	}
+
+	option = { # Refuse demands
+		name = chongqing.1.b
+		ai_chance = { factor = 0 }
+		LIT = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHQ
+			}
+		}
+	}
+}

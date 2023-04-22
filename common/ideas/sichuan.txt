@@ -1,2 +1,27 @@
 ideas = {
+
+	country = {
+
+		SIC_sypathy_for_LIT = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				add_war_support = -0.2
+				defence	= -0.80
+				army_attack_factor = -0.80
+				army_org_factor = -0.80
+				dig_in_speed_factor = -0.80
+				army_speed_factor = -0.80
+				out_of_supply_factor = 0.50
+				surrender_limit = -0.20
+			}
+		}
+
+	}
+
 }
