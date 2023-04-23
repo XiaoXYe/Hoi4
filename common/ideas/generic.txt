@@ -10,13 +10,79 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.30
 				industrial_capacity_factory = -0.20
 				industrial_capacity_dockyard = -0.20
+				political_power_factor = -0.20
+				production_speed_buildings_factor = -0.40
+			}
+		}
+
+		GEN_pandemic_decline = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
 				political_power_factor = -0.10
 				production_speed_buildings_factor = -0.20
 			}
 		}
+
+		GEN_pandemic_controlled = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				political_power_factor = -0.05
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		GEN_pandemic_solved = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		GEN_remove_mask = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				weekly_manpower = -100
+				max_training = -0.10
+				conscription_factor = -0.20
+				land_reinforce_rate = -0.20
+				training_time_factor = 0.10
+				stability_weekly = 0.01
+			}
+		}
+
 	}
 
 }

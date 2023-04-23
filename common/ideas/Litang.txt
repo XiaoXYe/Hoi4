@@ -36,6 +36,37 @@ ideas = {
 			}
 		}
 
+		LIT_new_born_city = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_cost = 0.3
+				war_support_factor = -0.1
+				decryption_factor = -0.2
+				encryption_factor = -0.2
+			}
+		}
+
+		LIT_embrace_his_smile = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.2
+				resistance_activity = -0.2
+			}
+		}
+
 	}
 
 }

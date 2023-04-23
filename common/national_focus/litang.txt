@@ -15,7 +15,7 @@
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 15
+		x = 25
 		y = 0
 		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -71,8 +71,9 @@
 	focus = {
 		id = LIT_socialmedia_propaganda
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 7
+		x = 1
 		y = 1
+		relative_position_id = LIT_situation_worse
 		cost = 5
 
 		prerequisite = { focus = LIT_situation_worse }
@@ -107,8 +108,9 @@
 	focus = {
 		id = LIT_stir_up_people_emotion
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
+		x = -1
 		y = 1
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_situation_worse }
 
@@ -161,8 +163,9 @@
 	focus = {
 		id = LIT_final_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
+		x = 0
 		y = 2
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_socialmedia_propaganda }
 		prerequisite = { focus = LIT_stir_up_people_emotion }
@@ -204,8 +207,9 @@
 	focus = {
 		id = LIT_is_free
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
+		x = 0
 		y = 3
+		relative_position_id = LIT_situation_worse
 		cost = 1
 		prerequisite = { focus = LIT_final_effort }
 
@@ -225,14 +229,21 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_is_free"
 			set_country_flag = LIT_has_been_free
+			remove_ideas = {
+				LIT_fight_for_freedom
+			}
+			add_ideas = {
+				LIT_new_born_city
+			}
 		}
 	}
 
 	focus = {
 		id = LIT_assure_sichuan_stability
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 8
+		x = 2
 		y = 4
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_is_free }
 		
@@ -241,6 +252,7 @@
 		}
 		
 		available = {
+			has_country_flag = LIT_has_been_free
 		}
 
 		cancel_if_invalid = yes
@@ -260,8 +272,9 @@
 	focus = {
 		id = LIT_acquire_chongqing
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 8
+		x = 2
 		y = 5
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_assure_sichuan_stability }
 		
@@ -270,6 +283,7 @@
 		}
 		
 		available = {
+			has_country_flag = LIT_has_been_free
 		}
 
 		cancel_if_invalid = yes
@@ -289,8 +303,9 @@
 	focus = {
 		id = LIT_improve_leader_charm
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
+		x = -2
 		y = 4
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_is_free }
 		
@@ -299,6 +314,8 @@
 		}
 		
 		available = {
+			has_country_flag = LIT_has_been_free
+			has_country_flag = LIT_no_mask
 		}
 
 		cancel_if_invalid = yes
@@ -306,22 +323,31 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_improve_leader_charm"
 			add_political_power = 100
+			add_ideas = {
+				LIT_embrace_his_smile
+			}
 		}
 	}
 
 	focus = {
 		id = LIT_begin_study
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 3
+		x = -3
 		y = 5
+		relative_position_id = LIT_situation_worse
 		cost = 5
 		prerequisite = { focus = LIT_improve_leader_charm }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 		
 		available = {
+			has_country_flag = LIT_has_been_free
+		}
+
+		mutually_exclusive = {
+			focus = LIT_keep_innocence
 		}
 
 		cancel_if_invalid = yes
@@ -332,4 +358,227 @@
 		}
 	}
 
+	focus = {
+		id = LIT_keep_innocence
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 5
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_improve_leader_charm }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_has_been_free
+		}
+
+		mutually_exclusive = {
+			focus = LIT_begin_study
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_keep_innocence"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = LIT_right_of_smile
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 0
+		cost = 5
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_has_been_free
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.05
+				 add_timed_idea = {
+					idea = GEN_remove_mask
+					days = 90
+				 }
+				 set_country_flag = LIT_no_mask
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_improve_sanitation_habit
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_right_of_smile }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_what_about_animals
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_right_of_smile }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_happiness_under_covid
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 2
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_what_about_animals }
+		prerequisite = { focus = LIT_improve_sanitation_habit }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GEN_pandemic
+				add_idea = GEN_pandemic_decline
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_movable_hospitals
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_right_of_smile }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_invest_sanitary_infrastructure
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_movable_hospitals }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_go_back_to_work
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 2
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_movable_hospitals }
+		
+		available = {
+			AND = {
+				has_completed_focus = LIT_invest_sanitary_infrastructure
+				has_completed_focus = LIT_happiness_under_covid
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_smile_still
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 3
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_happiness_under_covid }
+		prerequisite = { focus = LIT_invest_sanitary_infrastructure }
+		prerequisite = { focus = LIT_go_back_to_work }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GEN_pandemic_decline
+				add_idea = GEN_pandemic_controlled
+			}
+		}
+	}
 }
