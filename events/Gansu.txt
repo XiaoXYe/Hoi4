@@ -1,0 +1,31 @@
+###########################
+# Gansu Events
+###########################
+
+add_namespace = gansu
+
+country_event = {
+	id = gansu.1
+	title = gansu.1.t
+	desc = gansu.1.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event gansu.1"
+	}
+	option = {
+		name = gansu.1.a
+		ai_chance = { factor = 100 }
+		LIT = {
+			transfer_state = 174
+		}
+	}
+	option = {
+		name = gansu.1.b
+		ai_chance = { factor = 0 }
+	}
+}
+

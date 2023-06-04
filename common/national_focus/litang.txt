@@ -11,6 +11,7 @@
 	}
 	
 	default = no
+	continuous_focus_position = { x = 2400 y = 1200 }
 
 	focus = {
 		id = army_effort
@@ -42,7 +43,7 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 6
 		y = 0
-		cost = 5
+		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -74,7 +75,7 @@
 		x = 1
 		y = 1
 		relative_position_id = LIT_situation_worse
-		cost = 5
+		cost = 2
 
 		prerequisite = { focus = LIT_situation_worse }
 
@@ -111,7 +112,7 @@
 		x = -1
 		y = 1
 		relative_position_id = LIT_situation_worse
-		cost = 5
+		cost = 2
 		prerequisite = { focus = LIT_situation_worse }
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -166,7 +167,7 @@
 		x = 0
 		y = 2
 		relative_position_id = LIT_situation_worse
-		cost = 5
+		cost = 2
 		prerequisite = { focus = LIT_socialmedia_propaganda }
 		prerequisite = { focus = LIT_stir_up_people_emotion }
 
@@ -241,7 +242,7 @@
 	focus = {
 		id = LIT_assure_sichuan_stability
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 3
 		y = 4
 		relative_position_id = LIT_situation_worse
 		cost = 5
@@ -283,7 +284,7 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_has_been_free
+
 		}
 
 		cancel_if_invalid = yes
@@ -298,6 +299,99 @@
 			}
 		}
 	}
+
+	focus = {
+		id = LIT_ally_tibet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 5
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_assure_sichuan_stability }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_ally_tibet"
+			LIT = {
+				create_faction = "LIT_AXIS"
+				country_event = {
+					id = litang.3
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_sanxia_conference
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 6
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_acquire_chongqing }
+		prerequisite = { focus = LIT_ally_tibet }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_control_covid
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_sanxia_conference"
+			HUB = {
+				country_event = {
+					id = hubei.2
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_expand_experiment_land
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 7
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_sanxia_conference }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_control_covid
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_expand_experiment_land"
+			LIT = {
+				country_event = {
+					id = litang.4
+					days = 1
+				}
+			}
+		}
+	}
+
 
 
 	focus = {
@@ -322,9 +416,14 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_improve_leader_charm"
-			add_political_power = 100
 			add_ideas = {
 				LIT_embrace_his_smile
+			}
+			LIT = {
+				country_event = {
+					id = litang.6
+					days = 7
+				}
 			}
 		}
 	}
@@ -343,7 +442,7 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_has_been_free
+			has_country_flag = LIT_begin_study_flag
 		}
 
 		mutually_exclusive = {
@@ -354,6 +453,68 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_begin_study"
+		}
+	}
+
+	focus = {
+		id = LIT_learn_copper
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 6
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_begin_study }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_copper"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = LIT_learn_history
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 7
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_learn_copper }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_history"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = LIT_learn_people
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 8
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_learn_history }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_people"
 			add_political_power = 100
 		}
 	}
@@ -372,7 +533,7 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_has_been_free
+			has_country_flag = LIT_keep_innocence_flag
 		}
 
 		mutually_exclusive = {
@@ -383,7 +544,58 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_keep_innocence"
+		}
+	}
+
+	focus = {
+		id = LIT_ride_horse_haha
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 8
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { focus = LIT_keep_innocence }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_ride_horse_haha"
 			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = LIT_who_am_i
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 9
+		relative_position_id = LIT_situation_worse
+		cost = 5
+		prerequisite = { 
+			focus = LIT_learn_people
+			focus = LIT_ride_horse_haha
+		}
+		prerequisite = { 
+			focus = LIT_expand_experiment_land
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_who_am_i"
+			LIT = {
+				country_event = {
+					id = litang.5
+				}
+			}
 		}
 	}
 
@@ -399,12 +611,15 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_has_been_free
+			NOT = {
+				is_subject_of = SIC
+			}
 		}
 
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_right_of_smile"
 			LIT = {
 				 add_stability = 0.05
 				 add_timed_idea = {
@@ -419,7 +634,7 @@
 	focus = {
 		id = LIT_improve_sanitation_habit
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = LIT_right_of_smile
 		cost = 5
@@ -432,6 +647,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_improve_sanitation_habit"
 			LIT = {
 				 add_stability = 0.01
 			}
@@ -441,7 +657,7 @@
 	focus = {
 		id = LIT_what_about_animals
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = LIT_right_of_smile
 		cost = 5
@@ -454,6 +670,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_what_about_animals"
 			LIT = {
 				 add_stability = 0.01
 			}
@@ -461,13 +678,12 @@
 	}
 
 	focus = {
-		id = LIT_happiness_under_covid
+		id = LIT_movable_hospitals
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -1
 		y = 2
 		relative_position_id = LIT_right_of_smile
 		cost = 5
-		prerequisite = { focus = LIT_what_about_animals }
 		prerequisite = { focus = LIT_improve_sanitation_habit }
 		
 		ai_will_do = {
@@ -477,6 +693,31 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_movable_hospitals"
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_happiness_under_covid
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 3
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_what_about_animals }
+		prerequisite = { focus = LIT_movable_hospitals }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_happiness_under_covid"
 			swap_ideas = {
 				remove_idea = GEN_pandemic
 				add_idea = GEN_pandemic_decline
@@ -485,9 +726,9 @@
 	}
 
 	focus = {
-		id = LIT_movable_hospitals
+		id = LIT_invest_sanitary_infrastructure
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = LIT_right_of_smile
 		cost = 5
@@ -500,6 +741,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_invest_sanitary_infrastructure"
 			LIT = {
 				 add_stability = 0.01
 			}
@@ -507,13 +749,13 @@
 	}
 
 	focus = {
-		id = LIT_invest_sanitary_infrastructure
+		id = LIT_compensate_farmers
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
-		y = 2
+		x = 3
+		y = 1
 		relative_position_id = LIT_right_of_smile
 		cost = 5
-		prerequisite = { focus = LIT_movable_hospitals }
+		prerequisite = { focus = LIT_right_of_smile }
 		
 		ai_will_do = {
 			factor = 100
@@ -522,6 +764,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_compensate_farmers"
 			LIT = {
 				 add_stability = 0.01
 			}
@@ -531,15 +774,44 @@
 	focus = {
 		id = LIT_go_back_to_work
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
+		x = 3
 		y = 2
 		relative_position_id = LIT_right_of_smile
 		cost = 5
-		prerequisite = { focus = LIT_movable_hospitals }
+		prerequisite = { focus = LIT_invest_sanitary_infrastructure }
+		prerequisite = { focus = LIT_compensate_farmers }
 		
 		available = {
 			AND = {
-				has_completed_focus = LIT_invest_sanitary_infrastructure
+				has_completed_focus = LIT_movable_hospitals
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_go_back_to_work"
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_go_back_to_tiktok
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 3
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_go_back_to_work }
+		
+		available = {
+			AND = {
 				has_completed_focus = LIT_happiness_under_covid
 			}
 		}
@@ -551,6 +823,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_go_back_to_tiktok"
 			LIT = {
 				 add_stability = 0.01
 			}
@@ -560,13 +833,12 @@
 	focus = {
 		id = LIT_smile_still
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
-		y = 3
+		x = 0
+		y = 4
 		relative_position_id = LIT_right_of_smile
 		cost = 5
 		prerequisite = { focus = LIT_happiness_under_covid }
-		prerequisite = { focus = LIT_invest_sanitary_infrastructure }
-		prerequisite = { focus = LIT_go_back_to_work }
+		prerequisite = { focus = LIT_go_back_to_tiktok }
 		
 		ai_will_do = {
 			factor = 100
@@ -575,10 +847,84 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_smile_still"
 			swap_ideas = {
 				remove_idea = GEN_pandemic_decline
 				add_idea = GEN_pandemic_controlled
 			}
+			set_country_flag = LIT_control_covid
 		}
 	}
+
+	focus = {
+		id = LIT_industrial_plan
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 5
+		relative_position_id = LIT_right_of_smile
+		cost = 5
+		prerequisite = { focus = LIT_smile_still }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_industrial_plan"
+			LIT = {
+				 add_stability = 0.01
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_communism_future
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 12
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_rebuild_China_glory
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_communism_future"
+		}
+	}
+
+	focus = {
+		id = LIT_empire_future
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 12
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_rebuild_Litang_glory
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_empire_future"
+		}
+	}
+
 }

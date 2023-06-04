@@ -1,0 +1,27 @@
+###########################
+# Debug Events
+###########################
+
+add_namespace = debug
+
+country_event = {
+	id = debug.1
+	title = debug.1.t
+	desc = debug.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event debug.1"
+	}
+
+	option = { # Accept demands
+		name = debug.1.a
+		ai_chance = { factor = 100 }
+		LIT = {
+			create_faction = THE_AXIS
+		}
+	}
+}

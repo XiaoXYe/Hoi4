@@ -39,3 +39,130 @@ country_event = {
 		name = litang.2.a
 	}
 }
+
+country_event = {
+	id = litang.3
+	title = litang.3.t
+	desc = litang.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.3"
+	}
+
+	option = {
+		name = litang.3.a
+		TIB = {
+			country_event = {
+				id = tibet.1
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = litang.3.b
+		TIB = {
+			country_event = {
+				id = tibet.2
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = litang.4
+	title = litang.4.t
+	desc = litang.4.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.4"
+	}
+
+	option = { # Accept demands
+		name = litang.4.a
+		SAX = {
+			country_event = {
+				id = shaanxi.1
+				days = 2
+			}
+		}
+		GAS = {
+			country_event = {
+				id = gansu.1
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = litang.5
+	title = litang.5.t
+	desc = litang.5.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.5"
+	}
+
+	option = { # I am Chinese
+		name = litang.5.a
+		set_country_flag = LIT_rebuild_China_glory
+		complete_national_focus = 
+	}
+
+	option = { # I am Litangnese
+		name = litang.5.b
+		set_country_flag = LIT_rebuild_Litang_glory
+		add_political_power = -100
+		add_stability = -0.10
+		create_country_leader = {
+			name = "Dingzhen Zhenzhu"
+			picture = "gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds"
+			ideology = nazism 
+		}
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = litang.6
+	title = litang.6.t
+	desc = litang.6.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.6"
+	}
+
+	option = { # study
+		name = litang.6.a
+		set_country_flag = LIT_begin_study_flag
+		complete_national_focus = LIT_begin_study
+	}
+
+	option = { # no study
+		name = litang.6.b
+		set_country_flag = LIT_keep_innocence_flag
+		complete_national_focus = LIT_keep_innocence
+	}
+}

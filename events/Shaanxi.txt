@@ -1,0 +1,33 @@
+###########################
+# Shaanxi Events
+###########################
+
+add_namespace = shaanxi
+
+country_event = {
+	id = shaanxi.1
+	title = shaanxi.1.t
+	desc = shaanxi.1.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event shaanxi.1"
+	}
+	option = {
+		name = shaanxi.1.a
+		ai_chance = { factor = 100 }
+		LIT = {
+			transfer_state = 190
+			transfer_state = 191
+			transfer_state = 175
+		}
+	}
+	option = {
+		name = shaanxi.1.b
+		ai_chance = { factor = 0 }
+	}
+}
+

@@ -1,5 +1,5 @@
 ###########################
-# Sichuan Events
+# Hubei Events
 ###########################
 
 add_namespace = hubei
@@ -30,6 +30,42 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = hubei.2
+	title = hubei.2.t
+	desc = hubei.2.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event hubei.2"
+	}
+	option = {
+		name = hubei.2.a
+		ai_chance = { factor = 100 }
+		LIT = {
+			transfer_state = 240
+			transfer_state = 224
+			transfer_state = 218
+			transfer_state = 198
+			transfer_state = 208
+			transfer_state = 210
+			transfer_state = 225
+			transfer_state = 244
+			transfer_state = 251
+			transfer_state = 247
+			transfer_state = 220
+			transfer_state = 250
+		}
+	}
+	option = {
+		name = hubei.2.b
+		ai_chance = { factor = 0 }
 	}
 }
 
