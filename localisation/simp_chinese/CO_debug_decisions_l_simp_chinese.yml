@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ debug_decisions:0 "Debug决议"
+ debug_decisions_desc:0 "只有在debug模式下才能看到这些决议"
+ debug_chicken_chicken_dinner:0 "中超联赛开始！"
+ debug_chicken_chicken_dinner_desc:0 "想要观海的请控制台输入：tag TST"

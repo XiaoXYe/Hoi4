@@ -264,3 +264,19 @@ country_event = {# Recruit soldiers
 		custom_effect_tooltip = LIT_tt_mass_forces
 	}	
 }
+
+country_event = {# No study
+	id = litang.12
+	title = litang.12.t
+	desc = litang.12.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {# That's OK
+		name = litang.12.a
+		add_ideas = {
+			LIT_dingzhen_riding
+		}
+	}	
+}

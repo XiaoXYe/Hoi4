@@ -78,7 +78,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				political_power_gain = 0.05
-				stability_weekly = 0.02
+				stability_factor = 0.02
 				opinion_gain_monthly_factor = 0.1
 			}
 
@@ -99,6 +99,39 @@ ideas = {
 			}
 
 		}
+
+		LIT_carnegie = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.02
+				opinion_gain_monthly_factor = 0.1
+				enemy_justify_war_goal_time = 0.1
+				faction_trade_opinion_factor = 0.1
+			}
+
+		}
+
+		LIT_dingzhen_riding = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				army_speed_factor = 0.05
+				cavalry_speed_factor = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defense_factor = 0.05
+				planning_speed = 0.1
+		}
+
 
 	}
 

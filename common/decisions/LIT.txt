@@ -32,3 +32,74 @@ LIT_learn_manner_decisions = {
 
 	}
 }
+
+LIT_learn_history_decisions = {
+	LIT_learn_three_kingdoms = {
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_learn_history
+		}
+
+		available = {
+			has_completed_focus = LIT_learn_history
+			NOT = { has_country_flag = LIT_learning_history }
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_learn_three_kingdoms"
+			set_country_flag = LIT_learning_history
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_learn_three_kingdoms"
+			clr_country_flag = LIT_learning_history
+			set_country_flag = LIT_learnt_three_kingdoms
+			custom_effect_tooltip = LIT_tt_wait_war
+		}
+
+	}
+}
+
+LIT_learn_people_decisions = {
+	LIT_learn_carnegie = {
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_learn_people
+		}
+
+		available = {
+			has_completed_focus = LIT_learn_people
+			NOT = { has_country_flag = LIT_learning_people }
+		}
+
+		fire_only_once = yes
+		cost = 20
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_learn_carnegie"
+			set_country_flag = LIT_learning_people
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_learn_mandarin"
+			clr_country_flag = LIT_learning_people
+			add_ideas = LIT_carnegie
+		}
+
+	}
+}

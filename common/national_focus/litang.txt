@@ -476,7 +476,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_history"
-			add_political_power = 100
+			custom_effect_tooltip = LIT_tt_learn_history
 		}
 	}
 
@@ -497,7 +497,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_people"
-			add_political_power = 100
+			custom_effect_tooltip = LIT_tt_learn_people
 		}
 	}
 
@@ -546,7 +546,9 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_ride_horse_haha"
-			add_political_power = 100
+			country_event = {
+				id = litang.12
+			}
 		}
 	}
 
