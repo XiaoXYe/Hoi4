@@ -1,0 +1,137 @@
+﻿units = {
+	######## LAND OOB ########
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 909
+		division_template = "步兵师"		
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+	######## No Naval OOB ########
+}

@@ -166,3 +166,101 @@ country_event = {
 		complete_national_focus = LIT_keep_innocence
 	}
 }
+
+country_event = {
+	id = litang.7
+	title = litang.7.t
+	desc = litang.7.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.7"
+	}
+
+	option = { # learn manner
+		name = litang.7.a
+	}
+
+}
+
+country_event = {
+	id = litang.8
+	title = litang.8.t
+	desc = litang.8.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.8"
+	}
+
+	option = { # learn history
+		name = litang.8.a
+	}
+
+}
+
+country_event = {
+	id = litang.9
+	title = litang.9.t
+	desc = litang.9.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.9"
+	}
+
+	option = { # learn people
+		name = litang.9.a
+	}
+
+}
+
+country_event = {
+	id = litang.10
+	title = litang.10.t
+	desc = litang.10.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.10"
+	}
+
+	option = { # animals as soldiers
+		name = litang.10.a
+		custom_effect_tooltip = LIT_tt_animal_soldiers
+	}
+
+	option = { # animals as friends
+		name = litang.10.b
+	}
+
+}
+
+country_event = {# Recruit soldiers
+	id = litang.11
+	title = litang.11.t
+	desc = litang.11.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {# Mass Mobilization
+		name = litang.11.a
+		hidden_effect = {
+			load_oob = LIT_mass
+		}
+		custom_effect_tooltip = LIT_tt_mass_forces
+	}	
+}

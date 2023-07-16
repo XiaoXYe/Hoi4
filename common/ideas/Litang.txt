@@ -67,6 +67,39 @@ ideas = {
 			}
 		}
 
+		LIT_effective_communication = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+				stability_weekly = 0.02
+				opinion_gain_monthly_factor = 0.1
+			}
+
+		}
+
+		LIT_mobile_hospitals = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				stability_factor = -0.05
+				army_org_regain = 0.05
+				cas_damage_reduction = 0.1
+			}
+
+		}
+
 	}
 
 }

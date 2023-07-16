@@ -1,0 +1,14 @@
+LIT_learn_manner_decisions = {
+	icon = generic_research
+	allowed = { tag = LIT }
+}
+
+LIT_learn_history_decisions = {
+	icon = generic_research
+	allowed = { tag = LIT }
+}
+
+LIT_learn_people_decisions = {
+	icon = generic_research
+	allowed = { tag = LIT }
+}
