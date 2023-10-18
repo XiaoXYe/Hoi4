@@ -22,7 +22,7 @@ focus_tree = {
 		factor = 1
 	}
 	
-	default = no
+	default = yes
 	reset_on_civilwar = no
 
 	initial_show_position = {
@@ -685,7 +685,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_controlled_state = {
+				random_state = {
 					limit = {
 						controller = { tag = ROOT }
 						free_building_slots = {
@@ -1774,6 +1774,10 @@ focus_tree = {
 					has_idea = neutrality_idea
 				}
 			}
+			modifier = {
+				factor = 20
+				has_idea = SOV_russian_political_influence
+			}
 		}
 
 		completion_reward = {
@@ -2199,7 +2203,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = no }
+					set_rule = { can_create_factions = yes }
 				}			
 			}
 		}
@@ -2256,7 +2260,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ideological_fanaticism_focus
 			set_rule = {
-				can_create_factions = no
+				can_create_factions = yes
 			}
 			hidden_effect = {
 				set_rule = { can_use_kamikaze_pilots = yes }

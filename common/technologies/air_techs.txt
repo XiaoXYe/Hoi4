@@ -20,7 +20,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2017
+		start_year = 1933
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 2 }
@@ -30,6 +30,9 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+
 		}
 		
 		sub_technologies = {
@@ -53,11 +56,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2017
+		start_year = 1933
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
 		}
 		
 		ai_will_do = {
@@ -93,7 +97,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = air_techs_folder
@@ -104,6 +108,8 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		sub_technologies = {
@@ -120,22 +126,22 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "2024.1.1"
+				date > "1940.1.1"
 			}
 		}
 	}
@@ -147,11 +153,12 @@ technologies = {
 		}
 	
 		research_cost = 1 #Carrier Variant
-		start_year = 2020
+		start_year = 1936
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
 		}
 		
 		ai_will_do = {
@@ -200,7 +207,7 @@ technologies = {
 				
 
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
@@ -214,6 +221,8 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		sub_technologies = {
@@ -231,27 +240,27 @@ technologies = {
 			modifier = {
 				factor = 0
 				original_tag = GER
-				date < "2025.1.1"
+				date < "1941.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2025.1.1"
+				date > "1941.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2026.1.1"
+				date > "1942.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2027.1.1"
+				date > "1943.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 		}
 	}
@@ -263,11 +272,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2024
+		start_year = 1940
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
 		}
 		
 		ai_will_do = {
@@ -292,7 +302,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.5
-				date > "2025.6.1"
+				date > "1941.6.1"
 			}
 
 			modifier = {
@@ -326,7 +336,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = air_techs_folder
@@ -337,6 +347,8 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		sub_technologies = {
@@ -353,22 +365,22 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "2029.1.1"
+				date > "1945.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2030.1.1"
+				date > "1946.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "2031.1.1"
+				date > "1947.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "2032.1.1"
+				date > "1948.1.1"
 			}
 		}
 	}
@@ -380,11 +392,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2028
+		start_year = 1944
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_light_fighter_and_modules
 		}
 		
 		ai_will_do = {
@@ -401,7 +414,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.5
-				date > "2029.1.1"
+				date > "1945.1.1"
 			}
 			modifier = {
 				factor = 2.5
@@ -430,7 +443,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2029
+		start_year = 1945
 
 		folder = {
 			name = air_techs_folder
@@ -440,6 +453,8 @@ technologies = {
 		categories = {
 			light_air
 			jet_technology
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 
 		ai_will_do = {
@@ -462,7 +477,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2034
+		start_year = 1950
 
 		folder = {
 			name = air_techs_folder
@@ -472,6 +487,8 @@ technologies = {
 		categories = {
 			light_air
 			jet_technology
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -492,7 +509,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = air_techs_folder
@@ -507,6 +524,8 @@ technologies = {
 			light_air
 			cas_bomber
 			air_equipment
+			mio_cat_all_cas_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -537,12 +556,13 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2020
+		start_year = 1936
 		
 		categories = {
 			naval_air
 			air_equipment
 			cas_bomber
+			mio_cat_all_cas_and_modules
 		}
 		
 		ai_will_do = {
@@ -591,7 +611,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = air_techs_folder
@@ -606,6 +626,8 @@ technologies = {
 			light_air
 			cas_bomber
 			air_equipment
+			mio_cat_all_cas_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -645,12 +667,13 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2024
+		start_year = 1940
 		
 		categories = {
 			naval_air
 			air_equipment
 			cas_bomber
+			mio_cat_all_cas_and_modules
 		}
 		
 		ai_will_do = {
@@ -699,7 +722,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = -4 y = 8 }
@@ -713,6 +736,8 @@ technologies = {
 			light_air
 			cas_bomber
 			air_equipment
+			mio_cat_all_cas_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -750,12 +775,13 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2028
+		start_year = 1944
 		
 		categories = {
 			naval_air
 			air_equipment
 			cas_bomber
+			mio_cat_all_cas_and_modules
 		}
 		
 		ai_will_do = {
@@ -797,7 +823,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 4 }
@@ -811,6 +837,8 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -842,11 +870,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2020
+		start_year = 1936
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_naval_bomber_and_modules
 		}
 		
 		ai_will_do = {
@@ -896,7 +925,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 6 }
@@ -910,6 +939,8 @@ technologies = {
 			naval_air
 			air_equipment
 			naval_bomber
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -948,11 +979,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2024
+		start_year = 1940
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_naval_bomber_and_modules
 		}
 		
 		ai_will_do = {
@@ -1003,7 +1035,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 8 }
@@ -1017,6 +1049,8 @@ technologies = {
 			naval_air
 			naval_bomber
 			air_equipment
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1055,11 +1089,12 @@ technologies = {
 		}
 	
 		research_cost = 1.0 #Carrier Variant
-		start_year = 2028
+		start_year = 1944
 		
 		categories = {
 			naval_air
 			air_equipment
+			mio_cat_all_naval_bomber_and_modules
 		}
 		
 		ai_will_do = {
@@ -1110,7 +1145,7 @@ technologies = {
 		#}
 		
 		research_cost = 2
-		start_year = 2017
+		start_year = 1933
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 2 }
@@ -1120,6 +1155,7 @@ technologies = {
 			medium_air
 			tactical_bomber
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1139,7 +1175,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 4 }
@@ -1149,6 +1185,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1168,7 +1205,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 6 }
@@ -1178,6 +1215,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1197,7 +1235,7 @@ technologies = {
 		#}
 
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 8 }
@@ -1207,6 +1245,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1226,7 +1265,7 @@ technologies = {
 		}
 		allow_branch = { has_dlc = "La Resistance" }
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 4 }
@@ -1236,6 +1275,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_scout_plane
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1268,7 +1308,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 6 }
@@ -1278,6 +1318,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_scout_plane
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1312,7 +1353,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = air_techs_folder
@@ -1323,6 +1364,7 @@ technologies = {
 			medium_air
 			tactical_bomber
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1331,7 +1373,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2020.1.1"
+				date > "1936.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -1343,13 +1385,13 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 			
 			modifier = {
 				factor = 5
 				is_major = yes
-				date > "2024.1.1"
+				date > "1940.1.1"
 			}
 		}
 	}
@@ -1366,7 +1408,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 6 }
@@ -1376,6 +1418,7 @@ technologies = {
 			medium_air
 			tactical_bomber
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1384,7 +1427,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2024.1.1"
+				date > "1940.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -1396,13 +1439,13 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2025.1.1"
+				date > "1941.1.1"
 			}
 			
 			modifier = {
 				factor = 5
 				is_major = yes
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 		}
 	}
@@ -1419,7 +1462,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 8 }
@@ -1429,6 +1472,7 @@ technologies = {
 			medium_air
 			tactical_bomber
 			air_equipment
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1437,7 +1481,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -1449,7 +1493,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "2029.1.1"
+				date > "1945.1.1"
 			}
 		}
 	}
@@ -1470,7 +1514,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2029
+		start_year = 1945
 		
 		folder = {
 			name = air_techs_folder
@@ -1481,6 +1525,7 @@ technologies = {
 			medium_air
 			jet_technology
 			tactical_bomber
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1499,7 +1544,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2034
+		start_year = 1950
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 14 }
@@ -1509,6 +1554,7 @@ technologies = {
 			medium_air
 			jet_technology
 			tactical_bomber
+			mio_cat_all_medium_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1530,7 +1576,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 4 }
@@ -1540,6 +1586,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1570,7 +1617,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
@@ -1580,6 +1627,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1610,7 +1658,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 8 }
@@ -1620,6 +1668,7 @@ technologies = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1644,7 +1693,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2034
+		start_year = 1950
 
 		dependencies = {
 			jet_engines = 1
@@ -1659,6 +1708,7 @@ technologies = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
 		ai_will_do = {
@@ -1680,7 +1730,7 @@ technologies = {
 		}
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 2028
+		start_year = 1944
 
 		# only from focus!!! #####
 		allow = {

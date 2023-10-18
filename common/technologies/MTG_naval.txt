@@ -41,7 +41,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -60,6 +60,8 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -78,7 +80,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -104,6 +106,8 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -123,7 +127,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -146,6 +150,8 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -160,7 +166,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -183,6 +189,8 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -192,7 +200,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -212,6 +220,8 @@ technologies = {
 			naval_equipment
 			dd_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -242,7 +252,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -267,6 +277,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 	improved_depth_charges = {
@@ -287,7 +299,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -312,6 +324,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 	advanced_depth_charges = {
@@ -331,7 +345,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -356,6 +370,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 	modern_depth_charges = {
@@ -372,7 +388,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -397,6 +413,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 	sonar = {
@@ -412,7 +430,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -437,6 +455,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -449,7 +469,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -474,6 +494,8 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 	}
 
@@ -492,6 +514,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_airplane_launcher_1
 			cruiser_ship_engine_1
+			ship_armor_cruiser_1
 		}
 		path = {
 			leads_to_tech = basic_ship_hull_cruiser
@@ -509,7 +532,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -533,6 +556,9 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
 
@@ -553,7 +579,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -577,6 +603,9 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
 
@@ -595,7 +624,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -619,6 +648,9 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
 
@@ -632,7 +664,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -655,6 +687,9 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
 
@@ -671,7 +706,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -696,6 +731,9 @@ technologies = {
 			cl_tech
 			ca_tech
 			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
 		}
 	}
 	basic_cruiser_armor_scheme = {
@@ -721,7 +759,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 0.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -746,6 +784,9 @@ technologies = {
 			cl_tech
 			ca_tech
 			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_carrier_and_modules
 		}
 	}
 
@@ -777,7 +818,7 @@ technologies = {
 
 		research_cost = 1.75
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -809,6 +850,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -832,7 +874,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -867,6 +909,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 	ship_hull_super_heavy = {
@@ -881,7 +924,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		ai_will_do = {
 			factor = 1
@@ -896,6 +939,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -914,7 +958,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -938,6 +982,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -951,7 +996,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -976,8 +1021,10 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
+
 	basic_heavy_armor_scheme = {
 
 		enable_equipment_modules = {
@@ -1001,7 +1048,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.25
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -1026,6 +1073,7 @@ technologies = {
 			bb_tech
 			bc_tech
 			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -1073,6 +1121,7 @@ technologies = {
 			bb_tech
 			bc_tech
 			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
 
@@ -1102,7 +1151,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.75
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -1125,6 +1174,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			mio_cat_tech_all_carrier_and_modules
 		}
 	}
 
@@ -1143,7 +1193,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -1166,6 +1216,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			mio_cat_tech_all_carrier_and_modules
 		}
 	}
 
@@ -1184,7 +1235,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -1207,6 +1258,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			mio_cat_tech_all_carrier_and_modules
 		}
 	}
 
@@ -1220,7 +1272,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -1243,6 +1295,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			mio_cat_tech_all_carrier_and_modules
 		}
 	}
 
@@ -1270,7 +1323,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 2006
+		start_year = 1922
 
 		folder = {
 			name = mtgnavalfolder
@@ -1292,6 +1345,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 
@@ -1311,7 +1365,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -1333,6 +1387,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 
@@ -1358,7 +1413,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -1380,6 +1435,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 
@@ -1395,7 +1451,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -1417,6 +1473,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 
@@ -1434,7 +1491,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -1464,6 +1521,7 @@ early_ship_hull_carrier = {
 			naval_equipment
 			ss_tech
 			ship_modules_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 
@@ -1486,7 +1544,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 2028
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
@@ -1509,6 +1567,7 @@ early_ship_hull_carrier = {
 			naval_equipment
 			ss_tech
 			ship_modules_tech
+			mio_cat_tech_all_submarine_and_modules
 		}
 	}
 	###Special snowflake hulls for special snowflake nations
@@ -1519,7 +1578,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {
@@ -1533,7 +1592,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {
@@ -1547,7 +1606,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {
@@ -1561,7 +1620,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {
@@ -1577,7 +1636,7 @@ early_ship_hull_carrier = {
 			ship_extra_fuel_tank
 		}
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {
@@ -1590,7 +1649,7 @@ early_ship_hull_carrier = {
 			ship_hull_midget_submarine
 		}
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 
 		#set at gamestart
 		allow = {

@@ -1,23 +1,25 @@
 technologies = {
 
 
-	@2002 = 0
-	@2018 = 2
-	@2019 = 3
-	@2020 = 4
-	@2021 = 5
-	@2022 = 5
-	@2023 = 7
-	@2024 = 7
-	@2025 = 8
-	@2026 = 9
-	@2027 = 10
-	@2028 = 11
-	@2029 = 12
-	@2030 = 20
+	@1918 = 0
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 5
+	@1939 = 7
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
+
+		show_equipment_icon = yes
 
 		enable_equipments = {
 			light_tank_chassis_0
@@ -110,7 +112,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2002
+		start_year = 1918
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
@@ -126,23 +128,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -198,7 +201,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2018
+		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -1 y = 2 }
@@ -214,23 +217,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -254,7 +258,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2020
+		start_year = 1936
 
 		folder = {
 			name = nsb_armour_folder
@@ -285,17 +289,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
@@ -312,6 +316,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -337,7 +342,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2022
+		start_year = 1938
 
 		folder = {
 			name = nsb_armour_folder
@@ -374,6 +379,7 @@ technologies = {
 		categories = {
 			armor
 			tp_tech
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -400,7 +406,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2025
+		start_year = 1941
 
 		folder = {
 			name = nsb_armour_folder
@@ -434,6 +440,7 @@ technologies = {
 		categories = {
 			armor
 			tp_tech
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -447,7 +454,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2025
+		start_year = 1941
 
 		folder = {
 			name = nsb_armour_folder
@@ -463,23 +470,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2026.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2027.1.1"
+				date > "1943.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 	}
 
@@ -528,11 +536,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2022
+		start_year = 1938
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2021 }
+			position = { x = 2 y = @1937 }
 		}
 
 		ai_will_do = {
@@ -545,7 +553,7 @@ technologies = {
 					tag = JAP
 					num_of_military_factories < 50
 				}
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 			modifier = {
 				tag = SOV
@@ -553,17 +561,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.1
-				date > "2024.1.1"
+				date > "1940.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2025.1.1"
+				date > "1941.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2026.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
@@ -576,6 +584,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -596,11 +605,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2024 }
+			position = { x = 2 y = @1940 }
 		}
 
 		on_research_complete = {
@@ -628,7 +637,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				date < "2025.1.1"
+				date < "1941.1.1"
 				factor = 0.3
 			}
 			modifier = {
@@ -643,23 +652,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2026.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2027.1.1"
+				date > "1943.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -678,11 +688,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2027
+		start_year = 1943
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2027 }
+			position = { x = 2 y = @1943 }
 		}
 
 		on_research_complete = {
@@ -700,23 +710,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2029.1.1"
+				date > "1945.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2030.1.1"
+				date > "1946.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -733,11 +744,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2029
+		start_year = 1945
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2029 }
+			position = { x = 2 y = @1945 }
 		}
 
 		ai_will_do = {
@@ -745,23 +756,24 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "2030.1.1"
+				date > "1946.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "2031.1.1"
+				date > "1947.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "2032.1.1"
+				date > "1948.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
 	}
 
@@ -811,7 +823,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2018
+		start_year = 1934
 
 		folder = {
 			name = nsb_armour_folder
@@ -823,17 +835,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 			modifier = {
 				tag = FRA
@@ -849,6 +861,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -872,11 +885,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2024
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @2024 }
+			position = { x = 5 y = @1940 }
 		}
 
 		on_research_complete = {
@@ -901,23 +914,24 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.2
-				date > "2026.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2027.1.1"
+				date > "1943.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -937,11 +951,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 1943
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 5 y = @2027 }
+			position = { x = 5 y = @1943 }
 		}
 
 		on_research_complete = {
@@ -959,23 +973,24 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "2028.1.1"
+				date > "1944.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2029.1.1"
+				date > "1945.1.1"
 			}
 
 			modifier = {
 				factor = 1.2
-				date > "2030.1.1"
+				date > "1946.1.1"
 			}
 		}
 
 		categories = {
 			armor
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -997,10 +1012,10 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 8 y = @2027 }
+			position = { x = 8 y = @1943 }
 		}
 
 		on_research_complete = {
@@ -1036,6 +1051,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1055,10 +1071,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 2020
+		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @2019 }
+			position = { x = 3 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1075,22 +1091,25 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1110,10 +1129,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 2022
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @2022 }
+			position = { x = 3 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1130,22 +1149,25 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1163,10 +1185,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 2025
+		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @2025 }
+			position = { x = 3 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1183,32 +1205,35 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @2028 }
+			position = { x = 3 y = @1944 }
 		}
 
 		on_research_complete = {
@@ -1230,22 +1255,25 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1261,10 +1289,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 2018
+		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2019 }
+			position = { x = 2 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -1281,22 +1309,25 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1314,10 +1345,10 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 2022
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2022 }
+			position = { x = 2 y = @1938 }
 		}
 
 		ai_will_do = {
@@ -1334,22 +1365,25 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
@@ -1365,10 +1399,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 2025
+		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2025 }
+			position = { x = 2 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -1385,32 +1419,35 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
 
 	engine_tech_4 = {
 
 		research_cost = 1
-		start_year = 2028
+		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @2028 }
+			position = { x = 2 y = @1944 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_4_tt
@@ -1430,22 +1467,53 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "2021.1.1"
+				date > "1937.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2022.1.1"
+				date > "1938.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "2023.1.1"
+				date > "1939.1.1"
 			}
 		}
 
 		categories = {
 			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
+
+	NOR_rikstanken_tech = {
+
+		allow = { always = no } #Only obtained through Rikstanken Event
+
+		enable_equipment_modules = {
+			NOR_rikstanken_turret
+			NOR_tank_rikstanken_armor
+		}
+
+		path = {
+		}
+
+		on_research_complete = {
+		
+		}
+
+		show_effect_as_desc = no
+
+		research_cost = 1
+		start_year = 1936
+
+
+		categories = {
+			armor
+		}
+	}
+
 }

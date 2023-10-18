@@ -47,16 +47,6 @@ bookmarks = {
 				political_effort
 			}
 		}
-		"ZHJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
-			ideology = communism
-
-			focuses = {
-				army_effort
-				industrial_effort
-				political_effort
-			}
-		}
 		"JIS"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
@@ -87,6 +77,11 @@ bookmarks = {
 				political_effort
 			}
 		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
 		"TST"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			available = {
@@ -94,7 +89,7 @@ bookmarks = {
 			}
 		}
 
-
+		# minors from DLC ####
 		"TIJ"={
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
@@ -110,6 +105,17 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"ZHJ"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
 
 			focuses = {
 				army_effort
