@@ -4,36 +4,7 @@
 
 add_namespace = pandemic
 
-news_event = {
-	id = pandemic.1
-	title = pandemic.1.t
-	desc = pandemic.1.d
-	picture = GFX_news_event_generic_parliament
 
-	is_triggered_only = yes
-
-	immediate = {
-		log = "[GetDateText]: news_event pandemic.1"
-		hidden_effect = {
-			every_country = {
-				limit = {
-					NOT = {
-						original_tag = TST
-					}
-				}
-			}
-			country_event = {
-				id = pandemic.2
-				days = 3
-			}
-		}
-
-	}
-	option = {
-		name = pandemic.1.a 
-		
-	}
-}
 country_event = {
 	id = pandemic.2
 	title = pandemic.2.t
