@@ -50,6 +50,10 @@
  BEJ_DEF:0 "北京"
  BEJ_ADJ:0 "北京"
 
+ BEJ_USC_democratic:0 "北京民主政府"
+ BEJ_USC_democratic_DEF:0 "北京民主政府"
+
+
  TIJ_fascism:0 "天津"
  TIJ_fascism_DEF:0 "天津"
  TIJ_democratic:0 "天津"
@@ -439,6 +443,9 @@
  XIJ_democratic_ADJ:0 "新疆"
  XIJ_neutrality_ADJ:0 "新疆"
  XIJ_communism_ADJ:0 "新疆"
+
+ XIJ_CTR_communism:0 "新疆中央政府"
+ XIJ_CTR_communism_DEF:0 "新疆中央政府"
 
  NMG_fascism:0 "内蒙古"
  NMG_fascism_DEF:0 "内蒙古"

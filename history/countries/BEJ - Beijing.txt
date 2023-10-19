@@ -124,3 +124,13 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "谷爱凌"
+	desc = ""
+	picture = "gfx/leaders/BEJ/Portrait_BEJ_GuAiling.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

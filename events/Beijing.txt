@@ -1,0 +1,190 @@
+###########################
+# Beijing Events
+###########################
+
+add_namespace = beijing
+
+country_event = {
+	id = beijing.1
+	title = beijing.1.t
+	desc = beijing.1.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2020.2.20
+		tag = BEJ
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.1"
+	}
+	option = {
+		name = beijing.1.a
+		hidden_effect = {
+			every_country = {
+				news_event ={
+					id = cnnews.2
+					days = 1
+				}
+			}
+			country_event = {
+				id = beijing.2
+				days = 14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beijing.2
+	title = beijing.2.t
+	desc = beijing.2.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.2"
+	}
+	option = {
+		name = beijing.2.a
+		hidden_effect = {
+			country_event = {
+				id = beijing.3
+				days = 14
+			}
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = beijing.3
+	title = beijing.3.t
+	desc = beijing.3.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.3"
+	}
+	option = {
+		name = beijing.3.a
+		hidden_effect = {
+			country_event = {
+				id = beijing.4
+				days = 14
+			}
+		}
+		add_stability = -0.2
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = beijing.4
+	title = beijing.4.t
+	desc = beijing.4.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.4"
+	}
+	option = {
+		name = beijing.4.a
+		hidden_effect = {
+			country_event = {
+				id = beijing.5
+				days = 14
+			}
+		}
+		add_stability = -0.3
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+			last_election = "2020.3.1"
+			election_frequency = 48
+		}
+		set_cosmetic_tag = BEJ_USC_democratic
+	}
+}
+
+country_event = {
+	id = beijing.5
+	title = beijing.5.t
+	desc = beijing.5.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.5"
+	}
+	option = {
+		name = beijing.5.a
+		hidden_effect = {
+			XIJ = {
+				country_event = {
+					id = xinjiang.1
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beijing.6
+	title = beijing.6.t
+	desc = beijing.6.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.6"
+	}
+	option = {
+		name = beijing.6.a
+		add_collaboration = {
+			target = XIJ
+			value = -0.5
+		}
+	}
+}
+
+
+
