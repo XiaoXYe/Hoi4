@@ -137,6 +137,7 @@ country_event = {
 			election_frequency = 48
 		}
 		set_cosmetic_tag = BEJ_USC_democratic
+		set_country_flag = BEJ_coup
 	}
 }
 
@@ -179,12 +180,96 @@ country_event = {
 	}
 	option = {
 		name = beijing.6.a
-		add_collaboration = {
-			target = XIJ
-			value = -0.5
-		}
 	}
 }
 
+country_event = {
+	id = beijing.7
+	title = beijing.7.t
+	desc = beijing.7.d
+	picture = GFX_report_event_china_infiltration
 
+	is_triggered_only = yes
+	fire_only_once = yes
 
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.7"
+	}
+	option = {
+		name = beijing.7.a
+		add_stability = 0.03
+		add_political_power = 10
+		country_event = {
+				id = beijing.8
+				days = 1
+		}
+	}
+	option = {
+		name = beijing.7.b
+		add_stability = -0.03
+		add_political_power = -10
+	}
+}
+
+country_event = {
+	id = beijing.8
+	title = beijing.8.t
+	desc = beijing.8.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.8"
+	}
+	option = {
+		name = beijing.8.a
+		add_stability = 0.03
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = beijing.9
+	title = beijing.9.t
+	desc = beijing.9.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.9"
+	}
+	option = {
+		name = beijing.9.a
+		add_stability = -0.1
+		add_political_power = 50
+		complete_national_focus = BEI_hands_off_approach
+	}
+	option = {
+		name = beijing.9.b
+		add_stability = -0.05
+		add_political_power = 10
+		complete_national_focus = BEI_limited_control_strategy
+	}
+}
+
+country_event = {
+	id = beijing.10
+	title = beijing.10.t
+	desc = beijing.10.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.10"
+	}
+	option = {
+		name = beijing.10.a
+		add_political_power = -10
+	}
+}

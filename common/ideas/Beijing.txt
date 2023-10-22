@@ -1,0 +1,191 @@
+ideas = {
+
+	country = {
+		BEJ_xiongan_district = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_factor = -0.02
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		BEJ_daxing_airport = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_factor = 0.02
+				stability_weekly_factor = 0.05
+				air_advisor_cost_factor = -0.1
+				air_accidents_factor = -0.1
+			}
+		}
+
+		BEJ_daxing_airport_pro = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly_factor = 0.1
+				air_advisor_cost_factor = -0.2
+				air_accidents_factor = -0.2
+			}
+		}
+
+		BEJ_daxing_airport_ultra = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly_factor = 0.1
+				air_advisor_cost_factor = -0.5
+				air_accidents_factor = -0.2
+				air_ace_generation_chance_factor = 0.1
+				ace_effectiveness_factor = 0.1
+				air_attack_factor = 0.05
+				air_interception_detect_factor = 0.1
+			}
+		}
+
+
+
+		BEJ_zhongguancun = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+				weekly_manpower = -1
+				encryption_factor = 0.05
+				decryption_factor = 0.05
+			}
+		}
+
+		BEJ_zhongguancun_pro = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.1
+				weekly_manpower = -2
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+
+		LIT_embrace_his_smile = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				stability_factor = 0.1
+				party_popularity_stability_factor = 0.2
+				resistance_activity = -0.2
+			}
+		}
+
+		LIT_effective_communication = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.02
+				opinion_gain_monthly_factor = 0.1
+			}
+
+		}
+
+		LIT_mobile_hospitals = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				stability_factor = -0.05
+				army_org_regain = 0.05
+				cas_damage_reduction = 0.1
+			}
+
+		}
+
+		LIT_carnegie = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.02
+				opinion_gain_monthly_factor = 0.1
+				enemy_justify_war_goal_time = 0.1
+				faction_trade_opinion_factor = 0.1
+			}
+
+		}
+
+		LIT_dingzhen_riding = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				army_speed_factor = 0.05
+				cavalry_speed_factor = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defense_factor = 0.05
+				planning_speed = 0.1
+		}
+
+
+	}
+
+}

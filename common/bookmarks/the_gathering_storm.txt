@@ -11,6 +11,12 @@ bookmarks = {
 			history = "OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
+			ideas = {
+				BEJ_xiongan_district
+				BEJ_daxing_airport
+				BEJ_zhongguancun
+			}
+
 			focuses = {
 				army_effort
 				industrial_effort

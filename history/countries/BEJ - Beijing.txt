@@ -15,6 +15,12 @@ set_popularities = {
 	neutrality = 25
 }
 
+add_ideas = {
+	 BEJ_xiongan_district
+	 BEJ_daxing_airport
+	 BEJ_zhongguancun
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
