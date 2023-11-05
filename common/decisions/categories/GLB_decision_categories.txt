@@ -1,0 +1,4 @@
+GLB_ancient_style_movement_decisions = {
+	icon = generic_research
+	visible = { has_global_flag = GLB_ancient_style_movement}
+}

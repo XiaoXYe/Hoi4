@@ -25,7 +25,7 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				political_power_factor = 0.02
+				political_power_factor = 0.01
 				stability_weekly_factor = 0.05
 				air_advisor_cost_factor = -0.1
 				air_accidents_factor = -0.1
@@ -41,7 +41,7 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				political_power_factor = 0.05
+				political_power_factor = 0.02
 				stability_weekly_factor = 0.1
 				air_advisor_cost_factor = -0.2
 				air_accidents_factor = -0.2
@@ -57,7 +57,7 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				political_power_factor = 0.05
+				political_power_factor = 0.03
 				stability_weekly_factor = 0.1
 				air_advisor_cost_factor = -0.5
 				air_accidents_factor = -0.2
@@ -104,56 +104,7 @@ ideas = {
 			}
 		}
 
-
-		LIT_embrace_his_smile = {
-
-			allowed = {
-				always = no
-			}
-
-			picture = ROM_carol_ii_greed
-
-			modifier = {
-				stability_factor = 0.1
-				party_popularity_stability_factor = 0.2
-				resistance_activity = -0.2
-			}
-		}
-
-		LIT_effective_communication = {
-
-			allowed = {
-				always = no
-			}
-
-			picture = ROM_carol_ii_greed
-
-			modifier = {
-				research_speed_factor = 0.05
-				political_power_gain = 0.05
-				stability_factor = 0.02
-				opinion_gain_monthly_factor = 0.1
-			}
-
-		}
-
-		LIT_mobile_hospitals = {
-
-			allowed = {
-				always = no
-			}
-
-			picture = ROM_carol_ii_greed
-
-			modifier = {
-				stability_factor = -0.05
-				army_org_regain = 0.05
-				cas_damage_reduction = 0.1
-			}
-
-		}
-
-		LIT_carnegie = {
+		BEJ_union_reborn = {
 
 			allowed = {
 				always = no
@@ -163,14 +114,14 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.02
-				opinion_gain_monthly_factor = 0.1
-				enemy_justify_war_goal_time = 0.1
-				faction_trade_opinion_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.03
 			}
-
 		}
 
-		LIT_dingzhen_riding = {
+		BEJ_public_welfare_idea = {
+
 			allowed = {
 				always = no
 			}
@@ -178,13 +129,128 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				army_speed_factor = 0.05
-				cavalry_speed_factor = 0.05
-				cavalry_attack_factor = 0.05
-				cavalry_defense_factor = 0.05
-				planning_speed = 0.1
+				local_manpower = 0.02
+				monthly_population = 0.10
+				production_factory_efficiency_gain_factor = -0.04
+				consumer_goods_factor = 0.10
+			}
 		}
 
+		BEJ_partly_nationalization_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots_factor = 0.2
+				industry_repair_factor = 0.2
+				production_oil_factor = 0.2
+			}
+		}
+
+		BEJ_congress_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+		BEJ_legal_president_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.03
+				political_power_cost = -0.05
+				stability_factor = 0.15
+			}
+		}
+
+		BEJ_new_finiance_system_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BEJ_speech_freedom_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_factor  = 0.02
+				encryption_factor = -0.04
+				decryption_factor = 0.04
+				war_support_weekly_factor = 0.002
+				defensive_war_stability_factor = 0.10
+			}
+		}
+
+		BEJ_orderly_privatization_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.025
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.10
+				trade_opinion_factor = 0.1
+			}
+		}
+
+		BEJ_capitalism_with_chinese_characteristics_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_cost = -0.15
+				stability_weekly_factor = 0.01
+				war_support_weekly_factor = 0.01
+				fascism_drift = -0.01
+				neutrality_drift = -0.01
+				drift_defence_factor = 0.04
+				resistance_damage_to_garrison = -0.1
+				research_speed_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				surrender_limit = 0.1
+			}
+		}
 
 	}
 

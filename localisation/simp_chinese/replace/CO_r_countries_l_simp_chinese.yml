@@ -52,6 +52,10 @@
 
  BEJ_USC_democratic:0 "北京民主政府"
  BEJ_USC_democratic_DEF:0 "北京民主政府"
+ BEJ_USC_united_states:0 "中华合众国"
+ BEJ_USC_united_states_DEF:0 "中华合众国"
+ BEJ_USC_people_united_states:0 "中华人民合众国"
+ BEJ_USC_people_united_states_DEF:0 "中华人民合众国"
 
 
  TIJ_fascism:0 "天津"

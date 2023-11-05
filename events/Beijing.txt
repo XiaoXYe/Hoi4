@@ -273,3 +273,67 @@ country_event = {
 		add_political_power = -10
 	}
 }
+
+country_event = {
+	id = beijing.11
+	title = beijing.11.t
+	desc = beijing.11.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.11"
+	}
+	option = {
+		name = beijing.11.a
+		add_political_power = -10
+		set_global_flag = GLB_ancient_style_movement
+	}
+}
+
+country_event = {
+	id = beijing.12
+	title = beijing.12.t
+	desc = beijing.12.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.12"
+	}
+	option = {
+		name = beijing.12.a
+		add_ideas = { BEJ_capitalism_with_chinese_characteristics_idea }
+		country_event = {
+			id = beijing.13
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = beijing.13
+	title = beijing.13.t
+	desc = beijing.13.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.13"
+	}
+	option = {
+		name = beijing.13.a
+		set_cosmetic_tag = BEJ_USC_people_united_states
+	}
+	option = {
+		name = beijing.13.b
+		set_cosmetic_tag = BEJ_USC_united_states
+	}
+}
+
