@@ -66,7 +66,7 @@
 	focus = {
 		id = BEJ_winter_olympic_facility_construction
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 9
+		x = 12
 		y = 1
 		relative_position_id = BEJ_work_summary
 		cost = 5
@@ -312,8 +312,308 @@
 	}
 
 	focus = {
-		id = BEJ_welcome_GuAiling
+		id = BEJ_epidemic_info_transparency
 		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_hands_off_approach }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_epidemic_info_transparency"
+			country_event = {
+				id = beijing.14
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_public_health_education
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 3
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_epidemic_info_transparency }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_public_health_education"
+		}
+	}
+
+	focus = {
+		id = BEJ_financial_incentives
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 4
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_public_health_education }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_financial_incentives"
+		}
+	}
+
+	focus = {
+		id = BEJ_vaccine_research
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = {
+			focus = BEJ_hands_off_approach
+			focus = BEJ_limited_control_strategy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vaccine_research"
+		}
+	}
+
+	focus = {
+		id = BEJ_strengthen_medical_system
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 3
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_vaccine_research }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_strengthen_medical_system"
+		}
+	}
+
+	focus = {
+		id = BEJ_travel_restriction
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_limited_control_strategy }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_travel_restriction"
+		}
+	}
+
+	focus = {
+		id = BEJ_self_isolation
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_travel_restriction }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_self_isolation"
+		}
+	}
+
+	focus = {
+		id = BEJ_mask_order
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 4
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_self_isolation }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_mask_order"
+		}
+	}
+
+	focus = {
+		id = BEJ_achieve_herd_immunity
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 5
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_financial_incentives }
+		prerequisite = { focus = BEJ_strengthen_medical_system }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_achieve_herd_immunity"
+		}
+	}
+
+	focus = {
+		id = BEJ_vaccination_certificate
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 5
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_mask_order }
+		prerequisite = { focus = BEJ_strengthen_medical_system }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vaccination_certificate"
+		}
+	}
+
+	focus = {
+		id = BEJ_defeat_the_epidemic
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 6
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 2
+
+		prerequisite = {
+			focus = BEJ_achieve_herd_immunity
+			focus = BEJ_vaccination_certificate
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_defeat_the_epidemic"
+		}
+	}
+
+	focus = {
+		id = BEJ_welcome_GuAiling
+		icon = GFX_goal_BEJ_welcome_GuAiling
 		x = -4
 		y = 1
 		relative_position_id = BEJ_work_summary

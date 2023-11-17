@@ -1,0 +1,12 @@
+BEJ_USC_people_united_states = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+BEJ_USC_united_states = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+LIT_SIC_pilot_base = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
+}

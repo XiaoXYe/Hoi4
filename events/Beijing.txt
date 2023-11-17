@@ -337,3 +337,137 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = beijing.14
+	title = beijing.14.t
+	desc = beijing.14.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.14"
+	}
+	option = {
+		name = beijing.14.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.15
+			days = 14
+		}
+	}
+	option = {
+		name = beijing.14.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.16
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = beijing.15
+	title = beijing.15.t
+	desc = beijing.15.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.15"
+	}
+	option = {
+		name = beijing.15.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.17
+			days = 30
+		}
+	}
+	option = {
+		name = beijing.15.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.17
+			days = 30
+		}
+	}
+	option = {
+		name = beijing.15.c
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.17
+			days = 21
+		}
+	}
+	option = {
+		name = beijing.15.e
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		country_event = {
+			id = beijing.16
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = beijing.16
+	title = beijing.16.t
+	desc = beijing.16.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.16"
+	}
+	option = {
+		name = beijing.16.a
+		add_political_power = 30
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_manpower = -2
+	}
+}
+
+country_event = {
+	id = beijing.17
+	title = beijing.17.t
+	desc = beijing.17.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.17"
+	}
+	option = {
+		name = beijing.17.a
+		add_political_power = 30
+	}
+}
