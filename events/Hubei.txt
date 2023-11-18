@@ -67,11 +67,6 @@ country_event = {
 			transfer_state = 208
 			transfer_state = 210
 			transfer_state = 225
-			transfer_state = 244
-			transfer_state = 251
-			transfer_state = 247
-			transfer_state = 220
-			transfer_state = 250
 		}
 	}
 	option = {

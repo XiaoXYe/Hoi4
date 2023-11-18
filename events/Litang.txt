@@ -156,6 +156,9 @@ country_event = {
 
 	option = { # study
 		name = litang.6.a
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
 		set_country_flag = LIT_begin_study_flag
 		complete_national_focus = LIT_begin_study
 	}

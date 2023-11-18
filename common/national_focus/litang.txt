@@ -370,6 +370,7 @@
 					id = litang.4
 					days = 1
 				}
+				set_global_flag = LIT_rise
 			}
 		}
 	}
@@ -568,7 +569,7 @@
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 
 		cancel_if_invalid = yes

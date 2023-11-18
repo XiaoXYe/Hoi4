@@ -225,6 +225,35 @@
 	}
 
 	focus = {
+		id = BEJ_bth_integration
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 5
+
+		prerequisite = { focus = BEJ_expand_xiongan_district_I }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = BEJ_control_covid
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_bth_integration"
+			country_event = beijing.18
+		}
+	}
+
+	focus = {
 		id = BEJ_adjust_covid_policy
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 4
@@ -250,10 +279,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_adjust_covid_policy"
 			add_political_power = 10
-			country_event = {
-				id = beijing.9
-				days = 1
-			}
+			country_event = beijing.9
 		}
 	}
 
@@ -281,6 +307,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_hands_off_approach"
+			add_timed_idea = {
+				idea = GEN_remove_mask
+				days = 120
+			}
 		}
 	}
 
@@ -308,6 +338,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_limited_control_strategy"
+			add_ideas = GEN_remove_mask
 		}
 	}
 
@@ -363,6 +394,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_public_health_education"
+			add_stability = 0.10
 		}
 	}
 
@@ -389,6 +421,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_financial_incentives"
+			add_war_support = 0.10
+			swap_ideas = {
+				remove_idea = GEN_pandemic
+				add_idea = GEN_pandemic_decline
+			}
 		}
 	}
 
@@ -418,6 +455,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vaccine_research"
+			add_timed_idea = {
+				idea = GEN_vaccine_research
+				days = 180
+			}
 		}
 	}
 
@@ -444,11 +485,19 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_strengthen_medical_system"
+			74 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = BEJ_travel_restriction
+		id = BEJ_mask_order
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 2
 		y = 2
@@ -469,7 +518,35 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_mask_order"
+			remove_ideas = GEN_remove_mask
+		}
+	}
+
+	focus = {
+		id = BEJ_travel_restriction
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = BEJ_adjust_covid_policy
+		cost = 5
+
+		prerequisite = { focus = BEJ_mask_order }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_travel_restriction"
+			add_ideas = GEN_travel_restriction
 		}
 	}
 
@@ -477,7 +554,7 @@
 		id = BEJ_self_isolation
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 2
-		y = 3
+		y = 4
 		relative_position_id = BEJ_adjust_covid_policy
 		cost = 5
 
@@ -496,32 +573,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_self_isolation"
-		}
-	}
-
-	focus = {
-		id = BEJ_mask_order
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
-		y = 4
-		relative_position_id = BEJ_adjust_covid_policy
-		cost = 5
-
-		prerequisite = { focus = BEJ_self_isolation }
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		available = {
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_mask_order"
+			add_stability =  0.10
+			swap_ideas = {
+				remove_idea = GEN_pandemic
+				add_idea = GEN_pandemic_decline
+			}
 		}
 	}
 
@@ -550,6 +606,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_achieve_herd_immunity"
+			swap_ideas = {
+				remove_idea = GEN_pandemic_decline
+				add_idea = GEN_pandemic_controlled
+			}
+			set_country_flag = BEJ_control_covid
 		}
 	}
 
@@ -561,7 +622,7 @@
 		relative_position_id = BEJ_adjust_covid_policy
 		cost = 5
 
-		prerequisite = { focus = BEJ_mask_order }
+		prerequisite = { focus = BEJ_self_isolation }
 		prerequisite = { focus = BEJ_strengthen_medical_system }
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -571,6 +632,7 @@
 		}
 		
 		available = {
+			has_country_flag = GEN_vaccine_researched
 		}
 
 		available_if_capitulated = yes
@@ -578,6 +640,12 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vaccination_certificate"
+			swap_ideas = {
+				remove_idea = GEN_pandemic_decline
+				add_idea = GEN_pandemic_controlled
+			}
+			remove_ideas = GEN_travel_restriction
+			set_country_flag = BEJ_control_covid
 		}
 	}
 
@@ -601,6 +669,7 @@
 		}
 		
 		available = {
+			has_country_flag = GEN_vaccine_researched
 		}
 
 		available_if_capitulated = yes
@@ -608,6 +677,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_defeat_the_epidemic"
+			swap_ideas = {
+				remove_idea = GEN_pandemic_controlled
+				add_idea = GEN_pandemic_solved
+			}
 		}
 	}
 
@@ -1061,6 +1134,109 @@
 			add_stability = 0.05
 			country_event = {
 				id = beijing.12
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_litang_threat_looms
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 8
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available = {
+			has_global_flag = LIT_rise
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_litang_threat_looms"
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = BEJ_freedom_league
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 1
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 2
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_litang_threat_looms }
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_freedom_league"
+			BEJ = {
+				create_faction = "FREEDOM_LEAGUE"
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_ally_shanxi
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -6
+		y = 2
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 2
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_freedom_league }
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ally_shanxi"
+			BEJ = {
+				add_to_faction = SHX
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_ally_shandong
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 2
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_freedom_league }
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ally_shandong"
+			BEJ = {
+				add_to_faction = SHD
 			}
 		}
 	}

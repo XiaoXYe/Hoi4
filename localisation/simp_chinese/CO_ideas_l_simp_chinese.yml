@@ -4,6 +4,8 @@
  GEN_pandemic_controlled:0 "已控制疫情的社会"
  GEN_pandemic_solved:0 "成功战胜疫情的社会"
  GEN_remove_mask:0 "摘下口罩的后果"
+ GEN_vaccine_research:0 "疫苗研发中"
+ GEN_travel_restriction:0 "旅行限制"
  SIC_sypathy_for_LIT:0 "大量理塘同情者"
  LIT_social_media_influencer_economy:0 "网红经济"
  LIT_fight_for_freedom:0 "为理塘自由而战"
