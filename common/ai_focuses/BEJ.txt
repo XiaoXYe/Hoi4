@@ -1,0 +1,139 @@
+
+ai_historical_focus_list_BEJ = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		BEJ_litang_threat_looms
+		BEJ_freedom_league
+		BEJ_ally_shanxi
+		BEJ_ally_shandong
+
+		BEJ_work_summary
+		BEJ_winter_olympic_facility_construction
+		BEJ_invest_zhongguancun_I
+		BEJ_adjust_covid_policy
+		BEJ_welcome_GuAiling
+		BEJ_hands_off_approach
+		BEJ_vaccine_research
+		BEJ_strengthen_medical_system
+		BEJ_epidemic_info_transparency
+		BEJ_public_health_education
+		BEJ_financial_incentives
+		BEJ_achieve_herd_immunity
+		BEJ_defeat_the_epidemic
+		BEJ_expand_xiongan_district_I
+		BEJ_bth_integration
+		BEJ_im_GuAiling
+		BEJ_role_of_union
+		BEJ_public_welfare
+		BEJ_partly_nationalization
+		BEJ_im_EileenFengGu
+		BEJ_executive_departments
+		BEJ_federal_court_system
+		BEJ_financial_reform
+		BEJ_free_speech
+		BEJ_orderly_privatization
+		BEJ_capitalism_with_chinese_characteristics
+	}
+}
+
+ai_focus_defense_BEJ = {
+	research = {
+		defensive = 5.0	
+		radar_tech = 1.0
+		construction_tech = 2.0
+		artillery = 2.0
+	}
+}
+
+ai_focus_aggressive_BEJ = {
+	research = {
+		offensive = 5.0
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 20.0
+	}
+}
+
+ai_focus_war_production_BEJ = {
+	research = {
+		industry = 10.0
+		construction_tech = 2.0
+		electronics = 2.0
+		computing_tech = 2.0		
+	}
+}
+
+ai_focus_military_equipment_BEJ = {
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+}
+
+ai_focus_military_advancements_BEJ = {
+	research = {
+		armor = 100.0
+		jet_technology = 5.0
+		land_doctrine = 100.0
+		rocketry = 7.5
+		radar_tech = 3.0
+		encryption_tech = 7.5
+		decryption_tech = 7.5
+		synth_resources = 3.0
+		motorized_equipment = 4.0
+		nuclear = 100.0
+		night_vision = 5.0
+		train_tech = 5.0
+	}
+}
+
+
+ai_focus_peaceful_BEJ = {
+	research = {
+		industry = 15.0
+		construction_tech = 5.0
+		electronics = 10.0
+		computing_tech = 10.0
+	}
+}
+
+ai_focus_naval_BEJ = {
+    research = {
+        naval_equipment = 7.0
+        naval_doctrine = 100.0
+        marine_tech = 10.0
+        dd_tech = 8.0
+        cl_tech = 5.0
+        ca_tech = 5.0
+        bc_tech = 3.0
+        bb_tech = 8.0
+        shbb_tech = 5.0
+        tp_tech = 3.0
+        cv_tech = 5.0
+        ss_tech = 10.0
+    }
+}
+
+ai_focus_naval_air_BEJ = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+	}
+}
+
+ai_focus_aviation_BEJ = {
+	research = {
+		air_doctrine = 50.0
+		light_air = 20.0
+		light_fighter = 20.0
+		jet_technology = 1.0
+		cas_bomber = 2.0		
+		medium_air = 3.0
+		tactical_bomber = 5.0
+		heavy_air = 1.5
+		air_equipment = 5.0
+		para_tech = 10.0
+	}
+}

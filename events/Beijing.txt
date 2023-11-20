@@ -246,13 +246,16 @@ country_event = {
 		name = beijing.9.a
 		add_stability = -0.1
 		add_political_power = 50
-		complete_national_focus = BEI_hands_off_approach
+		complete_national_focus = BEJ_hands_off_approach
 	}
 	option = {
 		name = beijing.9.b
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
 		add_stability = -0.05
 		add_political_power = 10
-		complete_national_focus = BEI_limited_control_strategy
+		complete_national_focus = BEJ_limited_control_strategy
 	}
 }
 
@@ -519,7 +522,167 @@ country_event = {
 					target = TIJ
 					transfer_troops = yes
 				}
+				add_state_core = 82
+				add_state_core = 79
+				add_state_core = 78
+				add_state_core = 59
+				add_state_core = 63
+				add_state_core = 85
+				add_state_core = 90
+				add_state_core = 96
+				add_state_core = 98
+				add_state_core = 103
+				add_state_core = 113
+				add_state_core = 128
 			}
+		}
+	}
+}
+
+country_event = {
+	id = beijing.20
+	title = beijing.20.t
+	desc = beijing.20.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.20"
+	}
+	option = {
+		name = beijing.20.a
+		BEJ = {
+			add_to_faction = SHX
+		}
+	}
+}
+
+country_event = {
+	id = beijing.21
+	title = beijing.21.t
+	desc = beijing.21.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.21"
+	}
+	option = {
+		name = beijing.21.a
+		BEJ = {
+			add_to_faction = SHD
+		}
+	}
+}
+
+country_event = {
+	id = beijing.22
+	title = beijing.22.t
+	desc = beijing.22.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.22"
+	}
+	option = {
+		name = beijing.22.a
+		BEJ = {
+			add_manpower = -50000
+		}
+		SHX = {
+			add_manpower = 50000
+		}
+	}
+	option = {
+		name = beijing.22.b
+		BEJ = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = SHX
+			}
+		}
+	}
+	option = {
+		name = beijing.22.c
+		SHX = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = beijing.23
+	title = beijing.23.t
+	desc = beijing.23.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.23"
+	}
+	option = {
+		name = beijing.23.a
+		BEJ = {
+			add_manpower = -50000
+		}
+		SHD = {
+			add_manpower = 50000
+		}
+	}
+	option = {
+		name = beijing.23.b
+		BEJ = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = SHD
+			}
+		}
+	}
+	option = {
+		name = beijing.23.c
+		SHD = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = beijing.24
+	title = beijing.24.t
+	desc = beijing.24.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.24"
+	}
+	option = {
+		name = beijing.24.a
+		add_stability = 0.10
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = beijing.24.b
+		add_war_support = 0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
 		}
 	}
 }

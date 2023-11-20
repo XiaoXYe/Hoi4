@@ -113,7 +113,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 		
 		available = {
@@ -154,7 +154,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 90
 		}
 		
 		available = {
@@ -203,7 +203,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 95
 		}
 		
 		available = {
@@ -250,6 +250,190 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_bth_integration"
 			country_event = beijing.18
+		}
+	}
+
+	focus = {
+		id = BEJ_talent_exchange
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 3
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 5
+
+		prerequisite = { focus = BEJ_bth_integration }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_talent_exchange"
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = BEJ_transportation_construction
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 3
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 5
+
+		prerequisite = { focus = BEJ_bth_integration }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_transportation_construction"
+			59 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			63 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			103 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_technology_sharing
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 3
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 5
+
+		prerequisite = { focus = BEJ_bth_integration }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_technology_sharing"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BEJ_education_standardization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 3
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 5
+
+		prerequisite = { focus = BEJ_bth_integration }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_education_standardization"
+			country_event = {
+				id = beijing.24
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_industrial_boom
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 4
+		relative_position_id = BEJ_winter_olympic_facility_construction
+		cost = 8
+
+		prerequisite = { focus = BEJ_talent_exchange }
+		prerequisite = { focus = BEJ_transportation_construction }
+		prerequisite = { focus = BEJ_technology_sharing }
+		prerequisite = { focus = BEJ_education_standardization }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_industrial_boom"
+			74 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			82 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			85 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			98 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			103 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -354,7 +538,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -383,7 +567,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -410,7 +594,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -508,7 +692,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -535,7 +719,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -562,7 +746,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 		
 		available = {
@@ -700,7 +884,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 95
 		}
 
 		available_if_capitulated = yes
@@ -762,7 +946,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -793,7 +977,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
 		available_if_capitulated = yes
@@ -822,7 +1006,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -892,7 +1076,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 95
 		}
 
 		available_if_capitulated = yes
@@ -924,7 +1108,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 95
 		}
 
 		available_if_capitulated = yes
@@ -955,7 +1139,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -986,7 +1170,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 95
 		}
 
 		available_if_capitulated = yes
@@ -1018,7 +1202,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -1050,7 +1234,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -1082,7 +1266,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 99
 		}
 
 		available_if_capitulated = yes
@@ -1185,20 +1369,37 @@
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_freedom_league"
 			BEJ = {
 				create_faction = "FREEDOM_LEAGUE"
+				add_war_support = 0.10
+			}
+			hidden_effect = {
+				BEJ = {
+					country_event = {
+						id = beijing.20
+						days = 14
+					}
+					country_event = {
+						id = beijing.21
+						days = 21
+					}
+				}
 			}
 		}
 	}
 
 	focus = {
-		id = BEJ_ally_shanxi
+		id = BEJ_support_shanxi
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -6
 		y = 2
 		relative_position_id = BEJ_litang_threat_looms
-		cost = 2
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		prerequisite = { focus = BEJ_freedom_league }
+
+		available = {
+			is_ally_with = SHX
+		}
 
 		ai_will_do = {
 			factor = 100
@@ -1208,24 +1409,30 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ally_shanxi"
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_shanxi"
 			BEJ = {
-				add_to_faction = SHX
+				country_event = {
+					id = beijing.22
+				}
 			}
 		}
 	}
 
 	focus = {
-		id = BEJ_ally_shandong
+		id = BEJ_support_shandong
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -2
 		y = 2
 		relative_position_id = BEJ_litang_threat_looms
-		cost = 2
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		prerequisite = { focus = BEJ_freedom_league }
 
+		available = {
+			is_ally_with = SHD
+
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -1234,11 +1441,171 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ally_shandong"
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_shandong"
 			BEJ = {
-				add_to_faction = SHD
+				country_event = {
+					id = beijing.23
+				}
 			}
 		}
 	}
+
+	focus = {
+		id = BEJ_ensure_north_safety
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 1
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 3
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_litang_threat_looms }
+
+		ai_will_do = {
+			factor = 90
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ensure_north_safety"
+			add_political_power = 100
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = BEJ_shanhaiguan_defense
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 2
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 8
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_ensure_north_safety }
+
+		ai_will_do = {
+			factor = 90
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_shanhaiguan_defense"
+			78 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 1104
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 2282
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 237
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_strengthen_the_great_wall
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 2
+		relative_position_id = BEJ_litang_threat_looms
+		cost = 8
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_ensure_north_safety }
+
+		ai_will_do = {
+			factor = 90
+		}
+		
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_strengthen_the_great_wall"
+			59 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1811
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3590
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 2014
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3593
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1958
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1958
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1138
+				}
+			}
+			63 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1587
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 818
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1908
+				}
+			}
+		}
+	}
+
 
 }
