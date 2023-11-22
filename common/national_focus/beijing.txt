@@ -14,28 +14,6 @@
 	continuous_focus_position = { x = 2400 y = 1200 }
 
 	focus = {
-		id = army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 25
-		y = 0
-		cost = 5
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			army_experience = 5
-			 
-		}
-	}
-
-	focus = {
 		id = BEJ_work_summary
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 8
@@ -1607,5 +1585,689 @@
 		}
 	}
 
+	focus = {
+		id = BEJ_army_reform_conference
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 30
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available = {
+			has_country_flag = BEJ_control_covid
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_army_reform_conference"
+			army_experience = 50
+			country_event = {
+				id = beijing.25
+			}
+			 
+		}
+	}
+
+	focus = {
+		id = BEJ_guailing_plan_chosen
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 1
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_army_reform_conference }
+
+		mutually_exclusive = { 
+			focus = BEJ_paopao_plan_chosen
+			focus = BEJ_kejie_plan_chosen
+			focus = BEJ_luhan_plan_chosen
+		}
+
+		available = {
+			has_country_flag = BEJ_army_guailing_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_guailing_plan_chosen"
+			add_ideas = {
+				BEJ_army_guailing_plan_idea_1
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_guailing
+				cost_reduction = 0.7
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_paopao_plan_chosen
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_army_reform_conference }
+
+		mutually_exclusive = { 
+			focus = BEJ_guailing_plan_chosen
+			focus = BEJ_kejie_plan_chosen
+			focus = BEJ_luhan_plan_chosen
+		}
+
+		available = {
+			has_country_flag = BEJ_army_paopao_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_paopao_plan_chosen"
+			add_ideas = {
+				BEJ_army_paopao_plan_idea_1
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_paopao
+				cost_reduction = 0.7
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_kejie_plan_chosen
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_army_reform_conference }
+
+		mutually_exclusive = { 
+			focus = BEJ_guailing_plan_chosen
+			focus = BEJ_paopao_plan_chosen
+			focus = BEJ_luhan_plan_chosen
+		}
+
+		available = {
+			has_country_flag = BEJ_army_kejie_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_kejie_plan_chosen"
+			add_ideas = {
+				BEJ_army_kejie_plan_idea_1
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_kejie
+				cost_reduction = 0.7
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_luhan_plan_chosen
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 1
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_army_reform_conference }
+
+		mutually_exclusive = { 
+			focus = BEJ_guailing_plan_chosen
+			focus = BEJ_paopao_plan_chosen
+			focus = BEJ_kejie_plan_chosen
+		}
+
+		available = {
+			has_country_flag = BEJ_army_luhan_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_luhan_plan_chosen"
+			add_ideas = {
+				BEJ_army_luhan_plan_idea_1
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_luhan
+				cost_reduction = 0.7
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_integrate_nudt
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_army_reform_conference }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_integrate_nudt"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BEJ_advocate_mechanization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 2
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_guailing_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_advocate_mechanization"
+			add_tech_bonus = {
+				name = mechanization_bonus
+				bonus = 1
+				uses = 2
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_armor_research
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 3
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_guailing_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_armor_research"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_war_is_skiing
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 4
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_advocate_mechanization }
+		prerequisite = { focus = BEJ_armor_research }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_war_is_skiing"
+			swap_ideas = {
+				remove_idea = BEJ_army_guailing_plan_idea_1
+				add_idea = BEJ_army_guailing_plan_idea_2
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_guailing
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_advocate_artillery
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_paopao_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_advocate_artillery"
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_support_tech_research
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 3
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_paopao_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_tech_research"
+			add_tech_bonus = {
+				name = support_tech_bonus
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_war_is_spending
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 4
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_advocate_artillery }
+		prerequisite = { focus = BEJ_support_tech_research }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_war_is_spending"
+			swap_ideas = {
+				remove_idea = BEJ_army_paopao_plan_idea_1
+				add_idea = BEJ_army_paopao_plan_idea_2
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_paopao
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_superior_firepower
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_computer_analyse
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 3
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_kejie_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_computer_analyse"
+			add_tech_bonus = {
+				name = computing_tech_bonus
+				bonus = 1
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_more_GPU
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_kejie_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_more_GPU"
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_war_is_going
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 4
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_computer_analyse }
+		prerequisite = { focus = BEJ_more_GPU }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_war_is_going"
+			swap_ideas = {
+				remove_idea = BEJ_army_kejie_plan_idea_1
+				add_idea = BEJ_army_kejie_plan_idea_2
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_kejie
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_multi_support_infantry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 3
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_luhan_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_multi_support_infantry"
+			add_tech_bonus = {
+				name = multi_support_tech_bonus
+				bonus = 1
+				uses = 2
+				category = engineers_tech
+				category = recon_tech
+				category = logistics_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_gun_per_hand
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 2
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_luhan_plan_chosen }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_gun_per_hand"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_war_is_supporting
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 4
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_multi_support_infantry }
+		prerequisite = { focus = BEJ_gun_per_hand }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_war_is_supporting"
+			swap_ideas = {
+				remove_idea = BEJ_army_luhan_plan_idea_1
+				add_idea = BEJ_army_luhan_plan_idea_2
+			}
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_luhan
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_i_understand_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 5
+		relative_position_id = BEJ_army_reform_conference
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { 
+			focus = BEJ_war_is_skiing
+			focus = BEJ_war_is_spending
+			focus = BEJ_war_is_going
+			focus = BEJ_war_is_supporting
+		}
+		prerequisite = { focus = BEJ_integrate_nudt }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_i_understand_war"
+			army_experience = 100
+			country_event = {
+				id = beijing.26
+				days = 7
+			}
+		}
+	}
 
 }

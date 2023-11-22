@@ -252,6 +252,143 @@ ideas = {
 			}
 		}
 
+		BEJ_army_guailing_plan_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_speed_factor = 0.1
+				breakthrough_factor = 0.1
+				org_loss_when_moving = -0.1
+			}
+		}
+
+		BEJ_army_guailing_plan_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.10
+				acclimatization_cold_climate_gain_factor = 0.2
+				army_speed_factor = 0.15
+				breakthrough_factor = 0.10
+				org_loss_when_moving = -0.10
+				army_armor_attack_factor = 0.10
+				army_armor_defence_factor = 0.10
+			}
+		}
+
+		BEJ_army_paopao_plan_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				army_artillery_defence_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		BEJ_army_paopao_plan_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				army_artillery_defence_factor = 0.10
+				army_artillery_attack_factor = 0.10
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				breakthrough_factor = 0.1
+			}
+		}
+
+		BEJ_army_kejie_plan_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				command_power_gain = 0.2
+				command_abilities_cost_factor = -0.1
+				dig_in_speed_factor = 0.1
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+
+		BEJ_army_kejie_plan_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				command_power_gain = 0.2
+				command_abilities_cost_factor = -0.2
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1
+				planning_speed = 0.2
+				max_planning_factor = 0.2
+			}
+		}
+
+		BEJ_army_luhan_plan_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				conscription = 0.02
+				land_reinforce_rate = 0.1
+				army_org_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+		}
+
+		BEJ_army_luhan_plan_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				experience_gain_army = 0.1
+				conscription = 0.02
+				land_reinforce_rate = 0.1
+				army_org_factor = 0.2
+				training_time_army_factor = -0.2
+				army_org_regain = 0.1
+				terrain_penalty_reduction = 0.1
+				combat_width_factor = -0.1
+			}
+		}
+
 	}
 
 }
