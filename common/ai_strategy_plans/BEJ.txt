@@ -1,0 +1,51 @@
+BEJ_guailing = {
+	name = "Beijing guailing plan"
+	desc = "Guailing plan for Beijing"
+
+	allowed = {
+		original_tag = BEJ
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		BEJ_litang_threat_looms
+		BEJ_freedom_league
+
+		BEJ_work_summary
+		BEJ_winter_olympic_facility_construction
+		BEJ_expand_xiongan_district_I
+		BEJ_adjust_covid_policy
+		BEJ_welcome_GuAiling
+		BEJ_hands_off_approach
+		BEJ_vaccine_research
+		BEJ_strengthen_medical_system
+		BEJ_epidemic_info_transparency
+		BEJ_public_health_education
+		BEJ_financial_incentives
+		BEJ_achieve_herd_immunity
+		BEJ_defeat_the_epidemic
+		BEJ_bth_integration
+		BEJ_im_GuAiling
+		BEJ_im_EileenFengGu
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	focus_factors = {
+		BEJ_new_navy_air_force = 0.1
+		BEJ_expand_tianjin_dockyard = 0.2
+		BEJ_shijiazhuang_flight_academy = 0.2
+		BEJ_ensure_north_safety = 0.2
+	}
+}

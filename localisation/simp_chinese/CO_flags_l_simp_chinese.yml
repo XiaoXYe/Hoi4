@@ -14,9 +14,11 @@
 
  BEJ_coup:0 "谷爱凌已夺取权力！"
  BEJ_control_covid:0 "北京已经控制了疫情"
+ BEJ_annex_hebei_tianjin_flag:0 "京津冀已统一"
  BEJ_army_guailing_flag:0 "谷爱凌的军事计划得到采纳"
  BEJ_army_paopao_flag:0 "泡泡的军事计划得到采纳"
  BEJ_army_kejie_flag:0 "柯洁的军事计划得到采纳"
  BEJ_army_luhan_flag:0 "鹿晗的军事计划得到采纳"
+ BEJ_zhanjifeng_flag:0 "战继峰同意担任我们的技术顾问"
  GLB_ancient_style_movement:0 "古风运动开始"
  GLB_shijiazhuang_named:0 "石家庄已改名"

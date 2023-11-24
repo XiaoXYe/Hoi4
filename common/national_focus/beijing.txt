@@ -378,6 +378,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_industrial_boom"
 			74 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -385,6 +386,7 @@
 				}
 			}
 			82 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -392,6 +394,7 @@
 				}
 			}
 			85 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -399,6 +402,7 @@
 				}
 			}
 			98 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -406,6 +410,7 @@
 				}
 			}
 			103 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1279,6 +1284,7 @@
 		prerequisite = { focus = BEJ_partly_nationalization }
 		prerequisite = { focus = BEJ_orderly_privatization }
 		available = {
+			has_country_flag = BEJ_annex_hebei_tianjin_flag
 		}
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2266,6 +2272,538 @@
 			country_event = {
 				id = beijing.26
 				days = 7
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_new_navy_air_force
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 42
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available = {
+			has_country_flag = BEJ_control_covid
+			has_country_flag = BEJ_annex_hebei_tianjin_flag
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_new_navy_air_force"
+			navy_experience = 50
+			air_experience = 50
+			 
+		}
+	}
+
+	focus = {
+		id = BEJ_expand_tianjin_dockyard
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_new_navy_air_force }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_expand_tianjin_dockyard"
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 50
+				producer = ROOT
+			}
+			82 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_hebei_coast_defense
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_expand_tianjin_dockyard }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_hebei_coast_defense"
+			add_tech_bonus = {
+				name = dd_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_beijing_aircraft_carrier
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 3
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_hebei_coast_defense }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_beijing_aircraft_carrier"
+			add_tech_bonus = {
+				name = cv_tech_bonus
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_bottom_of_bohai
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 2
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_expand_tianjin_dockyard }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_bottom_of_bohai"
+			add_tech_bonus = {
+				name = ss_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_focus_on_crusiers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 3
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_bottom_of_bohai }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_focus_on_crusiers"
+			add_tech_bonus = {
+				name = ca_tech_bonus
+				bonus = 1
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_bohai_navy_exercise
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 4
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { 
+			focus = BEJ_focus_on_crusiers 
+			focus = BEJ_beijing_aircraft_carrier
+		}
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_bohai_navy_exercise"
+			navy_experience = 50
+			add_doctrine_cost_reduction = {
+				name = BEJ_naval_doctrine_reduction
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_seals
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 5
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_bohai_navy_exercise }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_seals"
+			add_tech_bonus = {
+				name = ca_tech_bonus
+				bonus = 1
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_shijiazhuang_flight_academy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_new_navy_air_force }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_shijiazhuang_flight_academy"
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				name = BEJ_air_doctrine_reduction
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_rehire_retired_pilots
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_shijiazhuang_flight_academy }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_rehire_retired_pilots"
+			country_event = {
+				id = beijing.27
+				days = 7
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_expand_huabei_airbase
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_rehire_retired_pilots }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_expand_huabei_airbase"
+			113 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			63 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			96 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_focus_on_fighter
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 4
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_expand_huabei_airbase }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_focus_on_fighter"
+			add_tech_bonus = {
+				name = light_fighter_bonus
+				bonus = 0.75
+				uses = 2
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = cat_heavy_fighter_bonus
+				bonus = 0.75
+				uses = 2
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_focus_on_bomber
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 4
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_expand_huabei_airbase }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_focus_on_bomber"
+			add_tech_bonus = {
+				name = cat_strategic_bomber_bonus
+				bonus = 0.75
+				uses = 2
+				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				name = tactical_bomber_bonus
+				bonus = 0.75
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_air_support
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 5
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_focus_on_fighter }
+		prerequisite = { focus = BEJ_focus_on_bomber }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_air_support"
+			add_tech_bonus = {
+				name = cas_bomber_bonus
+				bonus = 0.75
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_naval_bomber
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 5
+		relative_position_id = BEJ_new_navy_air_force
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		prerequisite = { focus = BEJ_bohai_navy_exercise }
+		prerequisite = { focus = BEJ_focus_on_bomber }
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_naval_bomber"
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 0.75
+				uses = 2
+				category = naval_bomber
 			}
 		}
 	}
