@@ -4,7 +4,7 @@
 
 add_namespace = litang
 
-country_event = {
+country_event = {  # 甘孜州成立啦！
 	id = litang.1
 	title = litang.1.t
 	desc = litang.1.d
@@ -22,7 +22,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { # 四川政府要求理塘严禁人员流动
 	id = litang.2
 	title = litang.2.t
 	desc = litang.2.d
@@ -37,8 +37,242 @@ country_event = {
 
 	option = { # Accept demands
 		name = litang.2.a
+		custom_effect_tooltip = LIT_tt_chaos
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.100
+					days = 7
+				}
+			}
+		}
 	}
 }
+
+country_event = { # 大量商铺倒闭
+	id = litang.100
+	title = litang.100.t
+	desc = litang.100.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.100"
+	}
+
+	option = {
+		name = litang.100.a
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.101
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 倒霉的摄影师
+	id = litang.101
+	title = litang.101.t
+	desc = litang.101.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.101"
+	}
+
+	option = {
+		name = litang.101.a
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.102
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 甘孜州泡沫破灭
+	id = litang.102
+	title = litang.102.t
+	desc = litang.102.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.102"
+	}
+
+	option = {
+		name = litang.102.a
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.103
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 你好，丁真
+	id = litang.103
+	title = litang.103.t
+	desc = litang.103.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.103"
+	}
+
+	option = {
+		name = litang.103.a
+		country_event = {
+			id = litang.104
+		}
+	}
+}
+
+country_event = { # 不必言说的故事
+	id = litang.104
+	title = litang.104.t
+	desc = litang.104.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.104"
+	}
+
+	option = {
+		name = litang.104.a
+		country_event = {
+			id = litang.105
+		}
+	}
+}
+
+country_event = { # 洗尽铅华
+	id = litang.105
+	title = litang.105.t
+	desc = litang.105.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.105"
+	}
+
+	option = {
+		name = litang.105.a
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.106
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 理塘丁真
+	id = litang.106
+	title = litang.106.t
+	desc = litang.106.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.106"
+	}
+
+	option = {
+		name = litang.106.a
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.107
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = { # 归心
+	id = litang.107
+	title = litang.107.t
+	desc = litang.107.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.107"
+	}
+
+	option = {
+		name = litang.107.a
+				set_country_flag = LIT_turmoil
+		country_event = {
+			id = litang.108
+		}
+	}
+}
+
+country_event = { # 新王
+	id = litang.108
+	title = litang.108.t
+	desc = litang.108.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.108"
+	}
+
+	option = {
+		name = litang.108.a
+		set_country_flag = LIT_dingzhen_king_flag
+		create_country_leader = {
+			name = LIT_ch_dingzhen_1
+			desc = LIT_ch_dingzhen_1_desc
+			picture = "gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
 
 country_event = {
 	id = litang.3

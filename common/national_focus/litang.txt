@@ -53,7 +53,7 @@
 		available = {
 			AND = {
 				is_subject_of = SIC
-				has_country_flag = LIT_turmoil
+				has_country_flag = LIT_dingzhen_king_flag
 			}
 		}
 
@@ -88,7 +88,7 @@
 		available = {
 			AND = {
 				is_subject_of = SIC
-				has_country_flag = LIT_turmoil
+				has_country_flag = LIT_dingzhen_king_flag
 			}
 		}
 
@@ -125,7 +125,7 @@
 		available = {
 			AND = {
 				is_subject_of = SIC
-				has_country_flag = LIT_turmoil
+				has_country_flag = LIT_dingzhen_king_flag
 			}
 		}
 
@@ -162,7 +162,7 @@
 		available = {
 			AND = {
 				is_subject_of = SIC
-				has_country_flag = LIT_turmoil
+				has_country_flag = LIT_dingzhen_king_flag
 			}
 		}
 

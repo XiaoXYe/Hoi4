@@ -4,7 +4,7 @@
 
 add_namespace = sichuan
 
-country_event = {
+country_event = {  # 甘孜州的发展成果
 	id = sichuan.1
 	title = sichuan.1.t
 	desc = sichuan.1.d
@@ -30,7 +30,7 @@ country_event = {
 	}
 }
 
-country_event = {  # 理塘试点基地成立
+country_event = {  # 甘孜州文化特区成立
 	id = sichuan.2
 	title = sichuan.2.t
 	desc = sichuan.2.d
@@ -105,13 +105,15 @@ country_event = {  # 更加严格的防疫措施
 	option = { # Accept demands
 		name = sichuan.3.a
 		add_war_support = -0.1
-		LIT = {
-			set_country_flag = LIT_turmoil
-			country_event = {
-				id = litang.2
-				days = 3
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.2
+					days = 1
+				}
 			}
 		}
+		
 	}
 }
 
