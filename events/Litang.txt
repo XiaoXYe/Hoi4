@@ -273,7 +273,7 @@ country_event = { # 新王
 			elections_allowed = no
 		}
 	}
-
+}
 country_event = {
 	id = litang.3
 	title = litang.3.t
@@ -502,6 +502,43 @@ country_event = {# Recruit soldiers
 	}	
 }
 
+country_event = {# 千屏万象
+	id = litang.13
+	title = litang.13.t
+	desc = litang.13.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.13.a
+		hidden_effect = {
+			country_event = {
+				id = litang.14
+				days = 7
+			}
+		}
+	}	
+}
+
+country_event = {# 运营成功
+	id = litang.14
+	title = litang.14.t
+	desc = litang.14.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {# Mass Mobilization
+		name = litang.14.a
+		SIC = {
+			add_ideas = {
+				SIC_sypathy_for_LIT
+			}
+		}
+	}	
+}
+
 country_event = {# No study
 	id = litang.12
 	title = litang.12.t
@@ -517,3 +554,64 @@ country_event = {# No study
 		}
 	}	
 }
+
+country_event = {# 我命由我
+	id = litang.15
+	title = litang.15.t
+	desc = litang.15.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.15.a
+		add_timed_idea = {
+			idea = LIT_fight_for_freedom
+			days = 60
+		}
+		hidden_effect = {
+			SIC = {
+				end_puppet = LIT
+				country_event = sichuan.4
+			}
+			set_cosmetic_tag = LIT
+		}
+	}	
+}
+
+country_event = {# 独立战争胜利！
+	id = litang.16
+	title = litang.16.t
+	desc = litang.16.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.16.a
+		hidden_effect = {
+			country_event = {
+				id = litang.17
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {# 暗流涌动
+	id = litang.17
+	title = litang.17.t
+	desc = litang.17.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.17.a
+		add_political_power = -20
+		custom_effect_tooltip = LIT_tt_power_struggle
+		hidden_effect = {
+		}
+	}
+}
+

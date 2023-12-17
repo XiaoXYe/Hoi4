@@ -133,16 +133,9 @@ country_event = {  # 理塘反抗了我们！
 	option = { # Accept demands
 		name = sichuan.4.a
 		add_war_support = -0.1
-		hidden_effect = {
-			LIT = {
-				set_cosmetic_tag = LIT
-			}
-		}
-		SIC = {
-			declare_war_on = {
-				target = LIT
-				type = annex_everything
-			}
+		declare_war_on = {
+			target = LIT
+			type = annex_everything
 		}
 	}
 }

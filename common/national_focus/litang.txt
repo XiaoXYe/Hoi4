@@ -97,18 +97,12 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_socialmedia_propaganda"
-			add_political_power = 100
-			SIC = {
-				add_ideas = {
-					SIC_sypathy_for_LIT
-				}
-			}
-			 
+			country_event = litang.13
 		}
 	}
 
 	focus = {
-		id = LIT_stir_up_people_emotion
+		id = LIT_recruit_soldiers
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -1
 		y = 1
@@ -133,7 +127,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_stir_up_people_emotion"
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_recruit_soldiers"
 			army_experience = 10
 			add_manpower = 10000
 			add_war_support = 0.10
@@ -151,7 +145,7 @@
 		relative_position_id = LIT_situation_worse
 		cost = 2
 		prerequisite = { focus = LIT_socialmedia_propaganda }
-		prerequisite = { focus = LIT_stir_up_people_emotion }
+		prerequisite = { focus = LIT_recruit_soldiers }
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -172,18 +166,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_final_effort"
 			army_experience = 5
-			SIC = {
-				end_puppet = LIT
-				country_event = {
-					id = sichuan.4
-					days = 1
-				}
-			}
-			LIT = {
-				add_ideas = {
-					LIT_fight_for_freedom
-				}
-			}
+			country_event = litang.15
 		}
 	}
 
@@ -212,11 +195,15 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_is_free"
 			set_country_flag = LIT_has_been_free
-			remove_ideas = {
-				LIT_fight_for_freedom
+			add_army_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
-			add_ideas = {
-				LIT_new_born_city
+			country_event = {
+				id = litang.16
+				days = 7
 			}
 		}
 	}
