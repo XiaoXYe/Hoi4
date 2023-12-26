@@ -130,9 +130,21 @@ ideas = {
 				cavalry_attack_factor = 0.05
 				cavalry_defense_factor = 0.05
 				planning_speed = 0.1
+			}
 		}
 
+		LIT_relx_5 = {
+			allowed = {
+				always = no
+			}
 
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+				army_org_regain = -0.05
+			}
+		}
 	}
 
 }

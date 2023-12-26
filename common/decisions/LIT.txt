@@ -103,3 +103,102 @@ LIT_learn_people_decisions = {
 
 	}
 }
+
+LIT_balance_of_power_category = {
+	LIT_bop_refuse_business_order = {
+		priority = 100
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = LIT
+		}
+
+		cost = 30
+		days_re_enable = 30
+
+		ai_will_do = {
+			base = 10
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIT_power_balance
+				value = 0.1
+				tooltip_side = LIT_king_side
+			}
+		}
+	}
+
+	LIT_bop_accept_business_order = {
+		priority = 98
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = LIT
+		}
+
+		cost = 0
+		days_re_enable = 30
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIT_power_balance
+				value = -0.1
+				tooltip_side = LIT_capital_side
+			}
+		}
+	}
+
+	LIT_bop_hire_trusted_followers = {
+		priority = 97
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = LIT
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			base = 50
+		}
+
+		days_remove = 30
+		remove_effect = {
+			add_power_balance_value = {
+				id = LIT_power_balance
+				value = 0.2
+				tooltip_side = LIT_king_side
+			}
+		}
+	}
+
+	LIT_bop_bribe_dingzhen_family = {
+		priority = 95
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = LIT
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+		}
+
+		days_remove = 30
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIT_power_balance
+				value = -0.2
+				tooltip_side = LIT_capital_side
+			}
+		}
+	}
+
+}

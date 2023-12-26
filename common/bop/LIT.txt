@@ -1,0 +1,148 @@
+LIT_power_balance = {
+	initial_value = -0.2
+	left_side = LIT_capital_side
+	right_side = LIT_king_side
+	decision_category = LIT_balance_of_power_category
+
+	range = { 
+		id = LIT_balance_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+		}
+	}
+
+	side = {
+		id = LIT_king_side
+		icon = GFX_bop_ITA_king_vittorio_side
+
+		range = {
+			id = LIT_king_low_control_range
+			min = 0.1
+			max = 0.3
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = 0.01
+				stability_factor = -0.01
+			}
+			on_activate = {
+				
+			}
+		}
+		
+		range = {
+			id = LIT_king_medium_control_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				political_power_factor = 0.07
+				war_support_factor = 0.02
+				stability_factor = -0.02
+				consumer_goods_factor = -0.01
+				research_speed_factor = -0.01
+			}
+			on_activate = {
+				
+			}
+		}
+
+		range = {
+			id = LIT_king_high_control_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = 0.03
+				stability_factor = -0.03
+				consumer_goods_factor = -0.02
+				research_speed_factor = -0.02
+			}
+			on_activate = {
+				
+			}
+		}
+
+		range = {
+			id = LIT_king_total_control_range
+			min = 0.9
+			max = 1.0
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				research_speed_factor = -0.05
+			}
+			on_activate = {
+				
+			}
+		}
+	}
+
+	side = {
+		id = LIT_capital_side
+		icon =  GFX_bop_ITA_grand_council_side
+
+		range = {
+			id = LIT_capital_low_control_range
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = -0.01
+				stability_factor = 0.01
+			}
+			on_activate = {
+				
+			}
+		}
+
+		range = {
+			id = LIT_capital_medium_control_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_power_factor = 0.07
+				war_support_factor = 0.02
+				stability_factor = -0.02
+				consumer_goods_factor = 0.01
+				research_speed_factor = 0.01
+			}
+			on_activate = {
+				
+			}
+		}
+
+		range = {
+			id = LIT_capital_high_control_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				political_power_factor = 0.1
+				war_support_factor = -0.03
+				stability_factor = 0.03
+				consumer_goods_factor = 0.02
+				research_speed_factor = 0.02
+			}
+			on_activate = {
+				
+			}
+		}
+
+		range = {
+			id = LIT_capital_total_control_range
+			min = -1.0
+			max = -0.9
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = -0.05
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.05
+			}
+			on_activate = {
+				
+			}
+		}
+	}
+} 

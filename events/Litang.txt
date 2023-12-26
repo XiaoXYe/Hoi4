@@ -589,6 +589,7 @@ country_event = {# 独立战争胜利！
 
 	option = {
 		name = litang.16.a
+		custom_effect_tooltip = LIT_tt_power_struggle
 		hidden_effect = {
 			country_event = {
 				id = litang.17
@@ -609,9 +610,150 @@ country_event = {# 暗流涌动
 	option = {
 		name = litang.17.a
 		add_political_power = -20
-		custom_effect_tooltip = LIT_tt_power_struggle
-		hidden_effect = {
+		set_power_balance = {
+			id = LIT_power_balance
+			left_side = LIT_capital_side
+			right_side = LIT_king_side
+			set_value = -0.2
 		}
 	}
 }
 
+country_event = {# 烟
+	id = litang.18
+	title = litang.18.t
+	desc = litang.18.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.18.a
+		ai_chance = {
+            base = 100
+        }
+		add_political_power = -10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = 0.1
+			tooltip_side = LIT_king_side
+		}
+		add_ideas = LIT_relx_5
+	}
+	option = {
+		name = litang.18.b
+		ai_chance = {
+            base = 0
+        }
+		add_political_power = 10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = -0.1
+			tooltip_side = LIT_capital_side
+		}
+	}
+}
+
+country_event = {# 处理破产商户
+	id = litang.19
+	title = litang.19.t
+	desc = litang.19.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.19.a
+		ai_chance = {
+            base = 100
+        }
+		add_political_power = -10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = 0.2
+			tooltip_side = LIT_king_side
+		}
+	}
+	option = {
+		name = litang.19.b
+		ai_chance = {
+            base = 0
+        }
+		add_political_power = 10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = -0.2
+			tooltip_side = LIT_capital_side
+		}
+	}
+}
+
+country_event = {# 理塘王的形象
+	id = litang.20
+	title = litang.20.t
+	desc = litang.20.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.20.a
+		ai_chance = {
+            base = 100
+        }
+		add_political_power = -10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = 0.3
+			tooltip_side = LIT_king_side
+		}
+	}
+	option = {
+		name = litang.20.b
+		ai_chance = {
+            base = 0
+        }
+		add_political_power = 10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = -0.3
+			tooltip_side = LIT_capital_side
+		}
+	}
+}
+
+country_event = {# 斗争结束
+	id = litang.21
+	title = litang.21.t
+	desc = litang.21.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.21.a
+		trigger = {
+			power_balance_value = {
+				id = LIT_power_balance
+				value > 0.0
+			}
+		}
+		remove_power_balance = {
+			id = LIT_power_balance
+		}
+		complete_national_focus = LIT_the_king_win
+	}
+	option = {
+		name = litang.21.b
+		trigger = {
+			is_power_balance_in_range = {
+				id = LIT_power_balance
+				value < 0.0
+			}
+		}
+		remove_power_balance = {
+			id = LIT_power_balance
+		}
+		complete_national_focus = LIT_the_capital_win
+	}
+}
