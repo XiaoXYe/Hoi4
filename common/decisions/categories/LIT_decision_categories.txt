@@ -25,3 +25,9 @@ LIT_balance_of_power_category = {
 		
 	}
 }
+LIT_litangyia_category = {
+	icon = generic_research
+	allowed = { tag = LIT }
+	priority = 90
+
+}

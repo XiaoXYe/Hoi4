@@ -145,6 +145,118 @@ ideas = {
 				army_org_regain = -0.05
 			}
 		}
+
+		LIT_industry_plan_research = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.20
+			}
+		}
+
+		LIT_industry_plan_civilian = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.20
+			}
+		}
+
+		LIT_industry_plan_construct = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				global_building_slots_factor = 0.20
+			}
+		}
+
+		LIT_industrial_planning_administration = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industry_repair_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.20
+				conversion_cost_mil_to_civ_factor = -0.20
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		LIT_institute_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		LIT_golden_age_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.15
+				monthly_population = 0.2
+				supply_node_range = 0.1
+			}
+		}
+
+		LIT_mines_bureau_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				local_resources_factor = 0.20
+			}
+		}
+
+		LIT_sanxia_power_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
 	}
 
 }

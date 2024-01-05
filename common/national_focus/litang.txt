@@ -16,7 +16,7 @@
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 25
+		x = 50
 		y = 0
 		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -328,7 +328,13 @@
 			}
 			country_event = {
 				id = litang.21
-				days = 7
+				days = 1
+			}
+			hidden_effect = {
+				country_event = {
+					id = litang.22
+					days = 21
+				}
 			}
 		}
 	}
@@ -336,8 +342,8 @@
 	focus = {
 		id = LIT_the_king_win
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
-		y = 7
+		x = 25
+		y = 0
 		cost = 5
 
 		ai_will_do = {
@@ -358,8 +364,8 @@
 	focus = {
 		id = LIT_the_capital_win
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 15
-		y = 7
+		x = 35
+		y = 0
 		cost = 5
 
 		ai_will_do = {
@@ -857,33 +863,29 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_invest_sanitary_infrastructure"
 			LIT = {
-				188 = {
-					set_building_level = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}	
-				}
 				183 = {
-					set_building_level = {
-						type = infrastructure
-						level = 3
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
 						instant_build = yes
-					}	
+					}
 				}
 				239 = {
-					set_building_level = {
-						type = infrastructure
-						level = 3
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
 						instant_build = yes
 					}	
 				}
 				277 = {
-					set_building_level = {
-						type = infrastructure
-						level = 3
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
 						instant_build = yes
-					}	
+					}
 				}
 			}
 		}
@@ -949,6 +951,9 @@
 		cost = 5
 		prerequisite = { focus = LIT_smile_still }
 		
+		available = {
+			owns_state = 229
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -960,6 +965,425 @@
 			LIT = {
 				 add_stability = 0.01
 			}
+			country_event = {
+				id = litang.200
+				days = 3
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_industrial_planning_admin
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_plan }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_industrial_planning_admin"
+			add_ideas = LIT_industrial_planning_administration
+		}
+	}
+
+	focus = {
+		id = LIT_agriculture_mechanization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_plan }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_agriculture_mechanization"
+			every_state = {
+				limit = { OR = { state = 202 state = 217 state = 204 state = 241 state = 211 state = 234} }
+				set_state_category = city
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = LIT_institute
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 1
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_plan }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_institute"
+			add_ideas = LIT_institute_idea
+		}
+	}
+
+	focus = {
+		id = LIT_university
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_institute }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_university"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = LIT_zigong_salt_industry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -6
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_agriculture_mechanization }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_zigong_salt_industry"
+			270 = {
+				set_state_category = city
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_luzhou_liquor_industry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_agriculture_mechanization }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_luzhou_liquor_industry"
+			275 = {
+				set_state_category = city
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_litang_urbanization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_agriculture_mechanization }
+		prerequisite = { focus = LIT_industrial_planning_admin }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_litang_urbanization"
+			188 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			unlock_decision_category_tooltip = LIT_litangyia_category
+		}
+	}
+
+	focus = {
+		id = LIT_chengdu_chongqing_business_district
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 3
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_litang_urbanization }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_chengdu_chongqing_business_district"
+			229 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			238 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_mianyang_military_industry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_planning_admin }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_mianyang_military_industry"
+			201 = {
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_deyang_bureau_of_manufacturing
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 3
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_mianyang_military_industry }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_deyang_bureau_of_manufacturing"
+			223 = {
+				set_state_category = city
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_golden_age
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 4
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_chengdu_chongqing_business_district }
+		prerequisite = { focus = LIT_deyang_bureau_of_manufacturing }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_golden_age"
+			add_ideas = LIT_golden_age_idea
+		}
+	}
+
+	focus = {
+		id = LIT_sanxia_hydropower
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 4
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_chengdu_chongqing_business_district }
+		prerequisite = { focus = LIT_deyang_bureau_of_manufacturing }
+
+		available = {
+			owns_state = 224
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_sanxia_hydropower"
+			add_stability = 0.03
+			unlock_decision_tooltip = LIT_litangyia_sanxia_power_transfer
+		}
+	}
+
+	focus = {
+		id = LIT_bureau_of_mines
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_planning_admin }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_bureau_of_mines"
+			add_ideas = LIT_mines_bureau_idea
+		}
+	}
+
+	focus = {
+		id = LIT_making_steel
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_bureau_of_mines }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_bureau_of_mines"
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 229
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 310
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_extracting_natural_gas
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 3
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_bureau_of_mines }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_extracting_natural_gas"
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 211
+			}
 		}
 	}
 
@@ -967,7 +1391,7 @@
 		id = LIT_communism_future
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 20
-		y = 12
+		y = 20
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -991,7 +1415,7 @@
 		id = LIT_empire_future
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 15
-		y = 12
+		y = 20
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		

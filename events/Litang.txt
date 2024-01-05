@@ -722,7 +722,7 @@ country_event = {# 理塘王的形象
 	}
 }
 
-country_event = {# 斗争结束
+country_event = {# 民族冲突
 	id = litang.21
 	title = litang.21.t
 	desc = litang.21.d
@@ -732,6 +732,40 @@ country_event = {# 斗争结束
 
 	option = {
 		name = litang.21.a
+		ai_chance = {
+            base = 100
+        }
+		add_stability = -0.20
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = 0.2
+			tooltip_side = LIT_king_side
+		}
+	}
+	option = {
+		name = litang.21.b
+		ai_chance = {
+            base = 0
+        }
+		add_stability = 0.10
+		add_power_balance_value = {
+			id = LIT_power_balance
+			value = -0.2
+			tooltip_side = LIT_capital_side
+		}
+	}
+}
+
+country_event = {# 斗争结束
+	id = litang.22
+	title = litang.22.t
+	desc = litang.22.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.22.a
 		trigger = {
 			power_balance_value = {
 				id = LIT_power_balance
@@ -744,7 +778,7 @@ country_event = {# 斗争结束
 		complete_national_focus = LIT_the_king_win
 	}
 	option = {
-		name = litang.21.b
+		name = litang.22.b
 		trigger = {
 			is_power_balance_in_range = {
 				id = LIT_power_balance
@@ -755,5 +789,27 @@ country_event = {# 斗争结束
 			id = LIT_power_balance
 		}
 		complete_national_focus = LIT_the_capital_win
+	}
+}
+
+country_event = {# 发展计划
+	id = litang.200
+	title = litang.200.t
+	desc = litang.200.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.200.a
+		add_ideas = LIT_industry_plan_research
+	}
+	option = {
+		name = litang.200.b
+		add_ideas = LIT_industry_plan_civilian
+	}
+	option = {
+		name = litang.200.c
+		add_ideas = LIT_industry_plan_construct
 	}
 }
