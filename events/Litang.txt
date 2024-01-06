@@ -259,15 +259,7 @@ country_event = { # ÐÂÍõ
 	option = {
 		name = litang.108.a
 		set_country_flag = LIT_dingzhen_king_flag
-		create_country_leader = {
-			name = LIT_ch_dingzhen_1
-			desc = LIT_ch_dingzhen_1_desc
-			picture = "gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds"
-			ideology = fascism_ideology
-			traits = {
-				#
-			}
-		}
+		promote_character = LIT_ch_dingzhen_1
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no

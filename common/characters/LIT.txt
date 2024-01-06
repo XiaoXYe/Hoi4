@@ -1,4 +1,52 @@
 characters={
+
+	LIT_ch_dingzhen_1 = {
+		name = LIT_ch_dingzhen_1
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_dingzhen_1_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_dingzhen_1_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = LIT_ch_dingzhen_1_desc
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_advisor_dingzhen
+			traits  = {
+				fascist_demagogue 
+			}
+			available = {
+				has_completed_focus = LIT_the_king_win
+			}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = LIT_dingzhen_king_flag
+			}
+		}
+	}
+
+
 	LIT_ar={
 		advisor={
 			slot = high_command
@@ -288,22 +336,22 @@ characters={
 			}
 		}
 	}
-	LIT_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_fascist_guy
-				traits  = {
-					fascist_demagogue 
-				}
-				do_effect  = {
-					not  = {
-						has_government  = fascism 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
+#	LIT_fascist_guy={
+#		advisor={
+#			slot = political_advisor
+#			idea_token = LIT_fascist_guy
+#				traits  = {
+#					fascist_demagogue 
+#				}
+#				do_effect  = {
+#					not  = {
+#						has_government  = fascism 
+#					}
+#				}
+#				ai_will_do  = {
+#					factor  = 0.000
+#				}
+#		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={

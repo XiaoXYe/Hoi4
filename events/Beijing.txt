@@ -33,6 +33,7 @@ country_event = {
 				id = beijing.2
 				days = 14
 			}
+			recruit_character = BEJ_ch_guailing_1
 		}
 	}
 }
@@ -130,6 +131,8 @@ country_event = {
 			ideology = democratic
 			popularity = 0.1
 		}
+
+		promote_character = BEJ_ch_guailing_1
 		set_politics = {
 			ruling_party = democratic
 			elections_allowed = yes

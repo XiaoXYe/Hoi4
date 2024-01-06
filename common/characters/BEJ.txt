@@ -1,4 +1,51 @@
 characters={
+
+	BEJ_ch_guailing_1 = {
+		name = BEJ_ch_guailing_1
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_guailing_1_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_guailing_1_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = BEJ_ch_guailing_1_desc
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_advisor_guailing
+			traits  = {
+				democratic_reformer 
+			}
+			available = {
+				has_completed_focus = BEJ_welcome_GuAiling
+			}
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
 	BEJ_ar={
 		advisor={
 			slot = high_command
