@@ -1,0 +1,21 @@
+leader_traits = {
+	litang_emperor = {
+		random = no
+		political_power_factor = 0.20
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.20
+		ai_focus_aggressive_factor = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dalai_lama_15th = {
+		randome = no
+		political_power_factor = 0.20
+		war_support_factor = 0.05
+		political_advisor_cost_factor = -0.25
+		justify_war_goal_time = -0.25
+	}
+}

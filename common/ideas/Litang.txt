@@ -257,6 +257,21 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
+
+		LIT_speak_tibetan_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				opinion_gain_monthly_factor = -0.20
+				army_attack_factor = 0.10
+				breakthrough_factor = 0.10
+			}
+		}
+
 	}
 
 }

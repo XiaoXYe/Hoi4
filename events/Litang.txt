@@ -784,6 +784,135 @@ country_event = {# 斗争结束
 	}
 }
 
+country_event = {# 加冕
+	id = litang.23
+	title = litang.23.t
+	desc = litang.23.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.23.a
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_country_leader_trait = litang_emperor
+	}
+}
+
+country_event = {# 土改
+	id = litang.24
+	title = litang.24.t
+	desc = litang.24.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.24.a
+		add_political_power = -20
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+	}
+	option = {
+		name = litang.24.b
+		add_political_power = -50
+		add_stability = -0.10
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.20
+		}
+	}
+}
+
+country_event = {# 测码
+	id = litang.25
+	title = litang.25.t
+	desc = litang.25.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.25.a
+		add_politcal_power = 75
+	}
+}
+
+country_event = {# 藏传佛教
+	id = litang.26
+	title = litang.26.t
+	desc = litang.26.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.26.a
+		add_politcal_power = 25
+	}
+}
+
+country_event = {# 接回达赖喇嘛
+	id = litang.27
+	title = litang.27.t
+	desc = litang.27.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.27.a
+		add_politcal_power = 10
+		add_stability = 0.05
+	}
+}
+
+country_event = {# 灌顶法会
+	id = litang.28
+	title = litang.28.t
+	desc = litang.28.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.28.a
+		add_politcal_power = 10
+		add_stability = 0.05
+	}
+}
+
+country_event = {# 达赖喇嘛圆寂
+	id = litang.29
+	title = litang.29.t
+	desc = litang.29.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.29.a
+		add_stability = -0.15
+	}
+}
+
+country_event = {# 转世灵童丁真
+	id = litang.30
+	title = litang.30.t
+	desc = litang.30.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.30.a
+		add_country_leader_trait = dalai_lama_15th
+	}
+}
+
 country_event = {# 发展计划
 	id = litang.200
 	title = litang.200.t
