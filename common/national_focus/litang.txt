@@ -13,30 +13,6 @@
 	default = no
 	continuous_focus_position = { x = 2400 y = 1200 }
 
-	focus = {
-		id = army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 50
-		y = 0
-		cost = 5
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		available = {
-			is_subject = no
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			army_experience = 5
-			 
-		}
-	}
 
 	focus = {
 		id = LIT_situation_worse
@@ -969,34 +945,6 @@
 	}
 
 	focus = {
-		id = LIT_who_am_i
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 6
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { 
-			focus = LIT_learn_people
-			focus = LIT_ride_horse_haha
-		}
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_who_am_i"
-			LIT = {
-				country_event = {
-					id = litang.5
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = LIT_right_of_smile
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 15
@@ -1669,11 +1617,11 @@
 	}
 
 	focus = {
-		id = LIT_communism_future
+		id = LIT_army
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 20
-		y = 20
-		cost = 1
+		x = 10
+		y = 12
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1681,23 +1629,258 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_rebuild_China_glory
+			is_subject = no
 		}
 
 		available_if_capitulated = yes
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_communism_future"
+			army_experience = 50
 		}
 	}
 
 	focus = {
-		id = LIT_empire_future
+		id = LIT_central_command
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 15
-		y = 20
-		cost = 1
+		x = -2
+		y = 1
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_army }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = LIT_recruit_sichuan_generals
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_army }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			country_event = litang.50
+		}
+	}
+
+	focus = {
+		id = LIT_responsbility
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_central_command }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_ideas = LIT_responsbility_idea_1
+		}
+	}
+
+	focus = {
+		id = LIT_volkssturm
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_responsbility }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LIT_responsbility_idea_1
+				add_idea = LIT_responsbility_idea_2
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_kamba_training_camp
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_central_command }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_kamba
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_chushi_gangdruk_spirit
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_central_command }
+		prerequisite = { focus = LIT_recruit_sichuan_generals }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_ideas = LIT_chushi_gangdruk_spirit_idea_1
+		}
+	}
+
+	focus = {
+		id = LIT_ata_luozi
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_chushi_gangdruk_spirit }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LIT_chushi_gangdruk_spirit_idea_1
+				add_idea = LIT_chushi_gangdruk_spirit_idea_2
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_litang_rifle
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_recruit_sichuan_generals }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = litang_infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_iron_zhenzhu
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_litang_rifle }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = litang_armor_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_relx_grenade
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_recruit_sichuan_generals }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1705,14 +1888,18 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_rebuild_Litang_glory
+			has_idea = LIT_relx_5_1
 		}
 
 		available_if_capitulated = yes
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_empire_future"
+			army_experience = 10
+			swap_ideas = {
+				remove_idea = LIT_relx_5_1
+				add_idea = LIT_relx_5_2
+			}
 		}
 	}
 

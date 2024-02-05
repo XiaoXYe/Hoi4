@@ -364,4 +364,108 @@ characters={
 			}
 		}
 	}
+
+	SIC_ch_ligan = {
+		name = SIC_ch_ligan
+
+		portraits = {
+			army = {
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+
+		country_leader = {
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	SIC_ch_fengxuejuan = {
+		name = SIC_ch_fengxuejuan
+
+		portraits = {
+			army = {
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+
+		country_leader = {
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	SIC_ch_lihanyue = {
+		name = SIC_ch_lihanyue
+
+		portraits = {
+			army = {
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+
+		country_leader = {
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	SIC_ch_libosi = {
+		name = SIC_ch_libosi
+
+		portraits = {
+			army = {
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+
+		country_leader = {
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
 }

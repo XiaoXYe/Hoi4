@@ -123,7 +123,28 @@
  LIT_extracting_natural_gas:0 "开采天然气"
  LIT_extracting_natural_gas_desc:0 "四川达州号称中国气都，有大量的天然气资源等待开采"
 
-
+ LIT_army:0 "理塘军队"
+ LIT_army_desc:0 "我们需要建设一支属于理塘的军队"
+ LIT_central_command:0 "中央指挥部"
+ LIT_central_command_desc:0 "建设中央指挥部可以帮助我们更好的集中指挥"
+ LIT_recruit_sichuan_generals:0 "招降四川人才"
+ LIT_recruit_sichuan_generals_desc:0 "我们可以用金钱收买一些四川的人才来帮助指挥我们的军队"
+ LIT_responsbility:0 "义！务！"
+ LIT_responsbility_desc:0 "冲锋陷阵是每一位理塘人民的义务！"
+ LIT_volkssturm:0 "人民冲锋队"
+ LIT_volkssturm_desc:0 "建立人民冲锋队，保证每一个理塘人都尽到自己的义务！"
+ LIT_kamba_training_camp:0 "康巴训练营"
+ LIT_kamba_training_camp_desc:0 "我们应学习康巴训练营的模式，训练我们的军队"
+ LIT_chushi_gangdruk_spirit:0 "四水六岗精神"
+ LIT_chushi_gangdruk_spirit_desc:0 "我们不能忘记四水六岗的前辈们的牺牲，我们要为我们的命运抗争到底！"
+ LIT_ata_luozi:0 "阿塔和洛孜"
+ LIT_ata_luozi_desc:0 "阿塔和洛孜都是曾经的理塘特工，他们的事迹让我们意识到情报的重要性"
+ LIT_litang_rifle:0 "理塘步枪"
+ LIT_litang_rifle_desc:0 "步枪是现代化军队不可缺少的部分"
+ LIT_iron_zhenzhu:0 "钢铁珍珠"
+ LIT_iron_zhenzhu_desc:0 "康巴人都有自己的小马，而坦克将是现代化军队中士兵的小马
+ LIT_relx_grenade:0 "悦刻手雷"
+ LIT_relx_grenade_desc:0 "我们可以把电子烟进行改造，既能在平时抽两口，也能在战场上扔出去炸个人"
 
 
  BEJ_work_summary:0 "年度工作报告"

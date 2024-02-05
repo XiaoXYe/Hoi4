@@ -133,7 +133,7 @@ ideas = {
 			}
 		}
 
-		LIT_relx_5 = {
+		LIT_relx_5_1 = {
 			allowed = {
 				always = no
 			}
@@ -143,6 +143,20 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				army_org_regain = -0.05
+			}
+		}
+
+		LIT_relx_5_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				research_speed_factor = 0.05
+				army_org_regain = -0.05
+				breakthrough_factor = 0.1
 			}
 		}
 
@@ -269,6 +283,76 @@ ideas = {
 				opinion_gain_monthly_factor = -0.20
 				army_attack_factor = 0.10
 				breakthrough_factor = 0.10
+			}
+		}
+
+		LIT_central_command_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				command_power_gain = 0.1
+				experience_gain_army = 0.1
+				max_planning = 0.1
+			}
+		}
+
+		LIT_responsbility_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		LIT_responsbility_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				conscription = 0.02
+				army_org_factor = -0.1
+				monthly_population = 0.2
+			}
+		}
+
+		LIT_chushi_gangdruk_spirit_idea_1 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				surrender_limit = 0.3
+			}
+		}
+
+		LIT_chushi_gangdruk_spirit_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				surrender_limit = 0.3
+				operative_slot = 1
+				new_operative_slot_bonus = 1
 			}
 		}
 

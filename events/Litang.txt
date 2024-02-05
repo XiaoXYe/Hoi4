@@ -630,7 +630,7 @@ country_event = {# 烟
 			value = 0.1
 			tooltip_side = LIT_king_side
 		}
-		add_ideas = LIT_relx_5
+		add_ideas = LIT_relx_5_1
 	}
 	option = {
 		name = litang.18.b
@@ -910,6 +910,23 @@ country_event = {# 转世灵童丁真
 	option = {
 		name = litang.30.a
 		add_country_leader_trait = dalai_lama_15th
+	}
+}
+
+country_event = {# 军队改革-招降将领
+	id = litang.50
+	title = litang.50.t
+	desc = litang.30.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.50.a
+		recruit_character = SIC_ch_ligan
+		recruit_character = SIC_ch_fengxuejuan
+		recruit_character = SIC_ch_lihanyue
+		recruit_character = SIC_ch_libosi
 	}
 }
 
