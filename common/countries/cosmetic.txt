@@ -14,3 +14,7 @@ LIT_SIC_pilot_base = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 203 138 74 }
 }
+YUN_chouxiang_heavenly_kingdom = {
+	color = rgb { 0 255 127 }
+	color_ui = rgb { 0 255 127 }
+}

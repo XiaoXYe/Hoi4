@@ -913,6 +913,29 @@ country_event = {# 转世灵童丁真
 	}
 }
 
+country_event = {  # 孙笑川逃亡云南
+	id = litang.31
+	title = litang.31.t
+	desc = litang.31.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.31.a
+		add_political_power = -10
+		add_stability = 0.02
+		hidden_effect = {
+			YUN = {
+				country_event = {
+					id = yunnan.1
+					days = 7
+				}
+			}
+		}
+	}
+}
+
 country_event = {# 军队改革-招降将领
 	id = litang.50
 	title = litang.50.t

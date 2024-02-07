@@ -1,0 +1,51 @@
+###########################
+# Yunnan Events
+###########################
+
+add_namespace = yunnan
+
+country_event = {  # 孙笑川来到云南
+	id = yunnan.1
+	title = yunnan.1.t
+	desc = yunnan.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = yunnan.1.a
+		add_stability = -0.10
+		hidden_effect = {
+			country_event = {
+				id = yunnan.2
+				days = 14
+			}
+			recruit_character = YUN_ch_sunxiaochuan
+		}
+	}
+}
+
+country_event = {  # 孙笑川夺取政权
+	id = yunnan.2
+	title = yunnan.2.t
+	desc = yunnan.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = yunnan.2.a
+		add_stability = -0.10
+		set_country_flag = YUN_sunxiaochuan_seize_power_flag
+		set_cosmetic_tag = YUN_chouxiang_heavenly_kingdom
+		promote_character = YUN_ch_sunxiaochuan
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.30
+		}
+	}
+}

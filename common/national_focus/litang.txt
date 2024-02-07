@@ -311,6 +311,10 @@
 					id = litang.22
 					days = 21
 				}
+				country_event = {
+					id = litang.31
+					days = 7
+				}
 			}
 		}
 	}
@@ -1630,6 +1634,7 @@
 		
 		available = {
 			is_subject = no
+			has_completed_focus = LIT_conquer_sichuan
 		}
 
 		available_if_capitulated = yes

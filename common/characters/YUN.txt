@@ -12,6 +12,15 @@ characters={
 			}
 		}
 
+		country_leader = {
+			desc = ""
+			ideology = fascism_ideology
+			traits = {
+				chouxiang_emperor
+				bad_guy
+			}
+		}
+
 		advisor={
 		}
 
@@ -23,6 +32,10 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = -1
+
+			visible = {
+				has_country_flag = YUN_sunxiaochuan_seize_power_flag
+			}
 		}
 	}
 
