@@ -916,7 +916,7 @@ country_event = {# 转世灵童丁真
 country_event = {# 军队改革-招降将领
 	id = litang.50
 	title = litang.50.t
-	desc = litang.30.d
+	desc = litang.50.d
 	picture = GFX_report_event_soviet_tanks_snow
 
 	is_triggered_only = yes

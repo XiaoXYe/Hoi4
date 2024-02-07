@@ -1,4 +1,58 @@
 characters={
+
+	HEN_ch_agiao = {
+		name = HEN_ch_agiao
+
+		portraits = {
+			civilian = {
+				large = GFX_HEN_ch_agiao_portrait_large
+			}
+			army = {
+				large = GFX_HEN_ch_agiao_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	HEN_ch_mabaoguo = {
+		name = HEN_ch_mabaoguo
+
+		portraits = {
+			civilian = {
+				large = GFX_HEN_ch_mabaoguo_portrait_large
+			}
+			army = {
+				large = GFX_HEN_ch_mabaoguo_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+
 	HEN_ar={
 		advisor={
 			slot = high_command

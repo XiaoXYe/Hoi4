@@ -1,4 +1,32 @@
 characters={
+
+	YUN_ch_sunxiaochuan = {
+		name = YUN_ch_sunxiaochuan
+
+		portraits = {
+			civilian = {
+				large = GFX_YUN_ch_suxiaochuan_portrait_large
+			}
+			army = {
+				large = GFX_YUN_ch_suxiaochuan_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+
 	YUN_ar={
 		advisor={
 			slot = high_command

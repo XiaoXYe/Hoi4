@@ -1,10 +1,50 @@
 spriteTypes = {
     spriteType = {
         name = GFX_LIT_ch_dingzhen_1_portrait_large
-        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.png
     }
     spriteType = {
         name = GFX_BEJ_ch_guailing_1_portrait_large
-        texturefile = gfx/leaders/BEJ/Portrait_BEJ_GuAiling.dds
+        texturefile = gfx/leaders/BEJ/Portrait_BEJ_GuAiling.png
+    }
+    spriteType = {
+        name = GFX_BEJ_ch_kejie_portrait_large
+        texturefile = gfx/leaders/BEJ/Portrait_BEJ_KeJie.png
+    }
+    spriteType = {
+        name = GFX_BEJ_ch_paopao_portrait_large
+        texturefile = gfx/leaders/BEJ/Portrait_BEJ_PaoPao.png
+    }
+    spriteType = {
+        name = GFX_BEJ_ch_luhan_portrait_large
+        texturefile = gfx/leaders/BEJ/Portrait_BEJ_LuHan.png
+    }
+    spriteType = {
+        name = GFX_SIC_ch_ligan_portrait_large
+        texturefile = gfx/leaders/SIC/Portrait_SIC_LiGan.png
+    }
+    spriteType = {
+        name = GFX_SIC_ch_fengxuejuan_portrait_large
+        texturefile = gfx/leaders/SIC/Portrait_SIC_FengXuejuan.png
+    }
+    spriteType = {
+        name = GFX_SIC_ch_lihanyue_portrait_large
+        texturefile = gfx/leaders/SIC/Portrait_SIC_LiHanyue.png
+    }
+    spriteType = {
+        name = GFX_SIC_ch_libosi_portrait_large
+        texturefile = gfx/leaders/SIC/Portrait_SIC_LiBosi.png
+    }
+    spriteType = {
+        name = GFX_YUN_ch_suxiaochuan_portrait_large
+        texturefile = gfx/leaders/YUN/Portrait_YUN_SunXiaochuan.png
+    }
+    spriteType = {
+        name = GFX_HEN_ch_agiao_portrait_large
+        texturefile = gfx/leaders/HEN/Portrait_HEN_AGiao.png
+    }
+    spriteType = {
+        name = GFX_HEN_ch_mabaoguo_portrait_large
+        texturefile = gfx/leaders/HEN/Portrait_HEN_MaBaoguo.png
     }
 }

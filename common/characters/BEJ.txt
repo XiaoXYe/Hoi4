@@ -46,6 +46,96 @@ characters={
 		}
 	}
 
+	BEJ_ch_kejie = {
+		name = BEJ_ch_kejie
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_kejie_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_kejie_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_paopao = {
+		name = BEJ_ch_paopao
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_paopao_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_paopao_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_luhan = {
+		name = BEJ_ch_luhan
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_luhan_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_luhan_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
 	BEJ_ar={
 		advisor={
 			slot = high_command
