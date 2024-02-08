@@ -331,43 +331,6 @@ country_event = {
 }
 
 country_event = {
-	id = litang.5
-	title = litang.5.t
-	desc = litang.5.d
-	picture = GFX_report_event_soviet_tanks_snow
-
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event litang.5"
-	}
-
-	option = { # I am Chinese
-		name = litang.5.a
-		set_country_flag = LIT_rebuild_China_glory
-		complete_national_focus = 
-	}
-
-	option = { # I am Litangnese
-		name = litang.5.b
-		set_country_flag = LIT_rebuild_Litang_glory
-		add_political_power = -100
-		add_stability = -0.10
-		create_country_leader = {
-			name = "Dingzhen Zhenzhu"
-			picture = "gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.dds"
-			ideology = nazism 
-		}
-
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
-		}
-	}
-}
-
-country_event = {
 	id = litang.6
 	title = litang.6.t
 	desc = litang.6.d
@@ -932,6 +895,52 @@ country_event = {  # 孙笑川逃亡云南
 					days = 7
 				}
 			}
+		}
+	}
+}
+
+country_event = {  # 河南或战争
+	id = litang.32
+	title = litang.32.t
+	desc = litang.32.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.32"
+	}
+
+	option = {
+		name = litang.32.a
+		HEN = {
+			country_event = {
+				id = henan.100
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {  # 河南拒绝了！
+	id = litang.33
+	title = litang.33.t
+	desc = litang.33.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.33"
+	}
+
+	option = {
+		name = litang.33.a
+		declare_war_on = {
+			target = HEN
+			type = annex_everything
 		}
 	}
 }

@@ -753,7 +753,6 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_control_covid
 		}
 
 		cancel_if_invalid = yes
@@ -770,7 +769,34 @@
 		}
 	}
 
+	focus = {
+		id = LIT_henan_or_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 6
+		relative_position_id = LIT_grand_coronation
+		cost = 5
+		prerequisite = { focus = LIT_expand_experiment_land }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_army_manpower = { size > 99999 }
+			date > 2023.09.01
+		}
 
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_henan_or_war"
+			country_event = {
+				id = litang.32
+				days = 1
+			}
+		}
+	}
 
 	focus = {
 		id = LIT_improve_leader_charm
@@ -1623,8 +1649,8 @@
 	focus = {
 		id = LIT_army
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 10
-		y = 12
+		x = 6
+		y = 8
 		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
