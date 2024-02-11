@@ -1,14 +1,14 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = "CO_GATHERING_STORM_NAME"
+		desc = "CO_GATHERING_STORM_DESC"
 		date = 2020.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "BEJ"
 		default = yes
 		
 		"BEJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			ideas = {
@@ -24,7 +24,7 @@ bookmarks = {
 			}
 		}
 		"SHH"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -34,7 +34,7 @@ bookmarks = {
 			}
 		}
 		"SIC"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -44,7 +44,7 @@ bookmarks = {
 			}
 		}
 		"GUD"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -54,7 +54,7 @@ bookmarks = {
 			}
 		}
 		"JIS"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -64,7 +64,7 @@ bookmarks = {
 			}
 		}
 		"HUB"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -74,7 +74,7 @@ bookmarks = {
 			}
 		}
 		"LIN"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -85,11 +85,11 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 		}
 
 		"TST"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			available = {
 				is_debug = yes
 			}
@@ -97,7 +97,7 @@ bookmarks = {
 
 		# minors from DLC ####
 		"TIJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -108,7 +108,7 @@ bookmarks = {
 			}
 		}
 		"CHQ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -120,7 +120,7 @@ bookmarks = {
 		}
 		"ZHJ"={
 			minor = yes
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 
 			focuses = {
@@ -130,7 +130,7 @@ bookmarks = {
 			}
 		}
 		"JIL"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -141,7 +141,7 @@ bookmarks = {
 			}
 		}
 		"HLJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -152,7 +152,7 @@ bookmarks = {
 			}
 		}
 		"HEB"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -163,7 +163,7 @@ bookmarks = {
 			}
 		}
 		"NMG"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -174,7 +174,7 @@ bookmarks = {
 			}
 		}
 		"SHX"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -185,7 +185,7 @@ bookmarks = {
 			}
 		}
 		"SAX"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -196,7 +196,7 @@ bookmarks = {
 			}
 		}
 		"HEN"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -207,7 +207,7 @@ bookmarks = {
 			}
 		}
 		"HUN"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -218,7 +218,7 @@ bookmarks = {
 			}
 		}
 		"ANH"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -229,7 +229,7 @@ bookmarks = {
 			}
 		}
 		"JIX"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -240,7 +240,7 @@ bookmarks = {
 			}
 		}
 		"SHD"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -251,7 +251,7 @@ bookmarks = {
 			}
 		}
 		"FUJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -262,7 +262,7 @@ bookmarks = {
 			}
 		}
 		"GUX"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -273,7 +273,7 @@ bookmarks = {
 			}
 		}
 		"YUN"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -284,7 +284,7 @@ bookmarks = {
 			}
 		}
 		"GUZ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -295,7 +295,7 @@ bookmarks = {
 			}
 		}
 		"HAN"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -306,7 +306,7 @@ bookmarks = {
 			}
 		}
 		"GAS"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -317,7 +317,7 @@ bookmarks = {
 			}
 		}
 		"NIX"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -328,7 +328,7 @@ bookmarks = {
 			}
 		}
 		"QIH"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -339,7 +339,7 @@ bookmarks = {
 			}
 		}
 		"XIJ"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -350,7 +350,7 @@ bookmarks = {
 			}
 		}
 		"TIB"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -361,7 +361,7 @@ bookmarks = {
 			}
 		}
 		"HOK"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -372,7 +372,7 @@ bookmarks = {
 			}
 		}
 		"MAC"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
@@ -383,7 +383,7 @@ bookmarks = {
 			}
 		}
 		"TAW"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "CO_OTHER_GATHERING_STORM_DESC"
 			ideology = communism
 			minor = yes
 
