@@ -1300,6 +1300,10 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_institute"
 			add_ideas = LIT_institute_idea
+			swap_ideas = {
+				remove_idea = GEN_pandemic_controlled
+				add_idea = GEN_pandemic_solved
+			}
 		}
 	}
 
