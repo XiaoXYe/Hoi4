@@ -821,7 +821,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_iron_curtain"
 			country_event = {
-				id = litang.33
+				id = litang.34
 				days = 1
 			}
 		}
@@ -1700,6 +1700,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_army"
 			army_experience = 50
 		}
 	}
@@ -1723,6 +1724,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_central_command"
 			army_experience = 50
 		}
 	}
@@ -1746,6 +1748,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_recruit_sichuan_generals"
 			country_event = litang.50
 		}
 	}
@@ -1769,6 +1772,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_responsbility"
 			army_experience = 25
 			add_ideas = LIT_responsbility_idea_1
 		}
@@ -1793,6 +1797,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_volkssturm"
 			swap_ideas = {
 				remove_idea = LIT_responsbility_idea_1
 				add_idea = LIT_responsbility_idea_2
@@ -1819,6 +1824,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_kamba_training_camp"
 			add_doctrine_cost_reduction = {
 				name = BEJ_doctrine_kamba
 				cost_reduction = 0.5
@@ -1848,6 +1854,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_chushi_gangdruk_spirit"
 			army_experience = 25
 			add_ideas = LIT_chushi_gangdruk_spirit_idea_1
 		}
@@ -1872,6 +1879,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_ata_luozi"
 			swap_ideas = {
 				remove_idea = LIT_chushi_gangdruk_spirit_idea_1
 				add_idea = LIT_chushi_gangdruk_spirit_idea_2
@@ -1898,6 +1906,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_litang_rifle"
 			army_experience = 25
 			add_tech_bonus = {
 				name = litang_infantry_weapons_bonus
@@ -1927,6 +1936,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_iron_zhenzhu"
 			army_experience = 25
 			add_tech_bonus = {
 				name = litang_armor_bonus
@@ -1959,11 +1969,385 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_relx_grenade"
 			army_experience = 10
 			swap_ideas = {
 				remove_idea = LIT_relx_5_1
 				add_idea = LIT_relx_5_2
 			}
+		}
+	}
+
+	focus = {
+		id = LIT_snow_leopard_flag_waving
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 12
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_completed_focus = LIT_iron_curtain
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_snow_leopard_flag_waving"
+			add_political_power = 25
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = LIT_chinese_orthodoxy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 1
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 3
+		prerequisite = { focus = LIT_snow_leopard_flag_waving }
+		mutually_exclusive = { focus = LIT_litangyia_orthodoxy }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_chinese_orthodoxy"
+		}
+	}
+
+	focus = {
+		id = LIT_litangyia_orthodoxy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 1
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 3
+		prerequisite = { focus = LIT_snow_leopard_flag_waving }
+		mutually_exclusive = { focus = LIT_chinese_orthodoxy }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_litangyia_orthodoxy"
+		}
+	}
+
+	focus = {
+		id = LIT_break_iron_curtain
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 2
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_chinese_orthodoxy
+			focus = LIT_litangyia_orthodoxy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_break_iron_curtain"
+		}
+	}
+
+	focus = {
+		id = LIT_integrate_tibet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 2
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_chinese_orthodoxy
+			focus = LIT_litangyia_orthodoxy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			TIB = {
+				is_ally_with = LIT
+			}
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_integrate_tibet"
+		}
+	}
+
+	focus = {
+		id = LIT_boost_morale
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 2
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_chinese_orthodoxy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_boost_morale"
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = LIT_southwest_invade
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 3
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_boost_morale
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_southwest_invade"
+		}
+	}
+
+	focus = {
+		id = LIT_attack_changan
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -5
+		y = 3
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_boost_morale
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_attack_changan"
+		}
+	}
+
+	focus = {
+		id = LIT_recover_northwest
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -5
+		y = 4
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_attack_changan
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_recover_northwest"
+		}
+	}
+
+	focus = {
+		id = LIT_end_jiangsu_chaos
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 3
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_boost_morale
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_end_jiangsu_chaos"
+		}
+	}
+
+	focus = {
+		id = LIT_dingzhen_visit_jiangnan
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 4
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_end_jiangsu_chaos
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_dingzhen_visit_jiangnan"
+		}
+	}
+
+	focus = {
+		id = LIT_end_southeast_mutual_insurance
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 4
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_end_jiangsu_chaos
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_end_southeast_mutual_insurance"
+		}
+	}
+
+	focus = {
+		id = LIT_to_south_sea
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 5
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = { focus = LIT_recover_northwest }
+		prerequisite = { focus = LIT_end_southeast_mutual_insurance }
+		prerequisite = { focus = LIT_dingzhen_visit_jiangnan }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_to_south_sea"
+		}
+	}
+
+	focus = {
+		id = LIT_unfinished_business
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 6
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = { focus = LIT_to_south_sea }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_unfinished_business"
 		}
 	}
 
