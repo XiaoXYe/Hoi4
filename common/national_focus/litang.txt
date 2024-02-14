@@ -19,7 +19,7 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 6
 		y = 0
-		cost = 3
+		cost = 2
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -51,7 +51,7 @@
 		x = 1
 		y = 1
 		relative_position_id = LIT_situation_worse
-		cost = 3
+		cost = 2
 
 		prerequisite = { focus = LIT_situation_worse }
 
@@ -119,7 +119,7 @@
 		x = 0
 		y = 2
 		relative_position_id = LIT_situation_worse
-		cost = 3
+		cost = 2
 		prerequisite = { focus = LIT_socialmedia_propaganda }
 		prerequisite = { focus = LIT_recruit_soldiers }
 
@@ -369,7 +369,7 @@
 		x = 6
 		y = 1
 		relative_position_id = LIT_the_king_win
-		cost = 5
+		cost = 2
 		prerequisite = { focus = LIT_the_king_win }
 		
 		ai_will_do = {
@@ -660,7 +660,7 @@
 		}
 		
 		available = {
-			has_army_manpower = { size > 49999 }
+			has_army_manpower = { size > 199999 }
 		}
 
 		cancel_if_invalid = yes
@@ -724,6 +724,7 @@
 		
 		available = {
 			has_country_flag = LIT_control_covid
+			date > 2022.08.30
 		}
 
 		cancel_if_invalid = yes
@@ -783,8 +784,8 @@
 		}
 		
 		available = {
-			has_army_manpower = { size > 99999 }
-			date > 2023.09.01
+			has_army_manpower = { size > 599999 }
+			date > 2023.08.01
 		}
 
 		cancel_if_invalid = yes
@@ -793,6 +794,34 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_henan_or_war"
 			country_event = {
 				id = litang.32
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_iron_curtain
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 7
+		relative_position_id = LIT_grand_coronation
+		cost = 5
+		prerequisite = { focus = LIT_henan_or_war }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LIT_win_second_civil_war_flag
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_iron_curtain"
+			country_event = {
+				id = litang.33
 				days = 1
 			}
 		}
@@ -1207,7 +1236,7 @@
 		x = 0
 		y = 5
 		relative_position_id = LIT_right_of_smile
-		cost = 5
+		cost = 2
 		prerequisite = { focus = LIT_smile_still }
 		
 		available = {
@@ -1655,7 +1684,7 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 6
 		y = 8
-		cost = 5
+		cost = 3
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1681,7 +1710,7 @@
 		x = -2
 		y = 1
 		relative_position_id = LIT_army
-		cost = 5
+		cost = 3
 		prerequisite = { focus = LIT_army }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -1704,7 +1733,7 @@
 		x = 2
 		y = 1
 		relative_position_id = LIT_army
-		cost = 5
+		cost = 3
 		prerequisite = { focus = LIT_army }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		

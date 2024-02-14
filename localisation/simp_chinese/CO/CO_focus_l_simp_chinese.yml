@@ -48,9 +48,12 @@
  LIT_sanxia_conference:0 "召开三峡会议"
  LIT_sanxia_conference_desc:0 ""
  LIT_expand_experiment_land:0 "开辟汉中走廊"
- LIT_expand_experiment_land_desc:0 "汉中走廊是四川的咽喉，如果我们想要有更大的作为，必须做到控制汉中"
+ LIT_expand_experiment_land_desc:0 "汉中走廊是四川的咽喉，如果我们想要有更大的作为，必须先控制汉中"
  LIT_henan_or_war:0 "河南或战争"
  LIT_henan_or_war_desc:0 "河南作为中华民族龙兴之地，是为帝国崛起之基石"
+ LIT_iron_curtain:0 "铁幕"
+ LIT_iron_curtain_desc:0 "一幅横贯中国大陆的铁幕即将降落下来..."
+
 
  LIT_improve_leader_charm:0 "丁真，我们敬爱的领袖"
  LIT_improve_leader_charm_desc:0 "内容"

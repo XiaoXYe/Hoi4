@@ -776,6 +776,9 @@ country_event = {
 	}
 	option = {
 		name = beijing.100.a
+		ai_chance = {
+            base = 100
+        }
 		add_war_support = 0.10
 		BEJ = {
 			add_to_faction = HEN

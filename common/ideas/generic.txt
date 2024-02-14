@@ -115,6 +115,18 @@ ideas = {
 				army_speed_factor = -0.50
 			}
 		}
+
+		GEN_iron_curtain_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				justify_war_goal_time = 1.0
+			}
+		}
 	}
 
 }

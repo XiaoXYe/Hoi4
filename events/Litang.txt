@@ -945,6 +945,30 @@ country_event = {  # 河南拒绝了！
 	}
 }
 
+country_event = {  # 铁幕演说
+	id = litang.34
+	title = litang.34.t
+	desc = litang.34.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.34"
+	}
+
+	option = {
+		name = litang.34.a
+		add_ideas = GEN_iron_curtain_idea
+		add_opinion_modifier = {
+			target = LIN
+			modifier = iron_curtain_opinion_modifier
+		}
+	}
+}
+
+
 country_event = {# 军队改革-招降将领
 	id = litang.50
 	title = litang.50.t
