@@ -1,0 +1,119 @@
+###########################
+# Liaoning Events
+###########################
+
+add_namespace = liaoning
+
+country_event = {  # 葫芦岛会议
+	id = liaoning.100
+	title = liaoning.100.t
+	desc = liaoning.100.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.100"
+	}
+
+	option = {
+		name = liaoning.100.a
+		ai_chance = {
+            base = 100
+        }
+		country_event = {
+			id = liaoning.101
+			days = 7
+		}
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.36
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = liaoning.100.b
+	}
+}
+
+country_event = {  # 葫芦岛会议开始
+	id = liaoning.101
+	title = liaoning.101.t
+	desc = liaoning.101.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.101"
+	}
+
+	option = {
+		name = liaoning.101.a
+		ai_chance = {
+            base = 100
+        }
+		set_global_flag = GLB_huludao_conference_liaoning_agreed
+	}
+	option = {
+		name = liaoning.101.b
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
+		set_global_flag = GLB_huludao_conference_liaoning_rejected
+	}
+}
+
+country_event = {  # 葫芦岛会议成功
+	id = liaoning.102
+	title = liaoning.102.t
+	desc = liaoning.102.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = LIN
+		has_global_flag = GLB_huludao_conference_litang_agreed
+		has_global_flag = GLB_huludao_conference_liaoning_agreed
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.102"
+	}
+
+	option = {
+		name = liaoning.102.a
+	}
+}
+
+country_event = {  # 葫芦岛会议失败
+	id = liaoning.103
+	title = liaoning.103.t
+	desc = liaoning.103.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = LIT
+		OR = {
+			has_global_flag = GLB_huludao_conference_litang_rejected
+			has_global_flag = GLB_huludao_conference_liaoning_rejected
+		}
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.103"
+	}
+
+	option = {
+		name = liaoning.103.a
+	}
+}

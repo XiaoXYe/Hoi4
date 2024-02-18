@@ -968,6 +968,130 @@ country_event = {  # 铁幕演说
 	}
 }
 
+country_event = {  # 葫芦岛会议
+	id = litang.35
+	title = litang.35.t
+	desc = litang.35.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = LIT
+		has_war_with = BEJ
+		LIN = {
+			has_war_with = BEJ
+		}
+		BEJ = {
+			surrender_progress > 0.7
+		}
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.35"
+	}
+
+	option = {
+		name = litang.35.a
+		ai_chance = {
+            base = 100
+        }
+		hidden_effect = {
+			LIN = {
+				country_event = {
+					id = liaoning.100
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = litang.35.b
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
+	}
+}
+
+country_event = {  # 葫芦岛会议开始
+	id = litang.36
+	title = litang.36.t
+	desc = litang.36.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.36"
+	}
+
+	option = {
+		name = litang.36.a
+		ai_chance = {
+            base = 100
+        }
+		set_global_flag = GLB_huludao_conference_litang_agreed
+	}
+	option = {
+		name = litang.36.b
+		ai_chance = {
+            base = 0        # Never pick this option.
+        }
+		set_global_flag = GLB_huludao_conference_litang_rejected
+	}
+}
+
+country_event = {  # 葫芦岛会议成功
+	id = litang.37
+	title = litang.37.t
+	desc = litang.37.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = LIT
+		has_global_flag = GLB_huludao_conference_litang_agreed
+		has_global_flag = GLB_huludao_conference_liaoning_agreed
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.37"
+	}
+
+	option = {
+		name = litang.37.a
+	}
+}
+
+country_event = {  # 葫芦岛会议失败
+	id = litang.38
+	title = litang.38.t
+	desc = litang.38.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = LIT
+		OR = {
+			has_global_flag = GLB_huludao_conference_litang_rejected
+			has_global_flag = GLB_huludao_conference_liaoning_rejected
+		}
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.38"
+	}
+
+	option = {
+		name = litang.38.a
+	}
+}
 
 country_event = {# 军队改革-招降将领
 	id = litang.50

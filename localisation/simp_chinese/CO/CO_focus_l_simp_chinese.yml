@@ -14,7 +14,7 @@
  LIT_cigarette_or_vape:0 "烟草管理"
  LIT_cigarette_or_vape_desc:0 "传统香烟 or 电子烟？"
  LIT_self_value:0 "何为理塘王"
- LIT_self_value_decs:0 "资本塑造了理塘王，但那真的是理塘王吗？"
+ LIT_self_value_desc:0 "资本塑造了理塘王，但那真的是理塘王吗？"
  LIT_conquer_sichuan:0 "整肃四川"
  LIT_conquer_sichuan_desc:0 "整合四川的领土和人民，结束混乱的权力斗争"
  LIT_the_king_win:0 "丁真大获全胜"
@@ -56,7 +56,7 @@
 
  LIT_snow_leopard_flag_waving:0 "雪豹旗飘扬中原"
  LIT_snow_leopard_flag_waving_desc:0 "我们赢得了第二次中国内战，理塘帝国已迈入光明的未来！"
- LIT_chinese_orthodoxy:0 "宣称中华正统"LIT_unfinished_business
+ LIT_chinese_orthodoxy:0 "宣称中华正统"
  LIT_chinese_orthodoxy_desc:0 "理塘帝国的目标是全中国，理塘龙即为中国龙！"
  LIT_litangyia_orthodoxy:0 "宣称理塘尼亚"
  LIT_litangyia_orthodoxy_desc:0 "理塘帝国不屑于直接统治全中国地区，我们只建立属于我们的理塘尼亚！"
@@ -81,7 +81,7 @@
  LIT_to_south_sea:0 "直尽南海"
  LIT_to_south_sea_desc:0 "理塘的小孩子常常问：都说大地的尽头是南海，那么南海的尽头是什么？大人们总说：是印度尼西亚"
  LIT_unfinished_business:0 "前人未竟之事"
- LIT_unfinished_business_desc:0 "台湾！理塘爷爷来了！"
+ LIT_unfinished_business_desc:0 "台湾！你理塘爷爷来了！"
 
 
  LIT_improve_leader_charm:0 "丁真，我们敬爱的领袖"

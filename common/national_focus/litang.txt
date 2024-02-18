@@ -2010,7 +2010,7 @@
 		x = -3
 		y = 1
 		relative_position_id = LIT_snow_leopard_flag_waving
-		cost = 3
+		cost = 2
 		prerequisite = { focus = LIT_snow_leopard_flag_waving }
 		mutually_exclusive = { focus = LIT_litangyia_orthodoxy }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2025,6 +2025,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_chinese_orthodoxy"
+			custom_effect_tooltip = LIT_tt_chinese_orthodoxy
+			add_war_support = 0.05
 		}
 	}
 
@@ -2034,7 +2036,7 @@
 		x = 3
 		y = 1
 		relative_position_id = LIT_snow_leopard_flag_waving
-		cost = 3
+		cost = 2
 		prerequisite = { focus = LIT_snow_leopard_flag_waving }
 		mutually_exclusive = { focus = LIT_chinese_orthodoxy }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2049,6 +2051,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_litangyia_orthodoxy"
+			custom_effect_tooltip = LIT_tt_litangyia_orthodoxy
+			add_stability = 0.05
 		}
 	}
 
@@ -2075,6 +2079,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_break_iron_curtain"
+			unlock_decision_tooltip = LIT_break_iron_curtain_decision
+			unlock_decision_tooltip = LIT_conquer_neimenggu_decision
 		}
 	}
 
@@ -2105,6 +2111,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_integrate_tibet"
+			unlock_decision_tooltip = LIT_core_tibet_decision
 		}
 	}
 
@@ -2151,7 +2158,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2159,6 +2165,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_southwest_invade"
+			unlock_decision_tooltip = LIT_conquer_yunnan_decision
+			unlock_decision_tooltip = LIT_conquer_guizhou_decision
 		}
 	}
 
@@ -2178,7 +2186,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2186,6 +2193,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_attack_changan"
+			unlock_decision_tooltip = LIT_conquer_shaanxi_decision
 		}
 	}
 
@@ -2205,7 +2213,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2213,6 +2220,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_recover_northwest"
+			unlock_decision_tooltip = LIT_conquer_xinjiang_decision
+			unlock_decision_tooltip = LIT_conquer_qinghai_decision
+			unlock_decision_tooltip = LIT_conquer_gansu_decision
+			unlock_decision_tooltip = LIT_conquer_ningxia_decision
 		}
 	}
 
@@ -2232,7 +2243,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2240,6 +2250,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_end_jiangsu_chaos"
+			unlock_decision_tooltip = LIT_conquer_jiangsu_decision
+			unlock_decision_tooltip = LIT_conquer_shanghai_decision
 		}
 	}
 
@@ -2259,7 +2271,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2267,6 +2278,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_dingzhen_visit_jiangnan"
+			unlock_decision_tooltip = LIT_conquer_anhui_decision
+			unlock_decision_tooltip = LIT_conquer_zhejiang_decision
 		}
 	}
 
@@ -2286,7 +2299,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2294,6 +2306,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_end_southeast_mutual_insurance"
+			unlock_decision_tooltip = LIT_conquer_jiangxi_decision
+			unlock_decision_tooltip = LIT_conquer_hubei_decision
+			unlock_decision_tooltip = LIT_conquer_fujian_decision
+			unlock_decision_tooltip = LIT_conquer_hunan_decision
 		}
 	}
 
@@ -2314,7 +2330,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2322,6 +2337,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_to_south_sea"
+			unlock_decision_tooltip = LIT_conquer_guangxi_decision
+			unlock_decision_tooltip = LIT_conquer_guangdong_decision
+			unlock_decision_tooltip = LIT_conquer_hongkong_decision
+			unlock_decision_tooltip = LIT_conquer_macau_decision
+			unlock_decision_tooltip = LIT_conquer_hainan_decision
 		}
 	}
 
@@ -2340,7 +2360,6 @@
 			factor = 100
 		}
 		available = {
-			has_war = no
 		}
 
 		available_if_capitulated = yes
@@ -2348,6 +2367,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_unfinished_business"
+			unlock_decision_tooltip = LIT_conquer_taiwan_decision
 		}
 	}
 

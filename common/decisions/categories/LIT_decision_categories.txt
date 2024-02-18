@@ -31,3 +31,21 @@ LIT_litangyia_category = {
 	priority = 90
 
 }
+
+LIT_break_iron_curtain_category = {
+	icon = generic_research
+	allowed = { tag = LIT }
+	priority = 90
+}
+
+LIT_final_fight_category = {
+	icon = generic_research
+	allowed = { tag = LIT }
+	priority = 90
+}
+
+LIT_core_china_category = {
+	icon = generic_research
+	allowed = { tag = LIT }
+	priority = 90
+}
