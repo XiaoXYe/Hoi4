@@ -24,3 +24,107 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = pandemic.3
+	title = pandemic.3.t
+	desc = pandemic.3.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = no
+	fired_only_once = no
+
+	trigger = {
+		NOT = {
+			OR = {
+				tag = LIT
+				tag = BEJ
+			}
+		}
+		has_idea = GEN_pandemic
+		date > 2021.1.1
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event pandemic.3"
+	}
+
+	option = {
+		name = pandemic.3.a
+		swap_ideas = {
+			remove_idea = GEN_pandemic
+			add_idea = GEN_pandemic_decline
+		}
+		add_stability = 0.10
+	}
+}
+
+country_event = {
+	id = pandemic.4
+	title = pandemic.4.t
+	desc = pandemic.4.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = no
+	fired_only_once = no
+
+	trigger = {
+		NOT = {
+			OR = {
+				tag = LIT
+				tag = BEJ
+			}
+		}
+		has_idea = GEN_pandemic_decline
+		date > 2022.1.1
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event pandemic.4"
+	}
+
+	option = {
+		name = pandemic.4.a
+		swap_ideas = {
+			remove_idea = GEN_pandemic_decline
+			add_idea = GEN_pandemic_controlled
+		}
+		add_stability = 0.10
+	}
+}
+
+country_event = {
+	id = pandemic.5
+	title = pandemic.5.t
+	desc = pandemic.5.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = no
+	fired_only_once = no
+
+	trigger = {
+		NOT = {
+			OR = {
+				tag = LIT
+				tag = BEJ
+			}
+		}
+		has_idea = GEN_pandemic_controlled
+		date > 2023.1.1
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event pandemic.5"
+	}
+
+	option = {
+		name = pandemic.5.a
+		swap_ideas = {
+			remove_idea = GEN_pandemic_controlled
+			add_idea = GEN_pandemic_solved
+		}
+		add_stability = 0.10
+	}
+}
+
+
+

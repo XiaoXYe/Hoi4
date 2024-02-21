@@ -11,6 +11,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 
 	immediate = {
 		log = "[GetDateText]: news_event cnnews.1"
@@ -27,6 +28,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 
 	immediate = {
 		log = "[GetDateText]: news_event cnnews.2"

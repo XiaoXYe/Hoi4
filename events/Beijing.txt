@@ -23,11 +23,9 @@ country_event = {
 	option = {
 		name = beijing.1.a
 		hidden_effect = {
-			every_country = {
-				news_event ={
-					id = cnnews.2
-					days = 1
-				}
+			news_event ={
+				id = cnnews.2
+				days = 1
 			}
 			country_event = {
 				id = beijing.2
