@@ -37,3 +37,40 @@ news_event = {
 		name = cnnews.2.a 
 	}
 }
+
+# Dongbei Pact
+news_event = {
+	id = cnnews.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.3" }
+	title = cnnews.3.t
+	desc = cnnews.3.d
+	picture = GFX_news_event_generic_parliament
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: news_event cnnews.3"
+	}
+
+	option = {
+		name = cnnews.3.a
+	}
+}
+
+# The Dongbei War
+news_event = {
+	id = cnnews.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.4" }
+	title = cnnews.4.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.4.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.4.a
+	}
+}
+

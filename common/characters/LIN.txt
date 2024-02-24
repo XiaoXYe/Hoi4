@@ -1,4 +1,40 @@
 characters={
+
+	LIN_ch_daoge = {
+		name = LIN_ch_daoge
+
+		portraits = {
+			civilian = {
+				large = GFX_LIN_ch_daoge_portrait_large
+			}
+			army = {
+				large = GFX_LIN_ch_daoge_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+
 	LIN_ar={
 		advisor={
 			slot = high_command

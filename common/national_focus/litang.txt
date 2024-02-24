@@ -171,7 +171,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_is_free"
 			set_country_flag = LIT_has_been_free
-			add_army_experience = 50
+			army_experience = 50
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 2

@@ -47,4 +47,16 @@ spriteTypes = {
         name = GFX_HEN_ch_mabaoguo_portrait_large
         texturefile = gfx/leaders/HEN/Portrait_HEN_MaBaoguo.png
     }
+    spriteType = {
+        name = GFX_LIN_ch_daoge_portrait_large
+        texturefile = gfx/leaders/LIN/Portrait_LIN_DaoGe.png
+    }
+    spriteType = {
+        name = GFX_JIL_ch_huge_portrait_large
+        texturefile = gfx/leaders/JIL/Portrait_JIL_HuGe.png
+    }
+    spriteType = {
+        name = GFX_HLJ_ch_xinba_portrait_large
+        texturefile = gfx/leaders/HLJ/Portrait_HLJ_Xinba.png
+    }
 }

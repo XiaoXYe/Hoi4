@@ -91,6 +91,8 @@ if = {
 	}
 }
 
+recruit_character = HLJ_ch_xinba
+
 recruit_character = HLJ_ar
 recruit_character = HLJ_acr
 recruit_character = HLJ_mt

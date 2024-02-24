@@ -1,0 +1,489 @@
+###########################
+# Dongbei Pact Events
+###########################
+
+add_namespace = dbpact
+
+country_event = {
+	id = dbpact.1
+	title = dbpact.1.t
+	desc = dbpact.1.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event dbpact.1"
+	}
+
+	option = {
+		name = dbpact.1.a # Open the Congress
+		add_political_power = 50
+		set_country_flag = LIN_founded_dongbeipact
+		create_faction = DONGBEI_PACT
+		add_named_threat = {
+			threat = 4
+			name = "Formation of the Dongbei Pact"
+		}
+		hidden_effect = {
+			add_opinion_modifier = { target = NMG modifier = Dongbei_Pact_anti_neimenggu_modifier }
+			reverse_add_opinion_modifier = { target = NMG modifier = Dongbei_Pact_anti_neimenggu_modifier }
+			JIL = {
+				country_event = {
+					id = dbpact.2
+					days = 7
+				}
+			}
+			HLJ = {
+				country_event = {
+					id = dbpact.2
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+# Invitation to the Dongbei Pact
+country_event = {
+	id = dbpact.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.2" }
+	title = dbpact.2.t
+	desc = dbpact.2.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.2.a # Join the Dongbei Pact
+
+		ai_chance = {
+			factor = 100
+		}
+
+		LIN = {
+			add_to_faction = ROOT
+			add_opinion_modifier = { target = ROOT modifier = Dongbei_Pact_joined_yay_modifier }
+			hidden_effect = { country_event = dbpact.3 } # Notify Liaoning of joining
+		}
+		reverse_add_opinion_modifier = { target = NMG modifier = Dongbei_Pact_anti_neimenggu_modifier }
+
+		hidden_effect = {
+			add_opinion_modifier = { target = NMG modifier = Dongbei_Pact_anti_neimenggu_modifier }
+		}
+	}
+
+	option = {
+		name = dbpact.2.b # We have no interest
+
+		ai_chance = {
+			factor = 0
+		}
+
+		add_political_power = -100
+		set_country_flag = IGNORED_DONGBEI_PACT_INVITATION
+
+		LIN = {
+			country_event = { id = pact.4 } # Notify Liaoning of the refusal
+			add_opinion_modifier = { target = ROOT modifier = Dongbei_Pact_refused_modifier }
+		}
+	}
+}
+
+# A country joins the pact
+country_event = {
+	id = dbpact.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.3" }
+	title = dbpact.3.t
+	desc = dbpact.3.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.3.a # Welcome
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = LIN_pactnews_flag }
+					JIL = {
+						OR = {
+							exists = no
+							has_war = yes
+							is_in_faction_with = ROOT
+						}
+					}
+					HLJ = {
+						OR = {
+							exists = no
+							has_war = yes
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				set_country_flag = LIN_pactnews_flag
+				news_event = { id = cnnews.3 days = 1 }
+				NMG = { country_event = dbpact.8 }
+
+				every_country = {
+					limit = {
+						exists = yes
+						OR = {
+							tag = BEJ
+						}
+					}
+					country_event = { id = dbpact.9 days = 2 }
+				}
+			}
+		}
+	}
+}
+
+# A country refuses to join the pact
+country_event = {
+	id = dbpact.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.4" }
+	title = dbpact.4.t
+	desc = dbpact.4.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.4.a # We don't need them
+	}
+}
+
+# Neimenggu: The Dongbei Pact
+country_event = {
+	id = dbpact.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.8" }
+	title = dbpact.8.t
+	desc = dbpact.8.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	trigger = {
+		LIN = {
+			is_faction_leader = yes
+			exists = yes
+		}
+	}
+
+	option = {
+		name = dbpact.8.a # Not good
+	}
+}
+
+country_event = {
+	id = dbpact.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.9" }
+	title = dbpact.9.t
+	desc = dbpact.9.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = BEJ
+		}
+		LIN = {
+			is_faction_leader = yes
+			exists = yes
+		}
+		NMG = {
+			exists = yes
+			is_subject = no
+		}
+	}
+
+	option = {
+		name = dbpact.9.a # Support Neimenggu
+		ai_chance = {
+			factor = 100
+		}
+
+		set_country_flag = BEJ_supported_bulgaria_flag
+
+		LIN = {
+			add_opinion_modifier = { target = ROOT modifier = Dongbei_Pact_supported_enemy_modifier }
+			country_event = { id = dbpact.10 days = 1 }
+		}
+		BUL = {
+			add_opinion_modifier = { target = ROOT modifier = Dongbei_Pact_supported_us_modifier }
+			country_event = { id = dbpact.11 days = 1 }
+		}
+	}
+	option = {
+		name = dbpact.9.b # Avoid the Neimenggu
+		ai_chance = {
+			factor = 40
+		}
+		add_political_power = -50
+	}
+}
+
+# Liaoning: <country> supports Neimenggu!
+country_event = {
+	id = dbpact.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.10" }
+	title = dbpact.10.t
+	desc = dbpact.10.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.10.a # This is not good
+	}
+}
+
+# Neimenggu: <country> supports us
+country_event = {
+	id = dbpact.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.11" }
+	title = dbpact.11.t
+	desc = dbpact.11.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.11.a # Good
+	}
+}
+
+# Neimenggu: Ultimatum from Liaoning
+country_event = {
+	id = dbpact.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.17" }
+	title = dbpact.17.t
+	desc = dbpact.17.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.17.a # Then it is war
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 100
+		LIN = {
+			country_event = dbpact.18
+		}
+	}
+}
+
+# Liaoning: Ultimatum refused, war starts
+country_event = {
+	id = dbpact.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.18" }
+	title = dbpact.18.t
+	desc = dbpact.18.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.18.a # They had their chance!
+		set_global_flag = dongbei_war_started_flag
+		add_political_power = 100
+		add_manpower = 50000
+		declare_war_on = {
+			target = NMG
+			type = annex_everything
+		}
+
+		# Notify all Pact members
+		every_country = {
+			limit = {
+				NOT = { tag = LIN }
+				is_in_faction_with = LIN
+			}
+			country_event = dbpact.20 # Pact members: the war has started
+		}
+
+		hidden_effect = {
+			# add_ideas = has_scripted_peace
+			# BUL = { add_ideas = has_scripted_peace }
+			news_event = { id = cnnews.4 days = 1 }
+		}
+	}
+}
+
+# Pact members: the war has started
+country_event = {
+	id = dbpact.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.20" }
+	title = dbpact.20.t
+	desc = dbpact.20.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.20.a # Onwards to victory
+		add_political_power = 100
+		add_manpower = 50000
+		add_to_war = {
+			targeted_alliance = LIN
+			enemy = NMG
+			hostility_reason = asked_to_join
+		}
+	}
+}
+
+### Neimenggu: we're losing, sue for peace?
+country_event = {
+	id = dbpact.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.35" }
+	title = dbpact.35.t
+	desc = dbpact.35.d
+	picture = GFX_report_event_czech_soldiers_02
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NMG
+		has_war_with = LIN
+		NOT = {
+			controls_state = 9
+			controls_state = 19
+			controls_state = 30
+			controls_state = 37
+		}
+		LIN = {
+			is_faction_leader = yes
+			has_country_flag = LIN_founded_dongbeipact
+		}
+		has_global_flag = dongbei_war_started_flag
+		NOT = { has_global_flag = dongbei_war_ended_flag }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = dbpact.35.a # Sue for peace.
+		add_political_power = -50
+		LIN = { country_event = dbpact.36 } # Send the peace offer to Liaoning
+	}
+	option = {
+		name = dbpact.35.b # We can still win this!
+		trigger = { is_ai = no }
+		add_political_power = -100
+		add_war_support = -0.10
+	}
+}
+
+# Liaoning: Neimenggu asks for peace
+country_event = {
+	id = dbpact.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.36" }
+	title = dbpact.36.t
+	desc = dbpact.36.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.36.a # We are triumphant!
+		add_political_power = 200
+		set_global_flag = dongbei_war_ended_flag
+		set_global_flag = dongbei_war_ended_LIN_victory_flag
+
+		NMG = { white_peace = LIN white_peace = JIL white_peace = HLJ}
+
+		# custom effect
+		dongbei_pact_gain_land_from_neimenggu_effect = yes
+
+		hidden_effect = {
+			# Let Neimenggu know that Liaoning accepted the peace offer
+			NMG = { country_event = dbpact.37 }
+
+			# Let all other Pact members know that peace is signed
+			every_country = {
+				limit = {
+					NOT = { tag = LIN }
+					is_in_faction_with = LIN
+				}
+				country_event = dbpact.38
+			}
+		}
+	}
+
+	option = {
+		name = dbpact.36.b # They will be crushed
+		trigger = { is_ai = no }
+		add_political_power = -100
+		NMG = {
+			country_event = dbpact.46 # Notify Bulgaria of refusal
+		}
+	}
+}
+
+# Neimenggu: Liaoning accepted our peace offer
+country_event = {
+	id = dbpact.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.37" }
+	title = dbpact.37.t
+	desc = dbpact.37.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.37.a # At least we exist!
+		set_country_flag = NMG_dongbei_peace_loss_flag
+		effect_tooltip = {
+			LIN = {
+				white_peace = NMG
+			}
+		}
+	}
+}
+
+# Pact members: peace signed
+country_event = {
+	id = dbpact.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.38" }
+	title = dbpact.38.t
+	desc = dbpact.38.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.38.a # The Dongbei Pact stands triumphant!
+		add_political_power = 200
+
+		effect_tooltip = {
+			LIN = {
+				white_peace = NMG
+			}
+		}
+	}
+}
+
+# <country> refuses our peace offer
+country_event = {
+	id = dbpact.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.46" }
+	title = dbpact.46.t
+	desc = dbpact.46.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.46.a # We need to turn the tide
+		add_war_support = 0.10
+	}
+}

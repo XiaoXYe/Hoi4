@@ -10,6 +10,7 @@ state={
 
 	history = {
 		add_core_of = NMG
+		add_claim_by = LIN
 		owner = NMG
 		victory_points = { 416 10 }
 		buildings = {

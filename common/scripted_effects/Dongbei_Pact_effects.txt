@@ -1,0 +1,43 @@
+# Cedes land and grants cores for the Belgrade Pact members
+dongbei_pact_gain_land_from_neimenggu_effect = {
+	# give Liaoning lands
+	every_state = {
+		limit = {
+			is_owned_by = NMG
+			OR = {
+				is_core_of = LIN
+				is_claimed_by = LIN
+				state = 37 # ³à·å
+			}
+		}
+		LIN = { transfer_state = PREV }
+	}
+
+	# give Jilin lands
+	every_state = {
+		limit = {
+			is_owned_by = NMG
+			OR = {
+				is_core_of = JIL
+				is_claimed_by = JIL
+				state = 19 # ÐË°²
+				state = 30 # Í¨ÁÉ
+			}
+		}
+		JIL = { transfer_state = PREV }
+	}
+
+	# give Heilongjiang lands
+		every_state = {
+			limit = {
+				is_owned_by = NMG
+				OR = {
+					is_core_of = HLJ
+					is_claimed_by = HLJ
+					state = 9 # ºôÂ×±´¶û
+				}
+			}
+			HLJ = { transfer_state = PREV }
+		}
+	}
+}

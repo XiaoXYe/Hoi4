@@ -203,6 +203,9 @@ if = {
 		}
 	}
 }
+
+recruit_character = LIN_ch_daoge
+
 recruit_character = LIN_ar
 recruit_character = LIN_acr
 recruit_character = LIN_mt

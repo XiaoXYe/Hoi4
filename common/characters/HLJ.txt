@@ -1,4 +1,42 @@
 characters={
+
+	HLJ_ch_xinba = {
+		name = HLJ_ch_xinba
+
+		portraits = {
+			civilian = {
+				large = GFX_HLJ_ch_xinba_portrait_large
+			}
+			army = {
+				large = GFX_HLJ_ch_xinba_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = oligarchism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+
+
+
 	HLJ_ar={
 		advisor={
 			slot = high_command

@@ -10,6 +10,7 @@ state={
 
 	history = {
 		add_core_of = NMG
+		add_claim_by = JIL
 		owner = NMG
 		victory_points = { 1757 5 }
 		buildings = {

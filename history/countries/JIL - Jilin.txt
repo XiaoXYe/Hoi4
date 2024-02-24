@@ -91,6 +91,8 @@ if = {
 	}
 }
 
+recruit_character = JIL_ch_huge
+
 recruit_character = JIL_ar
 recruit_character = JIL_acr
 recruit_character = JIL_mt
