@@ -356,6 +356,24 @@ ideas = {
 			}
 		}
 
+		LIT_chouxiang_resistance_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				political_power_gain = -0.15
+			}
+			on_add = {
+				add_stability = -0.1
+			}
+			on_remove = {
+				add_stability = 0.1
+			}
+		}
 	}
 
 }

@@ -366,7 +366,7 @@
 	focus = {
 		id = LIT_grand_coronation
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
+		x = 0
 		y = 1
 		relative_position_id = LIT_the_king_win
 		cost = 2
@@ -391,13 +391,70 @@
 	}
 
 	focus = {
-		id = LIT_strengthen_national_identity
+		id = LIT_eradicate_chouxiang_culture
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -1
 		y = 1
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_grand_coronation }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_eradicate_chouxiang_culture"
+			add_popularity = {
+				ideology = communism
+				popularity = -0.2
+			}
+			remove_ideas = { LIT_chouxiang_resistance_idea }
+		}
+	}
+
+	focus = {
+		id = LIT_fight_against_progressivism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_grand_coronation
+		cost = 5
+		prerequisite = { focus = LIT_grand_coronation }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_fight_against_progressivism"
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = LIT_strengthen_national_identity
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 2
+		relative_position_id = LIT_grand_coronation
+		cost = 5
+		prerequisite = { focus = LIT_eradicate_chouxiang_culture }
+		prerequisite = { focus = LIT_fight_against_progressivism }
 		
 		ai_will_do = {
 			factor = 100
@@ -419,13 +476,42 @@
 	}
 
 	focus = {
-		id = LIT_centralization
+		id = LIT_a_clear_line_with_retroism
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
+		x = 1
 		y = 2
 		relative_position_id = LIT_grand_coronation
 		cost = 5
+		prerequisite = { focus = LIT_eradicate_chouxiang_culture }
+		prerequisite = { focus = LIT_fight_against_progressivism }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_a_clear_line_with_retroism"
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_centralization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 3
+		relative_position_id = LIT_grand_coronation
+		cost = 5
 		prerequisite = { focus = LIT_strengthen_national_identity }
+		prerequisite = { focus = LIT_a_clear_line_with_retroism }
 		
 		ai_will_do = {
 			factor = 100
@@ -438,18 +524,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_centralization"
-			add_popularity = {
-				ideology = communism
-				popularity = -0.10
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.10
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.10
-			}
+			add_political_power = 100
 			add_stability = 0.10
 		}
 	}
@@ -457,8 +532,8 @@
 	focus = {
 		id = LIT_land_reform
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 3
+		x = 0
+		y = 4
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_centralization }
@@ -484,8 +559,8 @@
 	focus = {
 		id = LIT_speak_tibetan
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -4
-		y = 3
+		x = -2
+		y = 4
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_centralization }
@@ -508,8 +583,8 @@
 	focus = {
 		id = LIT_scan_code
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 3
+		x = 2
+		y = 4
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_centralization }
@@ -535,11 +610,11 @@
 	focus = {
 		id = LIT_tibetan_buddhism
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 4
 		y = 2
 		relative_position_id = LIT_grand_coronation
 		cost = 5
-		prerequisite = { focus = LIT_strengthen_national_identity }
+		prerequisite = { focus = LIT_grand_coronation }
 		
 		ai_will_do = {
 			factor = 100
@@ -562,7 +637,7 @@
 	focus = {
 		id = LIT_bringback_dalailama
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 4
 		y = 3
 		relative_position_id = LIT_grand_coronation
 		cost = 5
@@ -589,7 +664,7 @@
 	focus = {
 		id = LIT_kalachakra_ceremony
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 4
 		y = 4
 		relative_position_id = LIT_grand_coronation
 		cost = 5
@@ -616,7 +691,7 @@
 	focus = {
 		id = LIT_reincarnation
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = 2
 		y = 5
 		relative_position_id = LIT_grand_coronation
 		cost = 6
@@ -649,8 +724,8 @@
 	focus = {
 		id = LIT_acquire_chongqing
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
-		y = 3
+		x = 8
+		y = 1
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_grand_coronation }
@@ -679,12 +754,11 @@
 	focus = {
 		id = LIT_ally_tibet
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
-		y = 3
+		x = 6
+		y = 1
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_grand_coronation }
-		prerequisite = { focus = LIT_tibetan_buddhism }
 		
 		ai_will_do = {
 			factor = 100
@@ -711,8 +785,8 @@
 	focus = {
 		id = LIT_sanxia_conference
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
-		y = 4
+		x = 7
+		y = 2
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_acquire_chongqing }
@@ -743,8 +817,8 @@
 	focus = {
 		id = LIT_expand_experiment_land
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
-		y = 5
+		x = 7
+		y = 3
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_sanxia_conference }
@@ -773,8 +847,8 @@
 	focus = {
 		id = LIT_henan_or_war
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
-		y = 6
+		x = 7
+		y = 4
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_expand_experiment_land }
@@ -802,8 +876,8 @@
 	focus = {
 		id = LIT_iron_curtain
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 5
-		y = 7
+		x = 7
+		y = 5
 		relative_position_id = LIT_grand_coronation
 		cost = 5
 		prerequisite = { focus = LIT_henan_or_war }
@@ -823,182 +897,6 @@
 			country_event = {
 				id = litang.34
 				days = 1
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_improve_leader_charm
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 1
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_the_king_win }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		available = {
-			has_country_flag = LIT_has_been_free
-			has_country_flag = LIT_no_mask
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_improve_leader_charm"
-			add_ideas = {
-				LIT_embrace_his_smile
-			}
-			LIT = {
-				country_event = {
-					id = litang.6
-					days = 7
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_begin_study
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
-		y = 2
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_improve_leader_charm }
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		available = {
-			has_country_flag = LIT_begin_study_flag
-		}
-
-		mutually_exclusive = {
-			focus = LIT_keep_innocence
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_begin_study"
-		}
-	}
-
-	focus = {
-		id = LIT_learn_copper
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
-		y = 3
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_begin_study }
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_copper"
-			custom_effect_tooltip = LIT_tt_learn_manner
-		}
-	}
-
-	focus = {
-		id = LIT_learn_history
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
-		y = 4
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_learn_copper }
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_history"
-			custom_effect_tooltip = LIT_tt_learn_history
-		}
-	}
-
-	focus = {
-		id = LIT_learn_people
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
-		y = 5
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_learn_history }
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_learn_people"
-			custom_effect_tooltip = LIT_tt_learn_people
-		}
-	}
-
-	focus = {
-		id = LIT_keep_innocence
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
-		y = 2
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_improve_leader_charm }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		available = {
-			has_country_flag = LIT_keep_innocence_flag
-		}
-
-		mutually_exclusive = {
-			focus = LIT_begin_study
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_keep_innocence"
-		}
-	}
-
-	focus = {
-		id = LIT_ride_horse_haha
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
-		y = 5
-		relative_position_id = LIT_the_king_win
-		cost = 5
-		prerequisite = { focus = LIT_keep_innocence }
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_ride_horse_haha"
-			country_event = {
-				id = litang.12
 			}
 		}
 	}
