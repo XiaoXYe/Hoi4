@@ -1,0 +1,11 @@
+# in state scope
+remove_claim_by_ROOT_and_add_core_of_ROOT = {
+	if = {
+		limit = { is_claimed_by = ROOT }
+		remove_claim_by = ROOT
+	}
+	if = {
+		limit = { NOT = { is_core_of = ROOT } }
+		add_core_of = ROOT
+	}
+}

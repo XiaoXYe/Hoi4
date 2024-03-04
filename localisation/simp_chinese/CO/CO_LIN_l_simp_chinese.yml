@@ -3,5 +3,17 @@
  LIN_congress_of_shenyang_desc:0 "蒙东四盟自古以来即属于东北，如今时机已到，我们应该同吉林和黑龙江在沈阳召开一次大会，讨论建立一个已夺回蒙东为目标的联盟"
  LIN_ultimatum_to_neimenggu:0 "对内蒙古的最后通牒"
  LIN_ultimatum_to_neimenggu_desc:0 "是时候向内蒙古重新宣称蒙东了。我们可以向内蒙古发送最后通牒来让他们交出所有争议领土，否则东北协约就会向他们宣战"
+ LIN_dongbei_unify:0 "统一东北协约"
+ LIN_dongbei_unify_desc:0 "打败内蒙古的胜利让我们意识到，东北只有内部团结，才能强大。"
+ LIN_entry:0 "入关"
+ LIN_entry_desc:0 "入关是历史上任何一个想要进入中原的东北政权逃不开的话题。如今东北是如此的团结和强大，是时候越过山海关，重新演绎四百年前的历史！"
+ 
+ 
+ 
+ 
+ 
+ 
  LIN_founded_dongbeipact:0 "东北协约成立！"
-
+ LIN_dongbei_unified_flag:0 "东北统一！"
+ LIN_dongbei_empire:0 "东北帝国"
+ LIN_dongbei_empire_DEF:0 "东北帝国"

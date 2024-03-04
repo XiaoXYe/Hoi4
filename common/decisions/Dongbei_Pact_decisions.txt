@@ -1,0 +1,219 @@
+Dongbei_integrate_our_land_decisions = {
+	
+	LIN_integrate_chifeng = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 37 } }
+
+		allowed = { original_tag = LIN }
+		available = {
+			has_full_control_of_state = 37
+		}
+
+		visible = {
+			37 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		days_remove = 60
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIN_integrate_chifeng"
+			37 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	JIL_integrate_tongliao = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 30 } }
+
+		allowed = { original_tag = JIL }
+		available = {
+			has_full_control_of_state = 30
+		}
+
+		visible = {
+			30 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 30
+
+		days_remove = 30
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JIL_integrate_tongliao"
+			30 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	JIL_integrate_xingan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 19 } }
+
+		allowed = { original_tag = JIL }
+		available = {
+			has_full_control_of_state = 19
+		}
+
+		visible = {
+			19 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 30
+
+		days_remove = 30
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JIL_integrate_tongliao"
+			19 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	HLJ_integrate_hulunbuir = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 9 } }
+
+		allowed = { original_tag = HLJ }
+		available = {
+			has_full_control_of_state = 9
+		}
+
+		visible = {
+			9 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		days_remove = 60
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove HLJ_integrate_hulunbuir"
+			9 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	LIN_integrate_jilin = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 36 } }
+
+		allowed = { original_tag = LIN }
+		available = {
+			every_state = {
+				limit = {
+					is_core_of = JIL
+				}
+				add_core_of = LIN
+			}
+		}
+
+		visible = {
+			36 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 90
+
+		days_remove = 180
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIN_integrate_jilin"
+			every_state = {
+				limit = {
+					is_core_of = JIL
+				}
+				add_core_of = LIN
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	LIN_integrate_heilongjiang = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 24 } }
+
+		allowed = { original_tag = LIN }
+		available = {
+			every_state = {
+				limit = {
+					is_core_of = HLJ
+				}
+				add_core_of = LIN
+			}
+		}
+
+		visible = {
+			24 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+
+		fire_only_once = yes
+		cost = 90
+
+		days_remove = 180
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIN_integrate_heilongjiang"
+			every_state = {
+				limit = {
+					is_core_of = HLJ
+				}
+				add_core_of = LIN
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	LIN_annouce_dongbei_unified = {
+		icon = infiltrate_state
+
+		allowed = { original_tag = LIN }
+		available = {
+			24 = {
+				is_owned_by = LIN
+			}
+			36 = {
+				is_owned_by = LIN
+			}
+			50 = {
+				is_owned_by = LIN
+			}
+		}
+
+		visible = {
+			has_completed_focus = LIN_dongbei_unify
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIN_annouce_dongbei_unified"
+			set_global_flag = GLB_dongbei_unified_flag
+			set_country_flag = LIN_dongbei_unified_flag
+			set_cosmetic_tag = LIN_dongbei_empire
+			news_event = { id = cnnews.5 days = 1 }
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+Dongbei_integrate_our_land_decisions = {
+	icon = generic_research
+	allowed = {
+		OR = {
+			tag = LIN
+			tag = JIL
+			tag = HLJ
+		}
+	}
+}

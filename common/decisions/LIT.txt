@@ -483,11 +483,15 @@ LIT_break_iron_curtain_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
-		days_remove = 15
+		cost = 50
+		days_remove = 20
 
 		ai_will_do = {
-			factor = 90
+			base = 90
+			modifier = {
+				base = 1
+				has_war = yes
+			}
 		}
 
 		complete_effect = {
@@ -526,7 +530,7 @@ LIT_break_iron_curtain_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -655,7 +659,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -697,7 +701,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 10
 		days_remove = 15
 
 		ai_will_do = {
@@ -781,7 +785,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -823,7 +827,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -907,7 +911,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1033,7 +1037,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1075,7 +1079,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1117,7 +1121,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1159,7 +1163,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1201,7 +1205,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 20
 		days_remove = 15
 
 		ai_will_do = {
@@ -1285,7 +1289,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 10
 		days_remove = 15
 
 		ai_will_do = {
@@ -1327,7 +1331,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 10
 		days_remove = 15
 
 		ai_will_do = {
@@ -1369,7 +1373,7 @@ LIT_final_fight_category = {
 		}
 
 		fire_only_once = no
-		cost = 30
+		cost = 10
 		days_remove = 15
 
 		ai_will_do = {

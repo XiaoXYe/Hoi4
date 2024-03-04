@@ -41,7 +41,7 @@ country_event = {
 			}
 		}
 		has_idea = GEN_pandemic
-		date > 2021.1.1
+		date > 2021.6.1
 	}
 
 	immediate = {
@@ -75,7 +75,7 @@ country_event = {
 			}
 		}
 		has_idea = GEN_pandemic_decline
-		date > 2022.1.1
+		date > 2023.1.1
 	}
 
 	immediate = {
@@ -109,7 +109,7 @@ country_event = {
 			}
 		}
 		has_idea = GEN_pandemic_controlled
-		date > 2023.1.1
+		date > 2024.6.1
 	}
 
 	immediate = {

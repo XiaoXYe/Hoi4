@@ -74,3 +74,19 @@ news_event = {
 	}
 }
 
+# Dongbei Unified
+news_event = {
+	id = cnnews.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.5" }
+	title = cnnews.5.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.5.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.5.a
+	}
+}
+

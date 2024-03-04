@@ -399,6 +399,7 @@ country_event = {
 		add_political_power = 200
 		set_global_flag = dongbei_war_ended_flag
 		set_global_flag = dongbei_war_ended_LIN_victory_flag
+		set_country_flag = LIN_dongbei_war_victory_flag
 
 		NMG = { white_peace = LIN white_peace = JIL white_peace = HLJ}
 
@@ -485,5 +486,123 @@ country_event = {
 	option = {
 		name = dbpact.46.a # We need to turn the tide
 		add_war_support = 0.10
+	}
+}
+
+# Dongbei union
+country_event = {
+	id = dbpact.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.60" }
+	title = dbpact.60.t
+	desc = dbpact.60.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.60.a  # we need reunion
+		JIL = {
+			country_event = {
+				id = dbpact.61
+				days = 3
+			}
+		}
+		HLJ = {
+			country_event = {
+				id = dbpact.61
+				days = 3
+			}
+		}
+	}
+}
+
+# Dongbei union for members
+country_event = {
+	id = dbpact.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.61" }
+	title = dbpact.61.t
+	desc = dbpact.61.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.61.a # Of course
+		ai_chance = { 
+			base = 50
+			modifier = {
+				base = 100
+				tag = JIL
+			}
+			modifier = {
+				base = 0
+				tag = HLJ
+			}
+		}
+		LIN = {
+			country_event = {
+				id = dbpact.62
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = dbpact.61.b # NO
+		ai_chance = { 
+			base = 50
+			modifier = {
+				base = 0
+				tag = JIL
+			}
+			modifier = {
+				base = 100
+				tag = HLJ
+			}
+		}
+		add_war_support = 0.05
+		leave_faction = yes
+		LIN = {
+			country_event = {
+				id = dbpact.63
+				days = 1
+			}
+		}
+	}
+}
+
+# notice LIN: agree
+country_event = {
+	id = dbpact.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.62" }
+	title = dbpact.62.t
+	desc = dbpact.62.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.62.a
+		add_stability = 0.02
+		add_war_support = 0.02
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+}
+
+# notice LIN: reject
+country_event = {
+	id = dbpact.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.63" }
+	title = dbpact.63.t
+	desc = dbpact.63.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dbpact.63.a # We need to turn the tide
+		add_war_support = 0.10
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
 	}
 }

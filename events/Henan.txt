@@ -39,7 +39,7 @@ country_event = {  # 加入山河同盟？
 	fire_only_once = yes
 
 	trigger = {
-		original_tag = HEN
+		tag = HEN
 		has_war_with = LIT
 		surrender_progress > 0.5
 	}

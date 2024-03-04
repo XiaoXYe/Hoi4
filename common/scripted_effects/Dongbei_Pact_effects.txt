@@ -28,16 +28,15 @@ dongbei_pact_gain_land_from_neimenggu_effect = {
 	}
 
 	# give Heilongjiang lands
-		every_state = {
-			limit = {
-				is_owned_by = NMG
-				OR = {
-					is_core_of = HLJ
-					is_claimed_by = HLJ
-					state = 9 # ºôÂ×±´¶û
-				}
+	every_state = {
+		limit = {
+			is_owned_by = NMG
+			OR = {
+				is_core_of = HLJ
+				is_claimed_by = HLJ
+				state = 9 # ºôÂ×±´¶û
 			}
-			HLJ = { transfer_state = PREV }
 		}
+		HLJ = { transfer_state = PREV }
 	}
 }

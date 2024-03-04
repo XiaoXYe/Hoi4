@@ -33,7 +33,7 @@
 		}
 
 		ai_will_do = {
-			factor = 15
+			base = 15
 
 			modifier = {
 				factor = 100
@@ -41,13 +41,8 @@
 				OR = {
 					country_exists = HLJ
 					country_exists = JIL
+					country_exists = NMG
 				}
-			}
-
-			modifier = {
-				factor = 10
-
-				NMG = { has_war = yes }
 			}
 		}
 
@@ -67,7 +62,7 @@
 		y = 1
 		relative_position_id = LIN_congress_of_shenyang
 
-		cost = 4
+		cost = 5
 
 		prerequisite = { focus = LIN_congress_of_shenyang }
 
@@ -86,7 +81,7 @@
 		}
 
 		ai_will_do = {
-			factor = 15
+			base = 15
 			modifier = {
 				factor = 100
 				date > 2021.8.1
@@ -97,6 +92,80 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIN_ultimatum_to_neimenggu"
 			NMG = {
 				country_event = { id = dbpact.17 hours = 4 }
+			}
+		}
+	}
+
+	focus = {
+		id = LIN_dongbei_unify
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = LIN_congress_of_shenyang
+
+		cost = 5
+
+		prerequisite = { focus = LIN_ultimatum_to_neimenggu }
+
+		available = {
+			has_country_flag = LIN_dongbei_war_victory_flag
+			is_faction_leader = yes
+			is_subject = no
+			date > 2023.1.1
+		}
+
+		bypass = {
+			NOT = { country_exists = JIL }
+			NOT = { country_exists = HLJ }
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 100
+				date > 2023.8.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIN_dongbei_unify"
+			country_event = { id = dbpact.60 hours = 4 }
+		}
+	}
+
+	focus = {
+		id = LIN_entry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 3
+		relative_position_id = LIN_congress_of_shenyang
+
+		cost = 5
+
+		prerequisite = { focus = LIN_dongbei_unify }
+
+		available = {
+			has_country_flag = LIN_dongbei_unified_flag
+			date > 2025.6.1
+		}
+
+		bypass = {
+			NOT = { country_exists = BEJ }
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 100
+				date > 2026.8.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIN_entry"
+			declare_war_on = {
+				target = BEJ
+				type = annex_everything
 			}
 		}
 	}
