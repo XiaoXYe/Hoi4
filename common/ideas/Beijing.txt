@@ -154,7 +154,7 @@ ideas = {
 			}
 		}
 
-		BEJ_congress_idea = {
+		BEJ_constitution_idea = {
 
 			allowed = {
 				always = no

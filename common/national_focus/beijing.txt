@@ -883,171 +883,9 @@
 	}
 
 	focus = {
-		id = BEJ_im_GuAiling
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 1
-		relative_position_id = BEJ_welcome_GuAiling
-		cost = 5
-
-		prerequisite = { focus = BEJ_welcome_GuAiling }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_im_GuAiling"
-			add_political_power = 50
-			add_stability = 0.05
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-		}
-	}
-
-	focus = {
-		id = BEJ_role_of_union
+		id = BEJ_provisional_consitution
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 1
-		relative_position_id = BEJ_im_GuAiling
-		cost = 5
-
-		prerequisite = { focus = BEJ_im_GuAiling }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 99
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_role_of_union"
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_ideas = { BEJ_union_reborn }
-		}
-	}
-
-	focus = {
-		id = BEJ_ancient_culture
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 1
-		relative_position_id = BEJ_im_GuAiling
-		cost = 5
-
-		prerequisite = { focus = BEJ_im_GuAiling }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_ancient_culture"
-			country_event = {
-				id = beijing.11
-			}
-		}
-	}
-
-	focus = {
-		id = BEJ_public_welfare
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 2
-		relative_position_id = BEJ_im_GuAiling
-		cost = 5
-
-		prerequisite = { focus = BEJ_role_of_union }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 99
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_public_welfare"
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_ideas = { BEJ_public_welfare_idea }
-		}
-	}
-
-	focus = {
-		id = BEJ_partly_nationalization
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 3
-		relative_position_id = BEJ_im_GuAiling
-		cost = 5
-
-		prerequisite = { focus = BEJ_public_welfare }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_partly_nationalization"
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_ideas = { BEJ_partly_nationalization_idea }
-			74 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = BEJ_im_EileenFengGu
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
 		y = 1
 		relative_position_id = BEJ_welcome_GuAiling
 		cost = 5
@@ -1066,70 +904,9 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_im_EileenFengGu"
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_new_provisional_consitution"
 			add_political_power = -50
 			add_stability = -0.05
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-		}
-	}
-
-	focus = {
-		id = BEJ_congress
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 1
-		relative_position_id = BEJ_im_EileenFengGu
-		cost = 5
-
-		prerequisite = { focus = BEJ_im_EileenFengGu }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 95
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_congress"
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_ideas = { BEJ_congress_idea }
-		}
-	}
-
-	focus = {
-		id = BEJ_executive_departments
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 1
-		relative_position_id = BEJ_im_EileenFengGu
-		cost = 5
-
-		prerequisite = { focus = BEJ_im_EileenFengGu }
-		available = {
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 99
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_executive_departments"
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -1139,14 +916,75 @@
 	}
 
 	focus = {
+		id = BEJ_against_traditionalists
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		relative_position_id = BEJ_provisional_consitution
+		cost = 5
+
+		prerequisite = { focus = BEJ_provisional_consitution }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 95
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_against_traditionalists"
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_democratic_political_system
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_provisional_consitution
+		cost = 5
+
+		prerequisite = { focus = BEJ_provisional_consitution }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 99
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_democratic_political_system"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
 		id = BEJ_federal_court_system
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 2
 		y = 1
-		relative_position_id = BEJ_im_EileenFengGu
+		relative_position_id = BEJ_provisional_consitution
 		cost = 5
 
-		prerequisite = { focus = BEJ_im_EileenFengGu }
+		prerequisite = { focus = BEJ_provisional_consitution }
 		available = {
 		}
 
@@ -1174,11 +1012,11 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -1
 		y = 2
-		relative_position_id = BEJ_im_EileenFengGu
+		relative_position_id = BEJ_provisional_consitution
 		cost = 5
 
-		prerequisite = { focus = BEJ_congress }
-		prerequisite = { focus = BEJ_executive_departments }
+		prerequisite = { focus = BEJ_against_traditionalists }
+		prerequisite = { focus = BEJ_democratic_political_system }
 		available = {
 		}
 
@@ -1206,10 +1044,10 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 2
-		relative_position_id = BEJ_im_EileenFengGu
+		relative_position_id = BEJ_provisional_consitution
 		cost = 5
 
-		prerequisite = { focus = BEJ_executive_departments }
+		prerequisite = { focus = BEJ_democratic_political_system }
 		prerequisite = { focus = BEJ_federal_court_system }
 		available = {
 		}
@@ -1234,15 +1072,218 @@
 	}
 
 	focus = {
-		id = BEJ_orderly_privatization
+		id = BEJ_constitution
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
 		y = 3
-		relative_position_id = BEJ_im_EileenFengGu
+		relative_position_id = BEJ_provisional_consitution
 		cost = 5
 
 		prerequisite = { focus = BEJ_financial_reform }
 		prerequisite = { focus = BEJ_free_speech }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 95
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_congress"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_ideas = { BEJ_constitution_idea }
+		}
+	}
+
+	focus = {
+		id = BEJ_first_free_election
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 4
+		relative_position_id = BEJ_provisional_consitution
+		cost = 5
+
+		prerequisite = { focus = BEJ_constitution }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_first_free_election"
+			add_political_power = 100
+			add_stability = 0.05
+			country_event = {
+				id = beijing.12
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_GuAiling_win
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 9
+		cost = 5
+
+		prerequisite = { }
+		available = {
+			always = no
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_GuAiling_win"
+		}
+	}
+
+	focus = {
+		id = BEJ_vegetarian_culture
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 1
+		relative_position_id = BEJ_GuAiling_win
+		cost = 5
+
+		prerequisite = { focus = BEJ_GuAiling_win }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vegetarian_culture"
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = BEJ_environmentalism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_vegetarian_culture
+		cost = 5
+
+		prerequisite = { focus = BEJ_vegetarian_culture }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_environmentalism"
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = BEJ_fight_against_chouxiang
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_GuAiling_win
+		cost = 5
+
+		prerequisite = { focus = BEJ_GuAiling_win }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_fight_against_chouxiang"
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.20
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_support_feminism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_fight_against_chouxiang
+		cost = 5
+
+		prerequisite = { focus = BEJ_fight_against_chouxiang }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_feminism"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = BEJ_role_of_union
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = BEJ_GuAiling_win
+		cost = 5
+
+		prerequisite = { focus = BEJ_GuAiling_win }
 		available = {
 		}
 
@@ -1256,35 +1297,57 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_orderly_privatization"
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_role_of_union"
 			add_popularity = {
-				ideology = democratic
+				ideology = communism
 				popularity = 0.05
 			}
-			add_ideas = { BEJ_orderly_privatization_idea }
-			74 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_ideas = { BEJ_union_reborn }
 		}
 	}
 
 	focus = {
-		id = BEJ_capitalism_with_chinese_characteristics
+		id = BEJ_public_welfare
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 5
-		relative_position_id = BEJ_welcome_GuAiling
+		y = 1
+		relative_position_id = BEJ_role_of_union
 		cost = 5
 
-		prerequisite = { focus = BEJ_partly_nationalization }
-		prerequisite = { focus = BEJ_orderly_privatization }
+		prerequisite = { focus = BEJ_role_of_union }
 		available = {
-			has_country_flag = BEJ_annex_hebei_tianjin_flag
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 99
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_public_welfare"
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_ideas = { BEJ_public_welfare_idea }
+		}
+	}
+
+	focus = {
+		id = BEJ_same_sex_marriage_legalized
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = BEJ_support_feminism
+		cost = 5
+
+		prerequisite = { focus = BEJ_environmentalism }
+		prerequisite = { focus = BEJ_support_feminism }
+		available = {
 		}
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1297,19 +1360,140 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus BEJ_capitalism_with_chinese_characteristics"
-			add_political_power = 100
-			add_stability = 0.05
-			country_event = {
-				id = beijing.12
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_same_sex_marriage_legalized"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
 			}
+		}
+	}
+
+	focus = {
+		id = BEJ_encourage_immigration
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = BEJ_support_feminism
+		cost = 5
+
+		prerequisite = { focus = BEJ_support_feminism }
+		prerequisite = { focus = BEJ_public_welfare }
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+		}
+	}
+
+	focus = {
+		id = BEJ_embrace_pluralism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_same_sex_marriage_legalized
+		cost = 5
+
+		prerequisite = { focus = BEJ_same_sex_marriage_legalized }
+		prerequisite = { focus = BEJ_encourage_immigration }
+
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.20
+			}
+			add_stability = 0.20
+		}
+	}
+
+	focus = {
+		id = BEJ_stride_forward
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = BEJ_encourage_immigration
+		cost = 5
+
+		prerequisite = { focus = BEJ_same_sex_marriage_legalized }
+		prerequisite = { focus = BEJ_encourage_immigration }
+
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_stride_forward"
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = BEJ_diverse_and_progressive_china
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = BEJ_stride_forward
+		cost = 5
+
+		prerequisite = { focus = BEJ_embrace_pluralism }
+		prerequisite = { focus = BEJ_stride_forward }
+
+		available = {
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BEJ_diverse_and_progressive_china"
+			add_political_power = 100
 		}
 	}
 
 	focus = {
 		id = BEJ_litang_threat_looms
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 8
+		x = 30
 		y = 8
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
