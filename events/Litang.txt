@@ -264,6 +264,7 @@ country_event = { # ĞÂÍõ
 			ruling_party = fascism
 			elections_allowed = no
 		}
+		complete_national_focus = LIT_situation_worse
 	}
 }
 country_event = {

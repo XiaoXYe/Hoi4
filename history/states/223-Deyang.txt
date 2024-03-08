@@ -13,9 +13,9 @@ state={
 		owner = SIC
 		victory_points = { 2372 10 }
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
 		}
 	}
 }

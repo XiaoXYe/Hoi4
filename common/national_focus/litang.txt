@@ -27,10 +27,7 @@
 		}
 		
 		available = {
-			AND = {
-				is_subject_of = SIC
-				has_country_flag = LIT_dingzhen_king_flag
-			}
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -38,10 +35,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_situation_worse"
-			LIT = {
-				 add_stability = -0.1
-				 add_war_support = 0.1
-			}
+			custom_effect_tooltip = GEN_tt_focus_auto_complete
 		}
 	}
 
@@ -74,6 +68,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_socialmedia_propaganda"
 			country_event = litang.13
+			add_war_support = 0.05
 		}
 	}
 
@@ -106,7 +101,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_recruit_soldiers"
 			army_experience = 10
 			add_manpower = 10000
-			add_war_support = 0.10
+			add_war_support = 0.05
 			country_event = {
 				id = litang.11
 			}
@@ -141,8 +136,14 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_final_effort"
-			army_experience = 5
+			army_experience = 25
 			country_event = litang.15
+			every_state = {
+				limit = {
+					is_core_of = SIC
+				}
+				add_claim_by = LIT
+			}
 		}
 	}
 
