@@ -752,11 +752,34 @@ country_event = {
 	option = {
 		name = beijing.27.a
 		air_experience = 50
-		set_cosmetic_flag = BEJ_zhanjifeng_flag
+		set_country_flag = BEJ_zhanjifeng_flag
 	}
 	option = {
 		name = beijing.27.b
 		air_experience = -25
+	}
+}
+
+country_event = {  # 第一届自由选举
+	id = beijing.30
+	title = beijing.30.t
+	desc = beijing.30.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.30"
+	}
+	option = {
+		name = beijing.30.a
+		set_country_flag = BEJ_GuAiling_win_selection_flag
+		complete_national_focus = BEJ_GuAiling_win
+	}
+	option = {
+		name = beijing.30.b
+		set_country_flag = BEJ_Kejie_win_selection_flag
 	}
 }
 

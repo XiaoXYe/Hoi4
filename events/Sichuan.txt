@@ -10,10 +10,7 @@ country_event = {  # 甘孜州的发展成果
 	desc = sichuan.1.d
 	picture = GFX_report_event_soviet_tanks_snow
 
-	trigger = {
-		tag = SIC
-		date > 2020.1.2
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	
 	immediate = {

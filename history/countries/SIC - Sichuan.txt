@@ -91,6 +91,8 @@ if = {
 	}
 }
 
+country_event = { id = sichuan.1 days = 5 }
+
 recruit_character = SIC_ar
 recruit_character = SIC_acr
 recruit_character = SIC_mt

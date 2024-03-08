@@ -36,4 +36,4 @@ tags={
 	"Alternative History"
 }
 name="EastMeme"
-supported_version="1.13.7"
+supported_version="1.14.*"

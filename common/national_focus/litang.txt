@@ -334,10 +334,12 @@
 			always = no
 		}
 
+		mutually_exclusive = { focus = LIT_the_capital_win }
 		cancel_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_the_king_win"
+			custom_effect_tooltip = GEN_tt_focus_auto_complete
 		}
 	}
 
@@ -356,10 +358,12 @@
 			always = no
 		}
 
+		mutually_exclusive = { focus = LIT_the_king_win }
 		cancel_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_the_capital_win"
+			custom_effect_tooltip = GEN_tt_focus_auto_complete
 		}
 	}
 
