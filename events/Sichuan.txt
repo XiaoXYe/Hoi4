@@ -52,6 +52,8 @@ country_event = {  # 甘孜州文化特区成立
 				}
 				set_cosmetic_tag = LIT_SIC_pilot_base
 				recruit_character = LIT_ch_dingzhen_1
+				recruit_character = LIT_ch_hubo
+				recruit_character = LIT_ch_silangluobu
 			}
 			SIC = {
 				puppet = LIT

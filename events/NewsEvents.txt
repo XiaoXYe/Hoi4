@@ -90,3 +90,82 @@ news_event = {
 	}
 }
 
+# Sichuan-Litang War
+news_event = {
+	id = cnnews.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.6" }
+	title = cnnews.6.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.6.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.6.a
+	}
+}
+
+# Sichuan-Litang War Litang win
+news_event = {
+	id = cnnews.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.7" }
+	title = cnnews.7.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.7.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.7.a
+	}
+}
+
+# 川渝合并
+news_event = {
+	id = cnnews.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.8" }
+	title = cnnews.8.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.8.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.8.a
+	}
+}
+
+# 三峡危机
+news_event = {
+	id = cnnews.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.9" }
+	title = cnnews.9.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.9.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.9.a
+	}
+}
+
+# 阿坝协定
+news_event = {
+	id = cnnews.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.10" }
+	title = cnnews.10.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.10.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.10.a
+	}
+}

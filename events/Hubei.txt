@@ -62,6 +62,9 @@ country_event = {
 			transfer_state = 210
 			transfer_state = 225
 		}
+		hidden_effect = {
+			news_event = { id = cnnews.9 days = 1 }
+		}
 	}
 	option = {
 		name = hubei.2.b

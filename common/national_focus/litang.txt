@@ -182,6 +182,9 @@
 				id = litang.16
 				days = 7
 			}
+			hidden_effect = {
+				news_event = { id = cnnews.7 days = 1 }
+			}
 		}
 	}
 

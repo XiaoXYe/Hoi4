@@ -267,6 +267,8 @@ country_event = { # 新王
 		complete_national_focus = LIT_situation_worse
 	}
 }
+
+# 拉萨缔盟
 country_event = {
 	id = litang.3
 	title = litang.3.t
@@ -301,6 +303,7 @@ country_event = {
 	}
 }
 
+# 阿坝会议
 country_event = {
 	id = litang.4
 	title = litang.4.t
@@ -327,6 +330,9 @@ country_event = {
 				id = gansu.1
 				days = 2
 			}
+		}
+		hidden_effect = {
+			news_event = { id = cnnews.10 days = 3 }
 		}
 	}
 }
@@ -453,6 +459,10 @@ country_event = {# Recruit soldiers
 		name = litang.11.a
 		hidden_effect = {
 			load_oob = LIT_mass
+			recruit_character = LIT_ch_yixi
+			recruit_character = LIT_ch_jicheng
+			recruit_character = LIT_ch_danduo
+			recruit_character = LIT_ch_yueha
 		}
 		custom_effect_tooltip = LIT_tt_mass_forces
 	}	
@@ -531,6 +541,11 @@ country_event = {# 我命由我
 				country_event = sichuan.4
 			}
 			set_cosmetic_tag = LIT
+			set_victory_points = {
+				province = 188
+				value = 40
+			}
+			news_event = { id = cnnews.6 days = 1 }
 		}
 	}	
 }

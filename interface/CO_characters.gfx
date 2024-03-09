@@ -4,6 +4,30 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.png
     }
     spriteType = {
+        name = GFX_LIT_ch_yixi_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Yixi.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_jicheng_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Jicheng.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_danduo_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Danduo.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_yueha_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Yueha.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_silangluobu_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_SilangLuobu.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_hubo_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Hubo.png
+    }
+    spriteType = {
         name = GFX_BEJ_ch_guailing_1_portrait_large
         texturefile = gfx/leaders/BEJ/Portrait_BEJ_GuAiling.png
     }

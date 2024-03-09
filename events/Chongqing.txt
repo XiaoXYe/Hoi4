@@ -25,13 +25,16 @@ country_event = {
 				target = CHQ
 				transfer_troops = yes
 			}
+			hidden_effect = {
+				news_event = { id = cnnews.8 days = 1 }
+			}
 		}
 		every_state = {
 			limit = {
 				is_core_of = CHQ
 			}
 			add_core_of = LIT
-		}		
+		}
 	}
 
 	option = { # Refuse demands
