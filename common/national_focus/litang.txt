@@ -895,7 +895,7 @@
 		}
 		
 		available = {
-			has_country_flag = LIT_win_second_civil_war_flag
+			has_global_flag = GLB_civil_war_II_LIT_win
 		}
 
 		cancel_if_invalid = yes
@@ -1184,6 +1184,13 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_industrial_planning_admin"
 			add_ideas = LIT_industrial_planning_administration
+			swap_ideas = {
+				remove_idea = GEN_pandemic_controlled
+				add_idea = GEN_pandemic_solved
+			}
+			hidden_effect = {
+				news_event = { id = cnnews.12 days = 1 }
+			}
 		}
 	}
 
@@ -1235,10 +1242,6 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_institute"
 			add_ideas = LIT_institute_idea
-			swap_ideas = {
-				remove_idea = GEN_pandemic_controlled
-				add_idea = GEN_pandemic_solved
-			}
 		}
 	}
 

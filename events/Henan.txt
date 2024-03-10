@@ -26,6 +26,9 @@ country_event = {  # 河南或战争
 				days = 3
 			}
 		}
+		hidden_effect = {
+			news_event = { id = cnnews.13 days = 1 }
+		}
 	}
 }
 

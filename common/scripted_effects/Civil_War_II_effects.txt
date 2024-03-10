@@ -1,0 +1,64 @@
+huludao_agreement_gain_land_effect = {
+	# give Litang lands
+	every_state = {
+		limit = {
+			is_core_of = HEN
+		}
+		LIT = { transfer_state = PREV }
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 148 # 运城
+				state = 142 # 晋城
+				state = 131 # 临汾
+				state = 125 # 长治
+				state = 99 # 吕梁
+				state = 109 # 晋中
+				state = 104 # 太原
+				state = 94 # 阳泉
+				state = 87 # 汐州
+				state = 80 # 朔州
+			}
+		}
+		LIT = { transfer_state = PREV }
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 145 # 菏泽
+				state = 144 # 济宁
+				state = 158 # 枣庄
+				state = 138 # 临沂
+				state = 143 # 日照
+			}
+		}
+		LIT = { transfer_state = PREV }
+	}
+
+	# give Dongbei lands
+	every_state = {
+		limit = {
+			is_core_of = BEJ
+		}
+		LIN = { transfer_state = PREV }
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 130 # 聊城
+				state = 110 # 德州
+				state = 106 # 滨州
+				state = 108 # 东营
+				state = 119 # 济南
+				state = 134 # 泰安
+				state = 123 # 淄博
+				state = 118 # 潍坊
+				state = 126 # 青岛
+				state = 111 # 烟台
+				state = 115 # 威海
+			}
+		}
+		LIN = { transfer_state = PREV }
+	}
+}

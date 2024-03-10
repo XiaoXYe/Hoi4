@@ -19,11 +19,27 @@ country_event = {
 	option = { # fullty accept
 		name = tibet.1.a
 		LIT = { puppet = TIB }
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.5
+					days = 1
+				}
+			}
+		}
 	}
 	option = { # accept
 		name = tibet.1.b
 		ai_chance = { factor = 100 }
 		LIT = { add_to_faction = TIB }
+		hidden_effect = {
+			LIT = {
+				country_event = {
+					id = litang.5
+					days = 1
+				}
+			}
+		}
 	}
 	option = { # decline
 		name = tibet.1.c
@@ -36,32 +52,3 @@ country_event = {
 	}
 
 }
-
-country_event = {
-	id = tibet.2
-	title = tibet.2.t
-	desc = tibet.2.d
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event tibet.2"
-	}
-	option = { # accept
-		name = tibet.2.a
-		ai_chance = { factor = 100 }
-		LIT = { add_to_faction = TIB }
-	}
-	option = {
-		name = tibet.2.b
-		LIT = { # decline
-			create_wargoal = {
-				type = annex_everything
-				target = TIB
-			}
-		}
-	}
-}
-

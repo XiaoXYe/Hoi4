@@ -117,6 +117,8 @@ recruit_character = HLJ_aco2
 
 set_convoys = 20
 
+add_ideas = DOB_eldest_son_of_repulic
+
 create_country_leader = {
 	name = "张庆伟"
 	desc = ""

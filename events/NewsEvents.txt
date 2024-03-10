@@ -169,3 +169,67 @@ news_event = {
 		name = cnnews.10.a
 	}
 }
+
+# 理塘意志
+news_event = {
+	id = cnnews.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.11" }
+	title = cnnews.11.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.11.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.11.a
+	}
+}
+
+# 理塘战胜疫情
+news_event = {
+	id = cnnews.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.12" }
+	title = cnnews.12.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.12.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.12.a
+	}
+}
+
+# 河南拒绝最后通牒
+news_event = {
+	id = cnnews.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.13" }
+	title = cnnews.13.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.13.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.13.a
+	}
+}
+
+# 第二次中国内战
+news_event = {
+	id = cnnews.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.14" }
+	title = cnnews.14.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.14.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.14.a
+	}
+}

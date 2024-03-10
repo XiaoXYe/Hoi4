@@ -291,14 +291,26 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+	id = litang.5
+	title = litang.5.t
+	desc = litang.5.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.5"
+	}
 
 	option = {
-		name = litang.3.b
-		TIB = {
-			country_event = {
-				id = tibet.2
-				days = 2
-			}
+		name = litang.5.a
+		add_political_power = 5
+		hidden_effect = {
+			news_event = { id = cnnews.11 days = 1 }
 		}
 	}
 }
@@ -776,6 +788,7 @@ country_event = {# 加冕
 		add_stability = 0.10
 		add_war_support = 0.10
 		add_country_leader_trait = litang_emperor
+		set_cosmetic_tag = LIT_litang_empire
 	}
 }
 
@@ -1080,6 +1093,7 @@ country_event = {  # 葫芦岛会议成功
 
 	option = {
 		name = litang.37.a
+		set_global_flag = GLB_huludao_conference_success
 	}
 }
 
@@ -1106,6 +1120,49 @@ country_event = {  # 葫芦岛会议失败
 
 	option = {
 		name = litang.38.a
+		set_global_flag = GLB_huludao_conference_fail
+	}
+}
+
+country_event = {  # 赢得内战
+	id = litang.39
+	title = litang.39.t
+	desc = litang.39.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = LIT
+		has_global_flag = GLB_civil_war_II_start
+		NOT = {
+			AND = {
+				country_exists = BEJ
+				country_exists = HEN
+				country_exists = SHX
+				country_exists = SHD
+			}
+		}
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event litang.39"
+	}
+
+	option = {
+		name = litang.35.a
+		ai_chance = {
+            base = 100
+        }
+		set_global_flag = GLB_civil_war_II_end
+		set_global_flag = GLB_civil_war_II_LIT_win
+		if = {
+			limit = {
+				has_global_flag = GLB_huludao_conference_success
+			}
+			huludao_agreement_gain_land_effect = yes
+		}
 	}
 }
 

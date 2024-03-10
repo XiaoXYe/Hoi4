@@ -116,6 +116,7 @@ recruit_character = JIL_aco2
 
 
 set_convoys = 20
+add_ideas = DOB_eldest_son_of_repulic
 
 create_country_leader = {
 	name = "巴音朝鲁"

@@ -804,6 +804,10 @@ country_event = {
 		BEJ = {
 			add_to_faction = HEN
 		}
+		hidden_effect = {
+			news_event = { id = cnnews.14 days = 1 }
+		}
+		set_global_flag = GLB_civil_war_II_start
 	}
 	option = {
 		name = beijing.100.b

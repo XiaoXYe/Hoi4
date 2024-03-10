@@ -227,6 +227,7 @@ recruit_character = LIN_ai2
 recruit_character = LIN_nt
 recruit_character = LIN_aco2
 
+add_ideas = DOB_eldest_son_of_repulic
 
 set_convoys = 20
 
