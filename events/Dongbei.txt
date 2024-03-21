@@ -527,14 +527,10 @@ country_event = {
 	option = {
 		name = dbpact.61.a # Of course
 		ai_chance = { 
-			base = 100
+			base = 0
 			modifier = {
 				base = 100
 				tag = JIL
-			}
-			modifier = {
-				base = 0
-				tag = HLJ
 			}
 		}
 		LIN = {
@@ -547,14 +543,10 @@ country_event = {
 	option = {
 		name = dbpact.61.b # NO
 		ai_chance = { 
-			base = 0
+			base = 100
 			modifier = {
 				base = 0
 				tag = JIL
-			}
-			modifier = {
-				base = 100
-				tag = HLJ
 			}
 		}
 		add_war_support = 0.05

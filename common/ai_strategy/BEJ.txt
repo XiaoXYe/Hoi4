@@ -1,0 +1,15 @@
+BEJ_defend_LIN = {
+    allowed = {
+        original_tag = BEJ
+    }
+    enable = {
+        country_exists = LIN
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = conquer
+        id = LIN
+        value = 100
+    }
+}

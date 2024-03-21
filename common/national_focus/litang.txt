@@ -1936,6 +1936,9 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_chinese_orthodoxy"
 			custom_effect_tooltip = LIT_tt_chinese_orthodoxy
 			add_war_support = 0.05
+			hidden_effect = {
+				set_country_flag = LIT_integrate_china_flag
+			}
 		}
 	}
 

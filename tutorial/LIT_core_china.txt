@@ -1,0 +1,2048 @@
+LIT_core_china_category = {
+	LIT_core_heilongjiang = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				12 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				15 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				21 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				18 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				13 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				17 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				24 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				29 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				16 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				20 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				27 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				25 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 8
+			has_full_control_of_state = 12
+			has_full_control_of_state = 15
+			has_full_control_of_state = 21
+			has_full_control_of_state = 18
+			has_full_control_of_state = 13
+			has_full_control_of_state = 17
+			has_full_control_of_state = 24
+			has_full_control_of_state = 29
+			has_full_control_of_state = 16
+			has_full_control_of_state = 20
+			has_full_control_of_state = 27
+			has_full_control_of_state = 25
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_heilongjiang"
+			8 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			12 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			15 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			21 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			18 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			13 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			17 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			24 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			29 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			16 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			20 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			27 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			25 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_jilin = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				26 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				34 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				44 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				36 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				40 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				42 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				51 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				54 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				41 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 26
+			has_full_control_of_state = 34
+			has_full_control_of_state = 44
+			has_full_control_of_state = 36
+			has_full_control_of_state = 40
+			has_full_control_of_state = 42
+			has_full_control_of_state = 51
+			has_full_control_of_state = 54
+			has_full_control_of_state = 41
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_jilin"
+			26 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			34 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			44 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			36 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			40 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			42 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			51 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			54 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			41 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_liaoning = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				62 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				72 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				53 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				64 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				69 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				75 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				83 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				66 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				67 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				50 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				73 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				65 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				60 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				48 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 62
+			has_full_control_of_state = 72
+			has_full_control_of_state = 53
+			has_full_control_of_state = 64
+			has_full_control_of_state = 69
+			has_full_control_of_state = 75
+			has_full_control_of_state = 83
+			has_full_control_of_state = 66
+			has_full_control_of_state = 67
+			has_full_control_of_state = 50
+			has_full_control_of_state = 73
+			has_full_control_of_state = 65
+			has_full_control_of_state = 60
+			has_full_control_of_state = 48
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_liaoning"
+			62 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			72 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			53 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			64 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			69 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			75 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			83 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			66 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			67 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			50 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			73 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			65 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			60 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			48 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_hebei = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				78 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				79 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				59 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				63 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				85 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				90 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				96 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				103 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				98 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				113 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				128 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 78
+			has_full_control_of_state = 79
+			has_full_control_of_state = 59
+			has_full_control_of_state = 63
+			has_full_control_of_state = 85
+			has_full_control_of_state = 90
+			has_full_control_of_state = 96
+			has_full_control_of_state = 103
+			has_full_control_of_state = 98
+			has_full_control_of_state = 113
+			has_full_control_of_state = 128
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_hebei"
+			78 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			79 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			59 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			63 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			85 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			90 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			96 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			103 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			98 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			113 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			128 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_beijing = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				74 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 74
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_beijing"
+			74 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_tianjin = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				82 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 82
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_tianjin"
+			82 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_shandong = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				106 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				108 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				110 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				111 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				115 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				118 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				119 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				123 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				126 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				130 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				134 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				138 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				143 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				144 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				145 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				158 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 106
+			has_full_control_of_state = 108
+			has_full_control_of_state = 110
+			has_full_control_of_state = 111
+			has_full_control_of_state = 115
+			has_full_control_of_state = 118
+			has_full_control_of_state = 119
+			has_full_control_of_state = 123
+			has_full_control_of_state = 126
+			has_full_control_of_state = 130
+			has_full_control_of_state = 134
+			has_full_control_of_state = 138
+			has_full_control_of_state = 143
+			has_full_control_of_state = 144
+			has_full_control_of_state = 145
+			has_full_control_of_state = 158
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_shandong"
+			106 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			108 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			110 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			111 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			115 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			118 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			119 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			123 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			126 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			130 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			134 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			138 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			143 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			144 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			145 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			158 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_jiangsu = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				168 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				163 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				181 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				187 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				176 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				197 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				200 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				205 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				213 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				214 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				215 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				219 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				216 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 168
+			has_full_control_of_state = 163
+			has_full_control_of_state = 181
+			has_full_control_of_state = 187
+			has_full_control_of_state = 176
+			has_full_control_of_state = 197
+			has_full_control_of_state = 200
+			has_full_control_of_state = 205
+			has_full_control_of_state = 213
+			has_full_control_of_state = 214
+			has_full_control_of_state = 215
+			has_full_control_of_state = 219
+			has_full_control_of_state = 216
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_jiangsu"
+			168 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			163 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			181 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			187 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			176 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			197 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			200 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			205 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			213 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			214 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			215 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			219 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			216 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_shanghai = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				228 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				221 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 228
+			has_full_control_of_state = 221
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_shanghai"
+			228 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			221 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_zhejiang = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				235 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				237 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				248 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				258 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				255 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				256 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				273 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				268 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				276 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				285 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				289 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 235
+			has_full_control_of_state = 237
+			has_full_control_of_state = 248
+			has_full_control_of_state = 258
+			has_full_control_of_state = 255
+			has_full_control_of_state = 256
+			has_full_control_of_state = 273
+			has_full_control_of_state = 268
+			has_full_control_of_state = 276
+			has_full_control_of_state = 285
+			has_full_control_of_state = 289
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_zhejiang"
+			235 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			237 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			248 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			258 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			255 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			256 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			273 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			268 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			276 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			285 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			289 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_fujian = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				293 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				306 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				313 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				319 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				330 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				328 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				327 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				336 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				343 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				526 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 293
+			has_full_control_of_state = 306
+			has_full_control_of_state = 313
+			has_full_control_of_state = 319
+			has_full_control_of_state = 330
+			has_full_control_of_state = 328
+			has_full_control_of_state = 327
+			has_full_control_of_state = 336
+			has_full_control_of_state = 343
+			has_full_control_of_state = 526
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_fujian"
+			293 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			306 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			313 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			319 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			330 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			328 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			327 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			336 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			343 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			526 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_henan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				137 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				135 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				179 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				146 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				159 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				167 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				165 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				169 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				160 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				164 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				166 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				177 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				178 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				184 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				180 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				192 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				194 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				206 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 137
+			has_full_control_of_state = 135
+			has_full_control_of_state = 179
+			has_full_control_of_state = 146
+			has_full_control_of_state = 159
+			has_full_control_of_state = 167
+			has_full_control_of_state = 165
+			has_full_control_of_state = 169
+			has_full_control_of_state = 160
+			has_full_control_of_state = 164
+			has_full_control_of_state = 166
+			has_full_control_of_state = 177
+			has_full_control_of_state = 178
+			has_full_control_of_state = 184
+			has_full_control_of_state = 180
+			has_full_control_of_state = 192
+			has_full_control_of_state = 194
+			has_full_control_of_state = 206
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_henan"
+			137 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			135 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			179 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			146 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			159 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			167 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			165 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			169 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			160 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			164 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			166 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			177 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			178 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			184 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			180 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			192 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			194 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			206 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_anhui = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				172 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				185 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				196 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				186 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				173 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				193 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				199 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				207 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				203 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				212 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				230 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				231 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				233 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				242 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				232 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				249 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 172
+			has_full_control_of_state = 185
+			has_full_control_of_state = 196
+			has_full_control_of_state = 186
+			has_full_control_of_state = 173
+			has_full_control_of_state = 193
+			has_full_control_of_state = 199
+			has_full_control_of_state = 207
+			has_full_control_of_state = 203
+			has_full_control_of_state = 212
+			has_full_control_of_state = 230
+			has_full_control_of_state = 231
+			has_full_control_of_state = 233
+			has_full_control_of_state = 242
+			has_full_control_of_state = 232
+			has_full_control_of_state = 249
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_anhui"
+			172 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			185 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			196 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			186 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			173 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			193 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			199 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			207 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			203 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			212 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			230 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			231 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			233 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			242 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			232 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			249 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_jiangxi = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				266 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				281 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				262 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				269 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				288 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				292 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				282 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				298 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				301 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				302 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				312 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 266
+			has_full_control_of_state = 281
+			has_full_control_of_state = 262
+			has_full_control_of_state = 269
+			has_full_control_of_state = 288
+			has_full_control_of_state = 292
+			has_full_control_of_state = 282
+			has_full_control_of_state = 298
+			has_full_control_of_state = 301
+			has_full_control_of_state = 302
+			has_full_control_of_state = 312
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_jiangxi"
+			266 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			281 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			262 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			269 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			288 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			292 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			282 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			298 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			301 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			302 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			312 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_hubei = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				198 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				218 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				208 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				210 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				225 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				220 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				251 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				247 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				250 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				246 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				226 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				254 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				257 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				259 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				244 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				224 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				240 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 198
+			has_full_control_of_state = 218
+			has_full_control_of_state = 208
+			has_full_control_of_state = 210
+			has_full_control_of_state = 225
+			has_full_control_of_state = 220
+			has_full_control_of_state = 251
+			has_full_control_of_state = 247
+			has_full_control_of_state = 250
+			has_full_control_of_state = 246
+			has_full_control_of_state = 226
+			has_full_control_of_state = 254
+			has_full_control_of_state = 257
+			has_full_control_of_state = 259
+			has_full_control_of_state = 244
+			has_full_control_of_state = 224
+			has_full_control_of_state = 240
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_hubei"
+			198 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			218 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			208 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			210 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			225 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			220 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			251 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			247 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			250 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			246 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			226 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			254 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			257 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			259 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			244 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			224 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			240 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_hunan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				260 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				264 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				265 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				271 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				284 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				272 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				287 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				296 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				299 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				300 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				305 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				308 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				337 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				316 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 260
+			has_full_control_of_state = 264
+			has_full_control_of_state = 265
+			has_full_control_of_state = 271
+			has_full_control_of_state = 284
+			has_full_control_of_state = 272
+			has_full_control_of_state = 287
+			has_full_control_of_state = 296
+			has_full_control_of_state = 299
+			has_full_control_of_state = 300
+			has_full_control_of_state = 305
+			has_full_control_of_state = 308
+			has_full_control_of_state = 337
+			has_full_control_of_state = 316
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_hunan"
+			260 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			264 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			265 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			271 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			284 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			272 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			287 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			296 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			299 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			300 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			305 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			308 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			337 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			316 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_guangdong = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				342 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				353 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				360 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				359 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				364 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				345 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				355 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				332 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				335 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				357 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				369 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				371 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				351 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				363 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				367 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				372 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				379 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				370 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				375 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				374 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				384 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 342
+			has_full_control_of_state = 353
+			has_full_control_of_state = 360
+			has_full_control_of_state = 359
+			has_full_control_of_state = 364
+			has_full_control_of_state = 345
+			has_full_control_of_state = 355
+			has_full_control_of_state = 332
+			has_full_control_of_state = 335
+			has_full_control_of_state = 357
+			has_full_control_of_state = 369
+			has_full_control_of_state = 371
+			has_full_control_of_state = 351
+			has_full_control_of_state = 363
+			has_full_control_of_state = 367
+			has_full_control_of_state = 372
+			has_full_control_of_state = 379
+			has_full_control_of_state = 370
+			has_full_control_of_state = 375
+			has_full_control_of_state = 374
+			has_full_control_of_state = 384
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_guangdong"
+			342 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			353 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			360 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			359 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			364 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			345 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			355 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			332 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			335 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			357 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			369 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			371 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			351 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			363 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			367 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			372 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			379 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			370 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			375 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			374 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			384 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_guangxi = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				324 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				337 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				350 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				326 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				349 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				356 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				368 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				331 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				354 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				373 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				383 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				339 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				366 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				380 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 324
+			has_full_control_of_state = 337
+			has_full_control_of_state = 350
+			has_full_control_of_state = 326
+			has_full_control_of_state = 349
+			has_full_control_of_state = 356
+			has_full_control_of_state = 368
+			has_full_control_of_state = 331
+			has_full_control_of_state = 354
+			has_full_control_of_state = 373
+			has_full_control_of_state = 383
+			has_full_control_of_state = 339
+			has_full_control_of_state = 366
+			has_full_control_of_state = 380
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_guangxi"
+			324 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			337 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			350 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			326 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			349 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			356 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			368 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			331 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			354 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			373 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			383 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			339 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			366 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			380 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_hongkong = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				377 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 377
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_hongkong"
+			377 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_macau = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				381 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 381
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_macau"
+			381 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_shanxi = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				77 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				80 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				87 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				99 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				104 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				94 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				109 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				125 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				131 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				142 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				148 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 77
+			has_full_control_of_state = 80
+			has_full_control_of_state = 87
+			has_full_control_of_state = 99
+			has_full_control_of_state = 104
+			has_full_control_of_state = 94
+			has_full_control_of_state = 109
+			has_full_control_of_state = 125
+			has_full_control_of_state = 131
+			has_full_control_of_state = 142
+			has_full_control_of_state = 148
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_shanxi"
+			77 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			80 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			87 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			99 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			104 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			94 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			109 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			125 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			131 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			142 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			148 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_shaanxi = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				89 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				116 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				154 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				147 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				157 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				162 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				170 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				175 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				191 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				190 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 89
+			has_full_control_of_state = 116
+			has_full_control_of_state = 154
+			has_full_control_of_state = 147
+			has_full_control_of_state = 157
+			has_full_control_of_state = 162
+			has_full_control_of_state = 170
+			has_full_control_of_state = 175
+			has_full_control_of_state = 191
+			has_full_control_of_state = 190
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_shaanxi"
+			89 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			116 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			154 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			147 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			157 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			162 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			170 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			175 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			191 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			190 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_chongqing = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				238 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 238
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_chongqing"
+			238 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_guizhou = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				280 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				283 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				307 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				309 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				311 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				304 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				320 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				317 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				325 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 280
+			has_full_control_of_state = 283
+			has_full_control_of_state = 307
+			has_full_control_of_state = 309
+			has_full_control_of_state = 311
+			has_full_control_of_state = 304
+			has_full_control_of_state = 320
+			has_full_control_of_state = 317
+			has_full_control_of_state = 325
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_guizhou"
+			280 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			283 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			307 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			309 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			311 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			304 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			320 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			317 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			325 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_ningxia = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				105 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				97 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				107 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				112 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				132 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 105
+			has_full_control_of_state = 97
+			has_full_control_of_state = 107
+			has_full_control_of_state = 112
+			has_full_control_of_state = 132
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_ningxia"
+			105 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			97 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			107 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			112 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			132 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_gansu = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				55 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				31 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				86 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				95 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				91 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				114 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				129 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				140 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				155 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				141 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				149 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				122 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				161 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				174 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 55
+			has_full_control_of_state = 31
+			has_full_control_of_state = 86
+			has_full_control_of_state = 95
+			has_full_control_of_state = 91
+			has_full_control_of_state = 114
+			has_full_control_of_state = 129
+			has_full_control_of_state = 140
+			has_full_control_of_state = 155
+			has_full_control_of_state = 141
+			has_full_control_of_state = 149
+			has_full_control_of_state = 122
+			has_full_control_of_state = 161
+			has_full_control_of_state = 174
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_gansu"
+			55 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			31 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			86 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			95 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			91 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			114 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			129 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			140 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			155 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			141 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			149 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			122 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			161 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			174 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_sichuan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				202 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				204 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				211 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				217 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				241 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				201 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				234 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				223 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				243 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				229 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				253 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				261 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				270 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				263 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				278 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				275 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				239 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				277 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				310 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				188 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				183 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 202
+			has_full_control_of_state = 204
+			has_full_control_of_state = 211
+			has_full_control_of_state = 217
+			has_full_control_of_state = 241
+			has_full_control_of_state = 201
+			has_full_control_of_state = 234
+			has_full_control_of_state = 223
+			has_full_control_of_state = 243
+			has_full_control_of_state = 229
+			has_full_control_of_state = 253
+			has_full_control_of_state = 261
+			has_full_control_of_state = 270
+			has_full_control_of_state = 263
+			has_full_control_of_state = 278
+			has_full_control_of_state = 275
+			has_full_control_of_state = 239
+			has_full_control_of_state = 277
+			has_full_control_of_state = 310
+			has_full_control_of_state = 188
+			has_full_control_of_state = 183
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_sichuan"
+			202 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			204 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			211 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			217 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			241 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			201 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			234 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			223 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			243 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			229 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			253 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			261 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			270 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			263 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			278 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			275 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			239 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			277 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			310 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			188 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			183 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_yunnan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				286 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				314 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				323 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				346 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				347 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				341 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				321 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				344 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				376 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				340 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				333 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				329 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				318 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				295 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				303 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				279 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 286
+			has_full_control_of_state = 314
+			has_full_control_of_state = 323
+			has_full_control_of_state = 346
+			has_full_control_of_state = 347
+			has_full_control_of_state = 341
+			has_full_control_of_state = 321
+			has_full_control_of_state = 344
+			has_full_control_of_state = 376
+			has_full_control_of_state = 340
+			has_full_control_of_state = 333
+			has_full_control_of_state = 329
+			has_full_control_of_state = 318
+			has_full_control_of_state = 295
+			has_full_control_of_state = 303
+			has_full_control_of_state = 279
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_yunnan"
+			286 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			314 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			323 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			346 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			347 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			341 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			321 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			344 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			376 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			340 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			333 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			329 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			318 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			295 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			303 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			279 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_hainan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				388 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				385 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				391 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				387 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 388
+			has_full_control_of_state = 385
+			has_full_control_of_state = 391
+			has_full_control_of_state = 387
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_hainan"
+			388 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			385 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			391 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			387 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_qinghai = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				92 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				136 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				152 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				120 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				139 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				124 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				117 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				93 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 92
+			has_full_control_of_state = 136
+			has_full_control_of_state = 152
+			has_full_control_of_state = 120
+			has_full_control_of_state = 139
+			has_full_control_of_state = 124
+			has_full_control_of_state = 117
+			has_full_control_of_state = 93
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_qinghai"
+			92 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			136 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			152 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			120 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			139 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			124 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			117 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			93 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_tibet = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				151 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				133 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				222 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				236 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				267 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				435 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				245 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				209 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 151
+			has_full_control_of_state = 133
+			has_full_control_of_state = 222
+			has_full_control_of_state = 236
+			has_full_control_of_state = 267
+			has_full_control_of_state = 435
+			has_full_control_of_state = 245
+			has_full_control_of_state = 209
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_tibet"
+			151 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			133 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			222 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			236 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			267 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			435 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			245 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			209 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_xinjiang = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				88 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				81 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				70 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				58 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				47 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				39 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				35 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				22 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				84 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				32 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				45 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				14 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				38 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				46 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 88
+			has_full_control_of_state = 81
+			has_full_control_of_state = 70
+			has_full_control_of_state = 58
+			has_full_control_of_state = 47
+			has_full_control_of_state = 39
+			has_full_control_of_state = 35
+			has_full_control_of_state = 22
+			has_full_control_of_state = 84
+			has_full_control_of_state = 32
+			has_full_control_of_state = 45
+			has_full_control_of_state = 14
+			has_full_control_of_state = 38
+			has_full_control_of_state = 46
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_xinjiang"
+			88 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			81 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			70 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			58 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			47 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			39 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			35 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			22 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			84 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			32 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			45 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			14 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			38 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			46 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_neimenggu = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				56 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				43 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				61 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				76 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				57 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				71 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				49 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				23 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				37 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				30 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				19 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				9 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 56
+			has_full_control_of_state = 43
+			has_full_control_of_state = 61
+			has_full_control_of_state = 76
+			has_full_control_of_state = 57
+			has_full_control_of_state = 71
+			has_full_control_of_state = 49
+			has_full_control_of_state = 23
+			has_full_control_of_state = 37
+			has_full_control_of_state = 30
+			has_full_control_of_state = 19
+			has_full_control_of_state = 9
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_neimenggu"
+			56 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			43 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			61 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			76 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			57 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			71 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			49 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			23 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			37 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			30 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			19 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			9 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_core_taiwan = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_integrate_china_flag
+			tag = LIT
+			OR = {
+				334 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				506 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				507 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				338 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				508 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				348 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				505 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				352 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				509 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				510 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				512 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				511 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				358 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				361 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				513 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				362 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				524 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				525 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 334
+			has_full_control_of_state = 506
+			has_full_control_of_state = 507
+			has_full_control_of_state = 338
+			has_full_control_of_state = 508
+			has_full_control_of_state = 348
+			has_full_control_of_state = 505
+			has_full_control_of_state = 352
+			has_full_control_of_state = 509
+			has_full_control_of_state = 510
+			has_full_control_of_state = 512
+			has_full_control_of_state = 511
+			has_full_control_of_state = 358
+			has_full_control_of_state = 361
+			has_full_control_of_state = 513
+			has_full_control_of_state = 362
+			has_full_control_of_state = 524
+			has_full_control_of_state = 525
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_taiwan"
+			334 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			506 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			507 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			338 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			508 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			348 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			505 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			352 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			509 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			510 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			512 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			511 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			358 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			361 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			513 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			362 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			524 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			525 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+

@@ -7,7 +7,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = usa_great_depression_3
 
 			modifier = {
 				consumer_goods_factor = 1.00
@@ -26,7 +26,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = usa_great_depression_2
 
 			modifier = {
 				consumer_goods_factor = 0.70
@@ -61,7 +61,7 @@ ideas = {
 				always = no
 			}
 
-			picture = ROM_carol_ii_greed
+			picture = generic_victors_of_ww1
 
 			modifier = {
 				political_power_factor = 0.05
@@ -75,7 +75,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = SWE_neither_death_nor_dishonor
 
 			modifier = {
 				weekly_manpower = -100

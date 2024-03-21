@@ -23,7 +23,7 @@ ideas = {
 				always = no
 			}
 
-			picture = ROM_carol_ii_greed
+			picture = eng_special_air_service
 
 			modifier = {
 				defence	= 0.50
@@ -220,7 +220,7 @@ ideas = {
 				always = no
 			}
 
-			picture = ROM_carol_ii_greed
+			picture = jap_supremacy_of_technology
 
 			modifier = {
 				research_speed_factor = 0.05
@@ -362,7 +362,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = chi_war_of_resistance3
 
 			modifier = {
 				political_power_gain = -0.15
