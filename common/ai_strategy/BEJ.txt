@@ -8,7 +8,7 @@ BEJ_defend_LIN = {
     abort_when_not_enabled = yes
 
     ai_strategy = {
-        type = conquer
+        type = prepare_for_war
         id = LIN
         value = 100
     }

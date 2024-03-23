@@ -4,9 +4,15 @@
 default_unit_production = { #If adding country-unique ones, bear in mind that they STACK
 	enable = {
 		always = yes
-		NOT = { original_tag = LIT } 
-		NOT = { original_tag = BEJ } 
-		NOT = { original_tag = LIN  }
+		NOT = { original_tag = GER } NOT = { original_tag = FRA } NOT = { original_tag = CHI  } NOT = { original_tag = ENG  }
+		NOT = { original_tag = CZE }
+		NOT = { tag = SOV }
+		NOT = { original_tag = ITA }
+		NOT = {
+			OR = {
+				original_tag = JAP
+			}
+		}
 	}
 
 	ai_strategy = {
@@ -163,9 +169,12 @@ default_role_ratios = {
 		has_dlc = "Man the Guns"
 		not = {
 			OR = {
-				original_tag = LIT
-				original_tag = BEJ
-				original_tag = LIN
+				original_tag = GER
+				original_tag = ENG
+				original_tag = USA
+				original_tag = JAP
+				original_tag = SOV
+				original_tag = ITA
 			}
 		}
 	}
@@ -236,8 +245,8 @@ bba_air_prod_1 = {
 
 	enable = {
 		always = yes
-		NOT = { original_tag = LIT } 
-		NOT = { original_tag = BEJ }
+		NOT = { original_tag = GER } 
+		NOT = { original_tag = ENG }
 	}
 
 	abort_when_not_enabled = yes
@@ -477,7 +486,7 @@ default_pp_spend_amount = {
 
 default_paratroopers_production = {
 	enable = {
-		NOT = { original_tag = LIT }
+		NOT = { original_tag = GER }
 		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
 	}
 	abort = {
@@ -510,9 +519,13 @@ build_patrol_bombers = {
 default_garrison_production = {
 	enable = {
 		NOT = {
-			original_tag = LIT
-			original_tag = BEJ
-			original_tag = LIN
+			original_tag = GER
+			original_tag = SOV
+			original_tag = USA
+			original_tag = CHI
+			original_tag = FRA
+			original_tag = JAP
+			original_tag = ENG
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes
@@ -538,7 +551,7 @@ default_garrison_production = {
 
 default_mountaineers_production = {
 	enable = {
-		NOT = { original_tag = LIT }
+		NOT = { original_tag = GER }
 		ai_wants_divisions > 11 #Decreasing the amount of mountaineers the AI wants
 	}
 	abort = {
@@ -552,9 +565,31 @@ default_mountaineers_production = {
 	}
 }
 
+#default_marines_production = {
+#	enable = {
+#		NOT = { original_tag = GER }
+#		ai_wants_divisions > 49
+#	}
+#	abort = {
+#		ai_wants_divisions < 50
+#	}
+#
+#	ai_strategy = {
+#		type = role_ratio
+#		id = marines
+#		value = 0
+#	}
+#
+#	#ai_strategy = {
+#	#	type = role_ratio
+#	#	id = infantry
+#	#	value = 0
+#	#}
+#}
+
 default_mobile_production = {
 	enable = {
-		NOT = { original_tag = LIT }
+		NOT = { original_tag = GER }
 		ai_wants_divisions > 11
 		has_tech = motorised_infantry
 	}
@@ -573,9 +608,9 @@ default_armored_production = {
 	enable = {
 		NOT = {
 			OR = {
-				original_tag = LIT
-				original_tag = BEJ
-				original_tag = LIN
+				original_tag = GER
+				original_tag = CZE
+				original_tag = SOV
 			}
 		}
 		ai_wants_divisions > 49
@@ -593,7 +628,7 @@ default_armored_production = {
 
 highered_armored_production = {
 	enable = {
-		NOT = { original_tag = LIT }
+		NOT = { original_tag = GER }
 		num_of_military_factories > 69
 	}
 	abort = {
@@ -610,8 +645,11 @@ highered_armored_production = {
 slightly_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = LIN
-			tag = BEJ
+			tag = JAP
+			tag = USA
+			tag = ENG
+			tag = FRA
+			tag = ITA
 		}
 	}
 
@@ -643,10 +681,11 @@ slightly_naval_focused_nation = {
 more_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = LIN
-			tag = BEJ
+			tag = JAP
+			tag = USA
+			tag = ENG
 		}
-		date > "2025.1.1" #Delaying it by a couple of years
+		date > "1941.1.1" #Delaying it by a couple of years
 	}
 
 	ai_strategy = {
@@ -672,6 +711,98 @@ more_naval_focused_nation = {
 		id = convoy
 		value = 1
 	}
+}
+
+
+default_area_priority = {
+	enable = {
+		NOT = { original_tag = GER }
+		NOT = { original_tag = FRA }
+		NOT = { original_tag = JAP }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 0
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 40
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 75
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 10
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 75
+	}
+
+}
+
+default_area_priority_non_africa = {
+    enable = {
+        NOT = { original_tag = ITA }
+        NOT = { original_tag = FRA }
+        NOT = { original_tag = USA }
+        NOT = { original_tag = ENG }
+        NOT = { is_subject_of = ENG }
+        NOT = { capital_scope = { is_on_continent = africa } }
+    }
+
+    ai_strategy = {
+        type = area_priority
+        id = africa
+        value = -70
+    }
+    ai_strategy = {
+        type = area_priority
+        id = suez
+        value = -40
+    }
 }
 
 default_railway_gun_management = {
@@ -714,8 +845,8 @@ dont_build_capitals_if_on_treaty = {
 
 	abort = {
 		OR = {
-				original_tag = BEJ
-				original_tag = LIN
+				original_tag = ITA
+				original_tag = ENG
 				NOT = { has_idea = MTG_naval_treaty_adherent }
 			}	
 	}
@@ -742,15 +873,19 @@ DEFAULT_early_template_design = {
 	enable = {
 		NOT = {
 			OR = {
-				tag = LIT
-				tag = BEJ
-				tag = LIN
+				tag = GER
+				tag = ENG
+				tag = SOV
+				tag = ITA
+				tag = JAP
+				tag = USA
+				tag = POL
 			}
 		}
-		date < 2024.1.1
+		date < 1940.1.1
 	}
 	abort = {
-		date > 2024.1.1
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -800,12 +935,16 @@ DEFAULT_midlate_template_design = {
 	enable = {
 		NOT = {
 			OR = {
-				tag = LIT
-				tag = BEJ
-				tag = LIN
+				tag = GER
+				tag = ENG
+				tag = SOV
+				tag = ITA
+				tag = JAP
+				tag = USA
+				tag = POL
 			}
 		}
-		date > 2024.1.1
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -888,6 +1027,10 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 		OR = {
 			manpower_per_military_factory > 500
 			has_war = no
+			AND = {
+				original_tag = ETH
+				is_government_in_exile = yes
+			}
 		}
 	}
 
@@ -909,7 +1052,7 @@ build_intelligence_agency_as_major = {
 		is_major = yes
 		OR = {
 			has_war = yes
-			date > 2022.1.1
+			date > 1938.1.1
 		}
 	}
 
@@ -922,7 +1065,7 @@ build_intelligence_agency_as_major = {
 
 build_intelligence_agency = {
 	enable = {
-		date > 2024.1.1
+		date > 1940.1.1
 		has_war = no
 		num_of_civilian_factories > 25
 	}
@@ -942,7 +1085,7 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		date > 2024.1.1
+		date > 1940.1.1
 		num_of_civilian_factories > 50
 	}
 	abort = {
@@ -1065,6 +1208,15 @@ default_spyplanes_production = {
 			has_tech = photo_reconnaisance
 		}
 		is_major = yes
+		#OR = {
+		#	has_equipment = {
+		#		scout_plane_equipment > 50
+		#	}
+		#	has_deployed_air_force_size = {
+		#		size > 50
+		#		type = scout_plane
+		#	}
+		#}
 	}
 
 	abort_when_not_enabled = yes
@@ -1119,5 +1271,93 @@ default_produce_floating_harbors = {
 		type = unit_ratio
 		id = floating_harbor # for floating harbors, 'unit_ratio' is actually not a ratio but an absolute desired number
 		value = 10
+	}
+}
+
+###
+
+comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking allies while ww2 is still going on
+
+	allowed = {
+		OR = {
+			original_tag = SOV
+			is_in_faction_with = SOV
+		}
+	}
+	enable = {
+		is_historical_focus_on = yes
+		SOV = { has_government = communism }
+		OR = {
+			USA = {
+				has_capitulated = no
+				has_war_with = JAP
+			}
+			ENG = {
+				has_capitulated = no
+				has_war_with = JAP
+			}
+		}
+		date > 1943.1.1
+		date < 1945.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = avoid_starting_wars
+		value = -400
+	}
+	ai_strategy = {
+		type = conquer
+		id = POL
+		value = -400 #REALLY dont try and conquer poland
+	}
+	ai_strategy = {
+		type = befriend
+		id = "POL"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = JAP
+		value = 400 #These values offset each other. Basically we won't start wars with anyone except for japan while this strategy is active
+	}
+	ai_strategy = {
+		type = conquer
+		id = FIN
+		value = 400 #These values offset each other. Basically we won't start wars with anyone except for finland while this strategy is active
+	}
+	ai_strategy = {
+		type = conquer
+		id = PER
+		value = 400 #These values offset each other. Basically we won't start wars with anyone except for iran while this strategy is active
+	}
+}
+
+allies_avoid_starting_wars_during_endgame = { #Allies should avoid attacking.. well, anyone while ww2 is in endgame
+	allowed = {
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+		}
+	}
+	enable = {
+		is_historical_focus_on = yes
+		ENG = { has_government = democratic }
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+		}
+		has_war_with = JAP
+		JAP = {
+			has_government = fascism #Just to make sure we're not looking at a puppet or sth
+		}
+		date > 1943.1.1
+		date < 1945.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = avoid_starting_wars
+		value = -400
 	}
 }

@@ -849,7 +849,7 @@ infantry_big_generic = {
 			factor = 0
 
 			OR = {
-				date < 1938.1.1
+				date < 2022.1.1
 				stockpile_ratio = { 
 	  				archetype = infantry_equipment
 	  				ratio < 4
@@ -869,7 +869,7 @@ infantry_big_generic = {
 				factor = 0
 
 				OR = {
-					date < 1938.1.1
+					date < 2022.1.1
 					stockpile_ratio = { 
 		  				archetype = infantry_equipment
 		  				ratio < 4
