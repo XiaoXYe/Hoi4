@@ -527,9 +527,9 @@ country_event = {
 	option = {
 		name = dbpact.61.a # Of course
 		ai_chance = { 
-			base = 0
+			factor = 1
 			modifier = {
-				base = 100
+				factor = 100
 				tag = JIL
 			}
 		}
@@ -543,9 +543,9 @@ country_event = {
 	option = {
 		name = dbpact.61.b # NO
 		ai_chance = { 
-			base = 100
+			factor = 100
 			modifier = {
-				base = 0
+				factor = 0
 				tag = JIL
 			}
 		}

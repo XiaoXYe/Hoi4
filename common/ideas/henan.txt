@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+
+		HEN_flood_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.2
+				conscription = -0.02
+				army_org_factor = -0.10
+				industrial_capacity_factory = -0.10
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+
+	}
+
+}

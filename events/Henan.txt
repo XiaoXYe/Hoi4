@@ -4,6 +4,47 @@
 
 add_namespace = henan
 
+country_event = {
+	id = henan.90
+	title = henan.90.t
+	desc = henan.90.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event henan.90"
+	}
+
+	option = {
+		name = henan.90.a
+		hidden_effect = {
+			country_event = { id = henan.91 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = henan.91
+	title = henan.91.t
+	desc = henan.91.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event henan.91"
+	}
+
+	option = {
+		name = henan.91.a
+		add_ideas = { HEN_flood_idea }
+		hidden_effect = {
+			news_event = { id = cnnews.15 days = 1 }
+		}
+	}
+}
+
 country_event = {  # 河南或战争
 	id = henan.100
 	title = henan.100.t

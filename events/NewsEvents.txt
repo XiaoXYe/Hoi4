@@ -233,3 +233,19 @@ news_event = {
 		name = cnnews.14.a
 	}
 }
+
+# 河南特大暴雨
+news_event = {
+	id = cnnews.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.15" }
+	title = cnnews.15.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.15.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.15.a
+	}
+}
