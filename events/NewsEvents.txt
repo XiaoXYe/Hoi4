@@ -249,3 +249,35 @@ news_event = {
 		name = cnnews.15.a
 	}
 }
+
+# 丁真加冕
+news_event = {
+	id = cnnews.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.16" }
+	title = cnnews.16.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.16.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.16.a
+	}
+}
+
+# 铁幕演说
+news_event = {
+	id = cnnews.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.17" }
+	title = cnnews.17.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.17.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.17.a
+	}
+}

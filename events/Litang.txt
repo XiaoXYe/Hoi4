@@ -789,6 +789,9 @@ country_event = {# ¼ÓÃá
 		add_war_support = 0.10
 		add_country_leader_trait = litang_emperor
 		set_cosmetic_tag = LIT_litang_empire
+		hidden_effect = {
+			news_event = { id = cnnews.16 days = 1}
+		}
 	}
 }
 
@@ -994,6 +997,7 @@ country_event = {  # ÌúÄ»ÑİËµ
 			target = LIN
 			modifier = iron_curtain_opinion_modifier
 		}
+		hidden_effect = { id = cnnews.17 days = 1}
 	}
 }
 
