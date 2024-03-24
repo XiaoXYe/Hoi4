@@ -11,6 +11,17 @@ leader_traits = {
 		}
 	}
 
+	litang_emperor_forever = {
+		random = no
+		stability_factor = 0.20
+		war_support_factor = 0.20
+		fascism_drift - 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	dalai_lama_15th = {
 		random = no
 		political_power_factor = 0.20

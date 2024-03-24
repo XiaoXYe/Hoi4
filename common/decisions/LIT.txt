@@ -480,6 +480,7 @@ LIT_break_iron_curtain_category = {
 		available = {
 			has_war = no
 			has_idea = GEN_iron_curtain_idea
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -496,6 +497,7 @@ LIT_break_iron_curtain_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_break_iron_curtain_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -505,6 +507,7 @@ LIT_break_iron_curtain_category = {
 				target = LIN
 			}
 			remove_ideas = GEN_iron_curtain_idea
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -527,6 +530,7 @@ LIT_break_iron_curtain_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -543,6 +547,7 @@ LIT_break_iron_curtain_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_neimenggu_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -552,6 +557,7 @@ LIT_break_iron_curtain_category = {
 				target = NMG
 			}
 			remove_ideas = GEN_iron_curtain_idea
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 }
@@ -576,6 +582,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -592,6 +599,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_xinjiang_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -600,6 +608,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = XIJ
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -622,6 +631,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -638,6 +648,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_qinghai_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -646,6 +657,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = QIH
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -668,6 +680,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -684,6 +697,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_gansu_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -692,6 +706,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = GAS
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -714,6 +729,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -730,6 +746,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_ningxia_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -738,6 +755,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = NIX
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -760,6 +778,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -776,6 +795,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_yunnan_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -784,6 +804,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = YUN
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -806,6 +827,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -822,6 +844,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_guizhou_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -830,6 +853,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = GUZ
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -852,6 +876,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -868,6 +893,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_shaanxi_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -876,6 +902,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = SAX
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -898,6 +925,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -914,6 +942,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_jiangsu_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -922,6 +951,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = JIS
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -944,6 +974,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -960,6 +991,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_shanghai_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -968,6 +1000,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = SHH
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -990,6 +1023,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1006,6 +1040,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_anhui_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1014,6 +1049,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = ANH
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1036,6 +1072,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1052,6 +1089,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_zhejiang_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1060,6 +1098,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = ZHJ
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1082,6 +1121,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1098,6 +1138,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_hubei_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1106,6 +1147,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = HUB
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1128,6 +1170,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1144,6 +1187,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_hunan_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1152,6 +1196,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = HUN
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1174,6 +1219,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1190,6 +1236,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_jiangxi_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1198,6 +1245,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = JIX
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1220,6 +1268,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1236,6 +1285,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_fujian_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1244,6 +1294,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = FUJ
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1266,6 +1317,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1282,6 +1334,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_guangxi_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1290,6 +1343,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = GUX
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1312,6 +1366,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1328,6 +1383,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_guangdong_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1336,6 +1392,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = GUD
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1358,6 +1415,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1374,6 +1432,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_hainan_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1382,6 +1441,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = HAN
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1404,6 +1464,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1420,6 +1481,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_hongkong_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1428,6 +1490,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = HOK
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1450,6 +1513,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1466,6 +1530,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_macau_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1474,6 +1539,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = MAC
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1496,6 +1562,7 @@ LIT_final_fight_category = {
 
 		available = {
 			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
 		}
 
 		fire_only_once = no
@@ -1512,6 +1579,7 @@ LIT_final_fight_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_taiwan_decision"
+			set_country_flag = LIT_prepare_conquer_flag
 		}
 
 		remove_effect = {
@@ -1520,6 +1588,7 @@ LIT_final_fight_category = {
 				type = annex_everything
 				target = TAW
 			}
+			clr_country_flag = LIT_prepare_conquer_flag
 		}
 	}
 
@@ -1565,53 +1634,6 @@ LIT_core_china_category = {
 				}
 				add_core_of = LIT
 			}
-		}
-	}
-
-	LIT_conquer_neimenggu_decision = {
-		allowed = {
-			tag = LIT
-		}
-		icon = generic_research
-
-		visible = {
-			has_completed_focus = LIT_break_iron_curtain
-			country_exists = NMG
-			NOT = {
-				has_war_with = NMG
-			}
-			NOT = {
-				is_ally_with = NMG
-			}
-		}
-
-		available = {
-			has_war = no
-		}
-
-		fire_only_once = no
-		cost = 30
-		days_remove = 15
-
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 0
-				country_exists = LIN
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_neimenggu_decision"
-		}
-
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_conquer_neimenggu_decision"
-			declare_war_on = {
-				target = NMG
-				type = annex_everything
-			}
-			remove_ideas = GEN_iron_curtain_idea
 		}
 	}
 }

@@ -374,6 +374,83 @@ ideas = {
 				add_stability = 0.1
 			}
 		}
+
+		LIT_recover_from_civil_war_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_3
+
+			modifier = {
+				consumer_goods_factor = 0.50
+				industrial_capacity_factory = -0.40
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.40
+				production_factory_efficiency_gain_factor = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				army_org_factor = -0.40
+				army_attack_factor = -0.30
+			}
+		}
+
+		LIT_recover_from_civil_war_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_2
+
+			modifier = {
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory = -0.30
+				political_power_factor = -0.15
+				production_speed_buildings_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				army_org_factor = -0.30
+				army_attack_factor = -0.20
+			}
+		}
+
+		LIT_recover_from_civil_war_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+				political_power_factor = -0.05
+				production_speed_buildings_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+			}
+		}
+
+		LIT_honor_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.15
+				research_speed_factor = 0.10
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
 	}
 
 }

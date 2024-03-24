@@ -1169,6 +1169,7 @@ country_event = {  # Ó®µÃÄÚÕ½
 			}
 			huludao_agreement_gain_land_effect = yes
 		}
+		add_ideas = LIT_recover_from_civil_war_1
 	}
 }
 

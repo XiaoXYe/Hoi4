@@ -1635,6 +1635,12 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_central_command"
 			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = BEJ_doctrine_central_command
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -1971,7 +1977,7 @@
 	focus = {
 		id = LIT_break_iron_curtain
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -1982,7 +1988,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 		
 
@@ -1999,7 +2005,7 @@
 	focus = {
 		id = LIT_integrate_tibet
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2030,7 +2036,7 @@
 	focus = {
 		id = LIT_boost_morale
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
+		x = -4
 		y = 2
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2057,7 +2063,7 @@
 	focus = {
 		id = LIT_southwest_invade
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
+		x = -4
 		y = 3
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2067,7 +2073,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 50
 		}
 		available = {
 		}
@@ -2085,7 +2091,7 @@
 	focus = {
 		id = LIT_attack_changan
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -5
+		x = -6
 		y = 3
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2095,7 +2101,7 @@
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
-			factor = 100
+			factor = 80
 		}
 		available = {
 		}
@@ -2112,7 +2118,7 @@
 	focus = {
 		id = LIT_recover_northwest
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -5
+		x = -6
 		y = 4
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2142,7 +2148,7 @@
 	focus = {
 		id = LIT_end_jiangsu_chaos
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
+		x = -2
 		y = 3
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2170,7 +2176,7 @@
 	focus = {
 		id = LIT_dingzhen_visit_jiangnan
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
+		x = -2
 		y = 4
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2198,7 +2204,7 @@
 	focus = {
 		id = LIT_end_southeast_mutual_insurance
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
+		x = -4
 		y = 4
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2228,7 +2234,7 @@
 	focus = {
 		id = LIT_to_south_sea
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
+		x = -4
 		y = 5
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2260,7 +2266,7 @@
 	focus = {
 		id = LIT_unfinished_business
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -3
+		x = -4
 		y = 6
 		relative_position_id = LIT_snow_leopard_flag_waving
 		cost = 5
@@ -2280,6 +2286,215 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_unfinished_business"
 			unlock_decision_tooltip = LIT_conquer_taiwan_decision
+		}
+	}
+
+	focus = {
+		id = LIT_reconstruction_after_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 2
+		relative_position_id = LIT_snow_leopard_flag_waving
+		cost = 5
+		prerequisite = {
+			focus = LIT_chinese_orthodoxy
+			focus = LIT_litangyia_orthodoxy
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_reconstruction_after_war"
+			swap_ideas = {
+				remove_idea = LIT_recover_from_civil_war_1
+				add_idea = LIT_recover_from_civil_war_2
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_financial_incentives
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = LIT_reconstruction_after_war
+		cost = 5
+		prerequisite = {
+			focus = LIT_reconstruction_after_war
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_financial_incentives"
+			swap_ideas = {
+				remove_idea = LIT_recover_from_civil_war_2
+				add_idea = LIT_recover_from_civil_war_3
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_ready_at_all_the_time
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = LIT_financial_incentives
+		cost = 5
+		prerequisite = {
+			focus = LIT_financial_incentives
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_ready_at_all_the_time"
+			remove_ideas = LIT_recover_from_civil_war_3
+		}
+	}
+
+	focus = {
+		id = LIT_honor
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = LIT_ready_at_all_the_time
+		cost = 5
+		prerequisite = {
+			focus = LIT_ready_at_all_the_time
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_war = no
+			NOT = { country_exists = BEJ }
+			NOT = { country_exists = LIN }
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_honor"
+			add_ideas = LIT_honor_idea
+		}
+	}
+
+	focus = {
+		id = LIT_arbitrary_forever
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = LIT_honor
+		cost = 5
+		prerequisite = {
+			focus = LIT_honor
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_arbitrary_forever"
+			add_country_leader_trait = litang_emperor_forever
+		}
+	}
+
+	focus = {
+		id = LIT_litangyia_millennium
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_honor
+		cost = 5
+		prerequisite = {
+			focus = LIT_honor
+		}
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_complete_focus = LIT_litang_urbanization
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_litangyia_millennium"
+			custom_effect_tooltip = LIT_tt_complete_litangyia
+		}
+	}
+
+	focus = {
+		id = LIT_limited_autonomy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_litangyia_orthodoxy
+		cost = 5
+		prerequisite = {
+			focus = LIT_litangyia_orthodoxy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_limited_autonomy"
+			add_stability = 0.10
 		}
 	}
 
