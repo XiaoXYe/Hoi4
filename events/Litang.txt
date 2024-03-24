@@ -997,7 +997,9 @@ country_event = {  # ÌúÄ»ÑİËµ
 			target = LIN
 			modifier = iron_curtain_opinion_modifier
 		}
-		hidden_effect = { id = cnnews.17 days = 1}
+		hidden_effect = {
+			news_event = { id = cnnews.17 days = 1}
+		}
 	}
 }
 

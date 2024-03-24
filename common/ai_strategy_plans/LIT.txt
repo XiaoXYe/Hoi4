@@ -14,6 +14,7 @@ LIT_dingzhen = {
 
 	ai_national_focuses = {
 		# grab as fast as you can if available
+		LIT_grand_coronation
 		LIT_acquire_chongqing
 		LIT_ally_tibet
 		LIT_sanxia_conference
@@ -44,7 +45,6 @@ LIT_dingzhen = {
 		LIT_agriculture_mechanization
 
 		LIT_the_king_win
-		LIT_grand_coronation
 		LIT_strengthen_national_identity
 		LIT_tibetan_buddhism
 

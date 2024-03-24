@@ -281,3 +281,35 @@ news_event = {
 		name = cnnews.17.a
 	}
 }
+
+# 孙笑川云南
+news_event = {
+	id = cnnews.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.18" }
+	title = cnnews.18.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.18.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.18.a
+	}
+}
+
+# 北京政变
+news_event = {
+	id = cnnews.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.19" }
+	title = cnnews.19.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.19.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.19.a
+	}
+}

@@ -209,7 +209,9 @@ Dongbei_integrate_our_land_decisions = {
 			set_global_flag = GLB_dongbei_unified_flag
 			set_country_flag = LIN_dongbei_unified_flag
 			set_cosmetic_tag = LIN_dongbei_empire
-			news_event = { id = cnnews.5 days = 1 }
+			hidden_effect = {
+				news_event = { id = cnnews.5 days = 1 }
+			}
 		}
 		ai_will_do = {
 			base = 100

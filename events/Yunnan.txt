@@ -47,5 +47,8 @@ country_event = {  # ËïĞ¦´¨¶áÈ¡ÕşÈ¨
 			ideology = fascism
 			popularity = 0.30
 		}
+		hidden_effect = {
+			news_event = { id = cnnews.18 days = 1}
+		}
 	}
 }

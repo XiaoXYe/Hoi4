@@ -181,6 +181,9 @@ country_event = {
 	}
 	option = {
 		name = beijing.6.a
+		hidden_effect = {
+			news_event = { id = cnnews.19 days = 1}
+		}
 	}
 }
 
@@ -577,6 +580,9 @@ country_event = {
 		name = beijing.21.a
 		BEJ = {
 			add_to_faction = SHD
+		}
+		hidden_effect = { 
+			news_event = { id = cnnews.20 days = 1 }
 		}
 	}
 }
