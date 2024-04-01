@@ -1,0 +1,593 @@
+LIT_puppet_china_category = {
+	LIT_form_litangyia_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 188 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 151
+			has_full_control_of_state = 133
+			has_full_control_of_state = 222
+			has_full_control_of_state = 236
+			has_full_control_of_state = 267
+			has_full_control_of_state = 435
+			has_full_control_of_state = 245
+			has_full_control_of_state = 209
+			has_full_control_of_state = 92
+			has_full_control_of_state = 136
+			has_full_control_of_state = 152
+			has_full_control_of_state = 120
+			has_full_control_of_state = 139
+			has_full_control_of_state = 124
+			has_full_control_of_state = 117
+			has_full_control_of_state = 93
+			has_full_control_of_state = 55
+			has_full_control_of_state = 31
+			has_full_control_of_state = 86
+			has_full_control_of_state = 95
+			has_full_control_of_state = 91
+			has_full_control_of_state = 114
+			has_full_control_of_state = 129
+			has_full_control_of_state = 140
+			has_full_control_of_state = 155
+			has_full_control_of_state = 141
+			has_full_control_of_state = 149
+			has_full_control_of_state = 122
+			has_full_control_of_state = 161
+			has_full_control_of_state = 174
+			has_full_control_of_state = 105
+			has_full_control_of_state = 97
+			has_full_control_of_state = 107
+			has_full_control_of_state = 112
+			has_full_control_of_state = 132
+			has_full_control_of_state = 88
+			has_full_control_of_state = 81
+			has_full_control_of_state = 70
+			has_full_control_of_state = 58
+			has_full_control_of_state = 47
+			has_full_control_of_state = 38
+			has_full_control_of_state = 46
+			has_full_control_of_state = 56
+			has_full_control_of_state = 76
+			has_full_control_of_state = 43
+			has_full_control_of_state = 89
+			has_full_control_of_state = 116
+			has_full_control_of_state = 154
+			has_full_control_of_state = 147
+			has_full_control_of_state = 157
+			has_full_control_of_state = 162
+			has_full_control_of_state = 170
+			has_full_control_of_state = 175
+			has_full_control_of_state = 191
+			has_full_control_of_state = 190
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_form_litangyia_decision"
+			LIT = { LIT_form_litangyia_effect = yes }
+			set_cosmetic_tag = LIT_LITANGYIA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LIT_puppet_dongbei_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 50 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 8
+			has_full_control_of_state = 12
+			has_full_control_of_state = 15
+			has_full_control_of_state = 21
+			has_full_control_of_state = 18
+			has_full_control_of_state = 13
+			has_full_control_of_state = 17
+			has_full_control_of_state = 24
+			has_full_control_of_state = 29
+			has_full_control_of_state = 16
+			has_full_control_of_state = 20
+			has_full_control_of_state = 27
+			has_full_control_of_state = 25
+			has_full_control_of_state = 26
+			has_full_control_of_state = 34
+			has_full_control_of_state = 44
+			has_full_control_of_state = 36
+			has_full_control_of_state = 40
+			has_full_control_of_state = 42
+			has_full_control_of_state = 51
+			has_full_control_of_state = 54
+			has_full_control_of_state = 41
+			has_full_control_of_state = 62
+			has_full_control_of_state = 72
+			has_full_control_of_state = 53
+			has_full_control_of_state = 64
+			has_full_control_of_state = 69
+			has_full_control_of_state = 75
+			has_full_control_of_state = 83
+			has_full_control_of_state = 66
+			has_full_control_of_state = 67
+			has_full_control_of_state = 50
+			has_full_control_of_state = 73
+			has_full_control_of_state = 65
+			has_full_control_of_state = 60
+			has_full_control_of_state = 48
+			has_full_control_of_state = 37
+			has_full_control_of_state = 30
+			has_full_control_of_state = 19
+			has_full_control_of_state = 9
+
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_dongbei_decision"
+			LIN = { 
+				LIT_puppet_dongbei_effect = yes
+				set_cosmetic_tag = LIN_LIT_LITANGYIA
+			}
+			puppet = LIN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_zhongyuan_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 167 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 137
+			has_full_control_of_state = 135
+			has_full_control_of_state = 179
+			has_full_control_of_state = 146
+			has_full_control_of_state = 159
+			has_full_control_of_state = 167
+			has_full_control_of_state = 165
+			has_full_control_of_state = 169
+			has_full_control_of_state = 160
+			has_full_control_of_state = 164
+			has_full_control_of_state = 166
+			has_full_control_of_state = 177
+			has_full_control_of_state = 178
+			has_full_control_of_state = 184
+			has_full_control_of_state = 180
+			has_full_control_of_state = 192
+			has_full_control_of_state = 194
+			has_full_control_of_state = 206
+			has_full_control_of_state = 106
+			has_full_control_of_state = 108
+			has_full_control_of_state = 110
+			has_full_control_of_state = 111
+			has_full_control_of_state = 115
+			has_full_control_of_state = 118
+			has_full_control_of_state = 119
+			has_full_control_of_state = 123
+			has_full_control_of_state = 126
+			has_full_control_of_state = 130
+			has_full_control_of_state = 134
+			has_full_control_of_state = 138
+			has_full_control_of_state = 143
+			has_full_control_of_state = 144
+			has_full_control_of_state = 145
+			has_full_control_of_state = 158
+			has_full_control_of_state = 77
+			has_full_control_of_state = 80
+			has_full_control_of_state = 87
+			has_full_control_of_state = 99
+			has_full_control_of_state = 104
+			has_full_control_of_state = 94
+			has_full_control_of_state = 109
+			has_full_control_of_state = 125
+			has_full_control_of_state = 131
+			has_full_control_of_state = 142
+			has_full_control_of_state = 148
+			has_full_control_of_state = 78
+			has_full_control_of_state = 79
+			has_full_control_of_state = 59
+			has_full_control_of_state = 63
+			has_full_control_of_state = 85
+			has_full_control_of_state = 90
+			has_full_control_of_state = 96
+			has_full_control_of_state = 103
+			has_full_control_of_state = 98
+			has_full_control_of_state = 113
+			has_full_control_of_state = 128
+			has_full_control_of_state = 74
+			has_full_control_of_state = 82
+			has_full_control_of_state = 172
+			has_full_control_of_state = 185
+			has_full_control_of_state = 196
+			has_full_control_of_state = 186
+			has_full_control_of_state = 173
+			has_full_control_of_state = 193
+			has_full_control_of_state = 199
+			has_full_control_of_state = 207
+			has_full_control_of_state = 203
+			has_full_control_of_state = 168
+			has_full_control_of_state = 163
+			has_full_control_of_state = 181
+			has_full_control_of_state = 187
+			has_full_control_of_state = 176
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_zhongyuan_decision"
+			HEN = { 
+				LIT_puppet_zhongyuan_effect = yes 
+				set_cosmetic_tag = HEN_LIT_LITANGYIA
+			}
+			puppet = HEN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_menggu_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 71 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 61
+			has_full_control_of_state = 57
+			has_full_control_of_state = 71
+			has_full_control_of_state = 49
+			has_full_control_of_state = 23
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_menggu_decision"
+			NMG = {
+				LIT_puppet_menggu_effect = yes
+				set_cosmetic_tag = NMG_LIT_LITANGYIA
+			}
+			puppet = NMG
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_xinjiang_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 45 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 22
+			has_full_control_of_state = 84
+			has_full_control_of_state = 14
+			has_full_control_of_state = 39
+			has_full_control_of_state = 35
+			has_full_control_of_state = 32
+			has_full_control_of_state = 45
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_xinjiang_decision"
+			XIJ = { 
+				LIT_puppet_xinjiang_effect = yes
+				set_cosmetic_tag = XIJ_LIT_LITANGYIA
+			}
+			puppet = XIJ
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_jiangnan_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 248 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 266
+			has_full_control_of_state = 281
+			has_full_control_of_state = 262
+			has_full_control_of_state = 269
+			has_full_control_of_state = 288
+			has_full_control_of_state = 292
+			has_full_control_of_state = 282
+			has_full_control_of_state = 298
+			has_full_control_of_state = 301
+			has_full_control_of_state = 302
+			has_full_control_of_state = 312
+			has_full_control_of_state = 293
+			has_full_control_of_state = 306
+			has_full_control_of_state = 313
+			has_full_control_of_state = 319
+			has_full_control_of_state = 330
+			has_full_control_of_state = 328
+			has_full_control_of_state = 327
+			has_full_control_of_state = 336
+			has_full_control_of_state = 343
+			has_full_control_of_state = 526
+			has_full_control_of_state = 235
+			has_full_control_of_state = 237
+			has_full_control_of_state = 248
+			has_full_control_of_state = 258
+			has_full_control_of_state = 255
+			has_full_control_of_state = 256
+			has_full_control_of_state = 273
+			has_full_control_of_state = 268
+			has_full_control_of_state = 276
+			has_full_control_of_state = 285
+			has_full_control_of_state = 289
+			has_full_control_of_state = 233
+			has_full_control_of_state = 242
+			has_full_control_of_state = 230
+			has_full_control_of_state = 231
+			has_full_control_of_state = 232
+			has_full_control_of_state = 249
+			has_full_control_of_state = 212
+			has_full_control_of_state = 197
+			has_full_control_of_state = 200
+			has_full_control_of_state = 205
+			has_full_control_of_state = 213
+			has_full_control_of_state = 214
+			has_full_control_of_state = 215
+			has_full_control_of_state = 219
+			has_full_control_of_state = 216
+			has_full_control_of_state = 228
+			has_full_control_of_state = 221
+
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_jiangnan_decision"
+			ZHJ = { 
+				LIT_puppet_jiangnan_effect = yes 
+				set_cosmetic_tag = ZHJ_LIT_LITANGYIA
+			}
+			puppet = ZHJ
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_yungui_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 323 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 280
+			has_full_control_of_state = 283
+			has_full_control_of_state = 307
+			has_full_control_of_state = 309
+			has_full_control_of_state = 311
+			has_full_control_of_state = 304
+			has_full_control_of_state = 320
+			has_full_control_of_state = 317
+			has_full_control_of_state = 325
+			has_full_control_of_state = 286
+			has_full_control_of_state = 314
+			has_full_control_of_state = 323
+			has_full_control_of_state = 346
+			has_full_control_of_state = 347
+			has_full_control_of_state = 341
+			has_full_control_of_state = 321
+			has_full_control_of_state = 344
+			has_full_control_of_state = 376
+			has_full_control_of_state = 340
+			has_full_control_of_state = 333
+			has_full_control_of_state = 329
+			has_full_control_of_state = 318
+			has_full_control_of_state = 295
+			has_full_control_of_state = 303
+			has_full_control_of_state = 279
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_yungui_decision"
+			YUN = { 
+				LIT_puppet_yungui_effect = yes
+				set_cosmetic_tag = YUN_LIT_LITANGYIA
+			}
+			puppet = YUN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_lianghu_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 246 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 198
+			has_full_control_of_state = 218
+			has_full_control_of_state = 208
+			has_full_control_of_state = 210
+			has_full_control_of_state = 225
+			has_full_control_of_state = 220
+			has_full_control_of_state = 251
+			has_full_control_of_state = 247
+			has_full_control_of_state = 250
+			has_full_control_of_state = 246
+			has_full_control_of_state = 226
+			has_full_control_of_state = 254
+			has_full_control_of_state = 257
+			has_full_control_of_state = 259
+			has_full_control_of_state = 244
+			has_full_control_of_state = 224
+			has_full_control_of_state = 240
+			has_full_control_of_state = 260
+			has_full_control_of_state = 264
+			has_full_control_of_state = 265
+			has_full_control_of_state = 271
+			has_full_control_of_state = 284
+			has_full_control_of_state = 272
+			has_full_control_of_state = 287
+			has_full_control_of_state = 296
+			has_full_control_of_state = 299
+			has_full_control_of_state = 300
+			has_full_control_of_state = 305
+			has_full_control_of_state = 308
+			has_full_control_of_state = 316
+			has_full_control_of_state = 315
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_lianghu_decision"
+			HUB = { 
+				LIT_puppet_lianghu_effect = yes
+				set_cosmetic_tag = HUB_LIT_LITANGYIA
+			}
+			puppet = HUB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	LIT_puppet_nanhai_decision = {
+		icon = infiltrate_state
+		highlight_states = { highlight_state_targets = { state = 357 } }
+		allowed = {
+			tag = LIT
+		}
+		visible = {
+			has_country_flag = LIT_puppet_china_flag
+			tag = LIT
+		}
+		available = {
+			has_full_control_of_state = 388
+			has_full_control_of_state = 385
+			has_full_control_of_state = 391
+			has_full_control_of_state = 387
+			has_full_control_of_state = 342
+			has_full_control_of_state = 353
+			has_full_control_of_state = 360
+			has_full_control_of_state = 359
+			has_full_control_of_state = 364
+			has_full_control_of_state = 345
+			has_full_control_of_state = 355
+			has_full_control_of_state = 332
+			has_full_control_of_state = 335
+			has_full_control_of_state = 357
+			has_full_control_of_state = 369
+			has_full_control_of_state = 371
+			has_full_control_of_state = 351
+			has_full_control_of_state = 363
+			has_full_control_of_state = 367
+			has_full_control_of_state = 372
+			has_full_control_of_state = 379
+			has_full_control_of_state = 370
+			has_full_control_of_state = 375
+			has_full_control_of_state = 374
+			has_full_control_of_state = 384
+			has_full_control_of_state = 324
+			has_full_control_of_state = 337
+			has_full_control_of_state = 350
+			has_full_control_of_state = 326
+			has_full_control_of_state = 349
+			has_full_control_of_state = 356
+			has_full_control_of_state = 368
+			has_full_control_of_state = 331
+			has_full_control_of_state = 354
+			has_full_control_of_state = 373
+			has_full_control_of_state = 383
+			has_full_control_of_state = 339
+			has_full_control_of_state = 366
+			has_full_control_of_state = 380
+			has_full_control_of_state = 377
+			has_full_control_of_state = 381
+			has_full_control_of_state = 334
+			has_full_control_of_state = 506
+			has_full_control_of_state = 507
+			has_full_control_of_state = 338
+			has_full_control_of_state = 508
+			has_full_control_of_state = 348
+			has_full_control_of_state = 505
+			has_full_control_of_state = 352
+			has_full_control_of_state = 509
+			has_full_control_of_state = 510
+			has_full_control_of_state = 512
+			has_full_control_of_state = 511
+			has_full_control_of_state = 358
+			has_full_control_of_state = 361
+			has_full_control_of_state = 513
+			has_full_control_of_state = 362
+			has_full_control_of_state = 524
+		}
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete LIT_puppet_nanhai_decision"
+			GUD = { 
+				LIT_puppet_nanhai_effect = yes
+				set_cosmetic_tag = GUD_LIT_LITANGYIA
+			}
+			puppet = GUD
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

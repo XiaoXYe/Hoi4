@@ -18,3 +18,39 @@ YUN_chouxiang_heavenly_kingdom = {
 	color = rgb { 0 255 127 }
 	color_ui = rgb { 0 255 127 }
 }
+LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+LIN_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+HEN_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+NMG_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+XIJ_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+ZHJ_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+YUN_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+HUB_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}
+GUD_LIT_LITANGYIA = {
+	color = rgb { 201 228 232 }
+	color_ui = rgb { 201 228 232 }
+}

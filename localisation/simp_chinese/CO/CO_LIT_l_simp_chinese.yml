@@ -95,6 +95,17 @@
  LIT_conquer_macau_decision:0 "征服澳门"
  LIT_conquer_taiwan_decision:0 "征服台湾"
 
+ LIT_puppet_china_category:0 "理塘尼亚之梦"
+ LIT_form_litangyia_decision:0 "宣告成立理塘尼亚"
+ LIT_puppet_dongbei_decision:0 "成立东北总督辖区"
+ LIT_puppet_zhongyuan_decision:0 "成立中原总督辖区"
+ LIT_puppet_menggu_decision:0 "成立蒙古总督辖区"
+ LIT_puppet_xinjiang_decision:0 "成立新疆总督辖区"
+ LIT_puppet_jiangnan_decision:0 "成立江南总督辖区"
+ LIT_puppet_yungui_decision:0 "成立云贵总督辖区"
+ LIT_puppet_lianghu_decision:0 "成立两湖总督辖区"
+ LIT_puppet_nanhai_decision:0 "成立南海总督辖区"
+
  litang_emperor:0 "理塘皇帝"
  dalai_lama_15th:0 "第十五世达赖喇嘛"
  litang_emperor_forever:0 "独断万古"

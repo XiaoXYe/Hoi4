@@ -570,7 +570,11 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_recover_northwest
+			OR = {
+				has_completed_focus = LIT_recover_northwest
+				has_completed_focus = LIT_north_boundary
+			}
+
 			country_exists = XIJ
 			NOT = {
 				has_war_with = XIJ
@@ -619,7 +623,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_recover_northwest
+			OR = {
+				has_completed_focus = LIT_recover_northwest
+				has_completed_focus = LIT_north_boundary
+			}
 			country_exists = QIH
 			NOT = {
 				has_war_with = QIH
@@ -668,7 +675,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_recover_northwest
+			OR = {
+				has_completed_focus = LIT_recover_northwest
+				has_completed_focus = LIT_north_boundary
+			}
 			country_exists = GAS
 			NOT = {
 				has_war_with = GAS
@@ -717,7 +727,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_recover_northwest
+			OR = {
+				has_completed_focus = LIT_recover_northwest
+				has_completed_focus = LIT_north_boundary
+			}
 			country_exists = NIX
 			NOT = {
 				has_war_with = NIX
@@ -766,7 +779,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_southwest_invade
+			OR = {
+				has_completed_focus = LIT_southwest_invade
+				has_completed_focus = LIT_yungui_puppet
+			}
 			country_exists = YUN
 			NOT = {
 				has_war_with = YUN
@@ -815,7 +831,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_southwest_invade
+			OR = {
+				has_completed_focus = LIT_southwest_invade
+				has_completed_focus = LIT_yungui_puppet
+			}
 			country_exists = GUZ
 			NOT = {
 				has_war_with = GUZ
@@ -864,7 +883,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_attack_changan
+			OR = {
+				has_completed_focus = LIT_attack_changan
+				has_completed_focus = LIT_east_boundary
+			}
 			country_exists = SAX
 			NOT = {
 				has_war_with = SAX
@@ -913,7 +935,11 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_jiangsu_chaos
+			OR = {
+				has_completed_focus = LIT_end_jiangsu_chaos
+				has_completed_focus = LIT_zhongyuan_puppet
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = JIS
 			NOT = {
 				has_war_with = JIS
@@ -962,7 +988,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_jiangsu_chaos
+			OR = {
+				has_completed_focus = LIT_end_jiangsu_chaos
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = SHH
 			NOT = {
 				has_war_with = SHH
@@ -1011,7 +1040,11 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_dingzhen_visit_jiangnan
+			OR = {
+				has_completed_focus = LIT_dingzhen_visit_jiangnan
+				has_completed_focus = LIT_zhongyuan_puppet
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = ANH
 			NOT = {
 				has_war_with = ANH
@@ -1060,7 +1093,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_dingzhen_visit_jiangnan
+			OR = {
+				has_completed_focus = LIT_dingzhen_visit_jiangnan
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = ZHJ
 			NOT = {
 				has_war_with = ZHJ
@@ -1109,7 +1145,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_southeast_mutual_insurance
+			OR = {
+				has_completed_focus = LIT_end_southeast_mutual_insurance
+				has_completed_focus = LIT_lianghu_puppet
+			}
 			country_exists = HUB
 			NOT = {
 				has_war_with = HUB
@@ -1158,7 +1197,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_southeast_mutual_insurance
+			OR = {
+				has_completed_focus = LIT_end_southeast_mutual_insurance
+				has_completed_focus = LIT_lianghu_puppet
+			}
 			country_exists = HUN
 			NOT = {
 				has_war_with = HUN
@@ -1207,7 +1249,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_southeast_mutual_insurance
+			OR = {
+				has_completed_focus = LIT_end_southeast_mutual_insurance
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = JIX
 			NOT = {
 				has_war_with = JIX
@@ -1256,7 +1301,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_end_southeast_mutual_insurance
+			OR = {
+				has_completed_focus = LIT_end_southeast_mutual_insurance
+				has_completed_focus = LIT_jiangnan_puppet
+			}
 			country_exists = FUJ
 			NOT = {
 				has_war_with = FUJ
@@ -1305,7 +1353,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_to_south_sea
+			OR = {
+				has_completed_focus = LIT_to_south_sea
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = GUX
 			NOT = {
 				has_war_with = GUX
@@ -1354,7 +1405,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_to_south_sea
+			OR = {
+				has_completed_focus = LIT_to_south_sea
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = GUD
 			NOT = {
 				has_war_with = GUD
@@ -1403,7 +1457,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_to_south_sea
+			OR = {
+				has_completed_focus = LIT_to_south_sea
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = HAN
 			NOT = {
 				has_war_with = HAN
@@ -1452,7 +1509,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_to_south_sea
+			OR = {
+				has_completed_focus = LIT_to_south_sea
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = HOK
 			NOT = {
 				has_war_with = HOK
@@ -1501,7 +1561,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_to_south_sea
+			OR = {
+				has_completed_focus = LIT_to_south_sea
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = MAC
 			NOT = {
 				has_war_with = MAC
@@ -1550,7 +1613,10 @@ LIT_final_fight_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_unfinished_business
+			OR = {
+				has_completed_focus = LIT_unfinished_business
+				has_completed_focus = LIT_nanhai_puppet
+			}
 			country_exists = TAW
 			NOT = {
 				has_war_with = TAW

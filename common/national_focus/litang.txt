@@ -1971,6 +1971,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_litangyia_orthodoxy"
 			custom_effect_tooltip = LIT_tt_litangyia_orthodoxy
 			add_stability = 0.05
+			set_country_flag = LIT_puppet_china_flag
 		}
 	}
 
@@ -2495,6 +2496,216 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_limited_autonomy"
 			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = LIT_north_boundary
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = LIT_limited_autonomy
+		cost = 5
+		prerequisite = {
+			focus = LIT_limited_autonomy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_north_boundary"
+			unlock_decision_tooltip = LIT_conquer_xinjiang_decision
+			unlock_decision_tooltip = LIT_conquer_qinghai_decision
+			unlock_decision_tooltip = LIT_conquer_gansu_decision
+			unlock_decision_tooltip = LIT_conquer_ningxia_decision
+		}
+	}
+
+	focus = {
+		id = LIT_east_boundary
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_limited_autonomy
+		cost = 5
+		prerequisite = {
+			focus = LIT_limited_autonomy
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_east_boundary"
+			unlock_decision_tooltip = LIT_conquer_shaanxi_decision
+		}
+	}
+
+	focus = {
+		id = LIT_yungui_puppet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = LIT_north_boundary
+		cost = 5
+		prerequisite = {
+			focus = LIT_north_boundary
+			focus = LIT_east_boundary
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_yungui_puppet"
+			unlock_decision_tooltip = LIT_conquer_yunnan_decision
+			unlock_decision_tooltip = LIT_conquer_guizhou_decision
+		}
+	}
+
+	focus = {
+		id = LIT_zhongyuan_puppet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_north_boundary
+		cost = 5
+		prerequisite = {
+			focus = LIT_north_boundary
+			focus = LIT_east_boundary
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_zhongyuan_puppet"
+			unlock_decision_tooltip = LIT_conquer_anhui_decision
+			unlock_decision_tooltip = LIT_conquer_jiangsu_decision
+		}
+	}
+
+	focus = {
+		id = LIT_jiangnan_puppet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_east_boundary
+		cost = 5
+		prerequisite = {
+			focus = LIT_north_boundary
+			focus = LIT_east_boundary
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_jiangnan_puppet"
+			unlock_decision_tooltip = LIT_conquer_anhui_decision
+			unlock_decision_tooltip = LIT_conquer_jiangsu_decision
+			unlock_decision_tooltip = LIT_conquer_zhejiang_decision
+			unlock_decision_tooltip = LIT_conquer_jiangxi_decision
+			unlock_decision_tooltip = LIT_conquer_fujian_decision
+			unlock_decision_tooltip = LIT_conquer_shanghai_decision
+		}
+	}
+
+	focus = {
+		id = LIT_lianghu_puppet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 1
+		relative_position_id = LIT_zhongyuan_puppet
+		cost = 5
+		prerequisite = {
+			focus = LIT_zhongyuan_puppet
+			focus = LIT_yungui_puppet
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_lianghu_puppet"
+			unlock_decision_tooltip = LIT_conquer_hubei_decision
+			unlock_decision_tooltip = LIT_conquer_hunan_decision
+		}
+	}
+
+	focus = {
+		id = LIT_nanhai_puppet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 1
+		relative_position_id = LIT_zhongyuan_puppet
+		cost = 5
+		prerequisite = {
+			focus = LIT_zhongyuan_puppet
+			focus = LIT_jiangnan_puppet
+		}
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_nanhai_puppet"
+			unlock_decision_tooltip = LIT_conquer_guangxi_decision
+			unlock_decision_tooltip = LIT_conquer_guangdong_decision
+			unlock_decision_tooltip = LIT_conquer_hongkong_decision
+			unlock_decision_tooltip = LIT_conquer_macau_decision
+			unlock_decision_tooltip = LIT_conquer_hainan_decision
+			unlock_decision_tooltip = LIT_conquer_taiwan_decision
 		}
 	}
 
