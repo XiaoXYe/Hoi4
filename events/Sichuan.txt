@@ -42,7 +42,34 @@ country_event = {  # 甘孜州文化特区成立
 			LIT = {
 				transfer_state = 188
 				add_state_core = 188  # Litang
+			}
+			SIC = {
+				puppet = LIT
+			}
+			LIT = {
 				load_oob = LIT
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 0
+					transhumanism = 5
+					postmodernism = 10
+					progressivism = 5
+					gradualism = 40
+					conservatism = 20
+					retroism = 20
+				}
+				set_politics = {
+					ruling_party = gradualism 
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = LIT_SIC_pilot_base
+				recruit_character = LIT_ch_dingzhen_1
+				recruit_character = LIT_ch_hubo
+				recruit_character = LIT_ch_silangluobu
 				add_ideas = {
 					LIT_social_media_influencer_economy
 				}
@@ -50,13 +77,6 @@ country_event = {  # 甘孜州文化特区成立
 					id = litang.1
 					days = 3
 				}
-				set_cosmetic_tag = LIT_SIC_pilot_base
-				recruit_character = LIT_ch_dingzhen_1
-				recruit_character = LIT_ch_hubo
-				recruit_character = LIT_ch_silangluobu
-			}
-			SIC = {
-				puppet = LIT
 			}
 		}
 	}

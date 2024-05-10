@@ -261,7 +261,7 @@ country_event = { # 新王
 		set_country_flag = LIT_dingzhen_king_flag
 		promote_character = LIT_ch_dingzhen_1
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = conservatism
 			elections_allowed = no
 		}
 		complete_national_focus = LIT_situation_worse
@@ -807,7 +807,7 @@ country_event = {# 土改
 		name = litang.24.a
 		add_political_power = -20
 		add_popularity = {
-			ideology = fascism
+			ideology = conservatism
 			popularity = 0.10
 		}
 	}
@@ -816,7 +816,7 @@ country_event = {# 土改
 		add_political_power = -50
 		add_stability = -0.10
 		add_popularity = {
-			ideology = fascism
+			ideology = conservatism
 			popularity = 0.20
 		}
 	}
@@ -1200,14 +1200,169 @@ country_event = {# 发展计划
 
 	option = {
 		name = litang.200.a
-		add_ideas = LIT_industry_plan_research
+		add_timed_idea = {
+			idea = LIT_industry_plan_research
+			days = 365
+		}
 	}
 	option = {
 		name = litang.200.b
-		add_ideas = LIT_industry_plan_civilian
+		add_timed_idea = {
+			idea = LIT_industry_plan_civilian
+			days = 365
+		}
 	}
 	option = {
 		name = litang.200.c
-		add_ideas = LIT_industry_plan_construct
+		add_timed_idea = {
+			idea = LIT_industry_plan_construct
+			days = 365
+		}
+	}
+}
+
+country_event = {# 千年之都
+	id = litang.1000
+	title = litang.1000.t
+	desc = litang.1000.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1000.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1001
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 地基落成
+	id = litang.1001
+	title = litang.1001.t
+	desc = litang.1001.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1001.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1002
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 理塘尼亚凯旋门
+	id = litang.1002
+	title = litang.1002.t
+	desc = litang.1002.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1002.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1003
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 皇宫与皇帝雕像
+	id = litang.1003
+	title = litang.1003.t
+	desc = litang.1003.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1003.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1004
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 理塘尼亚之光
+	id = litang.1004
+	title = litang.1004.t
+	desc = litang.1004.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1004.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1005
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 理塘尼亚空港
+	id = litang.1005
+	title = litang.1005.t
+	desc = litang.1005.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1005.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1006
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 瀑布落成
+	id = litang.1006
+	title = litang.1006.t
+	desc = litang.1006.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1006.a
+		hidden_effect = {
+			country_event = {
+				id = litang.1007
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {# 世界最高城理塘尼亚
+	id = litang.1007
+	title = litang.1007.t
+	desc = litang.1007.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.1007.a
 	}
 }

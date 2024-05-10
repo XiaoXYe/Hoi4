@@ -30,6 +30,10 @@
  LIT_litangyia_arms_factory_build_2_flag:0 "所用军用工厂已建设完毕"
  LIT_litangyia_sanxia_power_transfer:0 "大规模接入三峡电力"
  LIT_litangyia_sanxia_power_transfer_flag:0 "三峡电力已接入完毕"
+ LIT_litangyia_construct_2:0 "理塘工业体系成熟化"
+ LIT_litangyia_construct_2_flag:0 "理塘工业发展成熟"
+ LIT_litangyia_construct_final:0 "建设世界最高城 §R理塘尼亚§!"
+ LIT_litangyia_construct_final_flag:0 "理塘尼亚建设完成"
 
  LIT_break_iron_curtain_category:0 "冷战格局"
  LIT_break_iron_curtain_decision:0 "击碎铁幕"
@@ -95,8 +99,8 @@
  LIT_conquer_macau_decision:0 "征服澳门"
  LIT_conquer_taiwan_decision:0 "征服台湾"
 
- LIT_puppet_china_category:0 "理塘尼亚之梦"
- LIT_form_litangyia_decision:0 "宣告成立理塘尼亚"
+ LIT_puppet_china_category:0 "大理塘尼亚之梦"
+ LIT_form_litangyia_decision:0 "宣告成立大理塘尼亚"
  LIT_puppet_dongbei_decision:0 "成立东北总督辖区"
  LIT_puppet_zhongyuan_decision:0 "成立中原总督辖区"
  LIT_puppet_menggu_decision:0 "成立蒙古总督辖区"

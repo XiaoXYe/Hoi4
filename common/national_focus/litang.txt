@@ -11,7 +11,7 @@
 	}
 	
 	default = no
-	continuous_focus_position = { x = 2400 y = 1200 }
+	continuous_focus_position = { x = 1200 y = 1600 }
 
 
 	focus = {
@@ -69,6 +69,10 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_socialmedia_propaganda"
 			country_event = litang.13
 			add_war_support = 0.05
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -102,6 +106,10 @@
 			army_experience = 10
 			add_manpower = 10000
 			add_war_support = 0.05
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
 			country_event = {
 				id = litang.11
 			}
@@ -137,6 +145,10 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_final_effort"
 			army_experience = 25
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.10
+			}
 			country_event = litang.15
 			every_state = {
 				limit = {
@@ -419,7 +431,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_eradicate_chouxiang_culture"
 			add_popularity = {
-				ideology = communism
+				ideology = postmodernism
 				popularity = -0.2
 			}
 			remove_ideas = { LIT_chouxiang_resistance_idea }
@@ -447,7 +459,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_fight_against_progressivism"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = -0.2
 			}
 			add_stability = 0.05
@@ -476,7 +488,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_strengthen_national_identity"
 			add_popularity = {
-				ideology = fascism
+				ideology = conservatism
 				popularity = 0.10
 			}
 			add_war_support = 0.10
@@ -505,7 +517,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_a_clear_line_with_retroism"
 			add_popularity = {
-				ideology = neutrality
+				ideology = retroism
 				popularity = -0.10
 			}
 		}
@@ -896,6 +908,18 @@
 		
 		available = {
 			has_global_flag = GLB_civil_war_II_LIT_win
+		}
+
+		bypass = {
+			OR = {
+				has_global_flag = GLB_huludao_conference_fail
+				AND = {
+					has_global_flag = GLB_civil_war_II_LIT_win
+					NOT = {
+						has_global_flag = GLB_civil_war_dongbei_engage
+					}
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1896,8 +1920,9 @@
 	focus = {
 		id = LIT_snow_leopard_flag_waving
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 12
-		y = 12
+		x = 0
+		y = 1
+		relative_position_id = LIT_iron_curtain
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -1905,8 +1930,8 @@
 			factor = 100
 		}
 		
-		available = {
-			has_completed_focus = LIT_iron_curtain
+		prerequisite = {
+			focus = LIT_iron_curtain
 		}
 
 		available_if_capitulated = yes

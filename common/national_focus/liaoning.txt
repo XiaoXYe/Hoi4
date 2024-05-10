@@ -167,6 +167,7 @@
 				target = BEJ
 				type = annex_everything
 			}
+			set_global_flag = GLB_civil_war_dongbei_engage
 		}
 	}
 

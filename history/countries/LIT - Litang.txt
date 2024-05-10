@@ -2,17 +2,23 @@
 oob = "empty"
 
 set_politics = {
-	ruling_party = communism 
+	ruling_party = gradualism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 10
-	fascism = 10
-	communism = 70
-	neutrality = 10
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	transhumanism = 0
+	postmodernism = 5
+	progressivism = 15
+	gradualism = 30
+	conservatism = 30
+	retroism = 20
 }
 
 starting_train_buffer = 2
@@ -108,26 +114,19 @@ if = {
 	}
 }
 
-recruit_character = LIT_ar
 recruit_character = LIT_acr
 recruit_character = LIT_mt
 recruit_character = LIT_stc
-recruit_character = LIT_aa2
 recruit_character = LIT_acgs
 recruit_character = LIT_ncm
 recruit_character = LIT_nccr
 recruit_character = LIT_coi
-recruit_character = LIT_democratic_guy
 recruit_character = LIT_acd2
 recruit_character = LIT_acas
-recruit_character = LIT_communist_guy
 recruit_character = LIT_ncs
 recruit_character = LIT_awt
-recruit_character = LIT_pot
-recruit_character = LIT_fascist_guy
 recruit_character = LIT_ai2
 recruit_character = LIT_nt
-recruit_character = LIT_aco2
 
 
 set_convoys = 20

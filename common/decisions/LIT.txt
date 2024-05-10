@@ -424,11 +424,11 @@ LIT_litangyia_category = {
 		icon = generic_research
 
 		visible = {
-			has_completed_focus = LIT_sanxia_hydropower
+			has_country_flag = LIT_litangyia_construct_1_flag
 		}
 
 		available = {
-			has_country_flag = LIT_litangyia_construct_1_flag
+			has_completed_focus = LIT_sanxia_hydropower
 		}
 
 		fire_only_once = yes
@@ -448,6 +448,7 @@ LIT_litangyia_category = {
 			set_country_flag = LIT_litangyia_sanxia_power_transfer_flag
 			every_state = {
 				limit = { OR = { state = 239 state = 253 state = 263 state = 277 state = 243 state = 261} }
+				set_country_flag = LIT_litangyia_sanxia_power_transfer_flag
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -457,6 +458,78 @@ LIT_litangyia_category = {
 			add_ideas = LIT_sanxia_power_idea
 		}
 	}
+
+	LIT_litangyia_construct_2 = {
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_litang_urbanization
+			has_country_flag = LIT_litangyia_construct_1_flag
+		}
+
+		available = {
+			AND = {
+				has_country_flag = LIT_litangyia_sanxia_power_transfer_flag
+				has_country_flag = LIT_litangyia_industrial_complex_build_2_flag
+				has_country_flag = LIT_litangyia_arms_factory_build_2_flag
+			}
+		}
+
+		fire_only_once = yes
+		cost = 30
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_litangyia_construct_2"
+
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_construct_2"
+			set_country_flag = LIT_litangyia_construct_2_flag
+			188 = {
+				set_state_category = megalopolis
+			}
+		}
+	}
+
+	LIT_litangyia_construct_final = {
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_litangyia_millennium
+		}
+
+		available = {
+			has_country_flag = LIT_litangyia_construct_2_flag
+		}
+
+		fire_only_once = yes
+		cost = 30
+		days_remove = 210
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_litangyia_construct_final"
+			country_event = {
+				id = litang.1000
+				days = 1
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_construct_final"
+			set_country_flag = LIT_litangyia_construct_final_flag
+		}
+	}
+
 }
 
 LIT_break_iron_curtain_category = {

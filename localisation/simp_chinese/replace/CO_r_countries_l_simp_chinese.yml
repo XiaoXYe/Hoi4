@@ -188,6 +188,8 @@
  FUJ_neutrality_ADJ:0 "福建"
  FUJ_communism_ADJ:0 "福建"
 
+ ANH_gradualism:0 "安徽"
+ ANH_gradualism_DEF:0 "安徽"
  ANH_fascism:0 "安徽"
  ANH_fascism_DEF:0 "安徽"
  ANH_democratic:0 "安徽"
@@ -370,6 +372,8 @@
  YUN_neutrality_ADJ:0 "云南"
  YUN_communism_ADJ:0 "云南"
 
+ SIC_gradualism:0 "四川"
+ SIC_gradualism_DEF:0 "四川"
  SIC_fascism:0 "四川"
  SIC_fascism_DEF:0 "四川"
  SIC_democratic:0 "四川"

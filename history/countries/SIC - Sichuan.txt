@@ -2,17 +2,23 @@
 oob = "SIC"
 
 set_politics = {
-	ruling_party = communism 
+	ruling_party = gradualism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	transhumanism = 3
+	postmodernism = 12
+	progressivism = 15
+	gradualism = 60
+	conservatism = 5
+	retroism = 5
 }
 
 # Starting tech
@@ -121,7 +127,7 @@ create_country_leader = {
 	name = "彭清华"
 	desc = ""
 	picture = "gfx/leaders/PRC/Portrait_Sichuan_PengQinghua.dds"
-	ideology = marxism
+	ideology = revisionism
 	traits = {
 		#
 	}

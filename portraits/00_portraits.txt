@@ -39,6 +39,36 @@ default = {
 					"GFX_Portrait_Asia_Generic_3" 
 			}
 		}
+		transhumanism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		postmodernism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_2" 
+			}
+		}
+		progressivism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		gradualism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		retroism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_2" 
+			}
+		}
 	}
 
 	operative = {
