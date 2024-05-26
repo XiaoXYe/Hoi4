@@ -14,7 +14,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = abstractism
 			traits = {
 				chouxiang_emperor
 				bad_guy

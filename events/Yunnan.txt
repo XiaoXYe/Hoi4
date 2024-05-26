@@ -40,12 +40,20 @@ country_event = {  # ÀÔ–¶¥®∂·»°’˛»®
 		set_cosmetic_tag = YUN_chouxiang_heavenly_kingdom
 		promote_character = YUN_ch_sunxiaochuan
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = postmodernism
 			elections_allowed = no
 		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.30
+		set_popularities = {
+			democratic = 0
+			fascism = 0
+			communism = 0
+			neutrality = 0
+			transhumanism = 5
+			postmodernism = 60
+			progressivism = 10
+			gradualism = 5
+			conservatism = 10
+			retroism = 10
 		}
 		hidden_effect = {
 			news_event = { id = cnnews.18 days = 1}

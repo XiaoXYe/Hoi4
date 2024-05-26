@@ -14,7 +14,7 @@ characters={
 
 		country_leader = {
 			desc = "todo"
-			ideology = centrism
+			ideology = abstractism
 			traits = {
 				#
 			}

@@ -15,7 +15,7 @@ leader_traits = {
 		random = no
 		stability_factor = 0.20
 		war_support_factor = 0.20
-		fascism_drift - 0.05
+		conservatism_drift - 0.05
 
 		ai_will_do = {
 			factor = 1

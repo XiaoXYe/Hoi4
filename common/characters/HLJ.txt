@@ -14,7 +14,7 @@ characters={
 
 		country_leader = {
 			desc = "todo"
-			ideology = oligarchism
+			ideology = monopoly_capitalism
 			traits = {
 				#
 			}

@@ -1,0 +1,84 @@
+###########################
+# Neimenggu Events
+###########################
+
+add_namespace = neimenggu
+
+country_event = {  # 蒙东分离主义者活动频繁
+	id = neimenggu.1
+	title = neimenggu.1.t
+	desc = neimenggu.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = neimenggu.1.a
+		add_stability = -0.05
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = neimenggu.2
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {  # 蒙东宣布脱离
+	id = neimenggu.2
+	title = neimenggu.2.t
+	desc = neimenggu.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			NME = {
+				transfer_state = 23
+				add_state_core = 23  # Mengdong
+			}
+			LIN = {
+				puppet = NME
+			}
+			NME = {
+				load_oob = NME
+				set_politics = {
+					ruling_party = conservatism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					democratic = 0
+					fascism = 0
+					communism = 0
+					neutrality = 0
+					transhumanism = 5
+					postmodernism = 20
+					progressivism = 5
+					gradualism = 5
+					conservatism = 60
+					retroism = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = neimenggu.2.a
+		ai_chance = { base = 100 }
+		add_stability = -0.05
+		add_political_power = -20
+	}
+	option = {
+		name = neimenggu.2.b
+		add_stability = -0.05
+		add_political_power = -20
+		NME = {
+			change_tag_from = NMG
+		}
+	}
+}

@@ -425,8 +425,10 @@ country_event = {
 		name = dbpact.36.b # They will be crushed
 		trigger = { is_ai = no }
 		add_political_power = -100
+		add_stability = -1.00
+		add_war_support = -1.00
 		NMG = {
-			country_event = dbpact.46 # Notify Bulgaria of refusal
+			country_event = dbpact.46 # Notify Neimenggu of refusal
 		}
 	}
 }
@@ -447,6 +449,12 @@ country_event = {
 		effect_tooltip = {
 			LIN = {
 				white_peace = NMG
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = neimenggu.1
+				days = 30
 			}
 		}
 	}

@@ -28,13 +28,25 @@ country_event = {  # па╟миол╗
         }
 		promote_character = {
 			character = HLJ_ch_xinba
-			ideology = oligarchism
+			ideology = monopoly_capitalism
 		}
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = conservatism
 			elections_allowed = no
 			last_election = "2020.3.1"
 			election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 0
+			fascism = 0
+			communism = 0
+			neutrality = 0
+			transhumanism = 2
+			postmodernism = 10
+			progressivism = 10
+			gradualism = 13
+			conservatism = 60
+			retroism = 5
 		}
 
 	}
