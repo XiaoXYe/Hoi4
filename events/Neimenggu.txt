@@ -52,10 +52,6 @@ country_event = {  # ÃÉ¶«Ğû²¼ÍÑÀë
 				}
 
 				set_popularities = {
-					democratic = 0
-					fascism = 0
-					communism = 0
-					neutrality = 0
 					transhumanism = 5
 					postmodernism = 20
 					progressivism = 5
@@ -63,6 +59,10 @@ country_event = {  # ÃÉ¶«Ğû²¼ÍÑÀë
 					conservatism = 60
 					retroism = 5
 				}
+				add_state_claim = 37 # Chifeng
+				add_state_claim = 30 # Tongliao
+				add_state_claim = 19 # Xingan
+				add_state_claim = 9 # Hulunbeier
 			}
 		}
 	}
@@ -72,6 +72,7 @@ country_event = {  # ÃÉ¶«Ğû²¼ÍÑÀë
 		ai_chance = { base = 100 }
 		add_stability = -0.05
 		add_political_power = -20
+		hidden_effect = { news_event = cnnews.22 }
 	}
 	option = {
 		name = neimenggu.2.b
@@ -80,5 +81,6 @@ country_event = {  # ÃÉ¶«Ğû²¼ÍÑÀë
 		NME = {
 			change_tag_from = NMG
 		}
+		hidden_effect = { news_event = cnnews.22 }
 	}
 }

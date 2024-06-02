@@ -24,7 +24,7 @@ characters={
 			slot = political_advisor
 			idea_token = BEJ_advisor_guailing
 			traits  = {
-				democratic_reformer 
+				 
 			}
 			available = {
 				has_completed_focus = BEJ_welcome_GuAiling

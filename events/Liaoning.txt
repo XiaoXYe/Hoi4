@@ -37,10 +37,6 @@ country_event = {  # µ∂∏Á…œÃ®
 			election_frequency = 48
 		}
 		set_popularities = {
-			democratic = 0
-			fascism = 0
-			communism = 0
-			neutrality = 0
 			transhumanism = 2
 			postmodernism = 55
 			progressivism = 5

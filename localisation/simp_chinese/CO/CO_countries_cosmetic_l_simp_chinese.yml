@@ -1,4 +1,7 @@
 ﻿l_simp_chinese:
+ LIT_SIC_pilot_base:0 "甘孜州藏族文化特区"
+ LIT_SIC_pilot_base_DEF:0 "甘孜州藏族文化特区"
+
  LIT_LITANGYIA:0 "大理塘尼亚"
  LIN_LIT_LITANGYIA:0 "东北总督辖区"
  HEN_LIT_LITANGYIA:0 "中原总督辖区"
@@ -8,3 +11,11 @@
  YUN_LIT_LITANGYIA:0 "云贵总督辖区"
  HUB_LIT_LITANGYIA:0 "两湖总督辖区"
  GUD_LIT_LITANGYIA:0 "南海总督辖区"
+
+ BEJ_Guailing_progressivism:0 "北京进步联盟"
+ BEJ_USC_democratic:0 "河北进步联盟"
+ BEJ_USC_democratic_DEF:0 "河北进步联盟"
+ BEJ_USC_united_states:0 "中华合众国"
+ BEJ_USC_united_states_DEF:0 "中华合众国"
+ BEJ_USC_people_united_states:0 "中华人民合众国"
+ BEJ_USC_people_united_states_DEF:0 "中华人民合众国"

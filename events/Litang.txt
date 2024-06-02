@@ -1221,6 +1221,33 @@ country_event = {# 发展计划
 	}
 }
 
+country_event = {# 处理成都男同
+	id = litang.500
+	title = litang.500.t
+	desc = litang.500.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.500.a
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.1
+		}
+		add_political_power = -35
+	}
+	option = {
+		name = litang.500.b
+		ai_chance = { base = 90 }
+		add_political_power = 35
+		add_timed_idea = {
+			idea = LIT_gay_camps
+			days = 180
+		}
+	}
+}
+
 country_event = {# 千年之都
 	id = litang.1000
 	title = litang.1000.t

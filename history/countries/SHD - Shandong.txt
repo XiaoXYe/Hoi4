@@ -2,17 +2,19 @@
 oob = "SHD"
 
 set_politics = {
-	ruling_party = communism 
+	ruling_party = gradualism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	transhumanism = 5
+	postmodernism = 10
+	progressivism = 15
+	gradualism = 50
+	conservatism = 10
+	retroism = 10
 }
 
 # Starting tech
@@ -232,7 +234,7 @@ create_country_leader = {
 	name = "刘家义"
 	desc = ""
 	picture = "gfx/leaders/PRC/Portrait_Shandong_LiuJiayi.dds"
-	ideology = marxism
+	ideology = revisionism
 	traits = {
 		#
 	}

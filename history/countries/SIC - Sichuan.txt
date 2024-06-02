@@ -9,10 +9,6 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 0
-	neutrality = 0
 	transhumanism = 3
 	postmodernism = 12
 	progressivism = 15

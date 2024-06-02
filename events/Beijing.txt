@@ -58,12 +58,12 @@ country_event = {
 		}
 		add_stability = -0.1
 		add_popularity = {
-			ideology = communism
-			popularity = -0.1
+			ideology = gradualism
+			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = democratic
-			popularity = 0.1
+			ideology = progressivism
+			popularity = 0.05
 		}
 	}
 }
@@ -90,12 +90,12 @@ country_event = {
 		}
 		add_stability = -0.2
 		add_popularity = {
-			ideology = communism
-			popularity = -0.1
+			ideology = gradualism
+			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = democratic
-			popularity = 0.1
+			ideology = progressivism
+			popularity = 0.05
 		}
 	}
 }
@@ -114,76 +114,25 @@ country_event = {
 	}
 	option = {
 		name = beijing.4.a
-		hidden_effect = {
-			country_event = {
-				id = beijing.5
-				days = 14
-			}
-		}
 		add_stability = -0.3
 		add_popularity = {
-			ideology = communism
+			ideology = gradualism
 			popularity = -0.1
 		}
 		add_popularity = {
-			ideology = democratic
+			ideology = progressivism
 			popularity = 0.1
 		}
 
 		promote_character = BEJ_ch_guailing_1
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = progressivism
 			elections_allowed = yes
 			last_election = "2020.3.1"
 			election_frequency = 48
 		}
-		set_cosmetic_tag = BEJ_USC_democratic
+		set_cosmetic_tag = BEJ_Guailing_progressivism
 		set_country_flag = BEJ_coup
-	}
-}
-
-country_event = {
-	id = beijing.5
-	title = beijing.5.t
-	desc = beijing.5.d
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event beijing.5"
-	}
-	option = {
-		name = beijing.5.a
-		hidden_effect = {
-			XIJ = {
-				country_event = {
-					id = xinjiang.1
-					days = 1
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = beijing.6
-	title = beijing.6.t
-	desc = beijing.6.d
-	picture = GFX_report_event_china_infiltration
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event beijing.6"
-	}
-	option = {
-		name = beijing.6.a
-		hidden_effect = {
-			news_event = { id = cnnews.19 days = 1}
-		}
 	}
 }
 
@@ -359,7 +308,7 @@ country_event = {
 	option = {
 		name = beijing.14.a
 		add_popularity = {
-			ideology = democratic
+			ideology = progressivism
 			popularity = 0.05
 		}
 		country_event = {
@@ -370,7 +319,7 @@ country_event = {
 	option = {
 		name = beijing.14.b
 		add_popularity = {
-			ideology = fascism
+			ideology = conservatism
 			popularity = 0.05
 		}
 		country_event = {
@@ -395,7 +344,7 @@ country_event = {
 	option = {
 		name = beijing.15.a
 		add_popularity = {
-			ideology = democratic
+			ideology = gradualism
 			popularity = 0.05
 		}
 		country_event = {
@@ -406,7 +355,7 @@ country_event = {
 	option = {
 		name = beijing.15.b
 		add_popularity = {
-			ideology = communism
+			ideology = progressivism
 			popularity = 0.05
 		}
 		country_event = {
@@ -417,7 +366,7 @@ country_event = {
 	option = {
 		name = beijing.15.c
 		add_popularity = {
-			ideology = neutrality
+			ideology = conservatism
 			popularity = 0.05
 		}
 		country_event = {
@@ -428,7 +377,7 @@ country_event = {
 	option = {
 		name = beijing.15.e
 		add_popularity = {
-			ideology = fascism
+			ideology = conservatism
 			popularity = 0.05
 		}
 		country_event = {
@@ -454,7 +403,7 @@ country_event = {
 		name = beijing.16.a
 		add_political_power = 30
 		add_popularity = {
-			ideology = fascism
+			ideology = conservatism
 			popularity = 0.05
 		}
 		add_manpower = -2
@@ -681,7 +630,7 @@ country_event = {
 		name = beijing.24.a
 		add_stability = 0.10
 		add_popularity = {
-			ideology = democratic
+			ideology = progressivism
 			popularity = 0.05
 		}
 	}
@@ -689,7 +638,7 @@ country_event = {
 		name = beijing.24.b
 		add_war_support = 0.10
 		add_popularity = {
-			ideology = communism
+			ideology = gradualism
 			popularity = 0.05
 		}
 	}

@@ -908,7 +908,7 @@
 			add_political_power = -50
 			add_stability = -0.05
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_legal_president_idea }
@@ -939,7 +939,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_against_traditionalists"
 			add_popularity = {
-				ideology = neutrality
+				ideology = conservatism
 				popularity = -0.10
 			}
 		}
@@ -969,7 +969,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_democratic_political_system"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.10
 			}
 			add_stability = 0.10
@@ -1000,7 +1000,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_federal_court_system"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_political_power = 50
@@ -1032,7 +1032,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_financial_reform"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_new_finiance_system_idea }
@@ -1064,7 +1064,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_free_speech"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_speech_freedom_idea }
@@ -1096,7 +1096,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_congress"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_constitution_idea }
@@ -1240,7 +1240,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_fight_against_chouxiang"
 			add_popularity = {
-				ideology = neutrality
+				ideology = postmodernism
 				popularity = -0.20
 			}
 		}
@@ -1270,7 +1270,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_feminism"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.20
 			}
 			add_stability = -0.02
@@ -1301,7 +1301,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_role_of_union"
 			add_popularity = {
-				ideology = communism
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_union_reborn }
@@ -1332,7 +1332,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_public_welfare"
 			add_popularity = {
-				ideology = communism
+				ideology = progressivism
 				popularity = 0.05
 			}
 			add_ideas = { BEJ_public_welfare_idea }
@@ -1364,7 +1364,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_same_sex_marriage_legalized"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.20
 			}
 		}
@@ -1395,7 +1395,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.20
 			}
 		}
@@ -1427,7 +1427,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
 			add_popularity = {
-				ideology = democratic
+				ideology = progressivism
 				popularity = 0.20
 			}
 			add_stability = 0.20

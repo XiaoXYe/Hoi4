@@ -604,6 +604,7 @@ LIT_break_iron_curtain_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = NMG
 		}
 
 		fire_only_once = no
@@ -628,6 +629,57 @@ LIT_break_iron_curtain_category = {
 			create_wargoal = {
 				type = annex_everything
 				target = NMG
+			}
+			remove_ideas = GEN_iron_curtain_idea
+			clr_country_flag = LIT_prepare_conquer_flag
+		}
+	}
+
+	LIT_conquer_neimenggueast_decision = {
+		allowed = {
+			tag = LIT
+		}
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_break_iron_curtain
+			country_exists = NME
+			NOT = {
+				has_war_with = NME
+			}
+			NOT = {
+				is_ally_with = NME
+			}
+		}
+
+		available = {
+			has_war = no
+			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = NME
+		}
+
+		fire_only_once = no
+		cost = 20
+		days_remove = 15
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				country_exists = LIN
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_conquer_neimenggueast_decision"
+			set_country_flag = LIT_prepare_conquer_flag
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_conquer_neimenggueast_decision"
+			create_wargoal = {
+				type = annex_everything
+				target = NME
 			}
 			remove_ideas = GEN_iron_curtain_idea
 			clr_country_flag = LIT_prepare_conquer_flag
@@ -660,6 +712,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = XIJ
 		}
 
 		fire_only_once = no
@@ -712,6 +765,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = QIH
 		}
 
 		fire_only_once = no
@@ -764,6 +818,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = GAS
 		}
 
 		fire_only_once = no
@@ -816,6 +871,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = NIX
 		}
 
 		fire_only_once = no
@@ -868,6 +924,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = YUN
 		}
 
 		fire_only_once = no
@@ -920,6 +977,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = GUZ
 		}
 
 		fire_only_once = no
@@ -972,6 +1030,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = SAX
 		}
 
 		fire_only_once = no
@@ -1025,6 +1084,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = JIS
 		}
 
 		fire_only_once = no
@@ -1077,6 +1137,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = SHH
 		}
 
 		fire_only_once = no
@@ -1130,6 +1191,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = ANH
 		}
 
 		fire_only_once = no
@@ -1182,6 +1244,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = ZHJ
 		}
 
 		fire_only_once = no
@@ -1234,6 +1297,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = HUB
 		}
 
 		fire_only_once = no
@@ -1286,6 +1350,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = HUN
 		}
 
 		fire_only_once = no
@@ -1338,6 +1403,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = JIX
 		}
 
 		fire_only_once = no
@@ -1390,6 +1456,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = FUJ
 		}
 
 		fire_only_once = no
@@ -1442,6 +1509,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = GUX
 		}
 
 		fire_only_once = no
@@ -1494,6 +1562,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = GUD
 		}
 
 		fire_only_once = no
@@ -1546,6 +1615,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = HAN
 		}
 
 		fire_only_once = no
@@ -1598,6 +1668,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = HOK
 		}
 
 		fire_only_once = no
@@ -1650,6 +1721,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = MAC
 		}
 
 		fire_only_once = no
@@ -1702,6 +1774,7 @@ LIT_final_fight_category = {
 		available = {
 			has_war = no
 			NOT = { has_country_flag = LIT_prepare_conquer_flag }
+			is_neighbor_of = TAW
 		}
 
 		fire_only_once = no

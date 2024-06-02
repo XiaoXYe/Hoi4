@@ -418,7 +418,7 @@ ideas = {
 				always = no
 			}
 
-			picture = usa_great_depression_1
+			picture = great_depression
 
 			modifier = {
 				consumer_goods_factor = 0.10
@@ -445,6 +445,20 @@ ideas = {
 				army_attack_factor = 0.05
 				breakthrough_factor = 0.05
 				army_org_factor = 0.05
+			}
+		}
+
+		LIT_gay_camps = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.20
+				production_factory_efficiency_gain_factor = -0.1
 			}
 		}
 

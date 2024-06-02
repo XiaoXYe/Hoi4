@@ -313,3 +313,52 @@ news_event = {
 		name = cnnews.19.a
 	}
 }
+
+# 山河同盟
+news_event = {
+	id = cnnews.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.20" }
+	title = cnnews.20.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.20.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.20.a
+	}
+}
+
+
+# 理塘对阵东北
+news_event = {
+	id = cnnews.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.21" }
+	title = cnnews.21.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.21.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.21.a
+	}
+}
+
+# 蒙东脱离内蒙古
+news_event = {
+	id = cnnews.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.22" }
+	title = cnnews.22.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.22.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.22.a
+	}
+}
