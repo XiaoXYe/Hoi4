@@ -191,6 +191,10 @@ country_event = { # Ï´¾¡Ç¦»ª
 					days = 3
 				}
 			}
+			news_event = {
+				id = cnnews.24
+				days = 2
+			}
 		}
 	}
 }
@@ -236,7 +240,7 @@ country_event = { # ¹éÐÄ
 
 	option = {
 		name = litang.107.a
-				set_country_flag = LIT_turmoil
+		set_country_flag = LIT_turmoil
 		country_event = {
 			id = litang.108
 		}

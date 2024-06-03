@@ -4,7 +4,7 @@
 
 add_namespace = heilongjiang
 
-country_event = {  # 辛巴上台
+country_event = {  # 新文化领袖
 	id = heilongjiang.999
 	title = heilongjiang.999.t
 	desc = heilongjiang.999.d
@@ -21,10 +21,10 @@ country_event = {  # 辛巴上台
 		log = "[GetDateText]: [Root.GetName]: event heilongjiang.999"
 	}
 
-	option = {
+	option = {  # 辛巴
 		name = heilongjiang.999.a
 		ai_chance = {
-            base = 100
+            base = 70
         }
 		promote_character = {
 			character = HLJ_ch_xinba
@@ -43,6 +43,31 @@ country_event = {  # 辛巴上台
 			gradualism = 13
 			conservatism = 60
 			retroism = 5
+		}
+	}
+
+	option = {  # 陈泽
+		name = heilongjiang.999.b
+		ai_chance = {
+            base = 30
+        }
+		promote_character = {
+			character = HLJ_ch_xinba
+			ideology = abstract_progrssivism
+		}
+		set_politics = {
+			ruling_party = postmodernism
+			elections_allowed = no
+			last_election = "2020.3.1"
+			election_frequency = 48
+		}
+		set_popularities = {
+			transhumanism = 2
+			postmodernism = 55
+			progressivism = 5
+			gradualism = 3
+			conservatism = 15
+			retroism = 20
 		}
 
 	}

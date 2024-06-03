@@ -4,7 +4,7 @@
 
 add_namespace = beijing
 
-country_event = {
+country_event = {  # 天才少女谷爱凌抵达北京
 	id = beijing.1
 	title = beijing.1.t
 	desc = beijing.1.d
@@ -36,7 +36,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 谷爱凌声称当前文化过于保守
 	id = beijing.2
 	title = beijing.2.t
 	desc = beijing.2.d
@@ -68,7 +68,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 谷爱凌开始传播自己的进步主义思想
 	id = beijing.3
 	title = beijing.3.t
 	desc = beijing.3.d
@@ -100,7 +100,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 进步主义夺得文化主导权
 	id = beijing.4
 	title = beijing.4.t
 	desc = beijing.4.d
@@ -133,10 +133,13 @@ country_event = {
 		}
 		set_cosmetic_tag = BEJ_Guailing_progressivism
 		set_country_flag = BEJ_coup
+		hidden_effect = {
+			news_event = cnnews.19
+		}
 	}
 }
 
-country_event = {
+country_event = {  # 年政府工作总结
 	id = beijing.7
 	title = beijing.7.t
 	desc = beijing.7.d
@@ -164,7 +167,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 年主要任务
 	id = beijing.8
 	title = beijing.8.t
 	desc = beijing.8.d
@@ -183,7 +186,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 调整防疫政策
 	id = beijing.9
 	title = beijing.9.t
 	desc = beijing.9.d
@@ -212,7 +215,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 谷爱凌宣布就任临时文化大总统
 	id = beijing.10
 	title = beijing.10.t
 	desc = beijing.10.d
@@ -230,7 +233,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  
 	id = beijing.11
 	title = beijing.11.t
 	desc = beijing.11.d
@@ -293,7 +296,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 疫情信息平台的开发问题
 	id = beijing.14
 	title = beijing.14.t
 	desc = beijing.14.d
@@ -329,7 +332,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 公开招标
 	id = beijing.15
 	title = beijing.15.t
 	desc = beijing.15.d
@@ -387,7 +390,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 疫情信息平台正式上线
 	id = beijing.16
 	title = beijing.16.t
 	desc = beijing.16.d
@@ -410,7 +413,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 疫情信息平台正式上线
 	id = beijing.17
 	title = beijing.17.t
 	desc = beijing.17.d
@@ -428,7 +431,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 京津冀一体化提上日程
 	id = beijing.18
 	title = beijing.18.t
 	desc = beijing.18.d
@@ -451,7 +454,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 京津冀一体化
 	id = beijing.19
 	title = beijing.19.t
 	desc = beijing.19.d
@@ -465,16 +468,17 @@ country_event = {
 	}
 	option = {
 		name = beijing.19.a
+		annex_country = {
+			target = HEB
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = TIJ
+			transfer_troops = yes
+		}
+		set_cosmetic_tag = BEJ_HEB_progressivism
 		hidden_effect = {
 			BEJ = {
-				annex_country = {
-					target = HEB
-					transfer_troops = yes
-				}
-				annex_country = {
-					target = TIJ
-					transfer_troops = yes
-				}
 				add_state_core = 82
 				add_state_core = 79
 				add_state_core = 78
@@ -489,6 +493,7 @@ country_event = {
 				add_state_core = 128
 				set_country_flag = BEJ_annex_hebei_tianjin_flag
 			}
+			news_event = cnnews.26
 		}
 	}
 }
@@ -712,6 +717,37 @@ country_event = {
 	option = {
 		name = beijing.27.b
 		air_experience = -25
+	}
+}
+
+country_event = {  # 疫苗研发完成
+	id = beijing.28
+	title = beijing.28.t
+	desc = beijing.28.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.28"
+	}
+	option = {
+		name = beijing.28.a
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			news_event = cnnews.23
+		}
+	}
+	option = {
+		name = beijing.28.b
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = cnnews.23
+		}
 	}
 }
 

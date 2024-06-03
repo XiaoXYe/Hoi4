@@ -535,10 +535,16 @@ country_event = {
 	option = {
 		name = dbpact.61.a # Of course
 		ai_chance = { 
-			factor = 1
+			base = 10
 			modifier = {
 				factor = 100
-				tag = JIL
+				has_government = LIN
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_government = LIN
+				}
 			}
 		}
 		LIN = {
@@ -551,10 +557,16 @@ country_event = {
 	option = {
 		name = dbpact.61.b # NO
 		ai_chance = { 
-			factor = 100
+			base = 90
 			modifier = {
 				factor = 0
-				tag = JIL
+				has_government = LIN
+			}
+			modifier = {
+				factor = 100
+				NOT = {
+					has_government = LIN
+				}
 			}
 		}
 		add_war_support = 0.05

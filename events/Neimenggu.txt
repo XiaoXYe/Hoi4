@@ -44,6 +44,12 @@ country_event = {  # ÃÉ¶«Ðû²¼ÍÑÀë
 			}
 			NME = {
 				load_oob = NME
+
+				promote_character = {
+					character = HLJ_ch_wulantuya
+					ideology = old_artism
+				}
+
 				set_politics = {
 					ruling_party = conservatism
 					last_election = "1936.1.1"

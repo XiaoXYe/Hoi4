@@ -1,6 +1,6 @@
-BEJ_USC_democratic = {
-	color = rgb { 92 52 237 }
-	color_ui = rgb { 140 130 255 }
+BEJ_HEB_progressivism = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
 }
 BEJ_USC_people_united_states = {
 	color = rgb { 20 133 237 }

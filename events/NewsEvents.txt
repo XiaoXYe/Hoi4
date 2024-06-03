@@ -362,3 +362,84 @@ news_event = {
 		name = cnnews.22.a
 	}
 }
+
+# 北京疫苗研发完成
+news_event = {
+	id = cnnews.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.23" }
+	title = cnnews.23.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.23.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.23.a
+		trigger = {
+			OR = {
+				has_government = progressivism
+				has_government = gradualism
+			}
+		}
+	}
+	option = {
+		name = cnnews.23.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = progressivism
+					has_government = gradualism
+				}
+			}
+		}
+	}
+}
+
+# 丁真爆火
+news_event = {
+	id = cnnews.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.24" }
+	title = cnnews.24.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.24.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.24.a
+	}
+}
+
+# 北京宣布战胜疫情
+news_event = {
+	id = cnnews.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.25" }
+	title = cnnews.25.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.25.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.25.a
+	}
+}
+
+# 京津冀一体化
+news_event = {
+	id = cnnews.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.26" }
+	title = cnnews.26.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.26.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.26.a
+	}
+}

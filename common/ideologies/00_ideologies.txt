@@ -46,7 +46,8 @@ ideologies = {
 
 			abstractism = {
 			}
-
+			abstract_progrssivism = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -167,6 +168,8 @@ ideologies = {
 			litangnism = {
 			}
 			monopoly_capitalism = {
+			}
+			old_artism = {
 			}
 
 		}

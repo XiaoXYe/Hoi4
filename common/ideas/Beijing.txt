@@ -389,6 +389,50 @@ ideas = {
 			}
 		}
 
+		BEJ_vaccine_research_1_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_3
+
+			modifier = {
+				research_speed_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		BEJ_vaccine_research_2_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_2
+
+			modifier = {
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = 0.03
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+
+		BEJ_vaccine_research_3_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				research_speed_factor = -0.02
+				production_factory_max_efficiency_factor = -0.02
+				production_speed_industrial_complex_factor = -0.02
+			}
+		}
+
 	}
 
 }

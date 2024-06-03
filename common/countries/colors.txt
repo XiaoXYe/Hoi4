@@ -119,8 +119,8 @@ QIH = {
 	color_ui = rgb { 124 125 184 }
 }
 TIB = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 201 56 93 }
+	color = rgb { 168 166 167 }
+	color_ui = rgb { 177 207 205 }
 }
 XIJ = {
 	color = rgb { 203 138 74 }

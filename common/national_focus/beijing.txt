@@ -622,10 +622,9 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vaccine_research"
-			add_timed_idea = {
-				idea = GEN_vaccine_research
-				days = 180
-			}
+			set_country_flag = BEJ_vaccine_researching_flag
+			add_ideas = BEJ_vaccine_research_1_idea
+			unlock_decision_tooltip = BEJ_vaccine_research_development_decision
 		}
 	}
 
@@ -847,6 +846,9 @@
 			swap_ideas = {
 				remove_idea = GEN_pandemic_controlled
 				add_idea = GEN_pandemic_solved
+			}
+			hidden_effect = {
+				news_event = cnnews.25
 			}
 		}
 	}

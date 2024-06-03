@@ -34,7 +34,39 @@ characters={
 		}
 	}
 
+	HLJ_ch_chenze = {
+		name = HLJ_ch_chenze
 
+		portraits = {
+			civilian = {
+				large = GFX_HLJ_ch_chenze_portrait_large
+			}
+			army = {
+				large = GFX_HLJ_ch_chenze_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstract_progrssivism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
 
 
 	HLJ_ar={

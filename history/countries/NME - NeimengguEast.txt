@@ -106,6 +106,9 @@ if = {
 	}
 }
 
+recruit_character = NME_ch_wulantuya
+
+
 recruit_character = NMG_ar
 recruit_character = NMG_acr
 recruit_character = NMG_mt

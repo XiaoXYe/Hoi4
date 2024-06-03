@@ -1,0 +1,9 @@
+BEJ_vaccine_research_decisions = {
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		original_tag = BEJ
+	}
+	visible = {
+		has_country_flag = BEJ_vaccine_researching_flag
+	}
+}

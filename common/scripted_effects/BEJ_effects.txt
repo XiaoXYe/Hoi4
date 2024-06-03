@@ -1,0 +1,20 @@
+BEJ_reduce_vaccine_cost_effect = {
+	if = {
+		limit = {
+			has_idea = BEJ_vaccine_research_1_idea
+		}
+		swap_ideas = {
+			remove_idea = BEJ_vaccine_research_1_idea
+			add_idea = BEJ_vaccine_research_2_idea
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BEJ_vaccine_research_2_idea
+		}
+		swap_ideas = {
+			remove_idea = BEJ_vaccine_research_2_idea
+			add_idea = BEJ_vaccine_research_3_idea
+		}
+	}
+}

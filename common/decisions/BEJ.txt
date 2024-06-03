@@ -1,0 +1,147 @@
+BEJ_vaccine_research_decisions = {
+
+	BEJ_vaccine_research_development_decision = {
+		icon = GFX_decision_train
+		fixed_random_seed = no
+		allowed = {
+			original_tag = BEJ
+		}
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			research_speed_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 60
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			set_country_flag = BEJ_vaccine_research_development_decision_done_flag
+			unlock_decision_tooltip = BEJ_vaccine_research_clinical_trials_I_decision
+		}
+	}
+
+	BEJ_vaccine_research_clinical_trials_I_decision = {
+		icon = GFX_decision_train
+		fixed_random_seed = no
+		allowed = {
+			original_tag = BEJ
+		}
+		available = {
+			has_country_flag = BEJ_vaccine_research_development_decision_done_flag
+		}
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			research_speed_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			clr_country_flag = BEJ_vaccine_research_development_decision_done_flag
+			set_country_flag = BEJ_vaccine_research_clinical_trials_I_decision_done_flag
+			unlock_decision_tooltip = BEJ_vaccine_research_clinical_trials_II_decision
+		}
+	}
+
+	BEJ_vaccine_research_clinical_trials_II_decision = {
+		icon = GFX_decision_train
+		fixed_random_seed = no
+		allowed = {
+			original_tag = BEJ
+		}
+		cost = 25
+		available = {
+			has_country_flag = BEJ_vaccine_research_clinical_trials_I_decision_done_flag
+		}
+		fire_only_once = yes
+
+		modifier = {
+			research_speed_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = 60
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			clr_country_flag = BEJ_vaccine_research_clinical_trials_I_decision_done_flag
+			clr_country_flag = BEJ_vaccine_researching_flag
+			set_country_flag = BEJ_vaccine_research_clinical_trials_II_decision_done_flag
+			set_country_flag = GEN_vaccine_researched
+			if = {
+				limit = {
+					has_idea = BEJ_vaccine_research_1_idea
+				}
+				remove_ideas = BEJ_vaccine_research_1_idea
+			}
+			else_if = {
+				limit = {
+					has_idea = BEJ_vaccine_research_2_idea
+				}
+				remove_ideas = BEJ_vaccine_research_2_idea
+			}
+			else_if = {
+				limit = {
+					has_idea = BEJ_vaccine_research_3_idea
+				}
+				remove_ideas = BEJ_vaccine_research_3_idea
+			}
+			country_event = beijing.28
+		}
+	}
+
+	BEJ_investigate_wuhan_decision = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = BEJ
+		}
+		cost = 15
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 150
+		}
+		remove_effect = {
+			BEJ_reduce_vaccine_cost_effect = yes
+		}
+	}
+
+	BEJ_inactivation_research_decision = {
+		icon = generic_research
+		allowed = {
+			original_tag = BEJ
+		}
+		available = {
+			has_country_flag = BEJ_vaccine_research_development_decision_done_flag
+		}
+		cost = 20
+		fire_only_once = yes
+		days_remove = 15
+		ai_will_do = {
+			factor = 75
+		}
+
+		remove_effect = {
+			BEJ_reduce_vaccine_cost_effect = yes
+		}
+	}
+}

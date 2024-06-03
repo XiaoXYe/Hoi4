@@ -9,10 +9,6 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 0
-	neutrality = 0
 	transhumanism = 0
 	postmodernism = 20
 	progressivism = 15
@@ -111,6 +107,7 @@ if = {
 }
 
 recruit_character = HLJ_ch_xinba
+recruit_character = HLJ_ch_chenze
 
 recruit_character = HLJ_ar
 recruit_character = HLJ_acr

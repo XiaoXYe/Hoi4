@@ -1,0 +1,35 @@
+characters={
+	NME_ch_wulantuya = {
+		name = NME_ch_wulantuya
+
+		portraits = {
+			civilian = {
+				large = GFX_NME_ch_wulantuya_portrait_large
+			}
+			army = {
+				large = GFX_NME_ch_wulantuya_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = old_artism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+}
