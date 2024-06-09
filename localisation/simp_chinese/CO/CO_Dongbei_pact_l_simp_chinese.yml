@@ -77,3 +77,7 @@
  LIN_annouce_dongbei_unified:0 "宣布东北统一"
 
  DOB_eldest_son_of_repulic:0 "共和国长子"
+
+ DOB_found_dongbei_pact_threat:0 "成立东北协约"
+ DOB_invade_NMG_threat:0 "东北收复战争"
+ DOB_union_threat:0 "东北协约统一"

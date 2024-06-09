@@ -34,6 +34,10 @@ country_event = {
 					days = 3
 				}
 			}
+			add_named_threat = {
+				threat = 10
+				name = HUB_convid_19_threat
+			}
 		}
 	}
 }

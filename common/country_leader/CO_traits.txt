@@ -15,7 +15,7 @@ leader_traits = {
 		random = no
 		stability_factor = 0.20
 		war_support_factor = 0.20
-		conservatism_drift - 0.05
+		conservatism_drift = 0.02
 
 		ai_will_do = {
 			factor = 1
@@ -40,5 +40,13 @@ leader_traits = {
 	bad_guy = {
 		random = no
 		opinion_gain_monthly_factor = -0.5
+	}
+
+	progressivism_mentor = {
+		random = no
+		political_power_factor = 0.15
+		political_advisor_cost_factor = -0.10
+		progressivism_drift = 0.01
+		conservatism_drift = -0.01
 	}
 }

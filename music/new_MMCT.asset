@@ -71,3 +71,141 @@ music = {
     file = "tashanhe.ogg"
     volume = 0.65
 }
+
+music = {
+    name = "yixiaojianghu"
+    file = "yixiaojianghu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "zhexian"
+    file = "zhexian.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "buweixia"
+    file = "buweixia.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "chiling"
+    file = "chiling.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "cijiumenhuiyi"
+    file = "cijiumenhuiyi.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "gucheng"
+    file = "gucheng.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "hongzhaoyuan"
+    file = "hongzhaoyuan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "jinlichao"
+    file = "jinlichao.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "keneng"
+    file = "keneng.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "langrenpipa"
+    file = "langrenpipa.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "qifengle"
+    file = "qifengle.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "mangzhong"
+    file = "mangzhong.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "nianshaoyouwei"
+    file = "nianshaoyouwei.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "pingfanzhilu"
+    file = "pingfanzhilu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "taohuanuo"
+    file = "taohuanuo.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "tianwailaiwu"
+    file = "tianwailaiwu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "tianxia"
+    file = "tianxia.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "ting"
+    file = "ting.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "xingchendahai"
+    file = "xingchendahai.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "xuanni"
+    file = "xuanni.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "yanwuxie"
+    file = "yanwuxie.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "yuxitan"
+    file = "yuxitan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "yunyanchengyu"
+    file = "yunyaochengyu.ogg"
+    volume = 0.65
+}

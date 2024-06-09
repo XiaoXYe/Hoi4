@@ -23,8 +23,8 @@ country_event = {
 		set_country_flag = LIN_founded_dongbeipact
 		create_faction = DONGBEI_PACT
 		add_named_threat = {
-			threat = 4
-			name = "Formation of the Dongbei Pact"
+			threat = 5
+			name = DOB_found_dongbei_pact_threat
 		}
 		hidden_effect = {
 			add_opinion_modifier = { target = NMG modifier = Dongbei_Pact_anti_neimenggu_modifier }
@@ -301,6 +301,11 @@ country_event = {
 			type = annex_everything
 		}
 
+		add_named_threat = {
+			threat = 5
+			name = DOB_invade_NMG_threat
+		}
+
 		# Notify all Pact members
 		every_country = {
 			limit = {
@@ -519,6 +524,10 @@ country_event = {
 				id = dbpact.61
 				days = 3
 			}
+		}
+		add_named_threat = {
+			threat = 5
+			name = DOB_union_threat
 		}
 	}
 }

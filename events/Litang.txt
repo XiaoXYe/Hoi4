@@ -94,7 +94,7 @@ country_event = { # 倒霉的摄影师
 			LIT = {
 				country_event = {
 					id = litang.102
-					days = 3
+					days = 7
 				}
 			}
 		}
@@ -120,7 +120,7 @@ country_event = { # 甘孜州泡沫破灭
 			LIT = {
 				country_event = {
 					id = litang.103
-					days = 3
+					days = 7
 				}
 			}
 		}
@@ -349,6 +349,10 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = { id = cnnews.10 days = 3 }
+		}
+		add_named_threat = {
+			threat = 5
+			name = LIT_aba_conference_threat
 		}
 	}
 }
@@ -977,6 +981,10 @@ country_event = {  # 河南拒绝了！
 		declare_war_on = {
 			target = HEN
 			type = annex_everything
+		}
+		add_named_threat = {
+			threat = 40
+			name = LIT_start_civil_war_II_threat
 		}
 	}
 }

@@ -167,6 +167,10 @@
 				target = BEJ
 				type = annex_everything
 			}
+			add_named_threat = {
+				threat = 40
+				name = LIN_join_civil_war_II_threat
+			}
 			set_global_flag = GLB_civil_war_dongbei_engage
 		}
 	}

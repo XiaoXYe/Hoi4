@@ -119,3 +119,9 @@
  LIT_litang_empire_DEF:0 "理塘帝国"
 
  LIT_litangynia:0 "大理塘尼亚"
+
+ LIT_found_axis_threat:0 "成立理塘意志"
+ LIN_acquire_chongqing_threat:0 "川渝合并"
+ LIT_sanxia_conference_threat:0 "三峡会议"
+ LIT_aba_conference_threat:0 "阿坝会议"
+ LIT_start_civil_war_II_threat:0 "入侵河南"

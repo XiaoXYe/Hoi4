@@ -11,7 +11,7 @@
 	}
 	
 	default = no
-	continuous_focus_position = { x = 2400 y = 1200 }
+	continuous_focus_position = { x = 400 y = 2200 }
 
 	focus = {
 		id = BEJ_work_summary
@@ -940,9 +940,13 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_against_traditionalists"
+			swap_ideas = {
+				remove_idea = BEJ_gender_opposition_idea
+				add_idea = BEJ_gender_opposition_ease_1_idea
+			}
 			add_popularity = {
 				ideology = conservatism
-				popularity = -0.10
+				popularity = -0.05
 			}
 		}
 	}
@@ -1132,7 +1136,7 @@
 			add_stability = 0.05
 			country_event = {
 				id = beijing.30
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -1187,7 +1191,14 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_vegetarian_culture"
-			add_stability = 0.10
+			74 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
 		}
 	}
 
@@ -1214,7 +1225,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_environmentalism"
-			add_stability = 0.10
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.05
+			}
+			add_ideas = BEJ_sustainable_development_idea
 		}
 	}
 
@@ -1271,11 +1286,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_support_feminism"
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.20
+			swap_ideas = {
+				remove_idea = BEJ_gender_opposition_ease_1_idea
+				add_idea = BEJ_gender_opposition_ease_2_idea
 			}
-			add_stability = -0.02
 		}
 	}
 
@@ -1302,10 +1316,6 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_role_of_union"
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.05
-			}
 			add_ideas = { BEJ_union_reborn }
 		}
 	}
@@ -1365,10 +1375,10 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_same_sex_marriage_legalized"
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.20
-			}
+			swap_ideas = {
+					remove_idea = BEJ_gender_opposition_ease_2_idea
+					add_idea = BEJ_same_sex_marriage_idea
+				}
 		}
 	}
 
@@ -1396,10 +1406,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.20
-			}
+			country_event = beijing.200
 		}
 	}
 
@@ -1428,11 +1435,15 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_embrace_pluralism"
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.20
+			party_leader = {
+				limit = {
+					has_ideology = liberalism
+				}
+				add_trait = {
+					 ideology = liberalism
+					 trait = progressivism_mentor
+				}
 			}
-			add_stability = 0.20
 		}
 	}
 
@@ -1461,7 +1472,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_stride_forward"
-			add_political_power = 100
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.15
+			}
+			add_stability = 0.10
 		}
 	}
 
@@ -1490,7 +1505,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_diverse_and_progressive_china"
-			add_political_power = 100
+			add_ideas = BEJ_progrssivism_with_chinese_characteristics_idea
 		}
 	}
 
@@ -1499,8 +1514,12 @@
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 30
 		y = 8
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		bypass = {
+			has_global_flag = LIT_rise
+		}
 
 		available = {
 			has_global_flag = LIT_rise
@@ -1515,7 +1534,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus BEJ_litang_threat_looms"
-			add_political_power = 50
+			custom_effect_tooltip = GEN_tt_focus_auto_complete
 		}
 	}
 
@@ -1542,6 +1561,10 @@
 			BEJ = {
 				create_faction = "FREEDOM_LEAGUE"
 				add_war_support = 0.10
+			}
+			add_named_threat = {
+				threat = 5
+				name = BEJ_found_freedom_league_threat
 			}
 			hidden_effect = {
 				BEJ = {

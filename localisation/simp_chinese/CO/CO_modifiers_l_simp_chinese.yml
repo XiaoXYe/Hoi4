@@ -6,3 +6,11 @@
  Dongbei_Pact_refused_modifier:0 "拒绝加入东北协约"
  Dongbei_Pact_supported_enemy_modifier:0 "北京政府支持内蒙古"
  Dongbei_Pact_supported_us_modifier:0 "北京政府支持我们"
+
+
+ transhumanism_drift:0 "超人类主义每日增长"
+ postmodernism_drift:0 "后现代主义每日增长"
+ progressivism_drift:0 "进步主义每日增长"
+ gradualism_drift:0 "渐进主义每日增长"
+ conservatism_drift:0 "保守主义每日增长"
+ retroism_drift:0 "复古主义每日增长"

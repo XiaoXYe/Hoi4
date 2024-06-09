@@ -443,3 +443,20 @@ news_event = {
 		name = cnnews.26.a
 	}
 }
+
+
+# debug 用的
+news_event = {
+	id = cnnews.114514
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.114514" }
+	title = cnnews.114514.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.114514.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.114514.a
+	}
+}

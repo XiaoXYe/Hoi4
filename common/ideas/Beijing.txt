@@ -129,10 +129,23 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				local_manpower = 0.02
-				monthly_population = 0.10
-				production_factory_efficiency_gain_factor = -0.04
+				production_speed_industrial_complex_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = 0.10
+			}
+		}
+
+		BEJ_sustainable_development_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.03
+				stability_weekly = 0.01
+				production_speed_infrastructure_factor = -0.10
 			}
 		}
 
@@ -230,7 +243,8 @@ ideas = {
 			}
 		}
 
-		BEJ_capitalism_with_chinese_characteristics_idea = {
+		BEJ_open_borders_idea = {
+
 			allowed = {
 				always = no
 			}
@@ -238,14 +252,23 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				political_power_cost = -0.15
-				stability_weekly_factor = 0.01
-				war_support_weekly_factor = 0.01
-				fascism_drift = -0.01
-				neutrality_drift = -0.01
-				drift_defence_factor = 0.04
-				resistance_damage_to_garrison = -0.1
-				research_speed_factor = 0.15
+				monthly_population = 0.05
+				stability_factor = -0.10
+			}
+		}
+
+		BEJ_progrssivism_with_chinese_characteristics_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_cost = -0.10
+				drift_defence_factor = 0.10
+				resistance_damage_to_garrison = -0.20
+				research_speed_factor = 0.05
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 				surrender_limit = 0.1
@@ -433,6 +456,56 @@ ideas = {
 			}
 		}
 
+		BEJ_gender_opposition_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_3
+
+			modifier = {
+				monthly_population = -0.20
+				stability_factor = -0.35
+			}
+		}
+
+		BEJ_gender_opposition_ease_1_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = usa_great_depression_2
+
+			modifier = {
+				monthly_population = -0.15
+				stability_factor = -0.25
+			}
+		}
+
+		BEJ_gender_opposition_ease_2_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.10
+				stability_factor = -0.15
+			}
+		}
+
+		BEJ_same_sex_marriage_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.10
+			}
+		}
 	}
 
 }

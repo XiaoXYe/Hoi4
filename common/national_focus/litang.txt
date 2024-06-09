@@ -772,6 +772,10 @@
 					days = 1
 				}
 			}
+			add_named_threat = {
+				threat = 5
+				name = LIN_acquire_chongqing_threat
+			}
 		}
 	}
 
@@ -801,6 +805,10 @@
 				country_event = {
 					id = litang.3
 					days = 3
+				}
+				add_named_threat = {
+					threat = 5
+					name = LIT_found_axis_threat
 				}
 			}
 		}
@@ -834,6 +842,10 @@
 					id = hubei.2
 					days = 3
 				}
+			}
+			add_named_threat = {
+				threat = 5
+				name = LIT_sanxia_conference_threat
 			}
 		}
 	}

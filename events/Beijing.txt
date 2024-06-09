@@ -774,7 +774,7 @@ country_event = {  # 第一届自由选举
 	}
 }
 
-country_event = {
+country_event = {  # 开战！
 	id = beijing.100
 	title = beijing.100.t
 	desc = beijing.100.d
@@ -795,6 +795,10 @@ country_event = {
 		BEJ = {
 			add_to_faction = HEN
 		}
+		add_named_threat = {
+			threat = 20
+			name = BEJ_join_civil_war_II_threat
+		}
 		hidden_effect = {
 			news_event = { id = cnnews.14 days = 1 }
 		}
@@ -805,8 +809,106 @@ country_event = {
 		ai_chance = {
             base = 0        # Never pick this option.
         }
-		add_stability = -0.20
-		add_war_support = -0.20
+		add_stability = -0.50
+		add_war_support = -0.50
+	}
+}
+
+# 谷爱凌的进步派
+country_event = {  # 开放边境
+	id = beijing.200
+	title = beijing.200.t
+	desc = beijing.200.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.200"
+	}
+	option = {
+		name = beijing.200.a
+		add_timed_idea = {
+			idea = BEJ_open_borders_idea
+			days = 365
+		}
+	}
+	option = {
+		name = beijing.200.b
+		add_popularity = {
+			ideology = gradualism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = -0.05
+		}
+	}
+}
+
+### 北京风味事件
+# 2021.03.14 沙尘暴
+country_event = {
+	id = beijing.20210314
+	title = beijing.20210314.t
+	desc = beijing.20210314.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2021.3.14
+		tag = BEJ
 	}
 
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.20210314"
+	}
+	option = {
+		name = beijing.20210314.a
+		add_political_power = -30
+	}
+}
+
+# 2021.07.08都美竹吴亦凡
+country_event = {
+	id = beijing.20210708
+	title = beijing.20210708.t
+	desc = beijing.20210708.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2021.7.8
+		tag = BEJ
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event beijing.20210708"
+	}
+	option = {
+		name = beijing.20210708.a
+		ai_chance = {
+            base = 100
+        }
+		retire_character = BEJ_ch_wuyifan
+	}
+	option = {
+		name = beijing.20210708.b
+		ai_chance = {
+            base = 0
+        }
+		add_stability = -0.05
+		add_political_power = -50
+		add_popularity = {
+			ideology = progressivism
+			popularity = -0.10
+		}
+	}
 }

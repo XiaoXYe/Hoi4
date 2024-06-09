@@ -136,6 +136,428 @@ characters={
 		}
 	}
 
+	BEJ_ch_guanxiaotong = {
+		name = BEJ_ch_guanxiaotong
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_guanxiaotong_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_guanxiaotong_portrait_large
+				small = "GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = BEJ_guanxiaotong_stc
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer offensive_doctrine politically_connected media_personality }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_heshijie = {
+		name = BEJ_ch_heshijie
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_heshijie_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_heshijie_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_heshijie_ar
+			ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_lianxiao = {
+		name = BEJ_ch_lianxiao
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_lianxiao_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_lianxiao_portrait_large
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = gradualism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_lianxiao_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_maniubi = {
+		name = BEJ_ch_maniubi
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_maniubi_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_maniubi_portrait_large
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = postmodernism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = BEJ_maniubi_aco2
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_niudao = {
+		name = BEJ_ch_niudao
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_niudao_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_niudao_portrait_large
+				small = "GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = conservatism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_niudao_pot
+				traits  = {
+					prince_of_terror 
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer media_personality trait_reckless }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_tangrenjie = {
+		name = BEJ_ch_tangrenjie
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_tangrenjie_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_tangrenjie_portrait_large
+				small = "GFX_idea_generic_army_asia_1"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = gradualism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_tangrenjie_ai2
+			ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { infantry_officer media_personality politically_connected }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_wujing = {
+		name = BEJ_ch_wujing
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_wujing_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_wujing_portrait_large
+				small = "GFX_idea_generic_army_asia_1"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = gradualism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_wujing_ai2
+			ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { infantry_officer media_personality politically_connected }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_wuyifan = {
+		name = BEJ_ch_wuyifan
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_wuyifan_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_wuyifan_portrait_large
+				small = "GFX_idea_generic_army_asia_1"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = progressivism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_wuyifan_ai2
+			ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { infantry_officer media_personality politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_yangmi = {
+		name = BEJ_ch_yangmi
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_yangmi_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_yangmi_portrait_large
+				small = "GFX_idea_generic_army_asia_1"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = progressivism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = BEJ_yangmi_ai2
+			ledger  = army 
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { infantry_officer media_personality politically_connected }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
 	BEJ_ar={
 		advisor={
 			slot = high_command
