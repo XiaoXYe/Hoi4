@@ -142,3 +142,11 @@ LIT = {
 	color = rgb { 201 228 232 }
 	color_ui = rgb { 201 228 232 }
 }
+DAL = {
+	color = rgb { 139 69 19 }
+	color_ui = rgb { 139 69 19 }
+}
+NME = {
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
+}

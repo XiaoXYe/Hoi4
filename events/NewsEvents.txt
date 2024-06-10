@@ -444,6 +444,37 @@ news_event = {
 	}
 }
 
+# 东北加入第二次中国内战
+news_event = {
+	id = cnnews.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.27" }
+	title = cnnews.27.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.27.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.27.a
+	}
+}
+
+# 大连独立
+news_event = {
+	id = cnnews.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.28" }
+	title = cnnews.28.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.28.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.28.a
+	}
+}
 
 # debug 用的
 news_event = {

@@ -29,7 +29,7 @@ LIT_war_with_henan = {
 	}
 
 	ai_strategy = {
-		type = antagonize
+		type = prepare_for_war
 		id = HEN
 		value = 200
 	}

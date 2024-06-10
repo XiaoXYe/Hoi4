@@ -261,50 +261,6 @@ LIN_anti_armor = {
 	}
 }
 
-litang_ally = {
-	allowed = {
-		original_tag = LIN
-	}
-	enable = {
-		country_exists = LIT
-		country_exists = BEJ
-		has_country_flag = LIN_dongbei_unified_flag
-	}
-	abort = {
-		NOT = { country_exists = LIT }
-	}
-
-	ai_strategy = {
-		type = befriend
-		id = "LIT"
-		value = 200
-	}
-	ai_strategy = {
-		type = alliance
-		id = "LIT"
-		value = 200
-	}
-}
-
-germany_enemy = {
-	allowed = {
-		original_tag = LIN
-	}
-	enable = {
-		country_exists = LIT
-		NOT = { country_exists = BEJ }
-	}
-	abort = {
-		NOT = { country_exists = LIT }
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "LIT"
-		value = 200
-	}
-}
-
 LIN_template_design_1 = {
 	allowed = {
 		original_tag = LIN

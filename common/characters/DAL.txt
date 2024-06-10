@@ -1,0 +1,69 @@
+characters={
+	DAL_ch_boxilai = {
+		name = DAL_ch_boxilai
+
+		portraits = {
+			civilian = {
+				large = GFX_DAL_ch_boxilai_portrait_large
+			}
+			army = {
+				large = GFX_DAL_ch_boxilai_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DAL_ch_wangsicong = {
+		name = DAL_ch_wangsicong
+
+		portraits = {
+			civilian = {
+				large = GFX_DAL_ch_wangsicong_portrait_large
+			}
+			army = {
+				large = GFX_DAL_ch_wangsicong_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+}

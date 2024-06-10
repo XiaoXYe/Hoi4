@@ -13,3 +13,18 @@ BEJ_defend_LIN = {
         value = 100
     }
 }
+
+BEJ_garrison = {
+    allowed = {
+        original_tag = BEJ
+    }
+    enable = {
+       always = yes
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = garrison_reinforcement_priority
+        value = 100
+    }
+}

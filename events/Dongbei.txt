@@ -625,5 +625,6 @@ country_event = {
 			type = annex_everything
 			target = FROM
 		}
+		set_country_flag = DOB_union_blocked
 	}
 }

@@ -1,0 +1,14 @@
+SHD_garrison = {
+    allowed = {
+        original_tag = SHD
+    }
+    enable = {
+       always = yes
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = garrison_reinforcement_priority
+        value = 100
+    }
+}

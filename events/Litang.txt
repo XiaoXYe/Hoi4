@@ -272,8 +272,7 @@ country_event = { # 新王
 	}
 }
 
-# 拉萨缔盟
-country_event = {
+country_event = { # 拉萨缔盟
 	id = litang.3
 	title = litang.3.t
 	desc = litang.3.d
@@ -297,7 +296,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 西藏同意了
 	id = litang.5
 	title = litang.5.t
 	desc = litang.5.d
@@ -319,8 +318,7 @@ country_event = {
 	}
 }
 
-# 阿坝会议
-country_event = {
+country_event = {  # 阿坝会议
 	id = litang.4
 	title = litang.4.t
 	desc = litang.4.d
@@ -357,7 +355,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {  # 川渝合并
 	id = litang.6
 	title = litang.6.t
 	desc = litang.6.d
@@ -372,21 +370,20 @@ country_event = {
 
 	option = { # study
 		name = litang.6.a
-		ai_chance = {
-            base = 0        # Never pick this option.
-        }
-		set_country_flag = LIT_begin_study_flag
-		complete_national_focus = LIT_begin_study
-	}
-
-	option = { # no study
-		name = litang.6.b
-		set_country_flag = LIT_keep_innocence_flag
-		complete_national_focus = LIT_keep_innocence
+		CHQ = {
+			country_event = {
+				id = chongqing.1
+				days = 1
+			}
+		}
+		add_named_threat = {
+			threat = 5
+			name = LIN_acquire_chongqing_threat
+		}
 	}
 }
 
-country_event = {
+country_event = {  # 三峡会议
 	id = litang.7
 	title = litang.7.t
 	desc = litang.7.d
@@ -401,6 +398,16 @@ country_event = {
 
 	option = { # learn manner
 		name = litang.7.a
+		HUB = {
+			country_event = {
+				id = hubei.2
+				days = 3
+			}
+		}
+		add_named_threat = {
+			threat = 5
+			name = LIT_sanxia_conference_threat
+		}
 	}
 
 }
@@ -467,7 +474,7 @@ country_event = {
 
 }
 
-country_event = {# Recruit soldiers
+country_event = {  # 招兵买马，准备起义
 	id = litang.11
 	title = litang.11.t
 	desc = litang.11.d

@@ -161,3 +161,213 @@ country_event = {  # 葫芦岛会议失败
 		name = liaoning.103.a
 	}
 }
+
+country_event = {  # 大连疫情
+	id = liaoning.500
+	title = liaoning.500.t
+	desc = liaoning.500.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = LIN
+		date > 2020.12.15
+	}
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.500"
+	}
+
+	option = {
+		name = liaoning.500.a
+		ai_chance = {
+            base = 100
+        }
+		add_stability = -0.10
+		custom_effect_tooltip = LIN_tt_dalian_gonna_rebel
+		hidden_effect = {
+			country_event = {
+				id = liaoning.501
+				days = 15
+			}
+		}
+	}
+
+	option = {
+		name = liaoning.500.b
+		ai_chance = {
+            base = 0
+        }
+		add_political_power = -50
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				id = liaoning.502
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = {  # 大连暴乱
+	id = liaoning.501
+	title = liaoning.501.t
+	desc = liaoning.501.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.501"
+	}
+
+	option = {
+		name = liaoning.501.a
+		ai_chance = { base = 100 }
+		custom_effect_tooltip = LIN_tt_dalian_gonna_defeat_us
+		hidden_effect = {
+			country_event = {
+				id = liaoning.503
+				days = 15
+			}
+		}
+	}
+
+	option = {
+		name = liaoning.501.b
+		hidden_effect = {
+			country_event = {
+				id = liaoning.504
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = {  # 大连疫情被成功控制
+	id = liaoning.502
+	title = liaoning.502.t
+	desc = liaoning.502.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.502"
+	}
+
+	option = {
+		name = liaoning.502.a
+		add_stability = 0.10
+	}
+}
+
+country_event = {  # 大连独立
+	id = liaoning.503
+	title = liaoning.503.t
+	desc = liaoning.503.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.503"
+		hidden_effect = {
+			DAL = {
+				transfer_state = 83
+				add_state_core = 83  # Dalian
+			}
+			DAL = {
+				load_oob = DAL
+
+				promote_character = {
+					character = DAL_ch_boxilai
+					ideology = monopoly_capitalism
+				}
+
+				set_politics = {
+					ruling_party = conservatism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					transhumanism = 5
+					postmodernism = 20
+					progressivism = 5
+					gradualism = 5
+					conservatism = 60
+					retroism = 5
+				}
+			}
+			transfer_navy = {
+				target = DAL
+			}
+			country_event = {
+				id = liaoning.505
+				days = 14
+			}
+		}
+	}
+
+
+	option = {
+		name = liaoning.503.a
+		ai_chance = { base = 100 }
+		add_stability = -0.10
+		add_political_power = -30
+		hidden_effect = { news_event = cnnews.28 }
+	}
+	option = {
+		name = liaoning.503.b
+		add_stability = -0.10
+		add_political_power = -30
+		DAL = {
+			change_tag_from = LIN
+		}
+		hidden_effect = { news_event = cnnews.28 }
+	}
+}
+
+country_event = {  # 大连暴乱被镇压
+	id = liaoning.504
+	title = liaoning.504.t
+	desc = liaoning.504.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.504"
+	}
+
+	option = {
+		name = liaoning.504.a
+		add_stability = 0.15
+	}
+}
+
+country_event = {  # 我们海军没了
+	id = liaoning.505
+	title = liaoning.505.t
+	desc = liaoning.505.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event liaoning.505"
+	}
+
+	option = {
+		name = liaoning.505.a
+		add_political_power = -25
+	}
+}

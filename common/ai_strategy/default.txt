@@ -6,7 +6,7 @@ default_unit_production = { #If adding country-unique ones, bear in mind that th
 		always = yes
 		NOT = { original_tag = LIT } 
 		NOT = { original_tag = BEJ } 
-		NOT = { original_tag = LIN  }
+		NOT = { original_tag = LIN }
 	}
 
 	ai_strategy = {

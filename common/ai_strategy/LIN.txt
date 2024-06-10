@@ -1,0 +1,90 @@
+LIN_friend_LIT = {
+	allowed = {
+		original_tag = LIN
+	}
+	enable = {
+		country_exists = LIT
+		country_exists = BEJ
+		has_country_flag = LIN_dongbei_unified_flag
+	}
+	abort = {
+		NOT = { country_exists = BEJ }
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = LIT
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = LIT
+		value = 200
+	}
+}
+
+LIN_enemy_LIT = {
+	allowed = {
+		original_tag = LIN
+	}
+	enable = {
+		country_exists = LIT
+		NOT = { country_exists = BEJ }
+	}
+	abort = {
+		NOT = { country_exists = LIT }
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = LIT
+		value = 200
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = LIT
+		value = 200
+	}
+}
+
+LIN_invade_BEJ = {
+	allowed = {
+		original_tag = LIN
+	}
+	enable = {
+		is_subject = no
+		BEJ = {
+			is_subject = no
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = BEJ
+		value = 100
+	}
+}
+
+LIN_ignore_TST = {
+	allowed = {
+		original_tag = LIN
+	}
+	enable = {
+		always = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore
+		id = TST
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TST
+		value = 100
+	}
+}

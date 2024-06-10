@@ -766,16 +766,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_acquire_chongqing"
-			CHQ = {
-				country_event = {
-					id = chongqing.1
-					days = 1
-				}
-			}
-			add_named_threat = {
-				threat = 5
-				name = LIN_acquire_chongqing_threat
-			}
+			country_event = litang.6
 		}
 	}
 
@@ -837,16 +828,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_sanxia_conference"
-			HUB = {
-				country_event = {
-					id = hubei.2
-					days = 3
-				}
-			}
-			add_named_threat = {
-				threat = 5
-				name = LIT_sanxia_conference_threat
-			}
+			country_event = litang.7
 		}
 	}
 
