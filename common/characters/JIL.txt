@@ -34,6 +34,73 @@ characters={
 		}
 	}
 
+	JIL_ch_tanglaoya = {
+		name = JIL_ch_tanglaoya
+
+		portraits = {
+			civilian = {
+				large = GFX_JIL_ch_tanglaoya_portrait_large
+			}
+			army = {
+				large = GFX_JIL_ch_tanglaoya_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	JIL_ch_xiaoliang = {
+		name = JIL_ch_xiaoliang
+
+		portraits = {
+			civilian = {
+				large = GFX_JIL_ch_xiaoliang_portrait_large
+			}
+			army = {
+				large = GFX_JIL_ch_xiaoliang_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
 
 	JIL_ar={
 		advisor={

@@ -93,6 +93,9 @@ if = {
 	}
 }
 
+recruit_character = HOK_ch_hongkongdoll
+
+
 recruit_character = HOK_ar
 recruit_character = HOK_acr
 recruit_character = HOK_mt

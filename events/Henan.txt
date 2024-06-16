@@ -4,6 +4,50 @@
 
 add_namespace = henan
 
+country_event = {  # °¢giaoÉÏÌ¨
+	id = henan.999
+	title = henan.999.t
+	desc = henan.999.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = HEN
+		date > 2020.8.1
+	}
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event henan.999"
+	}
+
+	option = {
+		name = henan.999.a
+		ai_chance = {
+            base = 100
+        }
+		promote_character = {
+			character = HEN_ch_agiao
+			ideology = abstractism
+		}
+		set_politics = {
+			ruling_party = postmodernism
+			elections_allowed = no
+			last_election = "2020.3.1"
+			election_frequency = 48
+		}
+		set_popularities = {
+			transhumanism = 2
+			postmodernism = 55
+			progressivism = 5
+			gradualism = 3
+			conservatism = 15
+			retroism = 20
+		}
+
+	}
+}
+
 country_event = {
 	id = henan.90
 	title = henan.90.t

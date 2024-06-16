@@ -84,6 +84,14 @@ spriteTypes = {
         texturefile = gfx/leaders/GUD/Portrait_GUD_MaHuateng.png
     }
     spriteType = {
+        name = GFX_GUD_ch_mengwanzhou_portrait_large
+        texturefile = gfx/leaders/GUD/Portrait_GUD_MengWanzhou.png
+    }
+    spriteType = {
+        name = GFX_GUD_ch_yaoanna_portrait_large
+        texturefile = gfx/leaders/GUD/Portrait_GUD_YaoAnna.png
+    }
+    spriteType = {
         name = GFX_HEB_ch_gengshuai_portrait_large
         texturefile = gfx/leaders/HEB/Portrait_HEB_GengShuai.png
     }
@@ -106,6 +114,10 @@ spriteTypes = {
     spriteType = {
         name = GFX_HLJ_ch_chenze_portrait_large
         texturefile = gfx/leaders/HLJ/Portrait_HLJ_ChenZe.png
+    }
+    spriteType = {
+        name = GFX_HOK_ch_hongkongdoll_portrait_large
+        texturefile = gfx/leaders/HOK/Portrait_HOK_HongkongDoll.png
     }
     spriteType = {
         name = GFX_HUB_ch_caixukun_portrait_large
@@ -174,6 +186,10 @@ spriteTypes = {
     spriteType = {
         name = GFX_NMG_ch_shiyue_portrait_large
         texturefile = gfx/leaders/NMG/Portrait_NME_ShiYue.png
+    }
+    spriteType = {
+        name = GFX_SHH_ch_jujingyi_portrait_large
+        texturefile = gfx/leaders/SHH/Portrait_SHH_JuJingyi.png
     }
     spriteType = {
         name = GFX_SHX_ch_liusiyao_portrait_large

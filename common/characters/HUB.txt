@@ -1,4 +1,73 @@
 characters={
+
+	HUB_ch_caixukun = {
+		name = HUB_ch_caixukun
+
+		portraits = {
+			civilian = {
+				large = GFX_HUB_ch_caixukun_portrait_large
+			}
+			army = {
+				large = GFX_HUB_ch_caixukun_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	HUB_ch_kongxueer = {
+		name = HUB_ch_kongxueer
+
+		portraits = {
+			civilian = {
+				large = GFX_HUB_ch_kongxueer_portrait_large
+			}
+			army = {
+				large = GFX_HUB_ch_kongxueer_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	HUB_ar={
 		advisor={
 			slot = high_command

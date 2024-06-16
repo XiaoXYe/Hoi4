@@ -93,6 +93,10 @@ if = {
 	}
 }
 
+
+recruit_character = SHH_ch_jujingyi
+
+
 recruit_character = SHH_ar
 recruit_character = SHH_acr
 recruit_character = SHH_mt

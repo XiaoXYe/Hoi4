@@ -285,7 +285,7 @@ country_event = {  # ¥Û¡¨∂¿¡¢
 				load_oob = DAL
 
 				promote_character = {
-					character = DAL_ch_boxilai
+					character = DAL_ch_wangjianlin
 					ideology = monopoly_capitalism
 				}
 

@@ -1,4 +1,39 @@
 characters={
+
+	HOK_ch_hongkongdoll = {
+		name = HOK_ch_hongkongdoll
+
+		portraits = {
+			civilian = {
+				large = GFX_HOK_ch_hongkongdoll_portrait_large
+			}
+			army = {
+				large = GFX_HOK_ch_hongkongdoll_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	HOK_ar={
 		advisor={
 			slot = high_command

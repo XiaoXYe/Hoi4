@@ -33,6 +33,40 @@ characters={
 		}
 	}
 
+	DAL_ch_wangjianlin = {
+		name = DAL_ch_wangjianlin
+
+		portraits = {
+			civilian = {
+				large = GFX_DAL_ch_wangjianlin_portrait_large
+			}
+			army = {
+				large = GFX_DAL_ch_wangjianlin_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
 	DAL_ch_wangsicong = {
 		name = DAL_ch_wangsicong
 

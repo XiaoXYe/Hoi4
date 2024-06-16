@@ -506,6 +506,18 @@ ideas = {
 				monthly_population = -0.10
 			}
 		}
+
+		BEJ_two_front_battle_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.10
+			}
+		}
 	}
 
 }

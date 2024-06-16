@@ -34,6 +34,39 @@ characters={
 		}
 	}
 
+	LIN_ch_shamatetuanzhang = {
+		name = LIN_ch_shamatetuanzhang
+
+		portraits = {
+			civilian = {
+				large = GFX_LIN_ch_shamatetuanzhang_portrait_large
+			}
+			army = {
+				large = GFX_LIN_ch_shamatetuanzhang_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
 
 	LIN_ar={
 		advisor={

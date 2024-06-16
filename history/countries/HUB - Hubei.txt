@@ -95,6 +95,10 @@ if = {
 
 country_event = { id = hubei.1 days = 21 }
 
+
+recruit_character = HUB_ch_caixukun
+
+
 recruit_character = HUB_ar
 recruit_character = HUB_acr
 recruit_character = HUB_mt

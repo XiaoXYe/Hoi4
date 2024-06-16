@@ -4,6 +4,50 @@
 
 add_namespace = hubei
 
+country_event = {  # ¼¦¸çÉÏÌ¨
+	id = hubei.999
+	title = hubei.999.t
+	desc = hubei.999.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUB
+		date > 2020.8.1
+	}
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event hubei.999"
+	}
+
+	option = {
+		name = hubei.999.a
+		ai_chance = {
+            base = 100
+        }
+		promote_character = {
+			character = HUB_ch_caixukun
+			ideology = liberalism
+		}
+		set_politics = {
+			ruling_party = progressivism
+			elections_allowed = no
+			last_election = "2020.3.1"
+			election_frequency = 48
+		}
+		set_popularities = {
+			transhumanism = 2
+			postmodernism = 5
+			progressivism = 55
+			gradualism = 3
+			conservatism = 15
+			retroism = 20
+		}
+
+	}
+}
+
 country_event = {
 	id = hubei.1
 	title = hubei.1.t

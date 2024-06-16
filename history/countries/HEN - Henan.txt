@@ -94,6 +94,9 @@ if = {
 	}
 }
 
+recruit_character = HEN_ch_agiao
+recruit_character = HEN_ch_mabaoguo
+
 recruit_character = HEN_ar
 recruit_character = HEN_acr
 recruit_character = HEN_mt

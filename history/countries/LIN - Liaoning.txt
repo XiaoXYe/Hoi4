@@ -220,6 +220,7 @@ if = {
 }
 
 recruit_character = LIN_ch_daoge
+recruit_character = LIN_ch_shamatetuanzhang
 
 recruit_character = LIN_ar
 recruit_character = LIN_acr

@@ -107,6 +107,8 @@ if = {
 }
 
 recruit_character = JIL_ch_huge
+recruit_character = JIL_ch_tanglaoya
+recruit_character = JIL_ch_xiaoliang
 
 recruit_character = JIL_ar
 recruit_character = JIL_acr

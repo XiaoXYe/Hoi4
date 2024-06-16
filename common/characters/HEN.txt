@@ -12,6 +12,14 @@ characters={
 			}
 		}
 
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
 		advisor={
 		}
 

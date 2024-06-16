@@ -93,6 +93,8 @@ if = {
 	}
 }
 
+recruit_character = SHX_ch_liusiyao
+
 recruit_character = SHX_ar
 recruit_character = SHX_acr
 recruit_character = SHX_mt
