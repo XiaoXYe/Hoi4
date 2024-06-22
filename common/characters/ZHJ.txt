@@ -1,4 +1,142 @@
 characters={
+	ZHJ_ch_mayun = {
+		name = ZHJ_ch_mayun
+
+		portraits = {
+			civilian = {
+				large = GFX_ZHJ_ch_mayun_portrait_large
+			}
+			army = {
+				large = GFX_ZHJ_ch_mayun_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	ZHJ_ch_tongjincheng = {
+		name = ZHJ_ch_tongjincheng
+
+		portraits = {
+			civilian = {
+				large = GFX_ZHJ_ch_tongjincheng_portrait_large
+			}
+			army = {
+				large = GFX_ZHJ_ch_tongjincheng_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	ZHJ_ch_xumengjie = {
+		name = ZHJ_ch_xumengjie
+
+		portraits = {
+			civilian = {
+				large = GFX_ZHJ_ch_xumengjie_portrait_large
+			}
+			army = {
+				large = GFX_ZHJ_ch_xumengjie_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	ZHJ_ch_yumeng = {
+		name = ZHJ_ch_yumeng
+
+		portraits = {
+			civilian = {
+				large = GFX_ZHJ_ch_yumeng_portrait_large
+			}
+			army = {
+				large = GFX_ZHJ_ch_yumeng_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+
+
 	ZHJ_ar={
 		advisor={
 			slot = high_command

@@ -1,4 +1,38 @@
 characters={
+	HAN_ch_wuxuanyi = {
+		name = HAN_ch_wuxuanyi
+
+		portraits = {
+			civilian = {
+				large = GFX_HAN_ch_wuxuanyi_portrait_large
+			}
+			army = {
+				large = GFX_HAN_ch_wuxuanyi_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	HAN_ar={
 		advisor={
 			slot = high_command

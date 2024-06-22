@@ -93,6 +93,8 @@ if = {
 	}
 }
 
+recruit_character = NMG_ch_shiyue
+
 recruit_character = NMG_ar
 recruit_character = NMG_acr
 recruit_character = NMG_mt

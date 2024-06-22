@@ -93,6 +93,11 @@ if = {
 	}
 }
 
+recruit_character = ZHJ_ch_mayun
+recruit_character = ZHJ_ch_tongjincheng
+recruit_character = ZHJ_ch_xumengjie
+recruit_character = ZHJ_ch_yumeng
+
 recruit_character = ZHJ_ar
 recruit_character = ZHJ_acr
 recruit_character = ZHJ_mt

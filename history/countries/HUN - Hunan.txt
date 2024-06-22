@@ -93,6 +93,8 @@ if = {
 	}
 }
 
+recruit_character = HUN_ch_fujing
+
 recruit_character = HUN_ar
 recruit_character = HUN_acr
 recruit_character = HUN_mt

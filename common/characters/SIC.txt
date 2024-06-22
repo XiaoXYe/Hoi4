@@ -1,10 +1,21 @@
 characters={
-	SIC_ch_ligan = {
-		name = SIC_ch_ligan
+	SIC_ch_duanaojuan = {
+		name = SIC_ch_duanaojuan
 
 		portraits = {
+			civilian = {
+				large = GFX_SIC_ch_duanaojuan_portrait_large
+			}
 			army = {
-				large = GFX_SIC_ch_ligan_portrait_large
+				large = GFX_SIC_ch_duanaojuan_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
 			}
 		}
 
@@ -14,10 +25,10 @@ characters={
 		corps_commander={
 			traits = { infantry_officer }
 			skill = 3
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 			legacy_id = -1
 		}
 	}
@@ -40,6 +51,52 @@ characters={
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	SIC_ch_libosi = {
+		name = SIC_ch_libosi
+
+		portraits = {
+			army = {
+				large = GFX_SIC_ch_libosi_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	SIC_ch_ligan = {
+		name = SIC_ch_ligan
+
+		portraits = {
+			army = {
+				large = GFX_SIC_ch_ligan_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = -1
 		}
@@ -68,12 +125,12 @@ characters={
 		}
 	}
 
-	SIC_ch_libosi = {
-		name = SIC_ch_libosi
+	SIC_ch_zhangshunfei = {
+		name = SIC_ch_zhangshunfei
 
 		portraits = {
 			army = {
-				large = GFX_SIC_ch_libosi_portrait_large
+				large = GFX_SIC_ch_zhangshunfei_portrait_large
 			}
 		}
 
@@ -91,7 +148,39 @@ characters={
 		}
 	}
 
+	SIC_ch_zhangzining = {
+		name = SIC_ch_zhangzining
 
+		portraits = {
+			civilian = {
+				large = GFX_SIC_ch_zhangzining_portrait_large
+			}
+			army = {
+				large = GFX_SIC_ch_zhangzining_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
 
 
 	SIC_ar={

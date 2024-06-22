@@ -93,6 +93,9 @@ if = {
 	}
 }
 
+recruit_character = CHQ_ch_chenyifa
+recruit_character = CHQ_ch_fengtimo
+
 recruit_character = CHQ_ar
 recruit_character = CHQ_acr
 recruit_character = CHQ_mt

@@ -94,6 +94,8 @@ if = {
 	}
 }
 
+recruit_character = HAN_ch_wuxuanyi
+
 recruit_character = HAN_ar
 recruit_character = HAN_acr
 recruit_character = HAN_mt

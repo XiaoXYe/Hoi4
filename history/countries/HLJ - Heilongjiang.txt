@@ -106,8 +106,9 @@ if = {
 	}
 }
 
-recruit_character = HLJ_ch_xinba
 recruit_character = HLJ_ch_chenze
+recruit_character = HLJ_ch_daigulak
+recruit_character = HLJ_ch_xinba
 
 recruit_character = HLJ_ar
 recruit_character = HLJ_acr

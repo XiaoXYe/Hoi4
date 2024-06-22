@@ -60,7 +60,73 @@ characters={
 		}
 	}
 
+	HEN_ch_mengmeiqi = {
+		name = HEN_ch_mengmeiqi
 
+		portraits = {
+			civilian = {
+				large = GFX_HEN_ch_mengmeiqi_portrait_large
+			}
+			army = {
+				large = GFX_HEN_ch_mengmeiqi_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	HEN_ch_wenwan = {
+		name = HEN_ch_wenwan
+
+		portraits = {
+			civilian = {
+				large = GFX_HEN_ch_wenwan_portrait_large
+			}
+			army = {
+				large = GFX_HEN_ch_wenwan_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
 	HEN_ar={
 		advisor={
 			slot = high_command

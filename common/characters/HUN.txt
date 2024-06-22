@@ -1,4 +1,38 @@
 characters={
+	HUN_ch_fujing = {
+		name = HUN_ch_fujing
+
+		portraits = {
+			civilian = {
+				large = GFX_HUN_ch_fujing_portrait_large
+			}
+			army = {
+				large = GFX_HUN_ch_fujing_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	HUN_ar={
 		advisor={
 			slot = high_command

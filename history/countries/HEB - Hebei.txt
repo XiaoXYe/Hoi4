@@ -94,6 +94,9 @@ if = {
 	}
 }
 
+recruit_character = HEB_ch_gengshuai
+recruit_character = HEB_ch_zhanying
+
 recruit_character = HEB_ar
 recruit_character = HEB_acr
 recruit_character = HEB_mt

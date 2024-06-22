@@ -1,4 +1,208 @@
 characters={
+	GUD_ch_laimeiyun = {
+		name = GUD_ch_laimeiyun
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_laimeiyun_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_laimeiyun_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = jiangnanism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	GUD_ch_mahuateng = {
+		name = GUD_ch_mahuateng
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_mahuateng_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_mahuateng_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	GUD_ch_mengwanzhou = {
+		name = GUD_ch_mengwanzhou
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_mengwanzhou_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_mengwanzhou_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	GUD_ch_renzhengfei = {
+		name = GUD_ch_renzhengfei
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_renzhengfei_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_renzhengfei_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = monopoly_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	GUD_ch_yamy = {
+		name = GUD_ch_yamy
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_yamy_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_yamy_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	GUD_ch_yaoanna = {
+		name = GUD_ch_yaoanna
+
+		portraits = {
+			civilian = {
+				large = GFX_GUD_ch_yaoanna_portrait_large
+			}
+			army = {
+				large = GFX_GUD_ch_yaoanna_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	GUD_ar={
 		advisor={
 			slot = high_command

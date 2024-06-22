@@ -153,14 +153,17 @@ if = {
 		}
 	}
 }
-recruit_character = BEJ_ch_kejie
-recruit_character = BEJ_ch_paopao
-recruit_character = BEJ_ch_luhan
+
 recruit_character = BEJ_ch_guanxiaotong
 recruit_character = BEJ_ch_heshijie
+recruit_character = BEJ_ch_kejie
+recruit_character = BEJ_ch_leijun
 recruit_character = BEJ_ch_lianxiao
+recruit_character = BEJ_ch_lige
+recruit_character = BEJ_ch_luhan
 recruit_character = BEJ_ch_maniubi
 recruit_character = BEJ_ch_niudao
+recruit_character = BEJ_ch_paopao
 recruit_character = BEJ_ch_tangrenjie
 recruit_character = BEJ_ch_wujing
 recruit_character = BEJ_ch_wuyifan

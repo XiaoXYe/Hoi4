@@ -93,6 +93,9 @@ if = {
 	}
 }
 
+recruit_character = ANH_ch_hanjinlong
+
+
 recruit_character = ANH_ar
 recruit_character = ANH_acr
 recruit_character = ANH_mt

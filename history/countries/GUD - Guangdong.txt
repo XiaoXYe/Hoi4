@@ -95,6 +95,13 @@ if = {
 	}
 }
 
+recruit_character = GUD_ch_laimeiyun
+recruit_character = GUD_ch_mahuateng
+recruit_character = GUD_ch_mengwanzhou
+recruit_character = GUD_ch_renzhengfei
+recruit_character = GUD_ch_yamy
+recruit_character = GUD_ch_yaoanna
+
 recruit_character = GUD_ar
 recruit_character = GUD_acr
 recruit_character = GUD_mt

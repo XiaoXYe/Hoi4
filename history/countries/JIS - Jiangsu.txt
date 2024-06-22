@@ -93,6 +93,8 @@ if = {
 	}
 }
 
+recruit_character = JIS_ch_yangchaoyue
+
 recruit_character = JIS_ar
 recruit_character = JIS_acr
 recruit_character = JIS_mt

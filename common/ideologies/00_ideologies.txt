@@ -87,7 +87,8 @@ ideologies = {
 
 			liberalism = {
 			}
-
+			progressivism_capitalism = {
+			}
 		}
 
 		dynamic_faction_names = {

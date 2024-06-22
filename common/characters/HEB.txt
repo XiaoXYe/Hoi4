@@ -1,4 +1,72 @@
 characters={
+	HEB_ch_gengshuai = {
+		name = HEB_ch_gengshuai
+
+		portraits = {
+			civilian = {
+				large = GFX_HEB_ch_gengshuai_portrait_large
+			}
+			army = {
+				large = GFX_HEB_ch_gengshuai_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	HEB_ch_zhanying = {
+		name = HEB_ch_zhanying
+
+		portraits = {
+			civilian = {
+				large = GFX_HEB_ch_zhanying_portrait_large
+			}
+			army = {
+				large = GFX_HEB_ch_zhanying_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = abstractism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	HEB_ar={
 		advisor={
 			slot = high_command

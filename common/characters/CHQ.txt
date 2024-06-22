@@ -1,4 +1,72 @@
 characters={
+	CHQ_ch_chenyifa = {
+		name = CHQ_ch_chenyifa
+
+		portraits = {
+			civilian = {
+				large = GFX_CHQ_ch_chenyifa_portrait_large
+			}
+			army = {
+				large = GFX_CHQ_ch_chenyifa_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	CHQ_ch_fengtimo = {
+		name = CHQ_ch_fengtimo
+
+		portraits = {
+			civilian = {
+				large = GFX_CHQ_ch_fengtimo_portrait_large
+			}
+			army = {
+				large = GFX_CHQ_ch_fengtimo_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	CHQ_ar={
 		advisor={
 			slot = high_command

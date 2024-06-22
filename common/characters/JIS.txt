@@ -1,4 +1,38 @@
 characters={
+	JIS_ch_yangchaoyue = {
+		name = JIS_ch_yangchaoyue
+
+		portraits = {
+			civilian = {
+				large = GFX_JIS_ch_yangchaoyue_portrait_large
+			}
+			army = {
+				large = GFX_JIS_ch_yangchaoyue_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	JIS_ar={
 		advisor={
 			slot = high_command

@@ -46,96 +46,6 @@ characters={
 		}
 	}
 
-	BEJ_ch_kejie = {
-		name = BEJ_ch_kejie
-
-		portraits = {
-			civilian = {
-				large = GFX_BEJ_ch_kejie_portrait_large
-			}
-			army = {
-				large = GFX_BEJ_ch_kejie_portrait_large
-			}
-		}
-
-		advisor={
-		}
-
-		corps_commander={
-			traits = { armor_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-
-			visible = {
-				has_country_flag = BEJ_coup
-			}
-		}
-	}
-
-	BEJ_ch_paopao = {
-		name = BEJ_ch_paopao
-
-		portraits = {
-			civilian = {
-				large = GFX_BEJ_ch_paopao_portrait_large
-			}
-			army = {
-				large = GFX_BEJ_ch_paopao_portrait_large
-			}
-		}
-
-		advisor={
-		}
-
-		corps_commander={
-			traits = { armor_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-
-			visible = {
-				has_country_flag = BEJ_coup
-			}
-		}
-	}
-
-	BEJ_ch_luhan = {
-		name = BEJ_ch_luhan
-
-		portraits = {
-			civilian = {
-				large = GFX_BEJ_ch_luhan_portrait_large
-			}
-			army = {
-				large = GFX_BEJ_ch_luhan_portrait_large
-			}
-		}
-
-		advisor={
-		}
-
-		corps_commander={
-			traits = { armor_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-
-			visible = {
-				has_country_flag = BEJ_coup
-			}
-		}
-	}
-
 	BEJ_ch_guanxiaotong = {
 		name = BEJ_ch_guanxiaotong
 
@@ -227,6 +137,74 @@ characters={
 		}
 	}
 
+	BEJ_ch_kejie = {
+		name = BEJ_ch_kejie
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_kejie_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_kejie_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_leijun = {
+		name = BEJ_ch_leijun
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_leijun_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_leijun_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = progressivism_capitalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
 	BEJ_ch_lianxiao = {
 		name = BEJ_ch_lianxiao
 
@@ -267,6 +245,74 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_lige = {
+		name = BEJ_ch_lige
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_lige_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_lige_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = liberalism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_luhan = {
+		name = BEJ_ch_luhan
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_luhan_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_luhan_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 			legacy_id = -1
 
 			visible = {
@@ -358,6 +404,36 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = BEJ_coup
+			}
+		}
+	}
+
+	BEJ_ch_paopao = {
+		name = BEJ_ch_paopao
+
+		portraits = {
+			civilian = {
+				large = GFX_BEJ_ch_paopao_portrait_large
+			}
+			army = {
+				large = GFX_BEJ_ch_paopao_portrait_large
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 			legacy_id = -1
 
 			visible = {
