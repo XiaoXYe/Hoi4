@@ -1610,6 +1610,7 @@
 		}
 	}
 
+	# LIT ARMY FOCUS
 	focus = {
 		id = LIT_army
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1632,7 +1633,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_army"
-			army_experience = 50
+			army_experience = 20
 		}
 	}
 
@@ -1656,13 +1657,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_central_command"
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				name = BEJ_doctrine_central_command
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
+			add_ideas = LIT_central_command_idea
 		}
 	}
 
@@ -1691,13 +1686,257 @@
 	}
 
 	focus = {
-		id = LIT_responsbility
+		id = LIT_keep_innocence
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -4
+		x = -3
 		y = 2
 		relative_position_id = LIT_army
 		cost = 5
 		prerequisite = { focus = LIT_central_command }
+		prerequisite = { focus = LIT_recruit_sichuan_generals }
+		mutually_exclusive = { focus = LIT_discard_innocence }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_keep_innocence"
+			swap_ideas = {
+				remove_idea = LIT_old_army_idea_0
+				add_idea = LIT_new_army_innocence_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_discard_innocence
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 2
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_central_command }
+		prerequisite = { focus = LIT_recruit_sichuan_generals }
+		mutually_exclusive = { focus = LIT_keep_innocence }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_discard_innocence"
+			swap_ideas = {
+				remove_idea = LIT_old_army_idea_0
+				add_idea = LIT_new_army_technology_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_history_on_horse
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_keep_innocence }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_history_on_horse"
+			swap_ideas = {
+				remove_idea = LIT_new_army_innocence_idea_1
+				add_idea = LIT_new_army_innocence_idea_2
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_kamba_training_camp
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 4
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_history_on_horse }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_kamba_training_camp"
+			add_tech_bonus = {
+				name = LIT_kamba_training_camp_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
+			add_doctrine_cost_reduction = {
+				name = LIT_doctrine_kamba
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_king_of_mountain
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 5
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_kamba_training_camp }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_king_of_mountain"
+			add_tech_bonus = {
+				name = LIT_king_of_mountain_bonus
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+			}
+			swap_ideas = {
+				remove_idea = LIT_new_army_innocence_idea_2
+				add_idea = LIT_new_army_innocence_idea_3
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_guerrilla_tactics
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_keep_innocence }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_guerrilla_tactics"
+			add_tech_bonus = {
+				name = LIT_guerrilla_tactics_bonus
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+			add_doctrine_cost_reduction = {
+				name = LIT_guerrilla_tactics
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_power_of_idob
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 4
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_guerrilla_tactics }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_power_of_idob"
+			add_ideas = LIT_idob_power_idea
+		}
+	}
+
+	focus = {
+		id = LIT_elite_snow_leopard
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -2
+		y = 5
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_power_of_idob }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_elite_snow_leopard"
+			swap_ideas = {
+				remove_idea = LIT_idob_power_idea
+				add_idea = LIT_idob_with_snow_leopard_power_idea
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_responsbility
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -3
+		y = 6
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_king_of_mountain }
+		prerequisite = { focus = LIT_elite_snow_leopard }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1718,8 +1957,8 @@
 	focus = {
 		id = LIT_volkssturm
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -4
-		y = 3
+		x = -3
+		y = 7
 		relative_position_id = LIT_army
 		cost = 5
 		prerequisite = { focus = LIT_responsbility }
@@ -1743,13 +1982,13 @@
 	}
 
 	focus = {
-		id = LIT_kamba_training_camp
+		id = LIT_litang_rifle
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
-		y = 2
+		x = 4
+		y = 3
 		relative_position_id = LIT_army
 		cost = 5
-		prerequisite = { focus = LIT_central_command }
+		prerequisite = { focus = LIT_discard_innocence }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1761,12 +2000,200 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_kamba_training_camp"
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_litang_rifle"
+			add_tech_bonus = {
+				name = LIT_litang_rifle_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_coordinated_operations
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 4
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_litang_rifle }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_coordinated_operations"
 			add_doctrine_cost_reduction = {
-				name = BEJ_doctrine_kamba
-				cost_reduction = 0.5
+				name = LIT_doctrine_coordinated_operations
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_plains_blitz
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 4
+		y = 5
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_coordinated_operations }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_plains_blitz"
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = LIT_plains_blitz_operations
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_iron_zhenzhu
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 3
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_discard_innocence }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_iron_zhenzhu"
+			army_experience = 25
+			add_tech_bonus = {
+				name =  LIT_iron_zhenzhu_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_large_scale_mechanization
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 4
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_iron_zhenzhu }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_large_scale_mechanization"
+			add_tech_bonus = {
+				name = litang_mechanization_bonus
+				bonus = 1
+				uses = 2
+				category = cat_mechanized_equipment
+			}
+			swap_ideas = {
+				remove_idea = LIT_new_army_technology_idea_1
+				add_idea = LIT_new_army_technology_idea_2
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_corps_of_engineers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 5
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_large_scale_mechanization }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_corps_of_engineers"
+			add_tech_bonus = {
+				name = litang_engineers_bonus
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				name = litang_recon_bonus
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_heart_of_litang
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 6
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_corps_of_engineers }
+		prerequisite = { focus = LIT_plains_blitz }
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_heart_of_litang"
+			swap_ideas = {
+				remove_idea = LIT_new_army_technology_idea_2
+				add_idea = LIT_new_army_technology_idea_3
 			}
 		}
 	}
@@ -1775,7 +2202,7 @@
 		id = LIT_chushi_gangdruk_spirit
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = LIT_army
 		cost = 5
 		prerequisite = { focus = LIT_central_command }
@@ -1801,7 +2228,7 @@
 		id = LIT_ata_luozi
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = LIT_army
 		cost = 5
 		prerequisite = { focus = LIT_chushi_gangdruk_spirit }
@@ -1825,73 +2252,13 @@
 	}
 
 	focus = {
-		id = LIT_litang_rifle
+		id = LIT_army_equiped_relx
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
-		y = 2
-		relative_position_id = LIT_army
-		cost = 5
-		prerequisite = { focus = LIT_recruit_sichuan_generals }
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_litang_rifle"
-			army_experience = 25
-			add_tech_bonus = {
-				name = litang_infantry_weapons_bonus
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_iron_zhenzhu
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
-		y = 3
+		x = 6
+		y = 4
 		relative_position_id = LIT_army
 		cost = 5
 		prerequisite = { focus = LIT_litang_rifle }
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_iron_zhenzhu"
-			army_experience = 25
-			add_tech_bonus = {
-				name = litang_armor_bonus
-				bonus = 1
-				uses = 2
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_relx_grenade
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
-		y = 2
-		relative_position_id = LIT_army
-		cost = 5
-		prerequisite = { focus = LIT_recruit_sichuan_generals }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		ai_will_do = {
@@ -1906,11 +2273,37 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_relx_grenade"
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_army_equiped_relx"
+			swap_ideas = {
+				remove_idea = LIT_relx_5_idea
+				add_idea = LIT_relx_5_army_idea
+			}
+		}
+	}
+
+	focus = {
+		id = LIT_relx_army_version
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 5
+		relative_position_id = LIT_army
+		cost = 5
+		prerequisite = { focus = LIT_army_equiped_relx }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_relx_army_version"
 			army_experience = 10
 			swap_ideas = {
-				remove_idea = LIT_relx_5_1
-				add_idea = LIT_relx_5_2
+				remove_idea = LIT_relx_5_army_idea
+				add_idea = LIT_relx_5_army_special_idea
 			}
 		}
 	}
@@ -2740,7 +3133,7 @@
 	focus = {
 		id = LIT_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 53
+		x = 54
 		y = 0
 		cost = 10
 		

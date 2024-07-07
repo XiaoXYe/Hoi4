@@ -21,6 +21,11 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 set_research_slots = 3
 
+add_ideas = {
+	LIT_social_media_influencer_economy
+	LIT_old_army_idea_0
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -66,9 +66,6 @@ country_event = {  # 甘孜州文化特区成立
 				recruit_character = LIT_ch_dingzhen_1
 				recruit_character = LIT_ch_hubo
 				recruit_character = LIT_ch_silangluobu
-				add_ideas = {
-					LIT_social_media_influencer_economy
-				}
 				country_event = {
 					id = litang.1
 					days = 3

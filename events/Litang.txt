@@ -636,7 +636,7 @@ country_event = {# ял
 			value = 0.1
 			tooltip_side = LIT_king_side
 		}
-		add_ideas = LIT_relx_5_1
+		add_ideas = LIT_relx_5_idea
 	}
 	option = {
 		name = litang.18.b
