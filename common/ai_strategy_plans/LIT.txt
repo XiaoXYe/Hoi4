@@ -14,12 +14,14 @@ LIT_dingzhen = {
 
 	ai_national_focuses = {
 		# grab as fast as you can if available
+		LIT_the_king_win
 		LIT_grand_coronation
 		LIT_acquire_chongqing
 		LIT_ally_tibet
 		LIT_sanxia_conference
 		LIT_expand_experiment_land
 		LIT_henan_or_war
+		LIT_iron_curtain
 
 		LIT_situation_worse
 		LIT_socialmedia_propaganda
@@ -41,25 +43,16 @@ LIT_dingzhen = {
 		LIT_smile_still
 		LIT_industrial_plan
 		LIT_industrial_planning_admin
+		LIT_army
+		LIT_central_command
+		LIT_recruit_sichuan_generals
+		LIT_keep_innocence
+
 		LIT_institute
 		LIT_agriculture_mechanization
+		LIT_litang_urbanlization
 
-		LIT_the_king_win
-		LIT_strengthen_national_identity
-		LIT_tibetan_buddhism
-
-		LIT_litang_urbanization
-		LIT_chengdu_chongqing_business_district
-
-		LIT_army
-		LIT_recruit_sichuan_generals
-		LIT_central_command
-		LIT_responsbility
-
-		LIT_luzhou_liquor_industry
-		LIT_mianyang_military_industry
-		LIT_deyang_bureau_of_manufacturing
-		LIT_golden_age
+		
 	}
 
 	research = {

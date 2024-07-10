@@ -3141,6 +3141,10 @@
 
 		available_if_capitulated = yes
 
+		available = {
+			is_subject = no
+			has_completed_focus = LIT_conquer_sichuan
+		}
 
 		complete_tooltip = {
 			air_experience = 25
@@ -3454,6 +3458,8 @@
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
+			is_subject = no
+			has_completed_focus = LIT_conquer_sichuan
 		}
 
 		complete_tooltip = {
