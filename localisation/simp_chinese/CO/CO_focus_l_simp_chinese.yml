@@ -330,8 +330,8 @@
 
  BEJ_litang_threat_looms:0 "准备不可避免之战"
  BEJ_litang_threat_looms_desc:0 "[LIT.GetName]的扩张意图已再明显不过，狂妄的[LIT.GetLeader]自以为是一代枭雄，在我们要进行战备，消灭这些威胁中原稳定的跳梁小丑"
- BEJ_freedom_league:0 "高举中原之旗"
- BEJ_freedom_league_desc:0 "[LIT.GetLeader]领导的这些民族主义者应当被铲除，也必然会被铲除。我们要承担起中原的责任并团结周围的力量以抗衡理塘的对神州大地的侵蚀"
+ BEJ_freedom_league:0 "山河永固"
+ BEJ_freedom_league_desc:0 "[LIT.GetLeader]领导的这些民族主义者应当被铲除，也必然会被铲除。我们要承担起保持中华大地稳定的责任并团结周围的力量以抗衡[LIT.GetName]对神州大地的侵蚀"
  BEJ_support_shanxi:0 "援助山西"
  BEJ_support_shanxi_desc:0 "山西现在是我们的盟友，我们有义务帮助他们发展，让我们的联系更加紧密"
  BEJ_support_shandong:0 "支援山东"

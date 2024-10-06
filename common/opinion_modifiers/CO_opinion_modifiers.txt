@@ -37,4 +37,16 @@ opinion_modifiers = {
 	Dongbei_Pact_supported_us_modifier = {
 		value = 50
 	}
+
+	FreeLeague_anti_litang_modifier = {
+		value = -100
+	}
+
+	FreeLeague_joined_yay_modifier = {
+		value = 100
+	}
+
+	FreeLeague_refused_modifier = {
+		value = -50
+	}
 }

@@ -347,6 +347,12 @@ country_event = {  # ∞¢∞”ª·“È
 		}
 		hidden_effect = {
 			news_event = { id = cnnews.10 days = 3 }
+			BEJ = {
+				country_event = {
+					id = freeleague.1
+					days = 5
+				}
+			}
 		}
 		add_named_threat = {
 			threat = 5

@@ -1,0 +1,146 @@
+###########################
+# FreeLeague Events
+###########################
+
+add_namespace = freeleague
+
+country_event = {  # 理塘阿坝协定
+	id = freeleague.1
+	title = freeleague.1.t
+	desc = freeleague.1.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event freeleague.1"
+	}
+	option = {
+		name = freeleague.1.a
+		add_war_support = 0.05
+		complete_national_focus = BEJ_litang_threat_looms
+	}
+}
+
+
+country_event = { # 完全加入合作
+	id = freeleague.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event freeleague.2" }
+	title = freeleague.2.t
+	desc = freeleague.2.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = freeleague.2.a 
+		add_war_support = 0.03
+	}
+}
+
+country_event = { # 经济合作
+	id = freeleague.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event freeleague.3" }
+	title = freeleague.3.t
+	desc = freeleague.3.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = freeleague.3.a 
+		add_war_support = 0.01
+		add_stability = 0.01
+	}
+}
+
+country_event = { # 拒绝合作
+	id = freeleague.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event freeleague.4" }
+	title = freeleague.4.t
+	desc = freeleague.4.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = freeleague.4.a 
+		add_war_support = -0.01
+		add_stability = -0.01
+	}
+}
+
+country_event = {  # 邀请加入
+	id = freeleague.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event dbpact.2" }
+	title = freeleague.5.t
+	desc = freeleague.5.d
+	picture = GFX_report_event_china_infiltration
+
+	is_triggered_only = yes
+
+	option = {
+		name = freeleague.5.a # 完全加入
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 100
+				NOT = {
+					tag = HEN
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = HEN
+			}
+		}
+
+		BEJ = {
+			add_to_faction = ROOT
+			add_opinion_modifier = { target = ROOT modifier = FreeLeague_joined_yay_modifier }
+			hidden_effect = { country_event = freeleague.2 } # 告诉北京加入
+		}
+		reverse_add_opinion_modifier = { target = LIT modifier = FreeLeague_anti_litang_modifier }
+
+		hidden_effect = {
+			add_opinion_modifier = { target = LIT modifier = FreeLeague_anti_litang_modifier }
+		}
+	}
+
+	option = {
+		name = freeleague.5.b # 部分合作
+
+		ai_chance = { 
+			base = 90
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = HEN
+				}
+			}
+			modifier = {
+				factor = 100
+				tag = HEN
+			}
+		}
+
+		BEJ = {
+			country_event = { id = freeleague.3 } # 告诉北京部分加入
+		}
+	}
+
+	option = {
+		name = freeleague.5.c # 拒绝合作
+
+		ai_chance = { 
+			base = 0
+		}
+
+		BEJ = {
+			country_event = { id = freeleague.4 } # 告诉北京拒绝加入
+			add_opinion_modifier = { target = ROOT modifier = FreeLeague_refused_modifier }
+		}
+	}
+}

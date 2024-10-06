@@ -85,7 +85,7 @@ country_event = {
 		set_country_flag = IGNORED_DONGBEI_PACT_INVITATION
 
 		LIN = {
-			country_event = { id = pact.4 } # Notify Liaoning of the refusal
+			country_event = { id = dbpact.4 } # Notify Liaoning of the refusal
 			add_opinion_modifier = { target = ROOT modifier = Dongbei_Pact_refused_modifier }
 		}
 	}

@@ -1517,12 +1517,8 @@
 		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
-		bypass = {
-			has_global_flag = LIT_rise
-		}
-
 		available = {
-			has_global_flag = LIT_rise
+			always = no
 		}
 
 		ai_will_do = {
@@ -1562,6 +1558,7 @@
 				create_faction = "FREEDOM_LEAGUE"
 				add_war_support = 0.10
 			}
+			set_country_flag = BEJ_freedom_league_setup_flag
 			add_named_threat = {
 				threat = 5
 				name = BEJ_found_freedom_league_threat
