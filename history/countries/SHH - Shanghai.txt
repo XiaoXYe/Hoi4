@@ -2,7 +2,7 @@
 oob = "SHH"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 45
+	gradualism = 20
 	conservatism = 10
 	retroism = 10
 }
@@ -96,6 +96,7 @@ if = {
 
 recruit_character = SHH_ch_jujingyi
 
+promote_character = SHH_ch_jujingyi
 
 recruit_character = SHH_ar
 recruit_character = SHH_acr
@@ -120,13 +121,3 @@ recruit_character = SHH_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "李强"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Shanghai_LiQiang.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

@@ -5,10 +5,10 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = GFX_YUN_ch_suxiaochuan_portrait_large
+				large = GFX_YUN_ch_sunxiaochuan_portrait_large
 			}
 			army = {
-				large = GFX_YUN_ch_suxiaochuan_portrait_large
+				large = GFX_YUN_ch_sunxiaochuan_portrait_large
 			}
 		}
 

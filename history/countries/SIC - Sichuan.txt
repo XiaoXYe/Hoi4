@@ -2,17 +2,17 @@
 oob = "SIC"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = postmodernism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	transhumanism = 3
-	postmodernism = 12
+	transhumanism = 5
+	postmodernism = 35
 	progressivism = 15
-	gradualism = 60
+	gradualism = 35
 	conservatism = 5
 	retroism = 5
 }
@@ -96,7 +96,15 @@ if = {
 country_event = { id = sichuan.1 days = 5 }
 
 recruit_character = SIC_ch_duanaojuan
+recruit_character = SIC_ch_fengxuejuan
+recruit_character = SIC_ch_libosi
+recruit_character = SIC_ch_ligan
+recruit_character = SIC_ch_lihanyue
+recruit_character = SIC_ch_sunxiaochuan
+recruit_character = SIC_ch_zhangshunfei
 recruit_character = SIC_ch_zhangzining
+
+promote_character = SIC_ch_sunxiaochuan
 
 recruit_character = SIC_ar
 recruit_character = SIC_acr
@@ -121,13 +129,3 @@ recruit_character = SIC_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "彭清华"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Sichuan_PengQinghua.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

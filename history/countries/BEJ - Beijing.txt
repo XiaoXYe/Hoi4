@@ -169,6 +169,8 @@ recruit_character = BEJ_ch_wujing
 recruit_character = BEJ_ch_wuyifan
 recruit_character = BEJ_ch_yangmi
 
+promote_character = BEJ_ch_wujing
+
 recruit_character = BEJ_ar
 recruit_character = BEJ_acr
 recruit_character = BEJ_mt
@@ -190,15 +192,4 @@ recruit_character = BEJ_ai2
 recruit_character = BEJ_nt
 recruit_character = BEJ_aco2
 
-
 set_convoys = 20
-
-create_country_leader = {
-	name = "蔡奇"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Beijing_CaiQi.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

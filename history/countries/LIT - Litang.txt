@@ -115,6 +115,10 @@ if = {
 	}
 }
 
+recruit_character = LIT_ch_hubo
+
+promote_character = LIT_ch_hubo
+
 recruit_character = LIT_acr
 recruit_character = LIT_mt
 recruit_character = LIT_stc

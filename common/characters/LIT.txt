@@ -108,7 +108,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = revisionism
 			traits = {
 				#
 			}

@@ -3,7 +3,7 @@ oob = "HEB"
 
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = postmodernism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,9 +11,9 @@ set_politics = {
 
 set_popularities = {
 	transhumanism = 5
-	postmodernism = 10
+	postmodernism = 20
 	progressivism = 15
-	gradualism = 50
+	gradualism = 40
 	conservatism = 10
 	retroism = 10
 }
@@ -97,6 +97,8 @@ if = {
 recruit_character = HEB_ch_gengshuai
 recruit_character = HEB_ch_zhanying
 
+promote_character = HEB_ch_gengshuai
+
 recruit_character = HEB_ar
 recruit_character = HEB_acr
 recruit_character = HEB_mt
@@ -120,13 +122,3 @@ recruit_character = HEB_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "王东峰"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Hebei_WangDongfeng.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

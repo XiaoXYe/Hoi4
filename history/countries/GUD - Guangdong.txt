@@ -4,7 +4,7 @@ oob = "GUD"
 oob = "GUD"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = conservatism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,8 +14,8 @@ set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
 	progressivism = 15
-	gradualism = 50
-	conservatism = 10
+	gradualism = 30
+	conservatism = 30
 	retroism = 10
 }
 
@@ -102,6 +102,8 @@ recruit_character = GUD_ch_renzhengfei
 recruit_character = GUD_ch_yamy
 recruit_character = GUD_ch_yaoanna
 
+promote_character = GUD_ch_mahuateng
+
 recruit_character = GUD_ar
 recruit_character = GUD_acr
 recruit_character = GUD_mt
@@ -125,13 +127,3 @@ recruit_character = GUD_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "李希"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Guangdong_LiXi.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

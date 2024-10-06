@@ -120,12 +120,4 @@ recruit_character = ANH_aco2
 
 set_convoys = 20
 
-create_country_leader = {
-	name = "李锦斌"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Anhui_LiJinbin.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}
+promote_character = ANH_ch_hanjinlong

@@ -3,7 +3,7 @@ oob = "HEN"
 
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = postmodernism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -99,6 +99,8 @@ recruit_character = HEN_ch_mabaoguo
 recruit_character = HEN_ch_mengmeiqi
 recruit_character = HEN_ch_wenwan
 
+promote_character = HEN_ch_agiao
+
 recruit_character = HEN_ar
 recruit_character = HEN_acr
 recruit_character = HEN_mt
@@ -122,15 +124,5 @@ recruit_character = HEN_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "王国生"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Henan_WangGuosheng.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}
 
 country_event = { id = henan.90 days = 568 }

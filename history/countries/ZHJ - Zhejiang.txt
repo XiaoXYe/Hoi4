@@ -2,7 +2,7 @@
 oob = "ZHJ"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = conservatism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -12,8 +12,8 @@ set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
 	progressivism = 15
-	gradualism = 50
-	conservatism = 10
+	gradualism = 30
+	conservatism = 30
 	retroism = 10
 }
 
@@ -97,6 +97,8 @@ recruit_character = ZHJ_ch_mayun
 recruit_character = ZHJ_ch_tongjincheng
 recruit_character = ZHJ_ch_xumengjie
 recruit_character = ZHJ_ch_yumeng
+
+promote_character = ZHJ_ch_mayun
 
 recruit_character = ZHJ_ar
 recruit_character = ZHJ_acr

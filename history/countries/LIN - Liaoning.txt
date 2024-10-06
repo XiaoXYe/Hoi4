@@ -2,7 +2,7 @@
 oob = "LIN"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = postmodernism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -10,9 +10,9 @@ set_politics = {
 
 set_popularities = {
 	transhumanism = 0
-	postmodernism = 20
+	postmodernism = 50
 	progressivism = 15
-	gradualism = 60
+	gradualism = 30
 	conservatism = 5
 	retroism = 0
 }
@@ -222,6 +222,8 @@ if = {
 recruit_character = LIN_ch_daoge
 recruit_character = LIN_ch_shamatetuanzhang
 
+promote_character = LIN_ch_daoge
+
 recruit_character = LIN_ar
 recruit_character = LIN_acr
 recruit_character = LIN_mt
@@ -246,13 +248,3 @@ recruit_character = LIN_aco2
 add_ideas = DOB_eldest_son_of_repulic
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "陈求发"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Liaoning_ChenQiufa.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

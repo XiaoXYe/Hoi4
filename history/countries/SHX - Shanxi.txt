@@ -2,7 +2,7 @@
 oob = "SHX"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 35
+	gradualism = 30
 	conservatism = 10
 	retroism = 10
 }
@@ -94,6 +94,8 @@ if = {
 }
 
 recruit_character = SHX_ch_liusiyao
+
+promote_character = SHX_ch_liusiyao
 
 recruit_character = SHX_ar
 recruit_character = SHX_acr

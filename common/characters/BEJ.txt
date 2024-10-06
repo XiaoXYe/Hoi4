@@ -457,7 +457,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = gradualism
+			ideology = revisionism
 			traits = {
 				#
 			}
@@ -499,28 +499,18 @@ characters={
 			}
 			army = {
 				large = GFX_BEJ_ch_wujing_portrait_large
-				small = "GFX_idea_generic_army_asia_1"
 			}
 		}
 
 		country_leader = {
 			desc = ""
-			ideology = gradualism
+			ideology = revisionism
 			traits = {
 				#
 			}
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = BEJ_wujing_ai2
-			ledger  = army 
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
 		}
 
 		corps_commander={
@@ -531,10 +521,6 @@ characters={
 			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = -1
-
-			visible = {
-				has_country_flag = BEJ_coup
-			}
 		}
 	}
 

@@ -2,7 +2,7 @@
 oob = "CHQ"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 35
+	gradualism = 30
 	conservatism = 10
 	retroism = 10
 }
@@ -96,6 +96,9 @@ if = {
 recruit_character = CHQ_ch_chenyifa
 recruit_character = CHQ_ch_fengtimo
 
+promote_character = CHQ_ch_fengtimo
+
+
 recruit_character = CHQ_ar
 recruit_character = CHQ_acr
 recruit_character = CHQ_mt
@@ -119,13 +122,3 @@ recruit_character = CHQ_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "陈敏尔"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Chongqing_ChenMiner.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

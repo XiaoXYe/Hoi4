@@ -2,7 +2,7 @@
 oob = "JIS"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 35
+	gradualism = 30
 	conservatism = 10
 	retroism = 10
 }
@@ -95,6 +95,8 @@ if = {
 
 recruit_character = JIS_ch_yangchaoyue
 
+promote_character = JIS_ch_yangchaoyue
+
 recruit_character = JIS_ar
 recruit_character = JIS_acr
 recruit_character = JIS_mt
@@ -118,13 +120,3 @@ recruit_character = JIS_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "娄勤俭"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Jiangsu_LouQinjian.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

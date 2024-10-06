@@ -2,7 +2,7 @@
 oob = "HUB"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 35
+	gradualism = 30
 	conservatism = 10
 	retroism = 10
 }
@@ -98,6 +98,7 @@ country_event = { id = hubei.1 days = 21 }
 
 recruit_character = HUB_ch_caixukun
 
+promote_character = HUB_ch_caixukun
 
 recruit_character = HUB_ar
 recruit_character = HUB_acr
@@ -122,13 +123,3 @@ recruit_character = HUB_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "蒋超良"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Hubei_JiangChaoliang.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

@@ -3,7 +3,7 @@ oob = "HAN"
 
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -12,8 +12,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 5
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 30
+	gradualism = 35
 	conservatism = 10
 	retroism = 10
 }
@@ -96,6 +96,8 @@ if = {
 
 recruit_character = HAN_ch_wuxuanyi
 
+promote_character = HAN_ch_wuxuanyi
+
 recruit_character = HAN_ar
 recruit_character = HAN_acr
 recruit_character = HAN_mt
@@ -119,13 +121,3 @@ recruit_character = HAN_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "刘赐贵"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Hainan_LiuCigui.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}

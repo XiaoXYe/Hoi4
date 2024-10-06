@@ -125,6 +125,41 @@ characters={
 		}
 	}
 
+	SIC_ch_sunxiaochuan = {
+		name = SIC_ch_sunxiaochuan
+
+		portraits = {
+			civilian = {
+				large = GFX_SIC_ch_sunxiaochuan_portrait_large
+			}
+			army = {
+				large = GFX_SIC_ch_sunxiaochuan_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = abstractism
+			traits = {
+				chouxiang_emperor
+				bad_guy
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
 	SIC_ch_zhangshunfei = {
 		name = SIC_ch_zhangshunfei
 

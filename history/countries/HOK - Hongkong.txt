@@ -95,6 +95,7 @@ if = {
 
 recruit_character = HOK_ch_hongkongdoll
 
+promote_character = HOK_ch_hongkongdoll
 
 recruit_character = HOK_ar
 recruit_character = HOK_acr
@@ -119,13 +120,3 @@ recruit_character = HOK_aco2
 
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "林郑月娥"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Hongkong_LizhengYuee.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}

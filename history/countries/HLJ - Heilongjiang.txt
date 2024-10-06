@@ -2,7 +2,7 @@
 oob = "HLJ"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = progressivism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -11,8 +11,8 @@ set_politics = {
 set_popularities = {
 	transhumanism = 0
 	postmodernism = 20
-	progressivism = 15
-	gradualism = 60
+	progressivism = 35
+	gradualism = 30
 	conservatism = 5
 	retroism = 0
 }
@@ -110,6 +110,8 @@ recruit_character = HLJ_ch_chenze
 recruit_character = HLJ_ch_daigulak
 recruit_character = HLJ_ch_xinba
 
+promote_character = HLJ_ch_daigulak
+
 recruit_character = HLJ_ar
 recruit_character = HLJ_acr
 recruit_character = HLJ_mt
@@ -135,13 +137,3 @@ recruit_character = HLJ_aco2
 set_convoys = 20
 
 add_ideas = DOB_eldest_son_of_repulic
-
-create_country_leader = {
-	name = "张庆伟"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Heilongjiang_ChenQingwei.dds"
-	ideology = revisionism
-	traits = {
-		#
-	}
-}
