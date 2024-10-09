@@ -331,6 +331,10 @@
 					id = litang.31
 					days = 7
 				}
+				country_event = {
+					id = litang.109
+					days = 42
+				}
 			}
 		}
 	}
@@ -432,7 +436,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_eradicate_chouxiang_culture"
 			add_popularity = {
 				ideology = postmodernism
-				popularity = -0.2
+				popularity = -0.1
 			}
 			remove_ideas = { LIT_chouxiang_resistance_idea }
 		}
@@ -460,7 +464,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_fight_against_progressivism"
 			add_popularity = {
 				ideology = progressivism
-				popularity = -0.2
+				popularity = -0.1
 			}
 			add_stability = 0.05
 			country_event = {
@@ -495,7 +499,7 @@
 				ideology = conservatism
 				popularity = 0.10
 			}
-			add_war_support = 0.10
+			add_war_support = 0.05
 		}
 	}
 
@@ -548,7 +552,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_centralization"
-			add_political_power = 100
+			add_political_power = 50
 			add_stability = 0.10
 		}
 	}
@@ -1014,11 +1018,11 @@
 	focus = {
 		id = LIT_movable_hospitals
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = LIT_right_of_smile
 		cost = 5
-		prerequisite = { focus = LIT_improve_sanitation_habit }
+		prerequisite = { focus = LIT_right_of_smile }
 		
 		ai_will_do = {
 			factor = 100
@@ -1040,11 +1044,11 @@
 		id = LIT_happiness_under_covid
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -3
-		y = 3
+		y = 2
 		relative_position_id = LIT_right_of_smile
 		cost = 5
 		prerequisite = { focus = LIT_what_about_animals }
-		prerequisite = { focus = LIT_movable_hospitals }
+		prerequisite = { focus = LIT_improve_sanitation_habit }
 		
 		ai_will_do = {
 			factor = 100
@@ -1065,7 +1069,7 @@
 		id = LIT_invest_sanitary_infrastructure
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = LIT_right_of_smile
 		cost = 5
 		prerequisite = { focus = LIT_right_of_smile }
@@ -1111,7 +1115,7 @@
 		id = LIT_compensate_farmers
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 3
-		y = 3
+		y = 2
 		relative_position_id = LIT_right_of_smile
 		cost = 5
 		prerequisite = { focus = LIT_right_of_smile }
@@ -1135,7 +1139,7 @@
 		id = LIT_smile_still
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = LIT_right_of_smile
 		cost = 5
 		prerequisite = { focus = LIT_happiness_under_covid }
@@ -1162,7 +1166,7 @@
 		id = LIT_industrial_plan
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = LIT_right_of_smile
 		cost = 2
 		prerequisite = { focus = LIT_smile_still }
@@ -1191,7 +1195,7 @@
 	focus = {
 		id = LIT_industrial_planning_admin
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = LIT_industrial_plan
 		cost = 5
@@ -1206,6 +1210,30 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_industrial_planning_admin"
 			add_ideas = LIT_industrial_planning_administration
+		}
+	}
+
+	focus = {
+		id = LIT_defeat_epidemic
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 1
+		relative_position_id = LIT_industrial_plan
+		cost = 5
+		prerequisite = { focus = LIT_industrial_plan }
+		
+		available = {
+			num_of_civilian_factories > 70
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_defeat_epidemic"
 			swap_ideas = {
 				remove_idea = GEN_pandemic_controlled
 				add_idea = GEN_pandemic_solved
@@ -1219,7 +1247,7 @@
 	focus = {
 		id = LIT_agriculture_mechanization
 		icon = GFX_goal_generic_allies_build_infantry
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = LIT_industrial_plan
 		cost = 5
@@ -1288,73 +1316,6 @@
 		}
 	}
 
-	focus = {
-		id = LIT_zigong_salt_industry
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -6
-		y = 2
-		relative_position_id = LIT_industrial_plan
-		cost = 5
-		prerequisite = { focus = LIT_agriculture_mechanization }
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_zigong_salt_industry"
-			270 = {
-				set_state_category = city
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_luzhou_liquor_industry
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -4
-		y = 2
-		relative_position_id = LIT_industrial_plan
-		cost = 5
-		prerequisite = { focus = LIT_agriculture_mechanization }
-		
-		ai_will_do = {
-			factor = 100
-		}
-
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_luzhou_liquor_industry"
-			275 = {
-				set_state_category = city
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = LIT_litang_urbanization
@@ -1441,10 +1402,10 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_mianyang_military_industry"
 			201 = {
 				set_state_category = large_city
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1470,7 +1431,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_deyang_bureau_of_manufacturing"
 			223 = {
 				set_state_category = city
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1478,7 +1439,7 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1588,11 +1549,11 @@
 	focus = {
 		id = LIT_extracting_natural_gas
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 4
-		y = 3
+		x = 2
+		y = 4
 		relative_position_id = LIT_industrial_plan
 		cost = 5
-		prerequisite = { focus = LIT_bureau_of_mines }
+		prerequisite = { focus = LIT_making_steel }
 
 		ai_will_do = {
 			factor = 100
@@ -2832,37 +2793,9 @@
 	}
 
 	focus = {
-		id = LIT_arbitrary_forever
-		icon = GFX_goal_generic_allies_build_infantry
-		x = -1
-		y = 1
-		relative_position_id = LIT_honor
-		cost = 5
-		prerequisite = {
-			focus = LIT_honor
-		}
-
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_arbitrary_forever"
-			add_country_leader_trait = litang_emperor_forever
-		}
-	}
-
-	focus = {
 		id = LIT_litangyia_millennium
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = LIT_honor
 		cost = 5

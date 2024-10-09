@@ -15,7 +15,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = litangnism
 			traits = {
 				#
 			}
@@ -154,7 +154,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = litangnism
 			traits = {
 				#
 			}
@@ -201,7 +201,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = litangnism
 			traits = {
 				#
 			}
@@ -245,7 +245,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = litangnism
 			traits = {
 				#
 			}
@@ -288,7 +288,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = fascism_ideology
+			ideology = litangnism
 			traits = {
 				#
 			}
@@ -309,6 +309,228 @@ characters={
 			traits = { cavalry_officer trait_cautious defensive_doctrine }
 			skill = 2
 			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishihuli = {
+		name = LIT_ch_zhishihuli
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishihuli_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishihuli_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishisheli = {
+		name = LIT_ch_zhishisheli
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishisheli_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishisheli_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishituboshu = {
+		name = LIT_ch_zhishituboshu
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishituboshu_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishituboshu_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishixuebao = {
+		name = LIT_ch_zhishixuebao
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishixuebao_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishixuebao_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishiyanyang = {
+		name = LIT_ch_zhishiyanyang
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishiyanyang_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishiyanyang_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhishizhangzi = {
+		name = LIT_ch_zhishizhangzi
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhishizhangzi_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhishizhangzi_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1

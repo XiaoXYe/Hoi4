@@ -7,7 +7,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -18,7 +18,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -29,7 +29,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -40,7 +40,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -51,7 +51,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -62,7 +62,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -73,7 +73,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -84,7 +84,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -95,7 +95,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -106,7 +106,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -117,7 +117,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
@@ -128,7 +128,7 @@
 		}
 		location = 909
 		division_template = "步兵师"		
-		start_experience_factor = 1.0
+		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}

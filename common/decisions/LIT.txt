@@ -232,7 +232,7 @@ LIT_litangyia_category = {
 			188 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -249,7 +249,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 50
+		cost = 30
 		days_remove = 60
 
 		ai_will_do = {
@@ -264,10 +264,10 @@ LIT_litangyia_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_industrial_complex_build_1"
 			set_country_flag = LIT_litangyia_industrial_complex_build_1_flag
 			188 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -284,7 +284,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 50
+		cost = 30
 		days_remove = 60
 
 		ai_will_do = {
@@ -299,10 +299,10 @@ LIT_litangyia_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_arms_factory_build_1"
 			set_country_flag = LIT_litangyia_arms_factory_build_1_flag
 			188 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -325,7 +325,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 30
+		cost = 40
 		days_remove = 30
 
 		ai_will_do = {
@@ -358,7 +358,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 90
+		cost = 60
 		days_remove = 100
 
 		ai_will_do = {
@@ -373,10 +373,10 @@ LIT_litangyia_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_industrial_complex_build_2"
 			set_country_flag = LIT_litangyia_industrial_complex_build_2_flag
 			188 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -395,7 +395,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 90
+		cost = 60
 		days_remove = 100
 
 		ai_will_do = {
@@ -410,10 +410,10 @@ LIT_litangyia_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_litangyia_arms_factory_build_2"
 			set_country_flag = LIT_litangyia_arms_factory_build_2_flag
 			188 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -432,7 +432,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 100
+		cost = 80
 		days_remove = 120
 
 		ai_will_do = {
@@ -476,7 +476,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 30
+		cost = 40
 		days_remove = 30
 
 		ai_will_do = {
@@ -509,7 +509,7 @@ LIT_litangyia_category = {
 		}
 
 		fire_only_once = yes
-		cost = 30
+		cost = 45
 		days_remove = 210
 
 		ai_will_do = {

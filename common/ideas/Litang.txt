@@ -248,15 +248,12 @@ ideas = {
 			picture = ROM_carol_ii_greed
 
 			modifier = {
-				political_power_gain = 0.1
 				research_speed_factor = 0.05
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.05
 				global_building_slots_factor = 0.10
 				production_factory_max_efficiency_factor = 0.05
-				production_lack_of_resource_penalty_factor = -0.15
-				monthly_population = 0.2
-				supply_node_range = 0.1
+				monthly_population = 0.05
 			}
 		}
 
@@ -635,6 +632,18 @@ ideas = {
 			}
 		}
 
+		LIT_backward_industry = {
+			allowed = {
+				always = no
+			}
+
+			picture = great_depression
+
+			modifier = {
+				monthly_population = -0.20
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
 	}
 
 }

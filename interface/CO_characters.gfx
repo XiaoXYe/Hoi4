@@ -216,12 +216,36 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_Yueha.png
     }
     spriteType = {
+        name = GFX_LIT_ch_zhishihuli_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiHuli.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_zhishisheli_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiSheli.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_zhishituboshu_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiTuboshu.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_zhishixuebao_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiXuebao.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_zhishiyanyang_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiYanyang.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_zhishizhangzi_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_ZhishiZhangzi.png
+    }
+    spriteType = {
         name = GFX_NME_ch_wulantuya_portrait_large
         texturefile = gfx/leaders/NME/Portrait_NME_WulanTuya.png
     }
     spriteType = {
         name = GFX_NMG_ch_shiyue_portrait_large
-        texturefile = gfx/leaders/NMG/Portrait_NME_ShiYue.png
+        texturefile = gfx/leaders/NMG/Portrait_NMG_ShiYue.png
     }
     spriteType = {
         name = GFX_SHH_ch_jujingyi_portrait_large
@@ -252,6 +276,10 @@ spriteTypes = {
         texturefile = gfx/leaders/SIC/Portrait_SIC_LiHanyue.png
     }
     spriteType = {
+        name = GFX_SIC_ch_sunxiaochuan_portrait_large
+        texturefile = gfx/leaders/YUN/Portrait_YUN_SunXiaochuan.png
+    }
+    spriteType = {
         name = GFX_SIC_ch_zhangshunfei_portrait_large
         texturefile = gfx/leaders/SIC/Portrait_SIC_ZhangShunfei.png
     }
@@ -260,7 +288,7 @@ spriteTypes = {
         texturefile = gfx/leaders/SIC/Portrait_SIC_ZhangZining.png
     }
     spriteType = {
-        name = GFX_YUN_ch_suxiaochuan_portrait_large
+        name = GFX_YUN_ch_sunxiaochuan_portrait_large
         texturefile = gfx/leaders/YUN/Portrait_YUN_SunXiaochuan.png
     }
     spriteType = {
