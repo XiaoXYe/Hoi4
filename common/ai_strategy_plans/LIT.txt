@@ -14,7 +14,8 @@ LIT_dingzhen = {
 
 	ai_national_focuses = {
 		# grab as fast as you can if available
-		LIT_the_king_win
+		LIT_defeat_epidemic
+
 		LIT_grand_coronation
 		LIT_acquire_chongqing
 		LIT_ally_tibet
@@ -28,16 +29,20 @@ LIT_dingzhen = {
 		LIT_recruit_soldiers
 		LIT_final_effort
 		LIT_is_free
+		LIT_conquer_sichuan
+		LIT_shadow_behind
+		LIT_control_army
+		LIT_control_money
 		LIT_deal_with_bankrupt
 		LIT_cigarette_or_vape
 		LIT_self_value
-		LIT_conquer_sichuan
+		LIT_ethnic_issues
 
 		LIT_right_of_smile
 		LIT_improve_sanitation_habit
 		LIT_what_about_animals
-		LIT_movable_hospitals
 		LIT_happiness_under_covid
+		LIT_movable_hospitals
 		LIT_invest_sanitary_infrastructure
 		LIT_compensate_farmers
 		LIT_smile_still
@@ -50,7 +55,7 @@ LIT_dingzhen = {
 
 		LIT_institute
 		LIT_agriculture_mechanization
-		LIT_litang_urbanlization
+		LIT_litang_urbanization
 
 		
 	}

@@ -11,13 +11,11 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				add_war_support = -0.2
-				defence	= -0.80
-				army_attack_factor = -0.80
-				army_org_factor = -0.80
-				dig_in_speed_factor = -0.80
-				army_speed_factor = -0.80
-				out_of_supply_factor = 0.50
+				stability_weekly = -0.03
+				war_support_weekly = -0.03
+				defence	= -0.15
+				army_attack_factor = -0.15
+				army_org_factor = -0.15
 				surrender_limit = -0.20
 			}
 		}

@@ -15,6 +15,10 @@
  LIT_bop_accept_business_order:0 "丁真同意拍摄一期不要笑挑战"
  LIT_bop_hire_trusted_followers:0 "在资本内部安插丁真亲信"
  LIT_bop_bribe_dingzhen_family:0 "用金钱收买丁真亲朋好友"
+
+ LIT_power_endgame_category:0 "理塘权力斗争"
+ LIT_power_endgame_mission:0 "终局已至"
+
  LIT_litangyia_category:0 "建设世界最高城"
  LIT_litangyia_highway_build:0 "建设理塘高速公路"
  LIT_litangyia_industrial_complex_build_1:0 "理塘民用工厂建设：第一阶段"

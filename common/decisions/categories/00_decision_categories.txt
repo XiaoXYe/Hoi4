@@ -52,6 +52,15 @@ political_actions = {
 	}
 }
 
+general_actions = {
+	icon = generic_political_actions
+
+	allowed = {
+		always = yes
+	}
+}
+
+
 fascism_on_the_rise = {
 	icon = generic_fascism
 

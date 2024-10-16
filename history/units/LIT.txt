@@ -55,7 +55,6 @@ division_template = {
 	}
 }
 
-
 units = {
 	######## LAND OOB ########
 	division = {

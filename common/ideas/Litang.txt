@@ -26,12 +26,10 @@ ideas = {
 			picture = eng_special_air_service
 
 			modifier = {
-				defence	= 0.50
-				army_attack_factor = 0.50
-				army_org_factor = 0.50
-				dig_in_speed_factor = 0.30
-				army_speed_factor = 0.50
-				out_of_supply_factor = -0.50
+				defence	= 0.20
+				army_attack_factor = 0.20
+				army_org_factor = 0.20
+				army_speed_factor = 0.15
 				surrender_limit = 1.00
 			}
 		}

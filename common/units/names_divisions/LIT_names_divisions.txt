@@ -1,0 +1,30 @@
+LIT_CAV_01 = 
+{
+	name = "理塘起义军"
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GER_Gar_01 }
+
+	fallback_name = "理塘无敌 %d 师"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "理塘无敌 %d 师" }
+		2 = { "理塘无敌 %d 师" }
+		3 = { "理塘无敌 %d 师" }
+		4 = { "理塘无敌 %d 师" }
+		5 = { "理塘无敌 %d 师" }
+		6 = { "理塘无敌 %d 师" }
+		7 = { "理塘无敌 %d 师" }
+		8 = { "理塘无敌 %d 师" }
+		9 = { "理塘无敌 %d 师" }
+		10 = { "理塘无敌 %d 师" }
+
+	}
+}
