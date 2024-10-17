@@ -1,4 +1,46 @@
 LIT_core_china_category = {
+	LIT_core_tibet_decision = {
+		allowed = {
+			tag = LIT
+		}
+		icon = generic_research
+
+		visible = {
+			has_completed_focus = LIT_integrate_tibet
+			country_exists = TIB
+			is_ally_with = TIB
+		}
+
+		available = {
+		}
+
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+
+		ai_will_do = {
+			factor = 90
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision LIT_core_tibet_decision"
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LIT_core_tibet_decision"
+			annex_country = {
+				target = TIB
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = TIB
+				}
+				add_core_of = LIT
+			}
+		}
+	}
+	
 	LIT_core_heilongjiang = {
 		icon = infiltrate_state
 		highlight_states = { highlight_state_targets = { state = 24 } }
