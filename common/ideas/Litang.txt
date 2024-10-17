@@ -642,6 +642,34 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 			}
 		}
+		
+		LIT_guoyunchuxian_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		LIT_hongyunqitian_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = ROM_carol_ii_greed
+
+			modifier = {
+				political_power_gain = 0.10
+				research_speed_factor = 0.05
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+			}
+		}
 	}
 
 }

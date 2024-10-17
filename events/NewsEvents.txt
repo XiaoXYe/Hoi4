@@ -476,6 +476,22 @@ news_event = {
 	}
 }
 
+# 理塘赢得第二次中国内战
+news_event = {
+	id = cnnews.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.29" }
+	title = cnnews.29.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.29.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.29.a
+	}
+}
+
 # debug 用的
 news_event = {
 	id = cnnews.114514

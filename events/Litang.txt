@@ -1313,19 +1313,66 @@ country_event = {  # 赢得内战
 	}
 
 	option = {
-		name = litang.35.a
+		name = litang.39.a
 		ai_chance = {
             base = 100
         }
+		add_political_power = 125
+		army_experience = 50
+		add_ideas = LIT_recover_from_civil_war_1
 		set_global_flag = GLB_civil_war_II_end
 		set_global_flag = GLB_civil_war_II_LIT_win
+		hidden_effect = {
+			news_event = cnnews.29
+		}
 		if = {
 			limit = {
 				has_global_flag = GLB_huludao_conference_success
 			}
-			huludao_agreement_gain_land_effect = yes
+			country_event= {
+				id = litang.40
+				days = 7
+			}
 		}
-		add_ideas = LIT_recover_from_civil_war_1
+	}
+}
+
+country_event = {# 葫芦岛协定落实
+	id = litang.40
+	title = litang.40.t
+	desc = litang.40.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.40.a
+		huludao_agreement_gain_land_effect = yes
+	}
+}
+
+country_event = {# 帝国统一中国的方式
+	id = litang.41
+	title = litang.41.t
+	desc = litang.41.d
+	picture = GFX_report_event_soviet_tanks_snow
+
+	is_triggered_only = yes
+
+	option = {
+		name = litang.41.a
+		ai_chance = { base = 80 }
+		custom_effect_tooltip = LIT_tt_chinese_orthodoxy
+		complete_national_focus = LIT_chinese_orthodoxy
+		set_country_flag = LIT_integrate_china_flag
+	}
+
+	option = {
+		name = litang.41.b
+		ai_chance = { base = 20 }
+		custom_effect_tooltip = LIT_tt_litangyia_orthodoxy
+		complete_national_focus = LIT_litangyia_orthodoxy
+		set_country_flag = LIT_puppet_china_flag
 	}
 }
 
