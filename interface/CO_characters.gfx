@@ -196,6 +196,14 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.png
     }
     spriteType = {
+        name = GFX_LIT_ch_dingzhen_2_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu_2.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_dingzhen_3_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu_3.png
+    }
+    spriteType = {
         name = GFX_LIT_ch_hubo_portrait_large
         texturefile = gfx/leaders/LIT/Portrait_LIT_Hubo.png
     }
@@ -286,6 +294,10 @@ spriteTypes = {
     spriteType = {
         name = GFX_SIC_ch_zhangzining_portrait_large
         texturefile = gfx/leaders/SIC/Portrait_SIC_ZhangZining.png
+    }
+    spriteType = {
+        name = GFX_TST_ch_background_portrait_large
+        texturefile = gfx/leaders/TST/Portrait_TST_background.png
     }
     spriteType = {
         name = GFX_YUN_ch_sunxiaochuan_portrait_large

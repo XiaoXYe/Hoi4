@@ -1,0 +1,30 @@
+spriteTypes = {	
+	SpriteType = {
+		name = GFX_goal_LIT_situation_worse
+		texturefile = "gfx/interface/goals/LIT_situation_worse.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_socialmedia_propaganda
+		texturefile = "gfx/interface/goals/LIT_socialmedia_propaganda.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_recruit_soldiers
+		texturefile = "gfx/interface/goals/LIT_recruit_soldiers.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_final_effort
+		texturefile = "gfx/interface/goals/LIT_final_effort.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_is_free
+		texturefile = "gfx/interface/goals/LIT_is_free.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_conquer_sichuan
+		texturefile = "gfx/interface/goals/LIT_conquer_sichuan.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_what_about_animals
+		texturefile = "gfx/interface/goals/LIT_what_about_animals.png"			
+	}
+}

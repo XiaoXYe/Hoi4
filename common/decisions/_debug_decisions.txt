@@ -14,6 +14,10 @@ debug_decisions = {
 		fire_only_once = no
 		cost = 0
 
+		ai_will_do = {
+			base = 0
+		}
+
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -49,6 +53,39 @@ debug_decisions = {
 						}
 					}
 					add_state_claim = PREV
+				}
+			}
+		}
+	}
+
+	debug_set_portraits_descision = {
+		icon = generic_research
+
+		available = {
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+		
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			TST = {
+				set_portraits = {
+					character = TST_ch_background
+					army = { 
+						small =  GFX_LIT_ch_dingzhen_2_portrait_large
+					}
+					civilian = { 
+						large =  GFX_LIT_ch_dingzhen_2_portrait_large
+					}
 				}
 			}
 		}

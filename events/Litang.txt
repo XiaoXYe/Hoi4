@@ -557,6 +557,15 @@ country_event = {# ’Ω §Àƒ¥®
 		hidden_effect = {
 			news_event = { id = cnnews.7 days = 1 }
 		}
+		set_portraits = {
+			character = LIT_ch_dingzhen_1
+			army = { 
+				large =  GFX_LIT_ch_dingzhen_2_portrait_large
+			}
+			civilian = { 
+				large =  GFX_LIT_ch_dingzhen_2_portrait_large
+			}
+		}
 	}	
 }
 
@@ -943,6 +952,12 @@ country_event = {# º”√·
 		set_cosmetic_tag = LIT_litang_empire
 		hidden_effect = {
 			news_event = { id = cnnews.16 days = 1}
+		}
+		set_portraits = {
+			character = LIT_ch_dingzhen_1
+			civilian = { 
+				large =  GFX_LIT_ch_dingzhen_3_portrait_large
+			}
 		}
 	}
 }

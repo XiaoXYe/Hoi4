@@ -1,4 +1,31 @@
 characters={
+	TST_ch_background = {
+		name = TST_ch_background
+
+		portraits = {
+			civilian = {
+				large = GFX_TST_ch_background_portrait_large
+			}
+			army = {
+				large = GFX_TST_ch_background_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = "todo"
+			ideology = animism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+		}
+
+		corps_commander={
+		}
+	}
+
 	TST_ar={
 		advisor={
 			slot = high_command

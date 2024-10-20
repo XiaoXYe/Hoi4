@@ -1,17 +1,17 @@
 ﻿capital = 227
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = transhumanism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	transhumanism = 5
+	transhumanism = 50
 	postmodernism = 10
-	progressivism = 15
-	gradualism = 50
+	progressivism = 10
+	gradualism = 10
 	conservatism = 10
 	retroism = 10
 }
@@ -20,6 +20,9 @@ set_popularities = {
 set_technology = {
 	infantry_weapons = 1
 }
+
+recruit_character = TST_ch_background
+promote_character = TST_ch_background
 
 recruit_character = TST_ar
 recruit_character = TST_acr
