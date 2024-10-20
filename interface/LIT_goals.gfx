@@ -24,6 +24,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT_conquer_sichuan.png"			
 	}
 	SpriteType = {
+		name = GFX_goal_LIT_shadow_behind
+		texturefile = "gfx/interface/goals/LIT_shadow_behind.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_control_army
+		texturefile = "gfx/interface/goals/LIT_control_army.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_control_money
+		texturefile = "gfx/interface/goals/LIT_control_money.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_deal_with_bankrupt
+		texturefile = "gfx/interface/goals/LIT_deal_with_bankrupt.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_cigarette_or_vape
+		texturefile = "gfx/interface/goals/LIT_cigarette_or_vape.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_self_value
+		texturefile = "gfx/interface/goals/LIT_self_value.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_ethnic_issues
+		texturefile = "gfx/interface/goals/LIT_ethnic_issues.png"			
+	}
+	SpriteType = {
 		name = GFX_goal_LIT_what_about_animals
 		texturefile = "gfx/interface/goals/LIT_what_about_animals.png"			
 	}

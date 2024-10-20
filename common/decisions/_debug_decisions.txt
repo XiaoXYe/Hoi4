@@ -81,10 +81,10 @@ debug_decisions = {
 				set_portraits = {
 					character = TST_ch_background
 					army = { 
-						small =  GFX_LIT_ch_dingzhen_2_portrait_large
+						small =  GFX_LIT_ch_dingzhen_4_portrait_large
 					}
 					civilian = { 
-						large =  GFX_LIT_ch_dingzhen_2_portrait_large
+						large =  GFX_LIT_ch_dingzhen_4_portrait_large
 					}
 				}
 			}

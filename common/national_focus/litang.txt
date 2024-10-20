@@ -230,7 +230,7 @@
 
 	focus = {
 		id = LIT_shadow_behind
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_shadow_behind
 		x = 0
 		y = 1
 		relative_position_id = LIT_conquer_sichuan
@@ -257,7 +257,7 @@
 
 	focus = {
 		id = LIT_control_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_control_army
 		x = -1
 		y = 1
 		relative_position_id = LIT_shadow_behind
@@ -287,7 +287,7 @@
 
 	focus = {
 		id = LIT_control_money
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_control_money
 		x = 1
 		y = 1
 		relative_position_id = LIT_shadow_behind
@@ -317,7 +317,7 @@
 
 	focus = {
 		id = LIT_deal_with_bankrupt
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_deal_with_bankrupt
 		x = 2
 		y = 2
 		relative_position_id = LIT_shadow_behind
@@ -347,7 +347,7 @@
 
 	focus = {
 		id = LIT_cigarette_or_vape
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_cigarette_or_vape
 		x = -2
 		y = 2
 		relative_position_id = LIT_shadow_behind
@@ -377,7 +377,7 @@
 
 	focus = {
 		id = LIT_self_value
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_self_value
 		x = 0
 		y = 2
 		relative_position_id = LIT_shadow_behind
@@ -407,7 +407,7 @@
 
 	focus = {
 		id = LIT_ethnic_issues
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_ethnic_issues
 		x = 0
 		y = 1
 		relative_position_id = LIT_self_value
