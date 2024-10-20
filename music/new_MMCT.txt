@@ -12,29 +12,6 @@
 #Consult the music modding page on the HOI4 wiki for more info: https://hoi4.paradoxwikis.com/Music_modding.
 
 music_station = "new_MMCT"
-music = {
-    song = "qiansixi"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "wodeyigedaogupengyou"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "nanque"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
 
 music = {
     song = "banshengxue"
@@ -45,75 +22,19 @@ music = {
 }
 
 music = {
-    song = "chuntingxue"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+  song = "bishangguan"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
-    song = "guanshanjiu"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "jiumengyichang"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "meirenhuajuan"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "muxia"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "renjianjinghongke"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "tashanhe"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "yixiaojianghu"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "zhexian"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+  song = "bufurenjian"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
@@ -125,6 +46,22 @@ music = {
 }
 
 music = {
+  song = "changanguniang"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "changshengjue"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "chiling"
     chance = {
       modifier = { factor = 1 }
@@ -133,11 +70,43 @@ music = {
 }
 
 music = {
+  song = "chuntingxue"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "cijiumenhuiyi"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
+}
+
+music = {
+  song = "fengguoxietaohua"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "guanghanyao"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "guanshanjiu"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
@@ -157,11 +126,27 @@ music = {
 }
 
 music = {
+  song = "jianghuzhijian"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "jinlichao"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
+}
+
+music = {
+  song = "jiumengyichang"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
@@ -181,7 +166,7 @@ music = {
 }
 
 music = {
-    song = "qifengle"
+    song = "mangzhong"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
@@ -189,11 +174,35 @@ music = {
 }
 
 music = {
-    song = "mangzhong"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+  song = "meirenhuajuan"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "mowenguiqi"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "muxia"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "nanque"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
@@ -213,11 +222,43 @@ music = {
 }
 
 music = {
+  song = "qiansixi"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+    song = "qifengle"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+  song = "renjianjinghongke"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "taohuanuo"
     chance = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
+}
+
+music = {
+  song = "tashanhe"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }
 
 music = {
@@ -245,6 +286,14 @@ music = {
 }
 
 music = {
+  song = "wodeyigedaogupengyou"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "xingchendahai"
     chance = {
       modifier = { factor = 1 }
@@ -269,6 +318,14 @@ music = {
 }
 
 music = {
+  song = "yixiaojianghu"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
     song = "yuxitan"
     chance = {
       modifier = { factor = 1 }
@@ -282,4 +339,20 @@ music = {
       modifier = { factor = 1 }
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
+}
+
+music = {
+  song = "zhefengduye"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
+}
+
+music = {
+  song = "zhexian"
+  chance = {
+    modifier = { factor = 1 }
+    #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  }
 }

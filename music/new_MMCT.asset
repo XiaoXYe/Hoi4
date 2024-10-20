@@ -6,81 +6,20 @@
 #And remember to change the .dds of your radio station thumbnail in the gfx folder!
 
 music = {
-    name = "qiansixi"
-    file = "CO/qiansixi.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "wodeyigedaogupengyou"
-    file = "CO/wodeyigedaogupengyou.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "nanque"
-    file = "CO/nanque.ogg"
-    volume = 0.65
-}
-
-music = {
     name = "banshengxue"
     file = "CO/banshengxue.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "chuntingxue"
-    file = "CO/chuntingxue.ogg"
+    name = "bishangguan"
+    file = "CO/bishangguan.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "guanshanjiu"
-    file = "CO/guanshanjiu.ogg"
-    volume = 0.65
-}
-
-
-music = {
-    name = "jiumengyichang"
-    file = "CO/jiumengyichang.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "meirenhuajuan"
-    file = "CO/meirenhuajuan.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "muxia"
-    file = "CO/muxia.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "renjianjinghongke"
-    file = "CO/renjianjinghongke.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "tashanhe"
-    file = "CO/tashanhe.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "yixiaojianghu"
-    file = "CO/yixiaojianghu.ogg"
-    volume = 0.65
-}
-
-music = {
-    name = "zhexian"
-    file = "CO/zhexian.ogg"
+    name = "bufurenjian"
+    file = "CO/bufurenjian.ogg"
     volume = 0.65
 }
 
@@ -91,14 +30,50 @@ music = {
 }
 
 music = {
+    name = "changanguniang"
+    file = "CO/changanguniang.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "changshengjue"
+    file = "CO/changshengjue.ogg"
+    volume = 0.65
+}
+
+music = {
     name = "chiling"
     file = "CO/chiling.ogg"
     volume = 0.65
 }
 
 music = {
+    name = "chuntingxue"
+    file = "CO/chuntingxue.ogg"
+    volume = 0.65
+}
+
+music = {
     name = "cijiumenhuiyi"
     file = "CO/cijiumenhuiyi.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "fengguoxietaohua"
+    file = "CO/fengguoxietaohua.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "guanghanyao"
+    file = "CO/guanghanyao.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "guanshanjiu"
+    file = "CO/guanshanjiu.ogg"
     volume = 0.65
 }
 
@@ -115,8 +90,20 @@ music = {
 }
 
 music = {
+    name = "jianghuzhijian"
+    file = "CO/jianghuzhijian.ogg"
+    volume = 0.65
+}
+
+music = {
     name = "jinlichao"
     file = "CO/jinlichao.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "jiumengyichang"
+    file = "CO/jiumengyichang.ogg"
     volume = 0.65
 }
 
@@ -133,14 +120,32 @@ music = {
 }
 
 music = {
-    name = "qifengle"
-    file = "CO/qifengle.ogg"
+    name = "mangzhong"
+    file = "CO/mangzhong.ogg"
     volume = 0.65
 }
 
 music = {
-    name = "mangzhong"
-    file = "CO/mangzhong.ogg"
+    name = "meirenhuajuan"
+    file = "CO/meirenhuajuan.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "mowenguiqi"
+    file = "CO/mowenguiqi.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "muxia"
+    file = "CO/muxia.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "nanque"
+    file = "CO/nanque.ogg"
     volume = 0.65
 }
 
@@ -157,8 +162,32 @@ music = {
 }
 
 music = {
+    name = "qiansixi"
+    file = "CO/qiansixi.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "qifengle"
+    file = "CO/qifengle.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "renjianjinghongke"
+    file = "CO/renjianjinghongke.ogg"
+    volume = 0.65
+}
+
+music = {
     name = "taohuanuo"
     file = "CO/taohuanuo.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "tashanhe"
+    file = "CO/tashanhe.ogg"
     volume = 0.65
 }
 
@@ -177,6 +206,12 @@ music = {
 music = {
     name = "ting"
     file = "CO/ting.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "wodeyigedaogupengyou"
+    file = "CO/wodeyigedaogupengyou.ogg"
     volume = 0.65
 }
 
@@ -205,7 +240,26 @@ music = {
 }
 
 music = {
+    name = "yixiaojianghu"
+    file = "CO/yixiaojianghu.ogg"
+    volume = 0.65
+}
+
+music = {
     name = "yunyanchengyu"
     file = "CO/yunyanchengyu.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "zhefengduye"
+    file = "CO/zhefengduye.ogg"
+    volume = 0.65
+}
+
+
+music = {
+    name = "zhexian"
+    file = "CO/zhexian.ogg"
     volume = 0.65
 }
