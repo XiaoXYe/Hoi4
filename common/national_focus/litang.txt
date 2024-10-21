@@ -436,7 +436,7 @@
 
 	focus = {
 		id = LIT_the_king_win
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_the_king_win
 		x = 25
 		y = 0
 		cost = 5
@@ -460,7 +460,7 @@
 
 	focus = {
 		id = LIT_the_capital_win
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_the_capital_win
 		x = 39
 		y = 0
 		cost = 5
@@ -484,7 +484,7 @@
 
 	focus = {
 		id = LIT_grand_coronation
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_grand_coronation
 		x = 0
 		y = 1
 		relative_position_id = LIT_the_king_win
@@ -511,7 +511,7 @@
 
 	focus = {
 		id = LIT_eradicate_chouxiang_culture
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_eradicate_chouxiang_culture
 		x = -1
 		y = 1
 		relative_position_id = LIT_grand_coronation
@@ -539,7 +539,7 @@
 
 	focus = {
 		id = LIT_fight_against_progressivism
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_fight_against_progressivism
 		x = 1
 		y = 1
 		relative_position_id = LIT_grand_coronation
@@ -571,7 +571,7 @@
 
 	focus = {
 		id = LIT_strengthen_national_identity
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_strengthen_national_identity
 		x = -1
 		y = 2
 		relative_position_id = LIT_grand_coronation
@@ -600,7 +600,7 @@
 
 	focus = {
 		id = LIT_a_clear_line_with_retroism
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_a_clear_line_with_retroism
 		x = 1
 		y = 2
 		relative_position_id = LIT_grand_coronation
@@ -628,7 +628,7 @@
 
 	focus = {
 		id = LIT_centralization
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_centralization
 		x = 0
 		y = 3
 		relative_position_id = LIT_grand_coronation
@@ -654,7 +654,7 @@
 
 	focus = {
 		id = LIT_land_reform
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_land_reform
 		x = 0
 		y = 4
 		relative_position_id = LIT_grand_coronation
@@ -681,7 +681,7 @@
 
 	focus = {
 		id = LIT_speak_tibetan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_speak_tibetan
 		x = -2
 		y = 4
 		relative_position_id = LIT_grand_coronation
@@ -705,7 +705,7 @@
 	
 	focus = {
 		id = LIT_scan_code
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_scan_code
 		x = 2
 		y = 4
 		relative_position_id = LIT_grand_coronation
@@ -732,7 +732,7 @@
 	
 	focus = {
 		id = LIT_dinggongtuwu
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_dinggongtuwu
 		x = -1
 		y = 1
 		relative_position_id = LIT_land_reform
@@ -755,7 +755,7 @@
 
 	focus = {
 		id = LIT_tianxiaguixin
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_tianxiaguixin
 		x = 1
 		y = 1
 		relative_position_id = LIT_land_reform
@@ -778,7 +778,7 @@
 
 	focus = {
 		id = LIT_hongyunqitian
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_hongyunqitian
 		x = 0
 		y = 2
 		relative_position_id = LIT_land_reform

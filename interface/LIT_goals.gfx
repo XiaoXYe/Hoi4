@@ -1,58 +1,114 @@
 spriteTypes = {	
 	SpriteType = {
 		name = GFX_goal_LIT_situation_worse
-		texturefile = "gfx/interface/goals/LIT_situation_worse.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_situation_worse.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_socialmedia_propaganda
-		texturefile = "gfx/interface/goals/LIT_socialmedia_propaganda.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_socialmedia_propaganda.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_recruit_soldiers
-		texturefile = "gfx/interface/goals/LIT_recruit_soldiers.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_recruit_soldiers.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_final_effort
-		texturefile = "gfx/interface/goals/LIT_final_effort.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_final_effort.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_is_free
-		texturefile = "gfx/interface/goals/LIT_is_free.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_is_free.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_conquer_sichuan
-		texturefile = "gfx/interface/goals/LIT_conquer_sichuan.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_conquer_sichuan.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_shadow_behind
-		texturefile = "gfx/interface/goals/LIT_shadow_behind.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_shadow_behind.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_control_army
-		texturefile = "gfx/interface/goals/LIT_control_army.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_control_army.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_control_money
-		texturefile = "gfx/interface/goals/LIT_control_money.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_control_money.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_deal_with_bankrupt
-		texturefile = "gfx/interface/goals/LIT_deal_with_bankrupt.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_deal_with_bankrupt.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_cigarette_or_vape
-		texturefile = "gfx/interface/goals/LIT_cigarette_or_vape.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_cigarette_or_vape.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_self_value
-		texturefile = "gfx/interface/goals/LIT_self_value.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_self_value.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_ethnic_issues
-		texturefile = "gfx/interface/goals/LIT_ethnic_issues.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_ethnic_issues.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_the_king_win
+		texturefile = "gfx/interface/goals/LIT/LIT_the_king_win.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_the_capital_win
+		texturefile = "gfx/interface/goals/LIT/LIT_the_capital_win.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_grand_coronation
+		texturefile = "gfx/interface/goals/LIT/LIT_grand_coronation.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_eradicate_chouxiang_culture
+		texturefile = "gfx/interface/goals/LIT/LIT_eradicate_chouxiang_culture.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_fight_against_progressivism
+		texturefile = "gfx/interface/goals/LIT/LIT_fight_against_progressivism.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_strengthen_national_identity
+		texturefile = "gfx/interface/goals/LIT/LIT_strengthen_national_identity.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_a_clear_line_with_retroism
+		texturefile = "gfx/interface/goals/LIT/LIT_a_clear_line_with_retroism.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_centralization
+		texturefile = "gfx/interface/goals/LIT/LIT_centralization.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_land_reform
+		texturefile = "gfx/interface/goals/LIT/LIT_land_reform.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_speak_tibetan
+		texturefile = "gfx/interface/goals/LIT/LIT_speak_tibetan.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_scan_code
+		texturefile = "gfx/interface/goals/LIT/LIT_scan_code.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_dinggongtuwu
+		texturefile = "gfx/interface/goals/LIT/LIT_dinggongtuwu.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_tianxiaguixin
+		texturefile = "gfx/interface/goals/LIT/LIT_tianxiaguixin.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_hongyunqitian
+		texturefile = "gfx/interface/goals/LIT/LIT_hongyunqitian.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_what_about_animals
-		texturefile = "gfx/interface/goals/LIT_what_about_animals.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_what_about_animals.png"			
 	}
 }

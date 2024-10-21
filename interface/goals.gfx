@@ -4,15 +4,8 @@ spriteTypes = {
 	name = "GFX_goal_BEJ_welcome_GuAiling"
 	texturefile = "gfx/interface/goals/BEJ_welcome_GuAiling.png"			
 	}
+	
 	#### Generic continuous goal icons
-	#### LIT
-	SpriteType = {
-	name = "GFX_goal_LIT_what_about_animals"
-	texturefile = "gfx/interface/goals/LIT_what_about_animals.png"			
-	}
-
-
-
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			

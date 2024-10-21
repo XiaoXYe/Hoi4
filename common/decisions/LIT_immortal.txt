@@ -1,0 +1,31 @@
+LIT_immortal_category = {
+	LIT_immortal_decision = {
+		icon = GFX_decision_hol_draw_up_staff_plans	
+
+		visible = {
+			owns_state = 264
+		}
+		
+		available = {
+			owns_state = 264
+		}
+		
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			set_portraits = {
+				character = LIT_ch_dingzhen_1
+				army = { 
+					small =  GFX_LIT_ch_dingzhen_4_portrait_large
+				}
+				civilian = { 
+					large =  GFX_LIT_ch_dingzhen_4_portrait_large
+				}
+			}
+		}
+	}
+}

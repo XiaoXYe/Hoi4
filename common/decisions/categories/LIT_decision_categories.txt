@@ -61,3 +61,9 @@ LIT_puppet_china_category = {
 	allowed = { tag = LIT }
 	priority = 90
 }
+
+LIT_immortal_category = {
+	icon = generic_research
+	allowed = { tag = LIT }
+	priority = 90
+}
