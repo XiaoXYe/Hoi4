@@ -108,6 +108,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT/LIT_hongyunqitian.png"			
 	}
 	SpriteType = {
+		name = GFX_goal_LIT_acquire_chongqing
+		texturefile = "gfx/interface/goals/LIT/LIT_acquire_chongqing.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_ally_tibet
+		texturefile = "gfx/interface/goals/LIT/LIT_ally_tibet.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_sanxia_conference
+		texturefile = "gfx/interface/goals/LIT/LIT_sanxia_conference.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_expand_experiment_land
+		texturefile = "gfx/interface/goals/LIT/LIT_expand_experiment_land.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_henan_or_war
+		texturefile = "gfx/interface/goals/LIT/LIT_henan_or_war.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_iron_curtain
+		texturefile = "gfx/interface/goals/LIT/LIT_iron_curtain.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_snow_leopard_flag_waving
+		texturefile = "gfx/interface/goals/LIT/LIT_snow_leopard_flag_waving.png"			
+	}
+	SpriteType = {
 		name = GFX_goal_LIT_what_about_animals
 		texturefile = "gfx/interface/goals/LIT/LIT_what_about_animals.png"			
 	}

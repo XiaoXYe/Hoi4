@@ -918,7 +918,7 @@
 
 	focus = {
 		id = LIT_acquire_chongqing
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_acquire_chongqing
 		x = 8
 		y = 1
 		relative_position_id = LIT_grand_coronation
@@ -943,7 +943,7 @@
 
 	focus = {
 		id = LIT_ally_tibet
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_ally_tibet
 		x = 6
 		y = 1
 		relative_position_id = LIT_grand_coronation
@@ -978,7 +978,7 @@
 
 	focus = {
 		id = LIT_sanxia_conference
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_sanxia_conference
 		x = 7
 		y = 2
 		relative_position_id = LIT_grand_coronation
@@ -1005,7 +1005,7 @@
 
 	focus = {
 		id = LIT_expand_experiment_land
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_expand_experiment_land
 		x = 7
 		y = 3
 		relative_position_id = LIT_grand_coronation
@@ -1035,7 +1035,7 @@
 
 	focus = {
 		id = LIT_henan_or_war
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_henan_or_war
 		x = 7
 		y = 4
 		relative_position_id = LIT_grand_coronation
@@ -1063,8 +1063,37 @@
 	}
 
 	focus = {
+		id = LIT_snow_leopard_flag_waving
+		icon = GFX_goal_LIT_snow_leopard_flag_waving
+		x = 0
+		y = 1
+		relative_position_id = LIT_iron_curtain
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		prerequisite = {
+			focus = LIT_iron_curtain
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_snow_leopard_flag_waving"
+			country_event = {
+				id = litang.41
+				days = 7
+			}
+		}
+	}
+	
+	focus = {
 		id = LIT_iron_curtain
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_iron_curtain
 		x = 7
 		y = 5
 		relative_position_id = LIT_grand_coronation
@@ -2432,35 +2461,6 @@
 			swap_ideas = {
 				remove_idea = LIT_relx_5_army_idea
 				add_idea = LIT_relx_5_army_special_idea
-			}
-		}
-	}
-
-	focus = {
-		id = LIT_snow_leopard_flag_waving
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 1
-		relative_position_id = LIT_iron_curtain
-		cost = 1
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		prerequisite = {
-			focus = LIT_iron_curtain
-		}
-
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_snow_leopard_flag_waving"
-			country_event = {
-				id = litang.41
-				days = 7
 			}
 		}
 	}
