@@ -1001,7 +1001,7 @@ country_event = {# 测码
 
 	option = {
 		name = litang.25.a
-		add_politcal_power = 75
+		add_political_power = 75
 	}
 }
 
@@ -1015,7 +1015,7 @@ country_event = {# 藏传佛教
 
 	option = {
 		name = litang.26.a
-		add_politcal_power = 25
+		add_political_power = 25
 	}
 }
 
@@ -1029,7 +1029,7 @@ country_event = {# 接回达赖喇嘛
 
 	option = {
 		name = litang.27.a
-		add_politcal_power = 10
+		add_political_power = 10
 		add_stability = 0.05
 	}
 }
@@ -1044,7 +1044,7 @@ country_event = {# 灌顶法会
 
 	option = {
 		name = litang.28.a
-		add_politcal_power = 10
+		add_political_power = 10
 		add_stability = 0.05
 	}
 }

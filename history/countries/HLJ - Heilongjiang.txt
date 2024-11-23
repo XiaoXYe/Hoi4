@@ -13,7 +13,7 @@ set_popularities = {
 	postmodernism = 20
 	progressivism = 35
 	gradualism = 30
-	conservatism = 5
+	conservatism = 15
 	retroism = 0
 }
 

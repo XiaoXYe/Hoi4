@@ -220,7 +220,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = gradualism
+			ideology = revisionism
 			traits = {
 				#
 			}
@@ -336,7 +336,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = postmodernism
+			ideology = abstractism
 			traits = {
 				#
 			}
@@ -383,7 +383,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = conservatism
+			ideology = didaonism
 			traits = {
 				#
 			}
@@ -539,7 +539,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = progressivism
+			ideology = liberalism
 			traits = {
 				#
 			}
@@ -587,7 +587,7 @@ characters={
 
 		country_leader = {
 			desc = ""
-			ideology = progressivism
+			ideology = liberalism
 			traits = {
 				#
 			}

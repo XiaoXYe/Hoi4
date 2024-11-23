@@ -107,38 +107,6 @@ if = {
 }
 
 recruit_character = NME_ch_wulantuya
-
-
-recruit_character = NMG_ar
-recruit_character = NMG_acr
-recruit_character = NMG_mt
-recruit_character = NMG_stc
-recruit_character = NMG_aa2
-recruit_character = NMG_acgs
-recruit_character = NMG_ncm
-recruit_character = NMG_nccr
-recruit_character = NMG_coi
-recruit_character = NMG_democratic_guy
-recruit_character = NMG_acd2
-recruit_character = NMG_acas
-recruit_character = NMG_communist_guy
-recruit_character = NMG_ncs
-recruit_character = NMG_awt
-recruit_character = NMG_pot
-recruit_character = NMG_fascist_guy
-recruit_character = NMG_ai2
-recruit_character = NMG_nt
-recruit_character = NMG_aco2
-
+promote_character = NME_ch_wulantuya
 
 set_convoys = 20
-
-create_country_leader = {
-	name = "李纪恒"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Neimenggu_LiJiheng.dds"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
