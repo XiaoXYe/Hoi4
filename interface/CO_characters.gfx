@@ -192,6 +192,18 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_Danduo.png
     }
     spriteType = {
+        name = GFX_LIT_ch_dingzhenkezhu_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenKezhu.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_dingzhenquji_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenQuji.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_dingzhenTaxing_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenTaxing.png
+    }
+    spriteType = {
         name = GFX_LIT_ch_dingzhen_1_portrait_large
         texturefile = gfx/leaders/LIT/Portrait_LIT_DingzhenZhenzhu.png
     }
@@ -212,8 +224,20 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_Hubo.png
     }
     spriteType = {
+        name = GFX_LIT_ch_jiananzeren_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_JiananZeren.png
+    }
+    spriteType = {
         name = GFX_LIT_ch_jicheng_portrait_large
         texturefile = gfx/leaders/LIT/Portrait_LIT_Jicheng.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_langjizeren_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_LangjiZeren.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_luorongnima_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_LuorongNima.png
     }
     spriteType = {
         name = GFX_LIT_ch_silangluobu_portrait_large
