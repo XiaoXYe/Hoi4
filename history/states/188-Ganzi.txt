@@ -14,8 +14,9 @@ state={
 	}
 
 	history = {
+		add_core_of = LIT
 		add_core_of = SIC
-		owner = SIC
+		owner = LIT
 		victory_points = { 1255 5 }
 		victory_points = { 909 5 }
 		buildings = {

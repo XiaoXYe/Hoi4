@@ -48,6 +48,8 @@ ideologies = {
 			}
 			abstract_progrssivism = {
 			}
+			postmodern_photographism = {
+			}
 		}
 
 		dynamic_faction_names = {

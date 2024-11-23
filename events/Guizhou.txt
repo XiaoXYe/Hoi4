@@ -1,0 +1,36 @@
+###########################
+# Guizhou Events
+###########################
+
+add_namespace = guizhou
+
+### 风味事件
+# 2024.11.12 珠海恶性撞人事件
+country_event = {
+	id = guizhou.20241112
+	title = guizhou.20241112.t
+	desc = guizhou.20241112.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2024.11.12
+		tag = GUZ
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event guizhou.20241112"
+	}
+	option = {
+		name = guizhou.20241112.a
+		add_political_power = 30
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = {
+				id = cnnews.20241112
+				days = 1
+			}
+		}
+	}
+}

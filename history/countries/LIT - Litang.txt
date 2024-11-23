@@ -2,18 +2,18 @@
 oob = "empty"
 
 set_politics = {
-	ruling_party = gradualism 
+	ruling_party = postmodernism 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	transhumanism = 0
-	postmodernism = 5
-	progressivism = 15
-	gradualism = 30
-	conservatism = 30
+	transhumanism = 5
+	postmodernism = 10
+	progressivism = 5
+	gradualism = 40
+	conservatism = 20
 	retroism = 20
 }
 
@@ -115,8 +115,11 @@ if = {
 	}
 }
 
-recruit_character = LIT_ch_hubo
+SIC = {
+	puppet = LIT
+}
 
+recruit_character = LIT_ch_hubo
 promote_character = LIT_ch_hubo
 
 recruit_character = LIT_acr
@@ -133,5 +136,11 @@ recruit_character = LIT_awt
 recruit_character = LIT_ai2
 recruit_character = LIT_nt
 
+set_global_flag = LIT_spawned
+set_cosmetic_tag = LIT_SIC_pilot_base
+country_event = {
+	id = litang.1
+	days = 3
+}
 
 set_convoys = 20

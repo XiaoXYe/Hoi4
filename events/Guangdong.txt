@@ -1,0 +1,30 @@
+###########################
+# Guangdong Events
+###########################
+
+add_namespace = guangdong
+
+### 风味事件
+# 2024.11.11 珠海恶性撞人事件
+country_event = {
+	id = guangdong.20241111
+	title = guangdong.20241111.t
+	desc = guangdong.20241111.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2024.11.11
+		tag = GUD
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event guangdong.20241111"
+	}
+	option = {
+		name = guangdong.20241111.a
+		add_political_power = -30
+		add_stability = -0.05
+	}
+}

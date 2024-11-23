@@ -4,101 +4,7 @@
 
 add_namespace = sichuan
 
-country_event = {  # ¸Ê×ÎÖİµÄ·¢Õ¹³É¹û
-	id = sichuan.1
-	title = sichuan.1.t
-	desc = sichuan.1.d
-	picture = GFX_report_event_soviet_tanks_snow
-
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event sichuan.1"
-	}
-
-	option = { # Accept demands
-		name = sichuan.1.a
-		ai_chance = { factor = 100 }
-		country_event = {
-			id = sichuan.2
-			days = 3
-		}
-	}
-}
-
-country_event = {  # ¸Ê×ÎÖİÎÄ»¯ÌØÇø³ÉÁ¢
-	id = sichuan.2
-	title = sichuan.2.t
-	desc = sichuan.2.d
-	picture = GFX_report_event_soviet_tanks_snow
-
-	is_triggered_only = yes
-	
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event sichuan.2"
-		hidden_effect = {
-			set_global_flag = LIT_spawned
-			LIT = {
-				transfer_state = 188
-				add_state_core = 188  # Litang
-			}
-			SIC = {
-				puppet = LIT
-			}
-			LIT = {
-				load_oob = LIT
-				set_popularities = {
-					transhumanism = 5
-					postmodernism = 10
-					progressivism = 5
-					gradualism = 40
-					conservatism = 20
-					retroism = 20
-				}
-				set_politics = {
-					ruling_party = gradualism 
-					last_election = "1936.1.1"
-					election_frequency = 48
-					elections_allowed = no
-				}
-				set_cosmetic_tag = LIT_SIC_pilot_base
-				recruit_character = LIT_ch_dingzhen_1
-				recruit_character = LIT_ch_hubo
-				recruit_character = LIT_ch_silangluobu
-				country_event = {
-					id = litang.1
-					days = 3
-				}
-			}
-		}
-	}
-
-	option = { # play SIC
-		name = sichuan.2.a
-		ai_chance = { factor = 100 }
-		name = sichuan.2.a
-		add_political_power = -30
-		add_stability = -0.03
-		LIT = {
-			set_country_flag = choice_made
-		}
-	}
-	option = { # play LIT
-		trigger = { is_ai = no }
-		name = sichuan.2.b
-		hidden_effect = {
-			add_political_power = -30
-			add_stability = -0.03
-			LIT = {
-				set_country_flag = choice_made
-				change_tag_from = SIC
-			}
-		}
-	}
-}
-
-country_event = {  # ¸ü¼ÓÑÏ¸ñµÄ·ÀÒß´ëÊ©
+country_event = {  # ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½Ä·ï¿½ï¿½ß´ï¿½Ê©
 	id = sichuan.3
 	title = sichuan.3.t
 	desc = sichuan.3.d
@@ -107,7 +13,6 @@ country_event = {  # ¸ü¼ÓÑÏ¸ñµÄ·ÀÒß´ëÊ©
 	trigger = {
 		tag = SIC
 		has_idea = GEN_pandemic
-		date > 2020.2.1
 	}
 	fire_only_once = yes
 	
@@ -130,7 +35,7 @@ country_event = {  # ¸ü¼ÓÑÏ¸ñµÄ·ÀÒß´ëÊ©
 	}
 }
 
-country_event = {  # ÀíÌÁ·´¿¹ÁËÎÒÃÇ£¡
+country_event = {  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½
 	id = sichuan.4	
 	title = sichuan.4.t
 	desc = sichuan.4.d

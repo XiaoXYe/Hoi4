@@ -4,12 +4,27 @@ bookmarks = {
 		desc = "CO_GATHERING_STORM_DESC"
 		date = 2020.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "BEJ"
+		default_country = "LIT"
 		default = yes
 		
+		"LIT"={
+			history = "CO_OTHER_GATHERING_STORM_DESC"
+			ideology = gradualism
+
+			ideas = {
+				LIT_social_media_influencer_economy
+				LIT_old_army_idea_0
+			}
+
+			focuses = {
+				LIT_cigarette_or_vape
+				LIT_hongyunqitian
+				LIT_henan_or_war
+			}
+		}
 		"BEJ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 
 			ideas = {
 				BEJ_xiongan_district
@@ -23,9 +38,19 @@ bookmarks = {
 				political_effort
 			}
 		}
+		"LIN"={
+			history = "CO_OTHER_GATHERING_STORM_DESC"
+			ideology = postmodernism
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
 		"SHH"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 
 			focuses = {
 				army_effort
@@ -35,7 +60,7 @@ bookmarks = {
 		}
 		"SIC"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = postmodernism
 
 			focuses = {
 				army_effort
@@ -45,7 +70,7 @@ bookmarks = {
 		}
 		"GUD"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = conservatism
 
 			focuses = {
 				army_effort
@@ -55,27 +80,7 @@ bookmarks = {
 		}
 		"JIS"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
-
-			focuses = {
-				army_effort
-				industrial_effort
-				political_effort
-			}
-		}
-		"HUB"={
-			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
-
-			focuses = {
-				army_effort
-				industrial_effort
-				political_effort
-			}
-		}
-		"LIN"={
-			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 
 			focuses = {
 				army_effort
@@ -98,7 +103,18 @@ bookmarks = {
 		# minors from DLC ####
 		"TIJ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
+			minor = yes
+
+			focuses = {
+				army_effort
+				industrial_effort
+				political_effort
+			}
+		}
+		"HUB"={
+			history = "CO_OTHER_GATHERING_STORM_DESC"
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -109,7 +125,7 @@ bookmarks = {
 		}
 		"CHQ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -121,7 +137,7 @@ bookmarks = {
 		"ZHJ"={
 			minor = yes
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = conservatism
 
 			focuses = {
 				army_effort
@@ -131,7 +147,7 @@ bookmarks = {
 		}
 		"JIL"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = postmodernism
 			minor = yes
 
 			focuses = {
@@ -142,7 +158,7 @@ bookmarks = {
 		}
 		"HLJ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -153,7 +169,7 @@ bookmarks = {
 		}
 		"HEB"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = postmodernism
 			minor = yes
 
 			focuses = {
@@ -164,7 +180,7 @@ bookmarks = {
 		}
 		"NMG"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -175,7 +191,7 @@ bookmarks = {
 		}
 		"SHX"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -186,7 +202,7 @@ bookmarks = {
 		}
 		"SAX"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -197,7 +213,7 @@ bookmarks = {
 		}
 		"HEN"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = postmodernism
 			minor = yes
 
 			focuses = {
@@ -208,7 +224,7 @@ bookmarks = {
 		}
 		"HUN"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -219,7 +235,7 @@ bookmarks = {
 		}
 		"ANH"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -230,7 +246,7 @@ bookmarks = {
 		}
 		"JIX"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -241,7 +257,7 @@ bookmarks = {
 		}
 		"SHD"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -252,7 +268,7 @@ bookmarks = {
 		}
 		"FUJ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -263,7 +279,7 @@ bookmarks = {
 		}
 		"GUX"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -274,7 +290,7 @@ bookmarks = {
 		}
 		"YUN"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -285,7 +301,7 @@ bookmarks = {
 		}
 		"GUZ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -296,7 +312,7 @@ bookmarks = {
 		}
 		"HAN"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -307,7 +323,7 @@ bookmarks = {
 		}
 		"GAS"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -318,7 +334,7 @@ bookmarks = {
 		}
 		"NIX"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -329,7 +345,7 @@ bookmarks = {
 		}
 		"QIH"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -340,7 +356,7 @@ bookmarks = {
 		}
 		"XIJ"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -351,7 +367,7 @@ bookmarks = {
 		}
 		"TIB"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = gradualism
 			minor = yes
 
 			focuses = {
@@ -362,7 +378,7 @@ bookmarks = {
 		}
 		"HOK"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -373,7 +389,7 @@ bookmarks = {
 		}
 		"MAC"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {
@@ -384,7 +400,7 @@ bookmarks = {
 		}
 		"TAW"={
 			history = "CO_OTHER_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = progressivism
 			minor = yes
 
 			focuses = {

@@ -263,6 +263,8 @@ country_event = { # 新王
 	option = {
 		name = litang.108.a
 		set_country_flag = LIT_dingzhen_king_flag
+		recruit_character = LIT_ch_dingzhen_1
+		recruit_character = LIT_ch_silangluobu
 		promote_character = LIT_ch_dingzhen_1
 		set_politics = {
 			ruling_party = conservatism
@@ -291,7 +293,7 @@ country_event = { # 胡波的去留
 	}
 
 	option = {
-		name = litang.109.a
+		name = litang.109.b
 		retire_character = LIT_ch_hubo
 		add_manpower = -1
 	}

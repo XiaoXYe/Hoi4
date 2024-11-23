@@ -492,6 +492,22 @@ news_event = {
 	}
 }
 
+# 李子柒回归
+news_event = {
+	id = cnnews.20241112
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.20241112" }
+	title = cnnews.20241112.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.20241112.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.20241112.a
+	}
+}
+
 # debug 用的
 news_event = {
 	id = cnnews.114514
