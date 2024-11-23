@@ -119,7 +119,14 @@ SIC = {
 	puppet = LIT
 }
 
+recruit_character = LIT_ch_dingzhenkezhu
+recruit_character = LIT_ch_dingzhenquji
+recruit_character = LIT_ch_dingzhentaxing
 recruit_character = LIT_ch_hubo
+recruit_character = LIT_ch_jiananzeren
+recruit_character = LIT_ch_langjizeren
+recruit_character = LIT_ch_luorongnima
+
 promote_character = LIT_ch_hubo
 
 recruit_character = LIT_acr

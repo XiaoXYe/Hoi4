@@ -93,8 +93,6 @@ if = {
 	}
 }
 
-country_event = { id = sichuan.1 days = 5 }
-
 recruit_character = SIC_ch_duanaojuan
 recruit_character = SIC_ch_fengxuejuan
 recruit_character = SIC_ch_libosi
