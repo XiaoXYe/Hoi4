@@ -1,4 +1,50 @@
 characters={
+	LIT_ch_asuo = {
+		name = LIT_ch_asuo
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_asuo_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_asuo_portrait_large
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_asuo_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
 
 	LIT_ch_danduo = {
 		name = LIT_ch_danduo
@@ -94,6 +140,53 @@ characters={
 		}
 	}
 	
+	LIT_ch_dingzhenlangka = {
+		name = LIT_ch_dingzhenlangka
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_dingzhenlangka_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_dingzhenlangka_portrait_large
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_dingzhenlangka_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
 	LIT_ch_dingzhenquji = {
 		name = LIT_ch_dingzhenquji
 
@@ -141,6 +234,53 @@ characters={
 		}
 	}
 
+	LIT_ch_dingzhensangzhu = {
+		name = LIT_ch_dingzhensangzhu
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_dingzhensangzhu_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_dingzhensangzhu_portrait_large
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_dingzhensangzhu_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
 	LIT_ch_dingzhentaxing = {
 		name = LIT_ch_dingzhentaxing
 
@@ -165,6 +305,53 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = LIT_dingzhentaxing_aa2
+			ledger  = army 
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer brilliant_strategist trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_dingzhenzewang = {
+		name = LIT_ch_dingzhenzewang
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_dingzhenzewang_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_dingzhenzewang_portrait_large
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_dingzhenzewang_aa2
 			ledger  = army 
 				traits  = {
 					army_armored_2 
@@ -418,6 +605,52 @@ characters={
 			}
 		}
 	}
+	
+	LIT_ch_luobujiangcuo = {
+		name = LIT_ch_luobujiangcuo
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_luobujiangcuo_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_luobujiangcuo_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_luobujiangcuo_ar
+			ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
 
 	LIT_ch_luorongnima = {
 		name = LIT_ch_luorongnima
@@ -442,6 +675,98 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = LIT_luorongnima_ar
+			ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_luorongzewang = {
+		name = LIT_ch_luorongzewang
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_luorongzewang_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_luorongzewang_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_longrongzewang_ar
+			ledger  = army 
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_sangjikangzhu = {
+		name = LIT_ch_sangjikangzhu
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_sangjikangzhu_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_sangjikangzhu_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_sangjikangzhu_ar
 			ledger  = army 
 				traits  = {
 					army_regrouping_2 
@@ -576,6 +901,98 @@ characters={
 		advisor={
 			slot = army_chief
 			idea_token = LIT_yueha_aco2
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zerensangzhu = {
+		name = LIT_ch_zerensangzhu
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zerensangzhu_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zerensangzhu_portrait_large
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = LIT_zerensangzhu_aco2
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+
+		corps_commander={
+			traits = { cavalry_officer trait_cautious defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_zhima = {
+		name = LIT_ch_zhima
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_zhima_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_zhima_portrait_large
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = LIT_zhima_aco2
 				traits  = {
 					army_chief_organizational_2 
 				}
