@@ -26,5 +26,11 @@ country_event = {
 		name = guangdong.20241111.a
 		add_political_power = -30
 		add_stability = -0.05
+		hidden_effect = {
+			news_event = {
+				id = cnnews.20241111
+				days = 1
+			}
+		}
 	}
 }

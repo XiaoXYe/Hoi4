@@ -5,7 +5,7 @@
 add_namespace = guizhou
 
 ### 风味事件
-# 2024.11.12 珠海恶性撞人事件
+# 2024.11.11 李子柒复出
 country_event = {
 	id = guizhou.20241112
 	title = guizhou.20241112.t

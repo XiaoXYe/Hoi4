@@ -492,6 +492,22 @@ news_event = {
 	}
 }
 
+# 珠海恶性撞人事件
+news_event = {
+	id = cnnews.20241111
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.20241111" }
+	title = cnnews.20241111.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.20241111.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.20241111.a
+	}
+}
+
 # 李子柒回归
 news_event = {
 	id = cnnews.20241112
@@ -505,6 +521,22 @@ news_event = {
 
 	option = {
 		name = cnnews.20241112.a
+	}
+}
+
+# 琼瑶逝世
+news_event = {
+	id = cnnews.20241204
+	immediate = { log = "[GetDateText]: [Root.GetName]: event cnnews.20241204" }
+	title = cnnews.20241204.t
+	picture = GFX_news_event_generic_parliament
+	desc = cnnews.20241204.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = cnnews.20241204.a
 	}
 }
 

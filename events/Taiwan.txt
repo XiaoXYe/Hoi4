@@ -1,0 +1,36 @@
+###########################
+# Taiwan Events
+###########################
+
+add_namespace = taiwan
+
+### 风味事件
+# 2024.11.11 琼瑶逝世
+country_event = {
+	id = taiwan.20241204
+	title = taiwan.20241204.t
+	desc = taiwan.20241204.d
+	picture = GFX_report_event_china_infiltration
+
+	trigger = {
+		date > 2024.12.4
+		tag = TAW
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event taiwan.20241204"
+	}
+	option = {
+		name = taiwan.20241204.a
+		add_stability = -0.02
+		add_war_support = -0.02
+		hidden_effect = {
+			news_event = {
+				id = cnnews.20241204
+				days = 1
+			}
+		}
+	}
+}
