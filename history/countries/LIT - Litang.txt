@@ -1,6 +1,10 @@
 ﻿capital = 188
 oob = "empty"
 
+SIC = {
+	puppet = LIT
+}
+
 set_politics = {
 	ruling_party = postmodernism 
 	last_election = "1936.1.1"
@@ -10,10 +14,10 @@ set_politics = {
 
 set_popularities = {
 	transhumanism = 5
-	postmodernism = 10
+	postmodernism = 20
 	progressivism = 5
-	gradualism = 40
-	conservatism = 20
+	gradualism = 20
+	conservatism = 30
 	retroism = 20
 }
 
@@ -115,10 +119,6 @@ if = {
 	}
 }
 
-SIC = {
-	puppet = LIT
-}
-
 recruit_character = LIT_ch_asuo
 recruit_character = LIT_ch_dingzhenkezhu
 recruit_character = LIT_ch_dingzhenlangka
@@ -126,6 +126,7 @@ recruit_character = LIT_ch_dingzhenquji
 recruit_character = LIT_ch_dingzhensangzhu
 recruit_character = LIT_ch_dingzhentaxing
 recruit_character = LIT_ch_dingzhenzewang
+recruit_character = LIT_ch_dingzhenzhenzhu
 recruit_character = LIT_ch_hubo
 recruit_character = LIT_ch_jiananzeren
 recruit_character = LIT_ch_langjizeren
@@ -133,6 +134,7 @@ recruit_character = LIT_ch_luobujiangcuo
 recruit_character = LIT_ch_luorongnima
 recruit_character = LIT_ch_luorongzewang
 recruit_character = LIT_ch_sangjikangzhu
+recruit_character = LIT_ch_silangluobu
 recruit_character = LIT_ch_zerensangzhu
 recruit_character = LIT_ch_zhima
 

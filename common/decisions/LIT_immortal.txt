@@ -18,7 +18,7 @@ LIT_immortal_category = {
 
 		complete_effect = {
 			set_portraits = {
-				character = LIT_ch_dingzhen_1
+				character = LIT_ch_dingzhenzhenzhu
 				army = { 
 					small =  GFX_LIT_ch_dingzhen_4_portrait_large
 				}

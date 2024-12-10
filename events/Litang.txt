@@ -263,9 +263,7 @@ country_event = { # 新王
 	option = {
 		name = litang.108.a
 		set_country_flag = LIT_dingzhen_king_flag
-		recruit_character = LIT_ch_dingzhen_1
-		recruit_character = LIT_ch_silangluobu
-		promote_character = LIT_ch_dingzhen_1
+		promote_character = LIT_ch_dingzhenzhenzhu
 		set_politics = {
 			ruling_party = conservatism
 			elections_allowed = no
@@ -560,7 +558,7 @@ country_event = {# 战胜四川
 			news_event = { id = cnnews.7 days = 1 }
 		}
 		set_portraits = {
-			character = LIT_ch_dingzhen_1
+			character = LIT_ch_dingzhenzhenzhu
 			army = { 
 				large =  GFX_LIT_ch_dingzhen_2_portrait_large
 			}
@@ -956,7 +954,7 @@ country_event = {# 加冕
 			news_event = { id = cnnews.16 days = 1}
 		}
 		set_portraits = {
-			character = LIT_ch_dingzhen_1
+			character = LIT_ch_dingzhenzhenzhu
 			civilian = { 
 				large =  GFX_LIT_ch_dingzhen_3_portrait_large
 			}

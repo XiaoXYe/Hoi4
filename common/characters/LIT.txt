@@ -82,7 +82,7 @@ characters={
 		field_marshal={
 			traits = { hidden_sympathies trickster armor_officer offensive_doctrine media_personality }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 5
@@ -376,20 +376,20 @@ characters={
 		}
 	}
 
-	LIT_ch_dingzhen_1 = {
-		name = LIT_ch_dingzhen_1
+	LIT_ch_dingzhenzhenzhu = {
+		name = LIT_ch_dingzhenzhenzhu
 
 		portraits = {
 			civilian = {
-				large = GFX_LIT_ch_dingzhen_1_portrait_large
+				large = GFX_LIT_ch_dingzhenzhenzhu_1_portrait_large
 			}
 			army = {
-				large = GFX_LIT_ch_dingzhen_1_portrait_large
+				large = GFX_LIT_ch_dingzhenzhenzhu_1_portrait_large
 			}
 		}
 
 		country_leader = {
-			desc = LIT_ch_dingzhen_1_desc
+			desc = LIT_ch_dingzhenzhenzhu_desc
 			ideology = litangnism
 			traits = {
 				#
@@ -398,7 +398,7 @@ characters={
 
 		advisor = {
 			slot = army_chief
-			idea_token = LIT_dingzhen_aco2
+			idea_token = LIT_dingzhenzhenzhu_aco2
 			traits = { 
 				army_chief_offensive_2
 			}
@@ -408,9 +408,9 @@ characters={
 		}
 
 		field_marshal={
-			traits = { brilliant_strategist offensive_doctrine trait_reckless cavalry_officer media_personality }
+			traits = { brilliant_strategist offensive_doctrine hongyunqitian_trait cavalry_officer media_personality }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 2
@@ -854,7 +854,7 @@ characters={
 		field_marshal={
 			traits = { hidden_sympathies armor_officer offensive_doctrine partisans_organizer media_personality }
 			skill = 3
-			attack_skill = 2
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 3
 			logistics_skill = 4

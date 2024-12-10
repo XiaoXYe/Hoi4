@@ -1,0 +1,12 @@
+
+
+#### Trait Icons for CO ####
+
+spriteTypes = {	
+    				
+	spriteType = {
+		name = GFX_trait_hongyunqitian_trait
+		texturefile = gfx/interface/traits/personal/trait_hongyunqitian.dds
+	}
+		
+}
