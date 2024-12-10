@@ -1,5 +1,5 @@
 ﻿capital = 188
-oob = "empty"
+oob = "LIT"
 
 SIC = {
 	puppet = LIT
