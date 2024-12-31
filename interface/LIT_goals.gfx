@@ -12,12 +12,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT/LIT_recruit_soldiers.png"			
 	}
 	SpriteType = {
+		name = GFX_goal_LIT_support_from_tibet
+		texturefile = "gfx/interface/goals/LIT/LIT_support_from_tibet.png"	
+	}
+	SpriteType = {
 		name = GFX_goal_LIT_final_effort
 		texturefile = "gfx/interface/goals/LIT/LIT_final_effort.png"			
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_is_free
-		texturefile = "gfx/interface/goals/LIT/LIT_is_free.png"			
+		texturefile = "gfx/interface/goals/LIT/LIT_is_free.png"	
 	}
 	SpriteType = {
 		name = GFX_goal_LIT_conquer_sichuan

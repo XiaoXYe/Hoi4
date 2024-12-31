@@ -30,6 +30,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = GFX_LIT_ch_dingzhenzewang_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhenzewang_small.png
+    }
+
+    spriteType = {
         name = GFX_LIT_ch_dingzhenzhenzhu_portrait_small
         texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhenzhenzhu_small.png
     }
@@ -77,6 +82,11 @@ spriteTypes = {
     spriteType = {
         name = GFX_LIT_ch_luorongqupi_portrait_small
         texturefile = gfx/advisors/LIT/Portrait_LIT_luorongqupi_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_luorongzewang_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_luorongzewang_small.png
     }
 
     spriteType = {
