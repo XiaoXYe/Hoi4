@@ -5,10 +5,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_asuo_portrait_large
+				small = GFX_LIT_ch_asuo_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_asuo_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -21,15 +21,6 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_asuo_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
 		}
 
 		corps_commander={
@@ -46,16 +37,49 @@ characters={
 		}
 	}
 
+	LIT_ch_cichengyinba = {
+		name = LIT_ch_cichengyinba
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_asuo_portrait_large
+				small = GFX_LIT_ch_cichengyinba_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_asuo_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_cichengyinba
+			traits  = {
+				medical_worker_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
 	LIT_ch_danduo = {
 		name = LIT_ch_danduo
 
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_danduo_portrait_large
+				small = GFX_LIT_ch_danduo_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_danduo_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -69,14 +93,14 @@ characters={
 
 		advisor={
 			slot = high_command
-			idea_token = LIT_danduo_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			idea_token = LIT_danduo_ar2
+			ledger  = army
+			traits  = {
+				army_regrouping_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		field_marshal={
@@ -88,9 +112,9 @@ characters={
 			logistics_skill = 5
 			legacy_id = -1
 
-			visible = {
-				has_country_flag = LIT_dingzhen_king_flag
-			}
+			# visible = {
+			# 	has_country_flag = LIT_dingzhen_king_flag
+			# }
 		}
 	}
 
@@ -100,10 +124,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_dingzhenkezhu_portrait_large
+				small = GFX_LIT_ch_dingzhenkezhu_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_dingzhenkezhu_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -116,15 +140,15 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhenkezhu_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = army_chief
+			idea_token = LIT_dingzhenkezhu
+			traits  = {
+				tiger_of_litang_trait 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -163,15 +187,15 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhenlangka_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = high_command
+			# idea_token = LIT_dingzhenlangka_ncs
+			# ledger  = navy 
+			# traits  = {
+			# 	navy_capital_ship_2 
+			# }
+			# ai_will_do  = {
+			# 	factor  = 1.000
+			# }
 		}
 
 		corps_commander={
@@ -210,15 +234,18 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhenquji_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = air_chief
+			# idea_token = LIT_dingzhenquji_acs3
+			# allowed = {
+			# 	original_tag = LIT
+			# }
+			# traits = {
+			# 	air_chief_safety_3
+			# }
+			# cost = 150
+			# ai_will_do = {
+			# 	factor = 1.000
+			# }
 		}
 
 		corps_commander={
@@ -241,10 +268,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_dingzhensangzhu_portrait_large
+				small = GFX_LIT_ch_dingzhensangzhu_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_dingzhensangzhu_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -257,15 +284,14 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhensangzhu_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = political_advisor
+			idea_token = LIT_dingzhensangzhu
+			traits  = {
+				fashion_designer_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -288,10 +314,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_dingzhentaxing_portrait_large
+				small = GFX_LIT_ch_dingzhentaxing_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_dingzhentaxing_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -304,15 +330,14 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhentaxing_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = political_advisor
+			idea_token = LIT_dingzhentaxing
+			traits  = {
+				teacher_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -351,15 +376,15 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_dingzhenzewang_aa2
-			ledger  = army 
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = high_command
+			# idea_token = LIT_acas
+			# ledger  = air 
+			# traits  = {
+			# 	air_close_air_support_2 
+			# }
+			# ai_will_do  = {
+			# 	factor  = 1.000
+			# }
 		}
 
 		corps_commander={
@@ -382,6 +407,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_dingzhenzhenzhu_1_portrait_large
+				small = GFX_LIT_ch_dingzhenzhenzhu_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_dingzhenzhenzhu_1_portrait_large
@@ -397,14 +423,15 @@ characters={
 		}
 
 		advisor = {
-			slot = army_chief
-			idea_token = LIT_dingzhenzhenzhu_aco2
+			slot = high_command
+			idea_token = LIT_dingzhenzhenzhu_ac3
+			ledger = army
 			traits = { 
-				army_chief_offensive_2
+				army_cavalry_3
 			}
-			available = {
-				has_completed_focus = LIT_the_king_win
-			}
+			# available = {
+			# 	has_completed_focus = LIT_the_king_win
+			# }
 		}
 
 		field_marshal={
@@ -421,6 +448,73 @@ characters={
 			}
 		}
 	}
+
+	LIT_ch_dixiasangzhu = {
+		name = LIT_ch_dixiasangzhu
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_hubo_portrait_large
+				small = GFX_LIT_ch_dixiasangzhu_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_hubo_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_dixiasangzhu
+			traits  = {
+				music_producer_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	LIT_ch_gerongjicheng = {
+		name = LIT_ch_gerongjicheng
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_hubo_portrait_large
+				small = GFX_LIT_ch_gerongjicheng_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_hubo_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_gerongjicheng
+			traits  = {
+				judicial_police_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
 
 	LIT_ch_hubo = {
 		name = LIT_ch_hubo
@@ -444,15 +538,15 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_hubo_ai2
-			ledger  = army 
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = high_command
+			# idea_token = LIT_hubo_ai2
+			# ledger  = army 
+			# 	traits  = {
+			# 		army_infantry_2 
+			# 	}
+			# 	ai_will_do  = {
+			# 		factor  = 1.000
+			# 	}
 		}
 	}
 
@@ -462,6 +556,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_jiananzeren_portrait_large
+				small = GFX_LIT_ch_jiananzeren_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_jiananzeren_portrait_large
@@ -477,15 +572,14 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_jiananzeren_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = political_advisor
+			idea_token = LIT_jiananzeren
+			traits  = {
+				transportation_bureau_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -502,12 +596,46 @@ characters={
 		}
 	}
 
+	LIT_ch_jiangcuo = {
+		name = LIT_ch_jiangcuo
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_jiananzeren_portrait_large
+				small = GFX_LIT_ch_jiangcuo_portrait_small
+			}
+			army = {
+				small = GFX_LIT_ch_jiangcuo_portrait_small
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_jiangcuo
+			traits  = {
+				culture_and_tourism_bureau_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
 	LIT_ch_jicheng = {
 		name = LIT_ch_jicheng
 
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_jicheng_portrait_large
+				small = GFX_LIT_ch_jicheng_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_jicheng_portrait_large
@@ -524,14 +652,15 @@ characters={
 
 		advisor={
 			slot = high_command
-			idea_token = LIT_jicheng_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			idea_token = LIT_jicheng_acas3
+			ledger = air
+			traits = {
+				air_close_air_support_3
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+
 		}
 
 		field_marshal={
@@ -554,6 +683,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_langjizeren_portrait_large
+				small = GFX_LIT_ch_langjizeren_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_langjizeren_portrait_large
@@ -569,15 +699,14 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_langjizeren_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = political_advisor
+			idea_token = LIT_langjizeren
+			traits  = {
+				ancient_street_patrol_trait 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -600,6 +729,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_luobujiangcuo_portrait_large
+				small = GFX_LIT_ch_luobujiangcuo_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_luobujiangcuo_portrait_large
@@ -616,14 +746,14 @@ characters={
 
 		advisor={
 			slot = high_command
-			idea_token = LIT_luobujiangcuo_ar
+			idea_token = LIT_luobujiangcuo_ai2
 			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			traits  = {
+				army_infantry_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -636,6 +766,39 @@ characters={
 			legacy_id = -1
 
 			visible = {
+			}
+		}
+	}
+
+	LIT_ch_luorongchongweng = {
+		name = LIT_ch_luorongchongweng
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_luorongnima_portrait_large
+				small = GFX_LIT_ch_luorongchongweng_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_luorongnima_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_luorongchongweng
+			traits  = {
+				actor_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 	}
@@ -661,15 +824,6 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_luorongnima_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
 		}
 
 		corps_commander={
@@ -682,6 +836,39 @@ characters={
 			legacy_id = -1
 
 			visible = {
+			}
+		}
+	}
+
+	LIT_ch_luorongqupi = {
+		name = LIT_ch_luorongqupi
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_luorongnima_portrait_large
+				small = GFX_LIT_ch_luorongqupi_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_luorongnima_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_luorongqupi
+			traits  = {
+				grassroots_cultural_worker_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 	}
@@ -707,15 +894,6 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_longrongzewang_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
 		}
 
 		corps_commander={
@@ -725,6 +903,53 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_mayili = {
+		name = LIT_ch_mayili
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_mayili_portrait_large
+				small = GFX_LIT_ch_mayili_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_mayili_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_mayili_ns2
+			ledger  = navy
+			traits  = {
+				navy_submarine_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		navy_leader={
+			traits = { seawolf }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+   			coordination_skill = 2
 			legacy_id = -1
 
 			visible = {
@@ -753,15 +978,6 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
-			idea_token = LIT_sangjikangzhu_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
 		}
 
 		corps_commander={
@@ -800,11 +1016,18 @@ characters={
 		}
 
 		advisor={
-			slot = political_advisor
-			idea_token = LIT_pot
-				traits  = {
-					prince_of_terror 
-				}
+			# slot = navy_chief
+			# idea_token = LIT_silangluobu_ncdb2
+			# allowed = {
+			# 	original_tag = LIT
+			# }
+			# traits = {
+			# 	navy_chief_decisive_battle_2
+			# }
+			# cost = 150
+			# ai_will_do = {
+			# 	factor = 1.000
+			# }
 		}
 
 		corps_commander={
@@ -822,16 +1045,63 @@ characters={
 		}
 	}
 
-	LIT_ch_yixi = {
-		name = LIT_ch_yixi
+	LIT_ch_weishig = {
+		name = LIT_ch_weishig
 
 		portraits = {
 			civilian = {
-				large = GFX_LIT_ch_yixi_portrait_large
+				large = GFX_LIT_ch_weishig_portrait_large
+				small = GFX_LIT_ch_weishig_portrait_small
 			}
 			army = {
-				large = GFX_LIT_ch_yixi_portrait_large
-				small = "GFX_idea_generic_political_advisor_asia_3"
+				large = GFX_LIT_ch_weishig_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_weishig_ncs3
+			ledger  = navy
+			traits  = {
+				navy_capital_ship_3
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		navy_leader={
+			traits = { superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+   			coordination_skill = 1
+			legacy_id = -1
+
+			visible = {
+			}
+		}
+	}
+
+	LIT_ch_tudengpengcuo = {
+		name = LIT_ch_tudengpengcuo
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_silangluobu_portrait_large
+				small = GFX_LIT_ch_tudengpengcuo_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_silangluobu_portrait_large
 			}
 		}
 
@@ -845,10 +1115,82 @@ characters={
 
 		advisor={
 			slot = political_advisor
-			idea_token = LIT_yixi_stc
-				traits  = {
-					smooth_talking_charmer 
-				}
+			idea_token = LIT_tudengpengcuo
+			traits  = {
+				riot_police_trait
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+	LIT_ch_weishig = {
+		name = LIT_ch_weishig
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_silangluobu_portrait_large
+			}
+			army = {
+				large = GFX_LIT_ch_silangluobu_portrait_large
+				small = "GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = navy_chief
+			idea_token = LIT_weishig
+			traits  = {
+				navy_chief_maneuver_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		corps_commander={
+		}
+	}
+	LIT_ch_yixi = {
+		name = LIT_ch_yixi
+
+		portraits = {
+			civilian = {
+				large = GFX_LIT_ch_yixi_portrait_large
+				small = GFX_LIT_ch_yixi_portrait_small
+			}
+			army = {
+				large = GFX_LIT_ch_yixi_portrait_large
+			}
+		}
+
+		country_leader = {
+			desc = ""
+			ideology = litangnism
+			traits = {
+				#
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = LIT_yixi_aa3
+			ledger  = army
+			traits  = {
+				army_armored_3
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		field_marshal={
@@ -871,10 +1213,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_yueha_portrait_large
+				small = GFX_LIT_ch_yueha_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_yueha_portrait_large
-				small="GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -887,14 +1229,16 @@ characters={
 		}
 
 		advisor={
-			slot = army_chief
-			idea_token = LIT_yueha_aco2
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = high_command
+			idea_token = LIT_yueha_as3
+			ledger = air
+			traits = {
+				air_air_superiority_3
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+
 		}
 
 		field_marshal={
@@ -933,14 +1277,18 @@ characters={
 		}
 
 		advisor={
-			slot = army_chief
-			idea_token = LIT_zerensangzhu_aco2
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = navy_chief
+			# idea_token = LIT_zerensangzhu_ncr2
+			# allowed = {
+			# 	original_tag = LIT
+			# }
+			# traits  = {
+			# 	navy_chief_maneuver_2 
+			# }
+			# ai_will_do  = {
+			# 	factor  = 1.000
+			# }
+
 		}
 
 		corps_commander={
@@ -979,14 +1327,14 @@ characters={
 		}
 
 		advisor={
-			slot = army_chief
-			idea_token = LIT_zhima_aco2
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			# slot = army_chief
+			# idea_token = LIT_zhima_aco2
+			# 	traits  = {
+			# 		army_chief_organizational_2 
+			# 	}
+			# 	ai_will_do  = {
+			# 		factor  = 1.000
+			# 	}
 		}
 
 		corps_commander={
@@ -1221,407 +1569,6 @@ characters={
 			legacy_id = -1
 
 			visible = {
-			}
-		}
-	}
-
-	LIT_ar={
-		advisor={
-			slot = high_command
-			idea_token = LIT_ar
-			ledger  = army 
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_1"
-			}
-		}
-	}
-	LIT_acr={
-		advisor={
-			slot = air_chief
-			idea_token = LIT_acr
-				traits  = {
-					air_chief_reform_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	LIT_mt={
-		advisor={
-			slot = theorist
-			idea_token = LIT_mt
-			ledger  = army 
-				traits  = {
-					military_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_1"
-			}
-		}
-	}
-	LIT_stc={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_stc
-				traits  = {
-					smooth_talking_charmer 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
-			}
-		}
-	}
-	LIT_aa2={
-		advisor={
-			slot = high_command
-			idea_token = LIT_aa2
-			ledger  = army 
-			traits  = {
-				army_armored_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_2"
-			}
-		}
-	}
-	LIT_acgs={
-		advisor={
-			slot = air_chief
-			idea_token = LIT_acgs
-			traits  = {
-				air_chief_ground_support_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
-	LIT_ncm={
-		advisor={
-			slot = navy_chief
-			idea_token = LIT_ncm
-				traits  = {
-					navy_chief_maneuver_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_3"
-			}
-		}
-	}
-	LIT_nccr={
-		advisor={
-			slot = navy_chief
-			idea_token = LIT_nccr
-				traits  = {
-					navy_chief_commerce_raiding_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_2"
-			}
-		}
-	}
-	LIT_coi={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_coi
-				traits  = {
-					captain_of_industry 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_1"
-			}
-		}
-	}
-	LIT_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_democratic_guy
-			traits  = {
-				democratic_reformer 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = democratic 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_1"
-			}
-		}
-	}
-	LIT_acd2={
-		advisor={
-			slot = army_chief
-			idea_token = LIT_acd2
-			traits  = {
-				army_chief_defensive_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			visible = {
-				always = no
-			}
-		}
-		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_1"
-			}
-		}
-	}
-	LIT_acas={
-		advisor={
-			slot = high_command
-			idea_token = LIT_acas
-			ledger  = air 
-			traits  = {
-				air_close_air_support_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_2"
-			}
-		}
-	}
-
-	LIT_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_communist_guy
-			traits  = {
-				communist_revolutionary 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = communism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_3"
-			}
-		}
-	}
-
-	LIT_ncs={
-		advisor={
-			slot = high_command
-			idea_token = LIT_ncs
-			ledger  = navy 
-			traits  = {
-				navy_capital_ship_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_2"
-			}
-		}
-	}
-
-	LIT_awt={
-		advisor={
-			slot = theorist
-			idea_token = LIT_awt
-			ledger  = air 
-			traits  = {
-				air_warfare_theorist 
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_2"
-			}
-		}
-	}
-
-	LIT_pot={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_pot
-			traits  = {
-				prince_of_terror 
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
-			}
-		}
-	}
-
-	LIT_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = LIT_fascist_guy
-			traits  = {
-				fascist_demagogue 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = fascism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_asia_2"
-			}
-		}
-	}
-
-	LIT_ai2={
-		advisor={
-			slot = high_command
-			idea_token = LIT_ai2
-			ledger  = army 
-			traits  = {
-				army_infantry_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			visible = {
-				always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_3"
-			}
-		}
-	}
-
-	LIT_nt={
-		advisor={
-			slot = theorist
-			idea_token = LIT_nt
-			ledger  = navy 
-			traits  = {
-				naval_theorist 
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_3"
-			}
-		}
-	}
-
-	LIT_aco2={
-		advisor={
-			slot = army_chief
-			idea_token = LIT_aco2
-			traits  = {
-				army_chief_organizational_2 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			visible = {
-					always = no
-			}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_2"
 			}
 		}
 	}

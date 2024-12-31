@@ -1,0 +1,106 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_LIT_ch_asuo_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_asuo_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_cichengyinba_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_cichengyinba_small.png
+    }
+    
+    spriteType = {
+        name = GFX_LIT_ch_danduo_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_danduo_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_dingzhenkezhu_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhenkezhu_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_dingzhensangzhu_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhensangzhu_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_dingzhentaxing_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhentaxing_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_dingzhenzhenzhu_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dingzhenzhenzhu_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_dixiasangzhu_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_dixiasangzhu_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_gerongjicheng_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_gerongjicheng_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_jiananzeren_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_jiananzeren_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_jiangcuo_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_jiangcuo_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_jicheng_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_jicheng_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_langjizeren_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_langjizeren_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_luobujiangcuo_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_luobujiangcuo_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_luorongchongweng_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_luorongchongweng_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_luorongqupi_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_luorongqupi_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_mayili_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_mayili_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_tudengpengcuo_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_tudengpengcuo_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_weishig_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_weishig_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_yixi_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_yixi_small.png
+    }
+
+    spriteType = {
+        name = GFX_LIT_ch_yueha_portrait_small
+        texturefile = gfx/advisors/LIT/Portrait_LIT_yueha_small.png
+    }
+}

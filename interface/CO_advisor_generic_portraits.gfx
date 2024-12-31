@@ -1,0 +1,61 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_generic_ch_infantry_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_infantry_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_cavalry_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_cavalry_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_artillery_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_artillery_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_armor_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_armor_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_capital_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_capital_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_screen_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_screen_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_carrier_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_carrier_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_submarine_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_submarine_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_air_fighter_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_air_fighter_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_air_cas_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_air_cas_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_air_navy_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_air_navy_small.png
+    }
+
+    spriteType = {
+        name = GFX_generic_ch_air_bombing_portrait_small
+        texturefile = gfx/advisors/generic/Portrait_generic_air_bombing_small.png
+    }
+}

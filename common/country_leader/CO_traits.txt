@@ -1,3 +1,8 @@
+@tier1_cp_cost = 10
+@tier2_cp_cost = 20
+@tier3_cp_cost = 30
+@tier3_xp_gain = 0.30
+
 leader_traits = {
 	litang_emperor = {
 		random = no
@@ -48,5 +53,93 @@ leader_traits = {
 		political_advisor_cost_factor = -0.10
 		progressivism_drift = 0.01
 		conservatism_drift = -0.01
+	}
+
+	tiger_of_litang_trait = {
+		random = no
+		sprite = 5
+		experience_gain_army_factor = 0.05
+		army_infantry_attack_factor = 0.15
+		training_time_army_factor = -0.10
+
+		@tier3_cp_cost = 30
+	}
+
+	teacher_trait = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.05
+		stability_factor = 0.10
+	}
+
+	transportation_bureau_trait = {
+		random = no
+		sprite = 10
+		production_speed_rail_way_factor = 0.10 
+		consumer_goods_factor = -0.15
+	}
+
+	ancient_street_patrol_trait = {
+		random = no
+		sprite = 15
+		operative_slot = 2
+		agency_upgrade_time = -0.15
+	}
+
+	grassroots_cultural_worker_trait = {
+		random = no
+		sprite = 10
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.05
+	}
+
+	culture_and_tourism_bureau_trait = {
+		sprite = 14
+		random = no
+		research_time_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.10
+	}
+
+	riot_police_trait = {
+		random = no
+		sprite = 15
+		political_power_gain = -0.05
+		resistance_target = -0.1
+		resistance_activity = -0.15
+	}
+
+	judicial_police_trait = {
+		random = no
+		sprite = 13
+		economy_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+	}
+    
+	actor_trait = {
+		random = no
+		sprite = 10
+		industrial_capacity_factory = 0.05
+		consumer_goods_factor = -0.05
+	}
+	
+	music_producer_trait = {
+		random = no
+		sprite = 14
+		line_change_production_efficiency_factor = 0.10
+		production_speed_buildings_factor = 0.05
+	}
+
+	medical_worker_trait = {
+		random = no
+		sprite = 10
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = 0.05
+	}
+
+	fashion_designer_trait = {
+		random = no
+		sprite = 13
+		monthly_population = 0.02
+		party_popularity_stability_factor = 0.15
 	}
 }

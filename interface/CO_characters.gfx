@@ -264,12 +264,20 @@ spriteTypes = {
         texturefile = gfx/leaders/LIT/Portrait_LIT_LuorongZewang.png
     }
     spriteType = {
+        name = GFX_LIT_ch_mayili_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_Mayili.png
+    }
+    spriteType = {
         name = GFX_LIT_ch_sangjikangzhu_portrait_large
         texturefile = gfx/leaders/LIT/Portrait_LIT_SangjiKangzhu.png
     }
     spriteType = {
         name = GFX_LIT_ch_silangluobu_portrait_large
         texturefile = gfx/leaders/LIT/Portrait_LIT_SilangLuobu.png
+    }
+    spriteType = {
+        name = GFX_LIT_ch_weishig_portrait_large
+        texturefile = gfx/leaders/LIT/Portrait_LIT_WeishiG.png
     }
     spriteType = {
         name = GFX_LIT_ch_yixi_portrait_large
