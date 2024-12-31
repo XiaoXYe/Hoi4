@@ -21,6 +21,16 @@ characters={
 		}
 
 		advisor={
+			slot = high_command
+			idea_token = LIT_asuo_al2
+			ledger  = army
+			traits  = {
+				army_logistics_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			cost = 100
 		}
 
 		corps_commander={
@@ -67,6 +77,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
+			}
 		}
 	}
 
@@ -101,6 +114,10 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			cost = 100
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
+			}
 		}
 
 		field_marshal={
@@ -112,9 +129,9 @@ characters={
 			logistics_skill = 5
 			legacy_id = -1
 
-			# visible = {
-			# 	has_country_flag = LIT_dingzhen_king_flag
-			# }
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
+			}
 		}
 	}
 
@@ -258,6 +275,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -292,20 +310,23 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
-		}
-
-		corps_commander={
-			traits = { cavalry_officer trait_reckless }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = -1
-
 			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
 			}
 		}
+
+		# corps_commander={
+		# 	traits = { cavalry_officer trait_reckless }
+		# 	skill = 3
+		# 	attack_skill = 3
+		# 	defense_skill = 2
+		# 	planning_skill = 2
+		# 	logistics_skill = 3
+		# 	legacy_id = -1
+
+		# 	visible = {
+		# 	}
+		# }
 	}
 
 	LIT_ch_dingzhentaxing = {
@@ -338,20 +359,23 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
-		}
-
-		corps_commander={
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = -1
-
 			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
 			}
 		}
+
+		# corps_commander={
+		# 	traits = { career_officer }
+		# 	skill = 3
+		# 	attack_skill = 1
+		# 	defense_skill = 3
+		# 	planning_skill = 3
+		# 	logistics_skill = 3
+		# 	legacy_id = -1
+
+		# 	visible = {
+		# 	}
+		# }
 	}
 
 	LIT_ch_dingzhenzewang = {
@@ -360,10 +384,10 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_dingzhenzewang_portrait_large
+				small = GFX_LIT_ch_dingzhenzewang_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_dingzhenzewang_portrait_large
-				small = "GFX_idea_generic_army_asia_2"
 			}
 		}
 
@@ -376,15 +400,15 @@ characters={
 		}
 
 		advisor={
-			# slot = high_command
-			# idea_token = LIT_acas
-			# ledger  = air 
-			# traits  = {
-			# 	air_close_air_support_2 
-			# }
-			# ai_will_do  = {
-			# 	factor  = 1.000
-			# }
+			slot = air_chief
+			idea_token = LIT_dingzhenzewang_acgs2
+			traits  = {
+				air_chief_ground_support_2 
+			}
+			cost = 50
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -429,9 +453,10 @@ characters={
 			traits = { 
 				army_cavalry_3
 			}
-			# available = {
-			# 	has_completed_focus = LIT_the_king_win
-			# }
+			cost = 25
+			visible = {
+				has_country_flag = LIT_dingzhen_king_flag
+			}
 		}
 
 		field_marshal={
@@ -478,6 +503,9 @@ characters={
 			}
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
 			}
 		}
 	}
@@ -582,18 +610,18 @@ characters={
 			}
 		}
 
-		corps_commander={
-			traits = { cavalry_officer trait_mountaineer }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
+		# corps_commander={
+		# 	traits = { cavalry_officer trait_mountaineer }
+		# 	skill = 2
+		# 	attack_skill = 2
+		# 	defense_skill = 1
+		# 	planning_skill = 1
+		# 	logistics_skill = 1
+		# 	legacy_id = -1
 
-			visible = {
-			}
-		}
+		# 	visible = {
+		# 	}
+		# }
 	}
 
 	LIT_ch_jiangcuo = {
@@ -657,8 +685,12 @@ characters={
 			traits = {
 				air_close_air_support_3
 			}
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 
 		}
@@ -673,6 +705,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -707,20 +740,23 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
-		}
-
-		corps_commander={
-			traits = {  }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-
 			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
 			}
 		}
+
+		# corps_commander={
+		# 	traits = {  }
+		# 	skill = 1
+		# 	attack_skill = 1
+		# 	defense_skill = 1
+		# 	planning_skill = 1
+		# 	logistics_skill = 1
+		# 	legacy_id = -1
+
+		# 	visible = {
+		# 	}
+		# }
 	}
 	
 	LIT_ch_luobujiangcuo = {
@@ -751,6 +787,7 @@ characters={
 			traits  = {
 				army_infantry_2
 			}
+			cost = 100
 			ai_will_do  = {
 				factor  = 1.000
 			}
@@ -800,6 +837,9 @@ characters={
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			visible = {
+				has_country_flag = LIT_socialmedia_propaganda_flag
+			}
 		}
 	}
 
@@ -836,6 +876,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -879,6 +920,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = GFX_LIT_ch_luorongzewang_portrait_large
+				small = GFX_LIT_ch_luorongzewang_portrait_small
 			}
 			army = {
 				large = GFX_LIT_ch_luorongzewang_portrait_large
@@ -894,6 +936,15 @@ characters={
 		}
 
 		advisor={
+			slot = army_chief
+			idea_token = LIT_luorongzewang_acm2
+			traits  = {
+				army_chief_maneuver_2
+			}
+			cost = 50
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 
 		corps_commander={
@@ -990,6 +1041,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -1040,54 +1092,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
-				has_country_flag = LIT_dingzhen_king_flag
-			}
-		}
-	}
-
-	LIT_ch_weishig = {
-		name = LIT_ch_weishig
-
-		portraits = {
-			civilian = {
-				large = GFX_LIT_ch_weishig_portrait_large
-				small = GFX_LIT_ch_weishig_portrait_small
-			}
-			army = {
-				large = GFX_LIT_ch_weishig_portrait_large
-			}
-		}
-
-		country_leader = {
-			desc = ""
-			ideology = litangnism
-			traits = {
-				#
-			}
-		}
-
-		advisor={
-			slot = high_command
-			idea_token = LIT_weishig_ncs3
-			ledger  = navy
-			traits  = {
-				navy_capital_ship_3
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-
-		navy_leader={
-			traits = { superior_tactician }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 2
-   			coordination_skill = 1
-			legacy_id = -1
-
-			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -1130,11 +1135,11 @@ characters={
 
 		portraits = {
 			civilian = {
-				large = GFX_LIT_ch_silangluobu_portrait_large
+				large = GFX_LIT_ch_weishig_portrait_large
+				small = GFX_LIT_ch_weishig_portrait_small
 			}
 			army = {
-				large = GFX_LIT_ch_silangluobu_portrait_large
-				small = "GFX_idea_generic_political_advisor_asia_2"
+				large = GFX_LIT_ch_weishig_portrait_large
 			}
 		}
 
@@ -1147,19 +1152,36 @@ characters={
 		}
 
 		advisor={
-			slot = navy_chief
-			idea_token = LIT_weishig
+			slot = high_command
+			idea_token = LIT_weishig_ncs3
+			ledger  = navy
 			traits  = {
-				navy_chief_maneuver_2
+				navy_capital_ship_3
 			}
+			cost = 100
 			ai_will_do  = {
 				factor  = 1.000
 			}
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
+			}
 		}
 
-		corps_commander={
+		navy_leader={
+			traits = { superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+   			coordination_skill = 1
+			legacy_id = -1
+
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
+			}
 		}
 	}
+
 	LIT_ch_yixi = {
 		name = LIT_ch_yixi
 
@@ -1188,8 +1210,12 @@ characters={
 			traits  = {
 				army_armored_3
 			}
+			cost = 100
 			ai_will_do  = {
 				factor  = 1.000
+			}
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 
@@ -1203,6 +1229,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -1235,14 +1262,18 @@ characters={
 			traits = {
 				air_air_superiority_3
 			}
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 
 		}
 
 		field_marshal={
-			traits = { hidden_sympathies trait_cautious defensive_doctrine media_personality }
+			traits = { trait_cautious defensive_doctrine }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 2
@@ -1251,6 +1282,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}
@@ -1301,6 +1333,7 @@ characters={
 			legacy_id = -1
 
 			visible = {
+				has_country_flag = LIT_recruit_soldiers_flag
 			}
 		}
 	}

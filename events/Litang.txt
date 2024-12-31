@@ -487,16 +487,13 @@ country_event = {  # 招兵买马，准备起义
 		name = litang.11.a
 		hidden_effect = {
 			load_oob = LIT_mass
-			recruit_character = LIT_ch_yixi
-			recruit_character = LIT_ch_jicheng
-			recruit_character = LIT_ch_danduo
-			recruit_character = LIT_ch_yueha
 		}
+		set_country_flag = LIT_recruit_soldiers_flag
 		custom_effect_tooltip = LIT_tt_mass_forces
 	}	
 }
 
-country_event = {# 千屏万象
+country_event = {# 新理塘文旅公司
 	id = litang.13
 	title = litang.13.t
 	desc = litang.13.d
@@ -506,6 +503,7 @@ country_event = {# 千屏万象
 
 	option = {
 		name = litang.13.a
+		set_country_flag = LIT_socialmedia_propaganda_flag
 		hidden_effect = {
 			country_event = {
 				id = litang.14

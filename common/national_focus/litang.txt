@@ -42,7 +42,7 @@
 	focus = {
 		id = LIT_socialmedia_propaganda
 		icon = GFX_goal_LIT_socialmedia_propaganda
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = LIT_situation_worse
 		cost = 3
@@ -67,19 +67,16 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_socialmedia_propaganda"
-			country_event = litang.13
 			add_war_support = 0.05
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.05
-			}
+			country_event = litang.13
+			custom_effect_tooltip = LIT_tt_socialmedia_propaganda
 		}
 	}
 
 	focus = {
 		id = LIT_recruit_soldiers
 		icon = GFX_goal_LIT_recruit_soldiers
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = LIT_situation_worse
 		cost = 3
@@ -103,15 +100,57 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_recruit_soldiers"
-			army_experience = 10
 			add_manpower = 10000
 			add_war_support = 0.05
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.05
-			}
 			country_event = {
 				id = litang.11
+			}
+			custom_effect_tooltip = LIT_tt_recruit_soldiers
+		}
+	}
+
+	focus = {
+		id = LIT_support_from_tibet
+		icon = GFX_goal_LIT_support_from_tibet
+		x = 0
+		y = 1
+		relative_position_id = LIT_situation_worse
+		cost = 3
+		prerequisite = { focus = LIT_situation_worse }
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			AND = {
+				is_subject_of = SIC
+				has_country_flag = LIT_dingzhen_king_flag
+			}
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_support_from_tibet"
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = TIB
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = TIB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = TIB
 			}
 		}
 	}
@@ -124,6 +163,7 @@
 		relative_position_id = LIT_situation_worse
 		cost = 1
 		prerequisite = { focus = LIT_socialmedia_propaganda }
+		prerequisite = { focus = LIT_support_from_tibet }
 		prerequisite = { focus = LIT_recruit_soldiers }
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -166,7 +206,6 @@
 		y = 3
 		relative_position_id = LIT_situation_worse
 		cost = 5
-		prerequisite = { focus = LIT_final_effort }
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -282,6 +321,7 @@
 				id = litang.8
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -312,6 +352,7 @@
 				id = litang.9
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -342,6 +383,7 @@
 				id = litang.19
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -372,6 +414,7 @@
 				id = litang.18
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -402,6 +445,7 @@
 				id = litang.20
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -431,6 +475,7 @@
 				id = litang.21
 				days = 1
 			}
+			custom_effect_tooltip = LIT_tt_need_decide_quickly
 		}
 	}
 
@@ -962,8 +1007,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus LIT_ally_tibet"
+			create_faction = "LIT_AXIS"
 			LIT = {
-				create_faction = "LIT_AXIS"
 				country_event = {
 					id = litang.3
 					days = 3

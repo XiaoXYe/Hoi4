@@ -5,6 +5,16 @@ LIT_power_endgame_category = {
 		}
 		available = {
 			has_country_flag = LIT_power_endgmame_can_end_flag
+			OR = {
+				is_power_balance_in_range = {
+					id = LIT_power_balance
+					range > LIT_king_high_control_range
+				}
+				is_power_balance_in_range = {
+					id = LIT_power_balance
+					range < LIT_capital_high_control_range
+				}
+			}
 		}
 		cancel_trigger = {
 			always = no
