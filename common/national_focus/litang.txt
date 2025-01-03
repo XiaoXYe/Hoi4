@@ -1178,7 +1178,7 @@
 
 	focus = {
 		id = LIT_right_of_smile
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_right_of_smile
 		x = 15
 		y = 0
 		cost = 5
@@ -1210,7 +1210,7 @@
 
 	focus = {
 		id = LIT_improve_sanitation_habit
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_improve_sanitation_habit
 		x = -1
 		y = 1
 		relative_position_id = LIT_right_of_smile
@@ -1258,7 +1258,7 @@
 
 	focus = {
 		id = LIT_movable_hospitals
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_movable_hospitals
 		x = 1
 		y = 1
 		relative_position_id = LIT_right_of_smile
@@ -1283,7 +1283,7 @@
 
 	focus = {
 		id = LIT_happiness_under_covid
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_happiness_under_covid
 		x = -3
 		y = 2
 		relative_position_id = LIT_right_of_smile
@@ -1308,7 +1308,7 @@
 
 	focus = {
 		id = LIT_invest_sanitary_infrastructure
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_invest_sanitary_infrastructure
 		x = 1
 		y = 2
 		relative_position_id = LIT_right_of_smile
@@ -1354,7 +1354,7 @@
 
 	focus = {
 		id = LIT_compensate_farmers
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_compensate_farmers
 		x = 3
 		y = 2
 		relative_position_id = LIT_right_of_smile
@@ -1378,7 +1378,7 @@
 
 	focus = {
 		id = LIT_smile_still
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_smile_still
 		x = 0
 		y = 3
 		relative_position_id = LIT_right_of_smile
@@ -1405,7 +1405,7 @@
 
 	focus = {
 		id = LIT_industrial_plan
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_industrial_plan
 		x = 0
 		y = 4
 		relative_position_id = LIT_right_of_smile
@@ -1435,7 +1435,7 @@
 
 	focus = {
 		id = LIT_industrial_planning_admin
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_industrial_planning_admin
 		x = 1
 		y = 1
 		relative_position_id = LIT_industrial_plan
@@ -1456,7 +1456,7 @@
 
 	focus = {
 		id = LIT_defeat_epidemic
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_defeat_epidemic
 		x = -4
 		y = 1
 		relative_position_id = LIT_industrial_plan
@@ -1487,7 +1487,7 @@
 
 	focus = {
 		id = LIT_agriculture_mechanization
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_agriculture_mechanization
 		x = -1
 		y = 1
 		relative_position_id = LIT_industrial_plan
@@ -1517,7 +1517,7 @@
 
 	focus = {
 		id = LIT_institute
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_institute
 		x = 4
 		y = 1
 		relative_position_id = LIT_industrial_plan
@@ -1538,7 +1538,7 @@
 
 	focus = {
 		id = LIT_university
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_university
 		x = 4
 		y = 2
 		relative_position_id = LIT_industrial_plan
@@ -1560,7 +1560,7 @@
 
 	focus = {
 		id = LIT_litang_urbanization
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_litang_urbanization
 		x = -2
 		y = 2
 		relative_position_id = LIT_industrial_plan
@@ -1590,7 +1590,7 @@
 
 	focus = {
 		id = LIT_chengdu_chongqing_business_district
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_chengdu_chongqing_business_district
 		x = -2
 		y = 3
 		relative_position_id = LIT_industrial_plan
@@ -1626,7 +1626,7 @@
 
 	focus = {
 		id = LIT_mianyang_military_industry
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_mianyang_military_industry
 		x = 0
 		y = 2
 		relative_position_id = LIT_industrial_plan
@@ -1655,7 +1655,7 @@
 
 	focus = {
 		id = LIT_deyang_bureau_of_manufacturing
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_deyang_bureau_of_manufacturing
 		x = 0
 		y = 3
 		relative_position_id = LIT_industrial_plan
@@ -1689,7 +1689,7 @@
 
 	focus = {
 		id = LIT_golden_age
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_golden_age
 		x = -2
 		y = 4
 		relative_position_id = LIT_industrial_plan
@@ -1711,7 +1711,7 @@
 
 	focus = {
 		id = LIT_sanxia_hydropower
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_sanxia_hydropower
 		x = 0
 		y = 4
 		relative_position_id = LIT_industrial_plan
@@ -1738,7 +1738,7 @@
 
 	focus = {
 		id = LIT_bureau_of_mines
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_bureau_of_mines
 		x = 2
 		y = 2
 		relative_position_id = LIT_industrial_plan
@@ -1759,7 +1759,7 @@
 
 	focus = {
 		id = LIT_making_steel
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_making_steel
 		x = 2
 		y = 3
 		relative_position_id = LIT_industrial_plan
@@ -1773,7 +1773,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIT_bureau_of_mines"
+			log = "[GetDateText]: [Root.GetName]: Focus LIT_making_steel"
 			add_resource = {
 				type = steel
 				amount = 10
@@ -1789,7 +1789,7 @@
 
 	focus = {
 		id = LIT_extracting_natural_gas
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_LIT_extracting_natural_gas
 		x = 2
 		y = 4
 		relative_position_id = LIT_industrial_plan

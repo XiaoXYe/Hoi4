@@ -140,7 +140,95 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LIT/LIT_snow_leopard_flag_waving.png"			
 	}
 	SpriteType = {
+		name = GFX_goal_LIT_right_of_smile
+		texturefile = "gfx/interface/goals/LIT/LIT_right_of_smile.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_improve_sanitation_habit
+		texturefile = "gfx/interface/goals/LIT/LIT_improve_sanitation_habit.png"			
+	}
+	SpriteType = {
 		name = GFX_goal_LIT_what_about_animals
 		texturefile = "gfx/interface/goals/LIT/LIT_what_about_animals.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_movable_hospitals
+		texturefile = "gfx/interface/goals/LIT/LIT_movable_hospitals.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_happiness_under_covid
+		texturefile = "gfx/interface/goals/LIT/LIT_happiness_under_covid.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_invest_sanitary_infrastructure
+		texturefile = "gfx/interface/goals/LIT/LIT_invest_sanitary_infrastructure.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_compensate_farmers
+		texturefile = "gfx/interface/goals/LIT/LIT_compensate_farmers.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_smile_still
+		texturefile = "gfx/interface/goals/LIT/LIT_smile_still.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_industrial_plan
+		texturefile = "gfx/interface/goals/LIT/LIT_industrial_plan.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_industrial_planning_admin
+		texturefile = "gfx/interface/goals/LIT/LIT_industrial_planning_admin.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_defeat_epidemic
+		texturefile = "gfx/interface/goals/LIT/LIT_defeat_epidemic.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_agriculture_mechanization
+		texturefile = "gfx/interface/goals/LIT/LIT_agriculture_mechanization.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_institute
+		texturefile = "gfx/interface/goals/LIT/LIT_institute.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_university
+		texturefile = "gfx/interface/goals/LIT/LIT_university.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_litang_urbanization
+		texturefile = "gfx/interface/goals/LIT/LIT_litang_urbanization.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_chengdu_chongqing_business_district
+		texturefile = "gfx/interface/goals/LIT/LIT_chengdu_chongqing_business_district.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_mianyang_military_industry
+		texturefile = "gfx/interface/goals/LIT/LIT_mianyang_military_industry.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_deyang_bureau_of_manufacturing
+		texturefile = "gfx/interface/goals/LIT/LIT_deyang_bureau_of_manufacturing.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_golden_age
+		texturefile = "gfx/interface/goals/LIT/LIT_golden_age.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_sanxia_hydropower
+		texturefile = "gfx/interface/goals/LIT/LIT_sanxia_hydropower.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_bureau_of_mines
+		texturefile = "gfx/interface/goals/LIT/LIT_bureau_of_mines.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_making_steel
+		texturefile = "gfx/interface/goals/LIT/LIT_making_steel.png"			
+	}
+	SpriteType = {
+		name = GFX_goal_LIT_extracting_natural_gas
+		texturefile = "gfx/interface/goals/LIT/LIT_extracting_natural_gas.png"			
 	}
 }
